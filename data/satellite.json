@@ -1,0 +1,12 @@
+{
+ "north": 36.401388984848616,
+ "south": 36.363798554158635,
+ "west": -85.3472900390625,
+ "east": -85.2978515625,
+ "zoom": 17,
+ "px": [
+  4096,
+  3868
+ ],
+ "credit": "Imagery: Esri, Maxar, Earthstar Geographics"
+}

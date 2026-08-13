@@ -1,0 +1,2119 @@
+{
+ "generated_from": [
+  "C:\\dev\\livingston-outdoors\\data\\livingston-outdoors.json",
+  "C:\\dev\\visit-livingston\\data\\places.json",
+  "C:\\dev\\mtn-printers\\data\\mtn-printers.json"
+ ],
+ "nodes": [
+  {
+   "id": "barnraised",
+   "name": "Barnraised",
+   "type": "hub",
+   "url": "https://barnraised.design",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Steve's web studio \u2014 small-business websites, photography, drone. Every site on this map traces back here.",
+   "listed_in": [],
+   "bearing": 155.9
+  },
+  {
+   "id": "livingston-outdoors",
+   "name": "Livingston Outdoors",
+   "type": "directory",
+   "url": "https://livingstonoutdoors.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Photo-led directory of 40 outdoor places within 45 minutes of Livingston.",
+   "listed_in": [],
+   "bearing": 193.3
+  },
+  {
+   "id": "visit-livingston-tn",
+   "name": "Visit Livingston TN",
+   "type": "directory",
+   "url": "https://visitlivingstontn.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "First-timer's editorial guide to Livingston and Overton County \u2014 29 places.",
+   "listed_in": [],
+   "bearing": 254.1
+  },
+  {
+   "id": "middle-tn-printers",
+   "name": "Middle TN Printers",
+   "type": "directory",
+   "url": "https://middletnprinters.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Unranked directory of eleven Middle Tennessee commercial printers.",
+   "listed_in": [],
+   "bearing": 200.3
+  },
+  {
+   "id": "best-mom-cars",
+   "name": "Best Mom Cars",
+   "type": "directory",
+   "url": "https://bestmomcars.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Standalone top-list site, same Obscura custom-HTML pattern as the directories.",
+   "listed_in": [],
+   "bearing": 158.2
+  },
+  {
+   "id": "livingston-garden-center",
+   "name": "Livingston Garden Center",
+   "type": "built",
+   "url": "https://livingstongardencenter.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Client build \u2014 pickup-ordering garden center site, order by 5 PM for next-day pickup.",
+   "listed_in": [],
+   "bearing": 188.6,
+   "geo": [
+    151.07,
+    -89.79
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "tapestry-acres",
+   "name": "Tapestry Acres",
+   "type": "built",
+   "url": "https://tapestryacres.com",
+   "city": "Monroe",
+   "county": "Overton",
+   "drive_min": 15,
+   "blurb": "Own venture \u2014 alpaca farm and glamping stays outside Livingston.",
+   "listed_in": [],
+   "bearing": 244.8
+  },
+  {
+   "id": "to-the-max-rv",
+   "name": "To The Max RV",
+   "type": "built",
+   "url": "https://sites.obscurastudio.design/s/to-the-max-rv",
+   "city": "Monroe",
+   "county": "Overton",
+   "drive_min": 15,
+   "blurb": "Own venture \u2014 RV rental based at the Tapestry Acres farm.",
+   "listed_in": [],
+   "bearing": 251.8
+  },
+  {
+   "id": "oak-ridge-peptides",
+   "name": "Oak Ridge Peptides",
+   "type": "built",
+   "url": "https://oakridgepeptides.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Own venture e-commerce store (successor to Harris Wellness Solutions).",
+   "listed_in": [],
+   "bearing": 205.0
+  },
+  {
+   "id": "ridgeline-aerial",
+   "name": "Ridgeline Aerial",
+   "type": "built",
+   "url": "https://sites.obscurastudio.design/s/ridgeline-aerial",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Client build \u2014 drone and aerial photography, credited to Barnraised.",
+   "listed_in": [],
+   "bearing": 228.4
+  },
+  {
+   "id": "obscura-studio",
+   "name": "Obscura Studio",
+   "type": "built",
+   "url": "https://obscurastudio.design",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Own platform \u2014 the studio and hosting layer every custom-HTML site here is served from.",
+   "listed_in": [],
+   "bearing": 209.7
+  },
+  {
+   "id": "oliver-printing",
+   "name": "Oliver Printing Company",
+   "type": "built",
+   "url": "https://oliverprintingcompany.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Livingston print shop since 1967 \u2014 Barnraised sample site built; also featured on Middle TN Printers.",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 212.0,
+   "geo": [
+    -20.76,
+    13.75
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "livingston-city-park",
+   "name": "Livingston City Park",
+   "type": "listed",
+   "url": "https://www.cityoflivingston.net/community",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The town pool, ball fields and pickleball courts, two minutes from the square. Not a destination and not pretending to be, but on a July afternoon when nobody wants to drive anywhere it is the answer.",
+   "category": "swimming",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 183.9,
+   "geo": [
+    85.61,
+    -22.13
+   ],
+   "geo_method": "name-bounded"
+  },
+  {
+   "id": "central-park-livingston",
+   "name": "Central Park (Livingston)",
+   "type": "listed",
+   "url": "https://centralparklivingston.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 5,
+   "blurb": "Livingston's park on the square, with a playground, a splash pad, outdoor fitness equipment, a short walking trail and a stage the town uses for events. Three minutes from anywhere downtown.",
+   "category": "playground",
+   "listed_in": [
+    "livingston-outdoors",
+    "visit-livingston-tn"
+   ],
+   "bearing": 165.2,
+   "geo": [
+    -1.01,
+    21.76
+   ],
+   "geo_method": "venue-approx"
+  },
+  {
+   "id": "standing-stone-state-forest",
+   "name": "Standing Stone State Forest",
+   "type": "listed",
+   "url": "https://www.tn.gov/agriculture/forests/state-forests/standing-stone.html",
+   "city": "Hilham",
+   "county": "Overton",
+   "drive_min": 17,
+   "blurb": "The 8,309 acre working forest wrapped around the state park, run by the Division of Forestry rather than State Parks. Hiking and horseback riding are both allowed here, and so is hunting.",
+   "category": "hiking",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 235.4,
+   "geo": [
+    -1073.95,
+    -628.13
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "sunset-marina-and-resort",
+   "name": "Sunset Marina and Resort",
+   "type": "listed",
+   "url": "https://sunsetmarina.com/",
+   "city": "Byrdstown",
+   "county": "Pickett",
+   "drive_min": 19,
+   "blurb": "A full-service Dale Hollow marina near Byrdstown with close to 500 slips and rentals covering houseboats, pontoons, ski boats, fishing boats, kayaks and paddleboards. Cabins and chalets on site.",
+   "category": "boating",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 43.3,
+   "geo": [
+    1220.15,
+    -1366.92
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "obey-river-park",
+   "name": "Obey River Park",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/232654",
+   "city": "Monroe (near Byrdstown)",
+   "county": "Pickett",
+   "drive_min": 20,
+   "blurb": "A Corps campground three miles south of Byrdstown with the largest and busiest swimming beach on Dale Hollow, 123 campsites, a launch ramp and playgrounds. The one to pick when you want sand and shallow water rather than a boat.",
+   "category": "camping",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 30.0,
+   "geo": [
+    1144.88,
+    -1354.1
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "standing-stone-state-park",
+   "name": "Standing Stone State Park",
+   "type": "listed",
+   "url": "https://tnstateparks.com/parks/standing-stone",
+   "city": "Hilham",
+   "county": "Overton",
+   "drive_min": 20,
+   "blurb": "Twenty minutes from the square and the default answer when you want woods and water without committing to a drive. A thousand acres wrapped around 69-acre Kelly Lake, with eight miles of day-use trail, cabins, a campground and a seasonal pool.",
+   "category": "hiking",
+   "listed_in": [
+    "livingston-outdoors",
+    "visit-livingston-tn"
+   ],
+   "bearing": 240.1,
+   "geo": [
+    -1.01,
+    -0.91
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "waterloo-falls",
+   "name": "Waterloo Falls",
+   "type": "listed",
+   "url": "https://waterloovenueandevents.com/river-access/",
+   "city": "Cookeville",
+   "county": "Overton",
+   "drive_min": 24,
+   "blurb": "A falls on Spring Creek that is privately owned and run as an events venue, selling access to the river and the falls and renting primitive tent sites. Not a public park, and there is no free walk-in.",
+   "category": "waterfall",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 256.5,
+   "geo": [
+    -1080.62,
+    747.17
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "cinderella-park",
+   "name": "Cinderella Park",
+   "type": "listed",
+   "url": "https://www.cookeville-tn.gov/Facilities/Facility/Details/Cinderella-Park-7",
+   "city": "Cookeville",
+   "county": "Putnam",
+   "drive_min": 25,
+   "blurb": "A small Cookeville city park. Like Capshaw, it is here because it exists and it is public, not because it will fill an afternoon.",
+   "category": "playground",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 192.9,
+   "geo": [
+    -1247.0,
+    1870.99
+   ],
+   "geo_method": "name-city"
+  },
+  {
+   "id": "capshaw-park",
+   "name": "Capshaw Park",
+   "type": "listed",
+   "url": "https://www.cookeville-tn.gov/Facilities/Facility/Details/Capshaw-Park-13",
+   "city": "Cookeville",
+   "county": "Putnam",
+   "drive_min": 26,
+   "blurb": "A small Cookeville neighbourhood park on the city's inventory. Worth knowing about if you are already in town and need somewhere for half an hour, rather than worth the drive.",
+   "category": "playground",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 188.8,
+   "geo": [
+    -1279.84,
+    2091.89
+   ],
+   "geo_method": "name-city"
+  },
+  {
+   "id": "tennessee-central-trail",
+   "name": "Tennessee Central Trail",
+   "type": "listed",
+   "url": "https://tennesseecentraltrail.com/the-trail/",
+   "city": "Cookeville",
+   "county": "Putnam",
+   "drive_min": 26,
+   "blurb": "4.23 paved miles, nine feet wide, running beside a live rail line from Cookeville to Algood past the Depot Museum, the WestSide district and Tennessee Tech. The flattest and widest paved surface within 45 minutes.",
+   "category": "biking",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 217.9,
+   "geo": [
+    -1134.41,
+    1821.53
+   ],
+   "geo_method": "name-city"
+  },
+  {
+   "id": "dogwood-park",
+   "name": "Dogwood Park",
+   "type": "listed",
+   "url": "https://www.cookeville-tn.gov/facilities/facility/details/dogwoodpark-6",
+   "city": "Cookeville",
+   "county": "Putnam",
+   "drive_min": 27,
+   "blurb": "Downtown Cookeville's park across from the municipal building, with an interactive fountain, a performance pavilion, a rose garden and the Heart of the City Playground, which the city calls its only fully accessible playground.",
+   "category": "playground",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 201.2,
+   "geo": [
+    -1350.19,
+    2024.08
+   ],
+   "geo_method": "name-city"
+  },
+  {
+   "id": "dale-hollow-dam-overlook",
+   "name": "Dale Hollow Dam Overlook",
+   "type": "listed",
+   "url": "https://corpslakes.erdc.dren.mil/visitors/projects.cfm?ID=H304390",
+   "city": "Celina",
+   "county": "Clay",
+   "drive_min": 28,
+   "blurb": "The Corps overlook above Dale Hollow Dam, looking down the dam face and out over the tailwater where the eagles work in winter. A stop rather than a visit, and a free view of the whole structure.",
+   "category": "overlook",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 321.0,
+   "geo": [
+    -961.38,
+    -1418.66
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "dale-hollow-lake-primitive-camping",
+   "name": "Dale Hollow Lake Primitive Camping",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/234782",
+   "city": "Celina",
+   "county": "Clay",
+   "drive_min": 28,
+   "blurb": "The Corps' boat-in and walk-in primitive camping along the Dale Hollow shoreline, booked through Recreation.gov separately from the developed campgrounds. No hookups, no facilities.",
+   "category": "camping",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 329.0,
+   "geo": [
+    -498.06,
+    -1672.55
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "monterey-rail-trail",
+   "name": "Monterey Rail Trail",
+   "type": "listed",
+   "url": "https://www.exploremontereytn.com/attractions/",
+   "city": "Monterey",
+   "county": "Putnam",
+   "drive_min": 28,
+   "blurb": "About 1.1 miles of paved trail through downtown Monterey, the far end of the corridor that will eventually connect to Cookeville. Short enough to pair with Bee Rock and lunch rather than treat as the outing.",
+   "category": "biking",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 213.8,
+   "geo": [
+    396.65,
+    2170.4
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "ensor-sink-natural-area",
+   "name": "Ensor Sink Natural Area",
+   "type": "listed",
+   "url": "https://www.cookeville-tn.gov/facilities/facility/details/Ensor-Sink-Natural-Area-11",
+   "city": "Cookeville",
+   "county": "Putnam",
+   "drive_min": 29,
+   "blurb": "A Cookeville city natural area built around an active sinkhole, with short trails, a small amphitheatre, a stone council ring and a kiosk explaining the karst under the town. Free, and stranger than it sounds.",
+   "category": "hiking",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 205.4,
+   "geo": [
+    -1359.31,
+    2141.97
+   ],
+   "geo_method": "name-city"
+  },
+  {
+   "id": "dale-hollow-damsite-recreation-area",
+   "name": "Dale Hollow Damsite Recreation Area",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/232564",
+   "city": "Celina",
+   "county": "Clay",
+   "drive_min": 30,
+   "blurb": "A Corps campground on the Obey River below the dam with 72 sites, a paved mile on site, and connections to the Red Oak Ridge and Accordian Bluff trails. There is no lake access from the campground itself.",
+   "category": "camping",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 325.0,
+   "geo": [
+    -1261.35,
+    -1482.44
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "dale-hollow-national-fish-hatchery",
+   "name": "Dale Hollow National Fish Hatchery",
+   "type": "listed",
+   "url": "https://www.fws.gov/fish-hatchery/dale-hollow",
+   "city": "Celina",
+   "county": "Clay",
+   "drive_min": 30,
+   "blurb": "A federal trout hatchery near Celina raising rainbow, brown, lake and brook trout for the waters the dams changed, with a visitor centre, an aquarium, a paved walking road and public fishing.",
+   "category": "fishing",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 337.0,
+   "geo": [
+    -1388.85,
+    -1475.42
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "pleasant-grove-recreation-area-dale-hollow-lake",
+   "name": "Pleasant Grove Recreation Area (Dale Hollow Lake)",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/232675",
+   "city": "Allons",
+   "county": "Overton",
+   "drive_min": 31,
+   "blurb": "A Corps day-use area with a concrete ramp, a reservable group shelter, flush toilets and drinking water. No camping, no alcohol. The smallmouth fishing is the draw, and the pay station takes cards only.",
+   "category": "boating",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 226.1,
+   "geo": [
+    -119.93,
+    -471.97
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "east-port-marina-and-resort",
+   "name": "East Port Marina and Resort",
+   "type": "listed",
+   "url": "https://eastportmarina.com/",
+   "city": "Allons",
+   "county": "Overton",
+   "drive_min": 32,
+   "blurb": "A Dale Hollow marina on the Obey River arm near Allons, with slips, fuel, boat rentals and lodging on site.",
+   "category": "boating",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 176.9,
+   "geo": [
+    1487.36,
+    -611.67
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "bee-rock",
+   "name": "Bee Rock",
+   "type": "listed",
+   "url": "https://www.exploremontereytn.com/attractions/",
+   "city": "Monterey",
+   "county": "Putnam",
+   "drive_min": 33,
+   "blurb": "A city-owned overlook above Monterey with the Calfkiller valley and Stamps Hollow underneath it, reached by a short trail to an unfenced cliff edge. More view per step than anything else on this list.",
+   "category": "hiking",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 176.2,
+   "geo": [
+    285.23,
+    2287.59
+   ],
+   "geo_method": "name-city"
+  },
+  {
+   "id": "city-lake-natural-area",
+   "name": "City Lake Natural Area",
+   "type": "listed",
+   "url": "https://www.cookeville-tn.gov/Facilities/Facility/Details/City-Lake-Natural-Area-5",
+   "city": "Cookeville",
+   "county": "Putnam",
+   "drive_min": 33,
+   "blurb": "A 35 acre lake on the site of Cookeville's original water treatment plant, with catfish, bass and bream, kayak access, and a short trail past the old structure to the cascade below it.",
+   "category": "fishing",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 197.1,
+   "geo": [
+    -918.94,
+    2311.77
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "cordell-hull-birthplace-state-park",
+   "name": "Cordell Hull Birthplace State Park",
+   "type": "listed",
+   "url": "https://tnstateparks.com/parks/cordell-hull-birthplace",
+   "city": "Byrdstown",
+   "county": "Pickett",
+   "drive_min": 35,
+   "blurb": "Fifty-five acres in Byrdstown around a replica of the log cabin where Cordell Hull was born, plus a museum, archives, and the Bunkum Cave Trail out to a limestone cave with a small waterfall.",
+   "category": "history",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 16.7,
+   "geo": [
+    1417.55,
+    -1823.17
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "the-boils-wildlife-management-area",
+   "name": "The Boils Wildlife Management Area",
+   "type": "listed",
+   "url": "https://www.tn.gov/twra/wildlife-management-areas/cumberland-plateau-r3/the-boils-wma.html",
+   "city": "Gainesboro",
+   "county": "Jackson",
+   "drive_min": 35,
+   "blurb": "A small TWRA area on the Roaring River named for the spring that boils up out of the riverbed near the Roaring River Road entrance, with several fishing and swimming access points along the water.",
+   "category": "fishing",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 289.3,
+   "geo": [
+    -2483.16,
+    255.05
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "willow-grove-campground",
+   "name": "Willow Grove Campground",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/232747",
+   "city": "Allons",
+   "county": "Clay",
+   "drive_min": 35,
+   "blurb": "A Corps campground on a plateau above the lake with 81 sites, a beach and a ramp, holding the other end of the Accordian Bluff trail from Lillydale. Being up on the bluff is why it stays quieter.",
+   "category": "camping",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 353.0,
+   "geo": [
+    -163.98,
+    -548.85
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "cane-creek-park",
+   "name": "Cane Creek Park",
+   "type": "listed",
+   "url": "https://www.cookeville-tn.gov/facilities/facility/details/Cane-Creek-Park-1",
+   "city": "Cookeville",
+   "county": "Putnam",
+   "drive_min": 36,
+   "blurb": "Cookeville's park around a 56 acre lake, with two fishing piers, an 18 hole disc golf course, a mountain bike trail, paved loops, five playgrounds and seasonal boat rentals. The compromise when a group cannot agree.",
+   "category": "fishing",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 184.6,
+   "geo": [
+    -1651.31,
+    2037.71
+   ],
+   "geo_method": "name-city"
+  },
+  {
+   "id": "roaring-river-park",
+   "name": "Roaring River Park",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/232693",
+   "city": "Gainesboro",
+   "county": "Jackson",
+   "drive_min": 36,
+   "blurb": "A Corps day-use park on Cordell Hull Lake at the mouth of the Roaring River, with a ramp, a group shelter, a playground, and swimming, fishing and paddling access. Dawn to dusk, no camping.",
+   "category": "swimming",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 275.0,
+   "geo": [
+    -2337.91,
+    75.3
+   ],
+   "geo_method": "name-city"
+  },
+  {
+   "id": "cove-creek-recreation-area",
+   "name": "Cove Creek Recreation Area",
+   "type": "listed",
+   "url": "https://corpslakes.erdc.dren.mil/visitors/projects.cfm?ID=H304390",
+   "city": "Celina",
+   "county": "Clay",
+   "drive_min": 38,
+   "blurb": "A Corps launch area on the Cove Creek arm of Dale Hollow. Easy to get a boat in the water, but the access road is narrow and a long way from any highway, and there are no facilities.",
+   "category": "boating",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 317.0,
+   "geo": [
+    831.61,
+    -1497.39
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "horse-creek-resort",
+   "name": "Horse Creek Resort",
+   "type": "listed",
+   "url": "https://horsecreekresort.com/",
+   "city": "Celina",
+   "county": "Clay",
+   "drive_min": 38,
+   "blurb": "A Dale Hollow marina and resort with slips, rentals and lodging on the Clay County shore.",
+   "category": "boating",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 341.0,
+   "geo": [
+    -1399.16,
+    -1588.13
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "meadow-creek-park",
+   "name": "Meadow Creek Park",
+   "type": "listed",
+   "url": "https://www.exploremontereytn.com/attractions/",
+   "city": "Monterey",
+   "county": "Putnam",
+   "drive_min": 38,
+   "blurb": "Roughly 300 acres at Monterey with a lake for fishing and non-motorized boats, an adjoining cliff area brought in for climbing access, and hiking trails. An outpost on site rents kayaks and mountain bikes on weekend afternoons.",
+   "category": "fishing",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 209.6,
+   "geo": [
+    1001.64,
+    2458.33
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "cordell-hull-wildlife-management-area",
+   "name": "Cordell Hull Wildlife Management Area",
+   "type": "listed",
+   "url": "https://www.tn.gov/twra/wildlife-management-areas/cumberland-plateau-r3/cordell-hull-wma.html",
+   "city": "Gainesboro",
+   "county": "Jackson",
+   "drive_min": 40,
+   "blurb": "TWRA-managed Corps land along the Cumberland River and Cordell Hull Lake, with more than ten public access points including Horseshoe Bend, McClures Bend and Sullivans Bend. Open daylight hours, year round.",
+   "category": "fishing",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 253.6,
+   "geo": [
+    -2699.62,
+    163.83
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "star-point-resort",
+   "name": "Star Point Resort",
+   "type": "listed",
+   "url": "https://starpointresort.com/",
+   "city": "Celina",
+   "county": "Clay",
+   "drive_min": 40,
+   "blurb": "A Dale Hollow marina and resort with houseboat and pontoon rentals, slips and lakeside lodging.",
+   "category": "boating",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 349.0,
+   "geo": [
+    1200.89,
+    -1730.25
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "wartrace-creek-recreation-area",
+   "name": "Wartrace Creek Recreation Area",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/232734",
+   "city": "Gainesboro",
+   "county": "Jackson",
+   "drive_min": 40,
+   "blurb": "A Corps day-use area on Cordell Hull about nine miles from Gainesboro, with a swimming beach, a ramp, a volleyball court, a playground and a fish cleaning station.",
+   "category": "swimming",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 296.4,
+   "geo": [
+    -2519.24,
+    206.5
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "dale-hollow-lake-eagle-watch",
+   "name": "Dale Hollow Lake Eagle Watch",
+   "type": "listed",
+   "url": "https://www.recreation.gov/ticket/facility/10101848",
+   "city": "Allons",
+   "county": "Overton",
+   "drive_min": 43,
+   "blurb": "A ticketed winter boat tour out onto Dale Hollow to see the bald eagles that winter on the lake, booked through Recreation.gov and departing from Lillydale. January and February only, and it sells out.",
+   "category": "wildlife",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 172.2,
+   "geo": [
+    -193.97,
+    -528.62
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "lillydale-campground-and-day-use",
+   "name": "Lillydale Campground and Day Use",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/232623",
+   "city": "Allons",
+   "county": "Clay",
+   "drive_min": 43,
+   "blurb": "A Corps campground and day-use area near Allons with 112 sites, two ramps, two swimming beaches and the trailhead for the 7.5 mile Accordian Bluff trail over to Willow Grove.",
+   "category": "camping",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 345.0,
+   "geo": [
+    -122.27,
+    -568.5
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "salt-lick-creek-recreation-area-and-campground",
+   "name": "Salt Lick Creek Recreation Area and Campground",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/232697",
+   "city": "Gainesboro",
+   "county": "Jackson",
+   "drive_min": 43,
+   "blurb": "A Corps campground on Cordell Hull about ten miles from Gainesboro, 150 sites with electric hookups, a ramp, and access to swimming, fishing, hiking, and to horse and mountain bike trails.",
+   "category": "camping",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 282.1,
+   "geo": [
+    -3917.71,
+    -1331.05
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "cummins-falls-state-park",
+   "name": "Cummins Falls State Park",
+   "type": "listed",
+   "url": "https://tnstateparks.com/parks/cummins-falls",
+   "city": "Cookeville",
+   "county": "Jackson",
+   "drive_min": 45,
+   "blurb": "A 75 foot falls on the Blackburn Fork dropping into a pool people swim in, 45 minutes out. Reaching the base needs a Gorge Access Permit bought online against a daily cap, and the gorge floods fast enough that the park closes it without notice.",
+   "category": "hiking",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 260.7,
+   "geo": [
+    -1800.38,
+    1193.75
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "dale-hollow-lake-usace-nashville-district",
+   "name": "Dale Hollow Lake (USACE Nashville District)",
+   "type": "listed",
+   "url": "https://corpslakes.erdc.dren.mil/visitors/projects.cfm?ID=H304390",
+   "city": "Celina",
+   "county": "Clay",
+   "drive_min": 45,
+   "blurb": "The 27,700 acre Corps reservoir itself, headquartered at the dam outside Celina. Start here if you do not know Dale Hollow yet and need to work out which of its dozen access points suits what you actually want to do.",
+   "category": "boating",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 333.0,
+   "geo": [
+    -498.06,
+    -1672.55
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "granville-historic-district-and-veterans-park",
+   "name": "Granville Historic District and Veterans Park",
+   "type": "listed",
+   "url": "https://www.explorejctn.com/communities/granville",
+   "city": "Granville",
+   "county": "Jackson",
+   "drive_min": 45,
+   "blurb": "A restored riverboat town on Cordell Hull Lake with a lakeside Veterans Park and a historic district you can walk end to end. The outdoor part here is mostly rented: pontoons, kayaks, paddleboards and trail rides nearby.",
+   "category": "boating",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 267.9,
+   "geo": [
+    -3547.51,
+    1019.93
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "burgess-falls-state-park",
+   "name": "Burgess Falls State Park",
+   "type": "listed",
+   "url": "https://tnstateparks.com/parks/burgess-falls",
+   "city": "Baxter",
+   "county": "Putnam",
+   "drive_min": 46,
+   "blurb": "304 day-use acres on the Falling Water River with a run of falls ending at the 103 foot Burgess Falls, all on foot. No swimming here, which is the honest difference between this and Cummins.",
+   "category": "hiking",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 180.4,
+   "geo": [
+    -2061.15,
+    3125.42
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "sgt-alvin-c-york-state-historic-park",
+   "name": "Sgt. Alvin C. York State Historic Park",
+   "type": "listed",
+   "url": "https://tnstateparks.com/parks/sgt-alvin-c-york",
+   "city": "Pall Mall",
+   "county": "Fentress",
+   "drive_min": 46,
+   "blurb": "347 acres at Pall Mall holding Alvin York's farm, house and working gristmill on the Wolf River, with a re-created First World War trench. The river fishes, and gets stocked with trout in spring.",
+   "category": "hiking",
+   "listed_in": [
+    "livingston-outdoors"
+   ],
+   "bearing": 85.0,
+   "geo": [
+    2721.61,
+    -1424.94
+   ],
+   "geo_method": "name-state"
+  },
+  {
+   "id": "cub-mountain-atv-park-campground",
+   "name": "Cub Mountain ATV Park & Campground",
+   "type": "listed",
+   "url": "https://cubmountain.com/",
+   "city": "Crawford",
+   "county": "Overton",
+   "drive_min": 25,
+   "blurb": "Privately-owned ATV park and campground on roughly 1,900 acres in Crawford, with about 50 miles of ATV/UTV/motorcycle trails, a stocked 4-acre fishing lake, mountain biking, waterfalls, old coal-mining sites, and RV/tent camping. Jeeps, trucks, and SUVs are not permitted on the trails.",
+   "category": "outdoors",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 167.6,
+   "geo": [
+    1195.79,
+    1025.36
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "cumberland-national-scenic-byway-overton-county-segment",
+   "name": "Cumberland National Scenic Byway - Overton County segment",
+   "type": "listed",
+   "url": "https://cumberlandnationalscenicbyway.com/overton-county/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Designated scenic byway route through Overton County following SR 42 (Livingston Highway) south and SR 52 northwest from Livingston toward Standing Stone State Park, passing the historic Overton County Courthouse and other downtown Livingston landmarks.",
+   "category": "outdoors",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 169.9,
+   "geo": [
+    30.63,
+    -41.89
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "dale-hollow-lake-overton-county-access-mitchell-creek-marina-livingston-boat-dock",
+   "name": "Dale Hollow Lake - Overton County access (Mitchell Creek Marina / Livingston Boat Dock)",
+   "type": "listed",
+   "url": "https://mitchellcreekmarina.com/",
+   "city": "Allons",
+   "county": "Overton",
+   "drive_min": 12,
+   "blurb": "27,700-acre reservoir on the Obey River known for clear water and trophy smallmouth bass fishing. Overton County's own tourism site names Mitchell Creek Marina (the former Livingston Boat Dock) as its Dale Hollow access point, with boat slips, rentals, cabins, and an on-site restaurant. Dale Hollow Lake itself spans Clay, Pickett, Fentress, and Overton counties, and sources differ on which county line individual marinas fall in.",
+   "category": "outdoors",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 174.6,
+   "geo": [
+    -109.62,
+    -607.22
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "hidden-valley-golf-country-club",
+   "name": "Hidden Valley Golf & Country Club",
+   "type": "listed",
+   "url": "https://hvccgolf.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Semi-private 9-hole golf course in Livingston, built in 1966. Open to the public most days; Sundays are members-and-guests only.",
+   "category": "outdoors",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 181.6,
+   "geo": [
+    -88.63,
+    -228.38
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "livingston-city-park-recreation-park-city-ballpark",
+   "name": "Livingston City Park (Recreation Park / City Ballpark)",
+   "type": "listed",
+   "url": "https://www.cityoflivingston.net/community",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "City-operated recreation complex in Livingston (roughly 15 acres) with baseball and softball fields, pickleball courts, a public swimming pool, and walking paths.",
+   "category": "outdoors",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 186.3,
+   "geo": [
+    85.61,
+    -22.13
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "obey-river-park-campground",
+   "name": "Obey River Park Campground",
+   "type": "listed",
+   "url": "https://www.recreation.gov/camping/campgrounds/232654",
+   "city": "Monroe",
+   "county": "Overton",
+   "drive_min": 15,
+   "blurb": "U.S. Army Corps of Engineers campground on Dale Hollow Lake near Byrdstown, with over 120 campsites, the lake's largest swimming beach, a boat ramp, fishing, and winter bald-eagle viewing. Monroe, TN is generally listed as an Overton County community, though the campground sits close to the Pickett County line.",
+   "category": "outdoors",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 207.3
+  },
+  {
+   "id": "standing-stone-state-forest-wma",
+   "name": "Standing Stone State Forest (WMA)",
+   "type": "listed",
+   "url": "https://www.tn.gov/twra/wildlife-management-areas/cumberland-plateau-r3/standing-stone.html",
+   "city": "",
+   "county": "Overton",
+   "drive_min": 20,
+   "blurb": "TWRA-managed wildlife management area of nearly 11,000 acres surrounding Standing Stone State Park in Overton County. Open for big game and small game hunting, trapping, and dog training in season, as well as hiking and birding (notable songbird migration diversity).",
+   "category": "outdoors",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 237.8,
+   "geo": [
+    -1073.95,
+    -628.13
+   ],
+   "geo_method": "name-simplified"
+  },
+  {
+   "id": "livingston-mural-trail",
+   "name": "Livingston Mural Trail",
+   "type": "listed",
+   "url": "https://discoverlivingstontn.com/mural-trail/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The Livingston Mural Trail is a self-guided route past hand-painted murals in downtown Overton County, beginning with the 'Greetings from Overton County' mural on the historic downtown courthouse square, with additional murals located around Livingston.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 191.0,
+   "geo": [
+    -17.17,
+    -43.04
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "livingston-overton-county-farmers-market",
+   "name": "Livingston-Overton County Farmers Market",
+   "type": "listed",
+   "url": "https://www.picktnproducts.org/picktn-producers/picktn-listing.902.html",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The Livingston-Overton County Farmers Market sells locally grown produce and goods from area farmers, operating seasonally from May through November.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 198.0,
+   "geo": [
+    0.3,
+    -7.36
+   ],
+   "geo_method": "street-approx"
+  },
+  {
+   "id": "millard-oakley-public-library",
+   "name": "Millard Oakley Public Library",
+   "type": "listed",
+   "url": "https://millardoakleylibrary.org",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The Millard Oakley Public Library is the public library serving Livingston and Overton County, offering books, audiobooks, movies, internet access, e-books, and programs such as preschool storytime, teen events, and book clubs. It also hosts a self-service kiosk for driver license and Real ID transactions.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 202.7,
+   "geo": [
+    4.25,
+    9.37
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "overton-county-arts",
+   "name": "Overton County Arts",
+   "type": "listed",
+   "url": "https://www.overtoncountyarts.org",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Overton County Arts is a 501(c)3 nonprofit that promotes the visual arts in Overton County through art classes, bimonthly Art Mixers, the Libby Allen Art Contest, and K-12 art education programs, covering traditional fine arts as well as clay, wood, glass, fiber, and metal craft media.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 214.4,
+   "geo": [
+    -22.79,
+    3.77
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "overton-county-courthouse",
+   "name": "Overton County Courthouse",
+   "type": "listed",
+   "url": "https://courthouses.co/us-states/o-u/tennessee/overton-county/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The Overton County Courthouse is a two-story brick Federal-style courthouse on the historic downtown square in Livingston, built in 1868-69 after an earlier courthouse was destroyed by fire during the Civil War. It has been renovated several times, most recently in 2014, and still houses the county circuit court.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 216.7,
+   "geo": [
+    0.38,
+    5.97
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "overton-county-heritage-museum",
+   "name": "Overton County Heritage Museum",
+   "type": "listed",
+   "url": "https://tngenweb.org/ofp/overton-county-heritage-museum/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The Overton County Heritage Museum occupies the county's former sheriff's office and jail building on West Broad Street in Livingston and opened in March 2002 as a project of the Overton County Historical Society. Exhibits cover military artifacts from the Civil War through World War II, Depression-era household items, farm implements, and memorabilia from astronaut Mike McCulley, a Livingston native.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 221.4,
+   "geo": [
+    -31.98,
+    9.52
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "roaring-river-church-and-cemetery",
+   "name": "Roaring River Church and Cemetery",
+   "type": "listed",
+   "url": "https://tngenweb.org/ofp/roaring-river-church-and-cemetery-overton-county/",
+   "city": "",
+   "county": "Overton",
+   "drive_min": 20,
+   "blurb": "Roaring River Church and Cemetery is one of the oldest church and burial sites in Overton County, founded by Revolutionary War veteran Colonel Stephen Copeland in the late 1700s. The original Baptist congregation, built of poplar logs in a twelve-cornered cross shape, was chartered in 1801 and is considered among the oldest in the Upper Cumberland region.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 230.7,
+   "geo": [
+    -39.66,
+    -49.98
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "the-antique-market",
+   "name": "The Antique Market",
+   "type": "listed",
+   "url": "https://cumberlandriverbasin.org/place/the-antique-market-livingston/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The Antique Market is a downtown Livingston shop on the courthouse square housing booths from more than 40 antique dealers, selling costume and estate jewelry, primitive furniture, pottery, quilts, and other collectables.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 247.1,
+   "geo": [
+    -2.13,
+    0.43
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "1806-bbq",
+   "name": "1806 BBQ",
+   "type": "listed",
+   "url": "https://1806bbq.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A barbecue restaurant right on the courthouse square offering pulled pork, smoked brisket, wings, and a salad bar, along with burgers and appetizers. Offers dine-in, takeout, and delivery.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 151.2,
+   "geo": [
+    -2.07,
+    0.41
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "angelina-s-italian-subs-more",
+   "name": "Angelina's Italian Subs & More",
+   "type": "listed",
+   "url": "https://www.cookevillebites.com/restaurants/angelinas-italian-subs-more-livingston-tn",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A counter-service sub shop making Italian subs and pasta from family recipes, named after the owner's husband's grandmother. Offers takeout.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 153.5,
+   "geo": [
+    -78.62,
+    32.8
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "brazen-que",
+   "name": "Brazen Que",
+   "type": "listed",
+   "url": "https://www.brazenque.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A Texas-style craft barbecue restaurant cooking brisket, sausages, and ribs over live oak fire. Offers outdoor dining, catering, and is wheelchair accessible; has recent 5-star reviews into January 2026.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 160.5,
+   "geo": [
+    -17.66,
+    -112.26
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "casa-mexicana",
+   "name": "Casa Mexicana",
+   "type": "listed",
+   "url": "https://www.restaurantji.com/tn/livingston/casa-mexicana-/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A sit-down Mexican restaurant near the square serving standard Tex-Mex fare. Has an active review history into January 2026 with no closure indications.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 162.9,
+   "geo": [
+    3.55,
+    -130.05
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "ruby-lee-coffee-and-bakehouse",
+   "name": "Ruby & Lee Coffee and Bakehouse",
+   "type": "listed",
+   "url": "https://www.restaurantji.com/tn/livingston/ruby-and-lee-coffee-and-bakehouse-/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A bakery and coffee shop on the downtown square inside the Market on Main boutique, serving cinnamon rolls, muffins, breakfast sandwiches, and espresso drinks. This is a rebrand of the same location previously known as AC Squared Bakery.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 233.1,
+   "geo": [
+    0.69,
+    7.54
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "stover-s-country-kitchen",
+   "name": "Stover's Country Kitchen",
+   "type": "listed",
+   "url": "https://www.restaurantji.com/tn/livingston/stovers-country-kitchen-/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A cozy hometown diner serving breakfast all day plus Southern comfort food like hamburger steak, pinto beans, and cornbread. Casual counter-and-table service in a family-style atmosphere.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 242.4,
+   "geo": [
+    43.82,
+    -6.48
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "the-sno-shack",
+   "name": "The Sno Shack",
+   "type": "listed",
+   "url": "https://www.tripadvisor.com/Restaurant_Review-g55162-d6611617-Reviews-The_Sno_Shack-Livingston_Tennessee.html",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A walk-up shaved ice and snow cone stand with dozens of flavor combinations, plus a simple food menu of hamburger steaks and baked potatoes. Seasonal-style hours (afternoons/evenings, closed Sundays).",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 249.5,
+   "geo": [
+    -61.96,
+    34.9
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "wired-coffee-co",
+   "name": "Wired Coffee Co",
+   "type": "listed",
+   "url": "https://wiredcoffeeco.square.site/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A locally owned coffee shop established in 2017 serving espresso drinks, cold brew, smoothies, and a well-known chicken salad sandwich. Described by its owners as a family-friendly business.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 258.8,
+   "geo": [
+    15.78,
+    -132.87
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "fall-o-ween-in-livingston",
+   "name": "Fall-O-Ween in Livingston",
+   "type": "listed",
+   "url": "https://www.ucbjournal.com/fall-o-ween-sets-return-date-to-livingston-square-with-month-of-festivities/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Fall-O-Ween is an annual autumn celebration on the Historic Livingston Square and in Central Park, running from September through late October and culminating in a Halloween finale weekend with trick-or-treating, costume contests, mule-drawn wagon rides, a museum night, and haunted historic downtown walking tours.",
+   "category": "events",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 179.3,
+   "geo": [
+    -4.95,
+    5.11
+   ],
+   "geo_method": "venue-approx"
+  },
+  {
+   "id": "livingston-overton-county-christmas-parade",
+   "name": "Livingston-Overton County Christmas Parade",
+   "type": "listed",
+   "url": "https://www.overtoncountynews.com/calendar/livingston---overton-county-56th-annual-christmas-parade/event_a6dad57a-75a6-11ed-9b1a-e786fb4aa457.html",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The Livingston-Overton County Christmas Parade is a long-running annual holiday parade through downtown Livingston on Main Street, featuring floats, marching bands, and an appearance by Santa Claus; it reached its 56th running in 2022.",
+   "category": "events",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 195.6,
+   "geo": [
+    77.84,
+    -33.44
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "overton-county-fair",
+   "name": "Overton County Fair",
+   "type": "listed",
+   "url": "https://overtoncountytn.com/eventss/overton-county-fair/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The Overton County Fair is the county's annual agricultural fair, held at the Overton County Fairgrounds and featuring cattle and livestock shows, pageants, wild mule shows, and other agricultural and family competitions.",
+   "category": "events",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 219.0,
+   "geo": [
+    -22.32,
+    -49.98
+   ],
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "paint-livingston",
+   "name": "Paint Livingston",
+   "type": "listed",
+   "url": "https://www.overtoncountyarts.org/events",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Paint Livingston is an annual plein air painting competition organized by Overton County Arts, drawing painters from multiple states to paint live around town, culminating in a Quick Paint contest on the downtown square and an art sale and awards ceremony at the Joe L. Evins Community Center, with proceeds supporting K-12 art education.",
+   "category": "events",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 223.7,
+   "geo": [
+    -4.95,
+    5.11
+   ],
+   "geo_method": "venue-approx"
+  },
+  {
+   "id": "phillips-printing-company",
+   "name": "Phillips Printing Company",
+   "type": "listed",
+   "url": "https://philprint.com/",
+   "city": "Nashville",
+   "county": "Davidson",
+   "drive_min": 100,
+   "blurb": "Phillips pairs G7 Master certification with a six-color Heidelberg CX102 and in-line coating. The company says more than 95% of its work stays in-house, including offset and digital printing, finishing, and mailing. It has operated in Nashville since 1959.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 242.5
+  },
+  {
+   "id": "pollock-printing",
+   "name": "Pollock Printing",
+   "type": "listed",
+   "url": "https://www.pollockprinting.com/",
+   "city": "Nashville",
+   "county": "Davidson",
+   "drive_min": 100,
+   "blurb": "Pollock combines web, sheetfed offset, and digital printing with wide-format work, finishing, mailing, kitting, fulfillment, and warehousing. The Nashville family business has operated since 1972; its range suits jobs that must be printed, assembled, and distributed through one production partner.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 247.5
+  },
+  {
+   "id": "joyner-hogan-printers",
+   "name": "Joyner & Hogan Printers",
+   "type": "listed",
+   "url": "https://www.joynerhogan.net/",
+   "city": "Nashville",
+   "county": "Davidson",
+   "drive_min": 100,
+   "blurb": "Woman-owned and family-run, Joyner & Hogan has printed in Nashville since 1937. Its current services include commercial printing, business forms, campaign materials, and direct mail. Call when a job combines routine business pieces with mailing or campaign production.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 237.5
+  },
+  {
+   "id": "hatch-show-print",
+   "name": "Hatch Show Print",
+   "type": "listed",
+   "url": "https://hatchshowprint.com/",
+   "city": "Nashville",
+   "county": "Davidson",
+   "drive_min": 100,
+   "blurb": "Hatch Show Print has operated as a working letterpress shop since 1879 and is part of the Country Music Hall of Fame and Museum. Its limited-run posters use vintage wood and metal type with hand-carved imagery. Choose it when the letterpress process and the physical poster are central to the job.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 232.5
+  },
+  {
+   "id": "crown-label-inc",
+   "name": "Crown Label, Inc.",
+   "type": "listed",
+   "url": "https://crownlabelinc.com/",
+   "city": "La Vergne",
+   "county": "Rutherford",
+   "drive_min": 90,
+   "blurb": "Crown Label runs eight presses for flexographic and digital label and tag production, with work up to seven colors. Prepress and platemaking are handled in-house. It is the specialist on this list for roll labels and tags rather than general commercial printing.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 210.0
+  },
+  {
+   "id": "that-s-printing-inc",
+   "name": "That's Printing, Inc.",
+   "type": "listed",
+   "url": "https://www.thatsprinting.com/",
+   "city": "Franklin",
+   "county": "Williamson",
+   "drive_min": 115,
+   "blurb": "That's Printing handles offset, digital, and variable-data printing alongside an in-house finishing department. Listed capabilities include folding, saddle stitching, die cutting, coil and perfect binding, foil stamping, and embossing, making the Franklin shop a practical fit for pieces whose finishing is more involved than a straight cut and fold.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 236.2
+  },
+  {
+   "id": "franklin-web-printing-co",
+   "name": "Franklin Web Printing Co.",
+   "type": "listed",
+   "url": "https://www.fwpco.com/",
+   "city": "Franklin",
+   "county": "Williamson",
+   "drive_min": 115,
+   "blurb": "Franklin Web has operated as a non-heatset web printer since 1977. It prints trade publications, newspapers, magazines, and specialty tabloids, with ink-jet addressing, inserting, and direct-mail services available in-house. Start here for recurring or distributed publication work.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 228.8
+  },
+  {
+   "id": "quality-printing-company",
+   "name": "Quality Printing Company",
+   "type": "listed",
+   "url": "https://www.printshopgallatintn.com/",
+   "city": "Gallatin",
+   "county": "Sumner",
+   "drive_min": 85,
+   "blurb": "Family owned and operated in Gallatin since 1969, Quality Printing covers general commercial work close to Sumner County customers. Its current site lists business and marketing pieces, signs, banners, forms, promotional products, copying, and finishing. The business now operates with support from The Print Authority.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 260.0
+  },
+  {
+   "id": "ledbetter-signs",
+   "name": "LedBetter Signs",
+   "type": "listed",
+   "url": "https://ledbettersigns.net/",
+   "city": "Clarksville",
+   "county": "Montgomery",
+   "drive_min": 145,
+   "blurb": "Operating in Clarksville since 1956, LedBetter is a family-owned sign and print shop. Its signs, banners, decals, screen and digital printing, apparel, promotional items, and large-format work make this the profile to use for visible, applied graphics in the Clarksville area.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 280.0
+  },
+  {
+   "id": "anderson-printing-solutions",
+   "name": "Anderson Printing Solutions",
+   "type": "listed",
+   "url": "https://andersonps.com/",
+   "city": "Cookeville",
+   "county": "Putnam",
+   "drive_min": 25,
+   "blurb": "Offset and digital printing sit alongside signs, screen printing, embroidery, promotional products, mailing, and fulfillment at Anderson. The family-owned Cookeville shop was founded in 1976. Its broad service mix fits campaigns that need both printed pieces and branded merchandise.",
+   "category": "printing",
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 172.1,
+   "geo": [
+    -1309.04,
+    2091.06
+   ],
+   "geo_method": "town-approx"
+  }
+ ],
+ "edges": [
+  {
+   "source": "barnraised",
+   "target": "livingston-outdoors",
+   "kind": "operates"
+  },
+  {
+   "source": "barnraised",
+   "target": "visit-livingston-tn",
+   "kind": "operates"
+  },
+  {
+   "source": "barnraised",
+   "target": "middle-tn-printers",
+   "kind": "operates"
+  },
+  {
+   "source": "barnraised",
+   "target": "best-mom-cars",
+   "kind": "operates"
+  },
+  {
+   "source": "barnraised",
+   "target": "livingston-garden-center",
+   "kind": "built"
+  },
+  {
+   "source": "barnraised",
+   "target": "tapestry-acres",
+   "kind": "built"
+  },
+  {
+   "source": "barnraised",
+   "target": "to-the-max-rv",
+   "kind": "built"
+  },
+  {
+   "source": "barnraised",
+   "target": "oak-ridge-peptides",
+   "kind": "built"
+  },
+  {
+   "source": "barnraised",
+   "target": "ridgeline-aerial",
+   "kind": "built"
+  },
+  {
+   "source": "barnraised",
+   "target": "obscura-studio",
+   "kind": "built"
+  },
+  {
+   "source": "barnraised",
+   "target": "oliver-printing",
+   "kind": "built"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "visit-livingston-tn",
+   "kind": "sister"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "livingston-city-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "central-park-livingston",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "standing-stone-state-forest",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "sunset-marina-and-resort",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "obey-river-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "standing-stone-state-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "waterloo-falls",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "cinderella-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "capshaw-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "tennessee-central-trail",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "dogwood-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "dale-hollow-dam-overlook",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "dale-hollow-lake-primitive-camping",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "monterey-rail-trail",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "ensor-sink-natural-area",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "dale-hollow-damsite-recreation-area",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "dale-hollow-national-fish-hatchery",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "pleasant-grove-recreation-area-dale-hollow-lake",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "east-port-marina-and-resort",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "bee-rock",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "city-lake-natural-area",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "cordell-hull-birthplace-state-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "the-boils-wildlife-management-area",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "willow-grove-campground",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "cane-creek-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "roaring-river-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "cove-creek-recreation-area",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "horse-creek-resort",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "meadow-creek-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "cordell-hull-wildlife-management-area",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "star-point-resort",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "wartrace-creek-recreation-area",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "dale-hollow-lake-eagle-watch",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "lillydale-campground-and-day-use",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "salt-lick-creek-recreation-area-and-campground",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "cummins-falls-state-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "dale-hollow-lake-usace-nashville-district",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "granville-historic-district-and-veterans-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "burgess-falls-state-park",
+   "kind": "lists"
+  },
+  {
+   "source": "livingston-outdoors",
+   "target": "sgt-alvin-c-york-state-historic-park",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "central-park-livingston",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "cub-mountain-atv-park-campground",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "cumberland-national-scenic-byway-overton-county-segment",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "dale-hollow-lake-overton-county-access-mitchell-creek-marina-livingston-boat-dock",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "hidden-valley-golf-country-club",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "livingston-city-park-recreation-park-city-ballpark",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "obey-river-park-campground",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "standing-stone-state-forest-wma",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "standing-stone-state-park",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "livingston-mural-trail",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "livingston-overton-county-farmers-market",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "millard-oakley-public-library",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "overton-county-arts",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "overton-county-courthouse",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "overton-county-heritage-museum",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "roaring-river-church-and-cemetery",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "the-antique-market",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "1806-bbq",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "angelina-s-italian-subs-more",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "brazen-que",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "casa-mexicana",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "ruby-lee-coffee-and-bakehouse",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "stover-s-country-kitchen",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "the-sno-shack",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "wired-coffee-co",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "fall-o-ween-in-livingston",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "livingston-overton-county-christmas-parade",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "overton-county-fair",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "paint-livingston",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "phillips-printing-company",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "pollock-printing",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "joyner-hogan-printers",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "hatch-show-print",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "crown-label-inc",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "that-s-printing-inc",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "franklin-web-printing-co",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "quality-printing-company",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "ledbetter-signs",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "anderson-printing-solutions",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "oliver-printing",
+   "kind": "lists"
+  }
+ ]
+}

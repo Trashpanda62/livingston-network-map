@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-mode="city" data-palette="dawn" data-glyph="buildings" data-labels="focus" data-motion="full">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livingston Online — the network map</title>
+<link rel="stylesheet" href="src/style.css?v=16">
+</head>
+<body>
+<div id="graph"></div>
+
+<header class="hud hud-top">
+  <h1>Livingston Online</h1>
+  <p class="tagline">Every site we built, every business our directories point at — one town's web, in one place.</p>
+</header>
+
+<div class="hud hud-legend" id="legend">
+  <button class="chip chip-hub is-on" data-filter="hub">Barnraised</button>
+  <button class="chip chip-directory is-on" data-filter="directory">Our directories</button>
+  <button class="chip chip-built is-on" data-filter="built">Sites we built</button>
+  <button class="chip chip-listed is-on" data-filter="listed">Businesses &amp; places listed</button>
+  <span class="band-group" role="group" aria-label="Drive time">
+    <button class="chip band is-on" data-band="all">Any drive</button>
+    <button class="chip band" data-band="15">≤ 15 min</button>
+    <button class="chip band" data-band="45">≤ 45 min</button>
+  </span>
+</div>
+
+<div class="hud hud-search">
+  <input id="search" type="search" placeholder="Find a place or business…" aria-label="Search nodes" autocomplete="off">
+  <ul id="search-results" role="listbox" aria-label="Search results" hidden></ul>
+</div>
+
+<p class="hud hud-stats" id="stats"></p>
+<p class="hud hud-credit">Imagery: USGS</p>
+
+<aside class="panel" id="panel" role="dialog" aria-labelledby="panel-name" hidden>
+  <button class="panel-close" id="panel-close" aria-label="Close">&times;</button>
+  <p class="panel-kicker" id="panel-kicker"></p>
+  <h2 id="panel-name"></h2>
+  <p class="panel-meta" id="panel-meta"></p>
+  <p class="panel-blurb" id="panel-blurb"></p>
+  <p class="panel-visitors" id="panel-visitors"></p>
+  <p class="panel-listed" id="panel-listed"></p>
+  <a class="panel-visit" id="panel-visit" target="_blank" rel="noopener">Visit site ↗</a>
+</aside>
+
+<!-- Design locked 2026-08-12: force / dawn / buildings / focus / full.
+     To remix, restore the selector include from vendor/ (see git history). -->
+<script src="vendor/3d-force-graph.min.js?v=19"></script>
+<script type="module" src="src/app.js?v=24"></script>
+</body>
+</html>

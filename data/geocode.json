@@ -1,0 +1,437 @@
+{
+ "barnraised": {
+  "lat": null,
+  "lon": null,
+  "method": "failed"
+ },
+ "livingston-outdoors": {
+  "lat": null,
+  "lon": null,
+  "method": "failed"
+ },
+ "visit-livingston-tn": {
+  "lat": null,
+  "lon": null,
+  "method": "failed"
+ },
+ "middle-tn-printers": {
+  "lat": null,
+  "lon": null,
+  "method": "failed"
+ },
+ "best-mom-cars": {
+  "lat": null,
+  "lon": null,
+  "method": "failed"
+ },
+ "livingston-garden-center": {
+  "lat": 36.393647,
+  "lon": -85.3024712,
+  "method": "address"
+ },
+ "oak-ridge-peptides": {
+  "lat": null,
+  "lon": null,
+  "method": "failed"
+ },
+ "ridgeline-aerial": {
+  "lat": null,
+  "lon": null,
+  "method": "failed"
+ },
+ "obscura-studio": {
+  "lat": null,
+  "lon": null,
+  "method": "failed"
+ },
+ "oliver-printing": {
+  "lat": 36.3824068,
+  "lon": -85.3254799,
+  "method": "address"
+ },
+ "livingston-city-park": {
+  "lat": 36.3863026,
+  "lon": -85.3112369,
+  "method": "name-bounded"
+ },
+ "central-park-livingston": {
+  "lat": 36.3815373,
+  "lon": -85.3228348,
+  "method": "venue-approx"
+ },
+ "cumberland-national-scenic-byway-overton-county-segment": {
+  "lat": 36.388447080392154,
+  "lon": -85.31859857058824,
+  "method": "town-approx"
+ },
+ "hidden-valley-golf-country-club": {
+  "lat": 36.408692,
+  "lon": -85.334567,
+  "method": "address"
+ },
+ "livingston-city-park-recreation-park-city-ballpark": {
+  "lat": 36.3863026,
+  "lon": -85.3112369,
+  "method": "name-simplified"
+ },
+ "livingston-mural-trail": {
+  "lat": 36.38857257058823,
+  "lon": -85.32499857058824,
+  "method": "town-approx"
+ },
+ "livingston-overton-county-farmers-market": {
+  "lat": 36.3846989,
+  "lon": -85.3226597,
+  "method": "street-approx"
+ },
+ "millard-oakley-public-library": {
+  "lat": 36.3828826,
+  "lon": -85.3221303,
+  "method": "address"
+ },
+ "overton-county-arts": {
+  "lat": 36.38349021764706,
+  "lon": -85.32575151176471,
+  "method": "town-approx"
+ },
+ "overton-county-courthouse": {
+  "lat": 36.383252,
+  "lon": -85.322649,
+  "method": "address"
+ },
+ "overton-county-heritage-museum": {
+  "lat": 36.382867,
+  "lon": -85.3269816,
+  "method": "address"
+ },
+ "the-antique-market": {
+  "lat": 36.3838537,
+  "lon": -85.3229854,
+  "method": "address"
+ },
+ "1806-bbq": {
+  "lat": 36.3838558,
+  "lon": -85.322977,
+  "method": "address"
+ },
+ "angelina-s-italian-subs-more": {
+  "lat": 36.3803394,
+  "lon": -85.3332266,
+  "method": "address"
+ },
+ "brazen-que": {
+  "lat": 36.3960863,
+  "lon": -85.3250652,
+  "method": "address"
+ },
+ "casa-mexicana": {
+  "lat": 36.3980178,
+  "lon": -85.3222241,
+  "method": "address"
+ },
+ "ruby-lee-coffee-and-bakehouse": {
+  "lat": 36.383082,
+  "lon": -85.322607,
+  "method": "address"
+ },
+ "stover-s-country-kitchen": {
+  "lat": 36.3846032,
+  "lon": -85.3168319,
+  "method": "address"
+ },
+ "the-sno-shack": {
+  "lat": 36.3801111,
+  "lon": -85.3309969,
+  "method": "address"
+ },
+ "wired-coffee-co": {
+  "lat": 36.3983242,
+  "lon": -85.3205867,
+  "method": "address"
+ },
+ "fall-o-ween-in-livingston": {
+  "lat": 36.3833453,
+  "lon": -85.3233626,
+  "method": "venue-approx"
+ },
+ "livingston-overton-county-christmas-parade": {
+  "lat": 36.3875297,
+  "lon": -85.3122777,
+  "method": "address"
+ },
+ "overton-county-fair": {
+  "lat": 36.3893255117647,
+  "lon": -85.32568876666667,
+  "method": "town-approx"
+ },
+ "paint-livingston": {
+  "lat": 36.3833453,
+  "lon": -85.3233626,
+  "method": "venue-approx"
+ },
+ "standing-stone-state-forest": {
+  "lat": 36.4520885,
+  "lon": -85.4665009,
+  "method": "name-state"
+ },
+ "sunset-marina-and-resort": {
+  "lat": 36.5322899,
+  "lon": -85.1593227,
+  "method": "name-simplified"
+ },
+ "obey-river-park": {
+  "lat": 36.5308985,
+  "lon": -85.1694009,
+  "method": "name-state"
+ },
+ "standing-stone-state-park": {
+  "lat": 36.3839993,
+  "lon": -85.3228358,
+  "method": "name-state"
+ },
+ "waterloo-falls": {
+  "lat": 36.3027885,
+  "lon": -85.4673942,
+  "method": "name-state"
+ },
+ "cinderella-park": {
+  "lat": 36.1807895,
+  "lon": -85.4896734,
+  "method": "name-city"
+ },
+ "capshaw-park": {
+  "lat": 36.1568089,
+  "lon": -85.4940707,
+  "method": "name-city"
+ },
+ "tennessee-central-trail": {
+  "lat": 36.1861583,
+  "lon": -85.4745965,
+  "method": "name-city"
+ },
+ "dogwood-park": {
+  "lat": 36.1641698,
+  "lon": -85.5034899,
+  "method": "name-city"
+ },
+ "dale-hollow-dam-overlook": {
+  "lat": 36.5379066,
+  "lon": -85.4514283,
+  "method": "name-simplified"
+ },
+ "dale-hollow-lake-primitive-camping": {
+  "lat": 36.5654684,
+  "lon": -85.3893905,
+  "method": "name-simplified"
+ },
+ "monterey-rail-trail": {
+  "lat": 36.148285768627446,
+  "lon": -85.2695884745098,
+  "method": "town-approx"
+ },
+ "ensor-sink-natural-area": {
+  "lat": 36.1513718,
+  "lon": -85.5047112,
+  "method": "name-city"
+ },
+ "dale-hollow-damsite-recreation-area": {
+  "lat": 36.5448307,
+  "lon": -85.491594,
+  "method": "name-simplified"
+ },
+ "dale-hollow-national-fish-hatchery": {
+  "lat": 36.544068943137255,
+  "lon": -85.50866660784314,
+  "method": "town-approx"
+ },
+ "pleasant-grove-recreation-area-dale-hollow-lake": {
+  "lat": 36.4351365117647,
+  "lon": -85.33875848823529,
+  "method": "town-approx"
+ },
+ "east-port-marina-and-resort": {
+  "lat": 36.4503021,
+  "lon": -85.1235429,
+  "method": "name-simplified"
+ },
+ "bee-rock": {
+  "lat": 36.1355641,
+  "lon": -85.2845074,
+  "method": "name-city"
+ },
+ "city-lake-natural-area": {
+  "lat": 36.1329393,
+  "lon": -85.4457451,
+  "method": "name-state"
+ },
+ "cordell-hull-birthplace-state-park": {
+  "lat": 36.581820203921566,
+  "lon": -85.13289055882353,
+  "method": "town-approx"
+ },
+ "the-boils-wildlife-management-area": {
+  "lat": 36.35621231372549,
+  "lon": -85.6551946117647,
+  "method": "town-approx"
+ },
+ "willow-grove-campground": {
+  "lat": 36.44348160980392,
+  "lon": -85.34465652745098,
+  "method": "town-approx"
+ },
+ "cane-creek-park": {
+  "lat": 36.1626903,
+  "lon": -85.5438095,
+  "method": "name-city"
+ },
+ "roaring-river-park": {
+  "lat": 36.3757258,
+  "lon": -85.6357456,
+  "method": "name-city"
+ },
+ "cove-creek-recreation-area": {
+  "lat": 36.5464534,
+  "lon": -85.2113476,
+  "method": "name-state"
+ },
+ "horse-creek-resort": {
+  "lat": 36.5563042372549,
+  "lon": -85.510047,
+  "method": "town-approx"
+ },
+ "meadow-creek-park": {
+  "lat": 36.1170282,
+  "lon": -85.1885804,
+  "method": "name-state"
+ },
+ "cordell-hull-wildlife-management-area": {
+  "lat": 36.3661154,
+  "lon": -85.6841783,
+  "method": "name-simplified"
+ },
+ "star-point-resort": {
+  "lat": 36.5717321,
+  "lon": -85.1619006,
+  "method": "name-simplified"
+ },
+ "wartrace-creek-recreation-area": {
+  "lat": 36.36148290196079,
+  "lon": -85.66002598431372,
+  "method": "town-approx"
+ },
+ "dale-hollow-lake-eagle-watch": {
+  "lat": 36.44128553137255,
+  "lon": -85.3486722137255,
+  "method": "town-approx"
+ },
+ "lillydale-campground-and-day-use": {
+  "lat": 36.44561494313725,
+  "lon": -85.33907221372549,
+  "method": "town-approx"
+ },
+ "salt-lick-creek-recreation-area-and-campground": {
+  "lat": 36.5283961,
+  "lon": -85.8472806,
+  "method": "name-simplified"
+ },
+ "cummins-falls-state-park": {
+  "lat": 36.2543084,
+  "lon": -85.5637706,
+  "method": "name-state"
+ },
+ "dale-hollow-lake-usace-nashville-district": {
+  "lat": 36.5654684,
+  "lon": -85.3893905,
+  "method": "name-simplified"
+ },
+ "granville-historic-district-and-veterans-park": {
+  "lat": 36.27317846666667,
+  "lon": -85.7977109254902,
+  "method": "town-approx"
+ },
+ "burgess-falls-state-park": {
+  "lat": 36.0446107,
+  "lon": -85.598687,
+  "method": "name-state"
+ },
+ "sgt-alvin-c-york-state-historic-park": {
+  "lat": 36.5385881,
+  "lon": -84.9582772,
+  "method": "name-state"
+ },
+ "cub-mountain-atv-park-campground": {
+  "lat": 36.272588962745104,
+  "lon": -85.16258433529411,
+  "method": "town-approx"
+ },
+ "dale-hollow-lake-overton-county-access-mitchell-creek-marina-livingston-boat-dock": {
+  "lat": 36.44981886470588,
+  "lon": -85.33737809607842,
+  "method": "town-approx"
+ },
+ "obey-river-park-campground": {
+  "lat": 35.43536301568628,
+  "lon": -84.23346988235294,
+  "method": "town-approx"
+ },
+ "standing-stone-state-forest-wma": {
+  "lat": 36.4520885,
+  "lon": -85.4665009,
+  "method": "name-simplified"
+ },
+ "roaring-river-church-and-cemetery": {
+  "lat": 36.3893255117647,
+  "lon": -85.32801033529412,
+  "method": "town-approx"
+ },
+ "phillips-printing-company": {
+  "lat": 36.1761312,
+  "lon": -86.7537651,
+  "method": "address"
+ },
+ "pollock-printing": {
+  "lat": 36.1653198372549,
+  "lon": -86.76861996862746,
+  "method": "town-approx"
+ },
+ "joyner-hogan-printers": {
+  "lat": 36.1945124,
+  "lon": -86.8176625,
+  "method": "address"
+ },
+ "hatch-show-print": {
+  "lat": 36.1580054,
+  "lon": -86.7767056,
+  "method": "address"
+ },
+ "crown-label-inc": {
+  "lat": 36.0162598,
+  "lon": -86.576768,
+  "method": "address"
+ },
+ "that-s-printing-inc": {
+  "lat": 35.923292274509805,
+  "lon": -86.86897327254901,
+  "method": "town-approx"
+ },
+ "franklin-web-printing-co": {
+  "lat": 35.8989268,
+  "lon": -86.8767582,
+  "method": "address"
+ },
+ "quality-printing-company": {
+  "lat": 36.39398153137255,
+  "lon": -86.45320548627451,
+  "method": "town-approx"
+ },
+ "ledbetter-signs": {
+  "lat": 36.515409,
+  "lon": -87.354393,
+  "method": "address"
+ },
+ "anderson-printing-solutions": {
+  "lat": 36.156898403921566,
+  "lon": -85.49798020980393,
+  "method": "town-approx"
+ }
+}
