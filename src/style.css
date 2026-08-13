@@ -1,4 +1,5 @@
-:root { --bg: #0a0f1e; --label: #eef2fa; }
+:root { --bg: #0a0f1e; --label: #eef2fa; --card: rgba(16,22,40,0.88); }
+:root[data-palette="dawn"], :root[data-palette="print"] { --card: rgba(255,253,248,0.9); }
 * { margin: 0; box-sizing: border-box; }
 html, body { height: 100%; }
 body { background: var(--bg); overflow: hidden; font-family: "Segoe UI", system-ui, sans-serif; }
@@ -72,18 +73,31 @@ body { background: var(--bg); overflow: hidden; font-family: "Segoe UI", system-
 .panel-visit:hover { opacity: 0.8; }
 
 @media (max-width: 640px) {
-  .hud-top { max-width: calc(100vw - 44px); }
-  .hud-top h1 { font-size: 17px; }
-  .hud-top .tagline { font-size: 12px; }
-  .hud-search { top: 92px; left: 12px; right: 12px; width: auto; }
-  .hud-legend { bottom: 64px; left: 12px; right: 64px; gap: 6px; }
-  .band-group { margin-left: 0; }
-  .hud-stats { bottom: 30px; left: 12px; right: 12px; font-size: 11px; }
-  .hud-credit { bottom: 12px; right: 12px; font-size: 10px; }
-  .panel { top: auto; bottom: 64px; left: 12px; right: 12px; width: auto; max-height: 48vh; }
+  /* Phone: every HUD element sits on a card — floating text over satellite
+     imagery is unreadable — and the legend is one horizontally-scrolling row
+     instead of a stack covering the map. */
+  .hud-top { top: 10px; left: 12px; right: 12px; max-width: none;
+    background: var(--card); padding: 8px 12px; border-radius: 12px; }
+  .hud-top h1 { font-size: 15px; }
+  .hud-top .tagline { font-size: 11px; margin-top: 2px; }
+  .hud-search { top: 90px; left: 12px; right: 12px; width: auto; }
+  #search { min-height: 40px; }
+  .hud-legend { bottom: 44px; left: 0; right: 0; padding: 0 12px;
+    flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    gap: 6px; scrollbar-width: none; pointer-events: auto; }
+  .hud-legend::-webkit-scrollbar { display: none; }
+  .hud-legend .chip { flex: 0 0 auto; background: var(--card); opacity: 0.6; }
+  .hud-legend .chip.is-on { opacity: 1; }
+  .band-group { margin-left: 0; flex: 0 0 auto; }
+  .hud-stats { bottom: 12px; left: 12px; max-width: 40vw; font-size: 10px;
+    background: var(--card); padding: 4px 8px; border-radius: 8px; opacity: 1;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hud-credit { bottom: 12px; right: 12px; font-size: 9px;
+    background: var(--card); padding: 4px 8px; border-radius: 8px; }
+  .panel { top: auto; bottom: 84px; left: 12px; right: 12px; width: auto; max-height: 46vh; }
 }
 @media (pointer: coarse) {
-  .hud-legend .chip { min-height: 44px; display: inline-flex; align-items: center; }
+  .hud-legend .chip { min-height: 40px; display: inline-flex; align-items: center; }
   #search { min-height: 44px; }
   #search-results li { min-height: 44px; display: flex; align-items: center; }
   .panel-close { padding: 10px 14px; }
