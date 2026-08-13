@@ -1,0 +1,207 @@
+{
+ "209 S Spring St, Livingston TN": {
+  "lat": 36.3816672,
+  "lon": -85.3227614,
+  "method": "address"
+ },
+ "1033 E Main St, Livingston TN": {
+  "lat": 36.388884,
+  "lon": -85.304642,
+  "method": "address"
+ },
+ "116 S Spring St, Livingston TN": {
+  "lat": 36.3827124,
+  "lon": -85.3232931,
+  "method": "address"
+ },
+ "519 W Main St, Livingston TN": {
+  "lat": 36.380569,
+  "lon": -85.329209,
+  "method": "address"
+ },
+ "2320 Cookeville Hwy, Livingston TN": {
+  "lat": 36.338416,
+  "lon": -85.3499941,
+  "method": "address"
+ },
+ "207 Fair St, Livingston TN": {
+  "lat": 36.3816875,
+  "lon": -85.3314412,
+  "method": "address"
+ },
+ "501 W Main St A, Livingston TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "209 S Spring St, Livingston, TN 38570, United States": {
+  "lat": 36.3816662,
+  "lon": -85.3227614,
+  "method": "address"
+ },
+ "616 E Main St, Livingston, TN 38570, United States": {
+  "lat": 36.3862596,
+  "lon": -85.31566,
+  "method": "address"
+ },
+ "207 S Church St, Livingston TN": {
+  "lat": 36.3818585,
+  "lon": -85.3219428,
+  "method": "address"
+ },
+ "116 S Spring St, Livingston, TN 38570": {
+  "lat": 36.3827134,
+  "lon": -85.3232931,
+  "method": "address"
+ },
+ "617 N Church St, Livingston, TN 38570, United States": {
+  "lat": 36.3888105,
+  "lon": -85.3241727,
+  "method": "address"
+ },
+ "800 Rickman Rd, Livingston, TN 38570": {
+  "lat": 36.3630669,
+  "lon": -85.3360609,
+  "method": "address"
+ },
+ "519 W Main St, Livingston, TN 38570, United States": {
+  "lat": 36.3814779,
+  "lon": -85.3274103,
+  "method": "address"
+ },
+ "401 N Spring St, Livingston, TN 38570, United States": {
+  "lat": 36.385851,
+  "lon": -85.324158,
+  "method": "address"
+ },
+ "309 Windle St, Livingston, TN 38570": {
+  "lat": 36.3827515,
+  "lon": -85.31848,
+  "method": "address"
+ },
+ "209 Myers St, Livingston, TN 38570, United States": {
+  "lat": 36.3842798,
+  "lon": -85.3141532,
+  "method": "address"
+ },
+ "108 N Court Square, Livingston, TN 38570, United States": {
+  "lat": 36.3838623,
+  "lon": -85.3229517,
+  "method": "address"
+ },
+ "120 N Court Square, Livingston TN": {
+  "lat": 36.3838496,
+  "lon": -85.3230023,
+  "method": "address"
+ },
+ "215 Oak St, Livingston TN": {
+  "lat": 36.3834674,
+  "lon": -85.3275609,
+  "method": "address"
+ },
+ "215 Oak St, Livingston, TN 38570, United States": {
+  "lat": 36.3834684,
+  "lon": -85.3275609,
+  "method": "address"
+ },
+ "208 N Church St # A, Livingston, TN 38570, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "714 N Church St, Livingston TN": {
+  "lat": 36.3910355,
+  "lon": -85.3251168,
+  "method": "address"
+ },
+ "5480 Bradford Hicks Dr, Livingston, TN 38570, United States": {
+  "lat": 36.3968504,
+  "lon": -85.3243415,
+  "method": "address"
+ },
+ "641 W 4th St, Livingston, TN 38570, United States": {
+  "lat": 36.3892593,
+  "lon": -85.3318991,
+  "method": "address"
+ },
+ "306 Kennedy St, Livingston, TN 38570, United States": {
+  "lat": 36.4015348,
+  "lon": -85.3118378,
+  "method": "address"
+ },
+ "101 S Court Square, Livingston, TN 38570, United States": {
+  "lat": 36.383082,
+  "lon": -85.322607,
+  "method": "address"
+ },
+ "300 S Church St, Livingston, TN 38570": {
+  "lat": 36.38129,
+  "lon": -85.321977,
+  "method": "address"
+ },
+ "237 Ben Ogletree Ln, Livingston, TN 38570, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "3200 Celina Hwy, Allons, TN 38541, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "2040 Sunset Dock Rd, Monroe, TN 38573": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "104 N Main St, Byrdstown, TN 38549, United States": {
+  "lat": 36.570714,
+  "lon": -85.130515,
+  "method": "address"
+ },
+ "218 Mc Arthur Ave, Allons TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "507 Standing Stone Hwy, Hilham TN": {
+  "lat": 36.3947785,
+  "lon": -85.4413803,
+  "method": "address"
+ },
+ "2906 Hilham Hwy, Hilham, TN 38568": {
+  "lat": 36.4116398,
+  "lon": -85.4606014,
+  "method": "address"
+ },
+ "800 Rickman Rd, Livingston, TN 38570, United States": {
+  "lat": 36.3630669,
+  "lon": -85.3360609,
+  "method": "address"
+ },
+ "3812 Rickman Rd, Rickman TN": {
+  "lat": 36.2632588,
+  "lon": -85.3751842,
+  "method": "address"
+ },
+ "204 W Main St, Livingston, TN 38570": {
+  "lat": 36.3830528,
+  "lon": -85.3234745,
+  "method": "address"
+ },
+ "1185 Preston St #5, Livingston, TN 38570, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "Monroe, Overton County,  TN": {
+  "lat": 36.4370083,
+  "lon": -85.2424622,
+  "method": "address"
+ },
+ "Allons, Overton County,  TN": {
+  "lat": 36.4420071,
+  "lon": -85.3446879,
+  "method": "address"
+ }
+}

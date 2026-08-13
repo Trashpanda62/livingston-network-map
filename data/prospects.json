@@ -1,0 +1,933 @@
+{
+ "flagged": {
+  "central-park-livingston": {
+   "reason": "dead-site",
+   "reviews": 505
+  },
+  "horse-creek-resort": {
+   "reason": "dead-site",
+   "reviews": null
+  },
+  "hidden-valley-golf-country-club": {
+   "reason": "dead-site",
+   "reviews": 61
+  },
+  "livingston-overton-county-farmers-market": {
+   "reason": "aggregator-listing",
+   "reviews": 37
+  },
+  "millard-oakley-public-library": {
+   "reason": "dead-site",
+   "reviews": 52
+  },
+  "overton-county-arts": {
+   "reason": "aggregator-listing",
+   "reviews": null
+  },
+  "overton-county-courthouse": {
+   "reason": "aggregator-listing",
+   "reviews": null
+  },
+  "overton-county-heritage-museum": {
+   "reason": "aggregator-listing",
+   "reviews": 14
+  },
+  "the-antique-market": {
+   "reason": "aggregator-listing",
+   "reviews": 68
+  },
+  "1806-bbq": {
+   "reason": "dead-site",
+   "reviews": 189
+  },
+  "angelina-s-italian-subs-more": {
+   "reason": "aggregator-listing",
+   "reviews": 25
+  },
+  "casa-mexicana": {
+   "reason": "aggregator-listing",
+   "reviews": 527
+  },
+  "ruby-lee-coffee-and-bakehouse": {
+   "reason": "aggregator-listing",
+   "reviews": 94
+  },
+  "stover-s-country-kitchen": {
+   "reason": "aggregator-listing",
+   "reviews": 626
+  },
+  "the-sno-shack": {
+   "reason": "aggregator-listing",
+   "reviews": 38
+  },
+  "wired-coffee-co": {
+   "reason": "rented-subdomain",
+   "reviews": 252
+  },
+  "pollock-printing": {
+   "reason": "dead-site",
+   "reviews": 36
+  },
+  "joyner-hogan-printers": {
+   "reason": "dead-site",
+   "reviews": 10
+  },
+  "crown-label-inc": {
+   "reason": "dead-site",
+   "reviews": 1
+  },
+  "that-s-printing-inc": {
+   "reason": "dead-site",
+   "reviews": 15
+  },
+  "franklin-web-printing-co": {
+   "reason": "dead-site",
+   "reviews": 13
+  },
+  "quality-printing-company": {
+   "reason": "dead-site",
+   "reviews": 23
+  },
+  "ledbetter-signs": {
+   "reason": "dead-site",
+   "reviews": 19
+  },
+  "anderson-printing-solutions": {
+   "reason": "dead-site",
+   "reviews": null
+  }
+ },
+ "new": [
+  {
+   "id": "the-coop",
+   "name": "The Coop",
+   "category": "restaurants",
+   "city": "Livingston",
+   "address": "209 S Spring St, Livingston, TN 38570, United States",
+   "lat": 36.3816662,
+   "lon": -85.3227614,
+   "reviews": 944,
+   "rating": 4.3,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "frank-s",
+   "name": "Frank\u2019s",
+   "category": "restaurants",
+   "city": "Livingston",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "reviews": 86,
+   "rating": 4.3,
+   "reason": "facebook-only",
+   "geo_method": null
+  },
+  {
+   "id": "livingston-house-of-pizza",
+   "name": "Livingston House of Pizza",
+   "category": "restaurants",
+   "city": "Livingston",
+   "address": "616 E Main St, Livingston, TN 38570, United States",
+   "lat": 36.3862596,
+   "lon": -85.31566,
+   "reviews": 32,
+   "rating": 4.7,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "serendipity-salon",
+   "name": "Serendipity Salon",
+   "category": "hair salons",
+   "city": "Livingston",
+   "address": "207 S Church St",
+   "lat": 36.3818585,
+   "lon": -85.3219428,
+   "reviews": 18,
+   "rating": 4.9,
+   "reason": "rented-subdomain",
+   "geo_method": "address"
+  },
+  {
+   "id": "pamies-unisex-hair-salon",
+   "name": "Pamies Unisex Hair Salon",
+   "category": "hair salons",
+   "city": "Livingston",
+   "address": "116 S Spring St, Livingston, TN 38570",
+   "lat": 36.3827134,
+   "lon": -85.3232931,
+   "reviews": 65,
+   "rating": 4.8,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "woolbright-auto-repair",
+   "name": "Woolbright Auto Repair",
+   "category": "auto repair",
+   "city": "Livingston",
+   "address": "617 N Church St, Livingston, TN 38570, United States",
+   "lat": 36.3888105,
+   "lon": -85.3241727,
+   "reviews": 46,
+   "rating": 4.5,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "t-and-m-automotive",
+   "name": "T & M Automotive",
+   "category": "auto repair",
+   "city": "Livingston",
+   "address": "800 Rickman Rd, Livingston, TN 38570",
+   "lat": 36.3630669,
+   "lon": -85.3360609,
+   "reviews": 31,
+   "rating": 4.7,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "waterloo-tire-service",
+   "name": "Waterloo Tire Service",
+   "category": "tire shops",
+   "city": "Livingston",
+   "address": "519 W Main St, Livingston, TN 38570, United States",
+   "lat": 36.3814779,
+   "lon": -85.3274103,
+   "reviews": 135,
+   "rating": 4.7,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "hwy-tire",
+   "name": "HWY TIRE",
+   "category": "tire shops",
+   "city": "Livingston",
+   "address": "2320 Cookeville Hwy",
+   "lat": 36.338416,
+   "lon": -85.3499941,
+   "reviews": 52,
+   "rating": 4.7,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "low-cost-heating-and-cooling",
+   "name": "Low Cost Heating & Cooling",
+   "category": "HVAC",
+   "city": "Livingston",
+   "address": "401 N Spring St, Livingston, TN 38570, United States",
+   "lat": 36.385851,
+   "lon": -85.324158,
+   "reviews": 30,
+   "rating": 4.8,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "heritage-heating-and-cooling",
+   "name": "Heritage Heating & Cooling",
+   "category": "HVAC",
+   "city": "Livingston",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "reviews": 2,
+   "rating": 5,
+   "reason": "no-website",
+   "geo_method": null
+  },
+  {
+   "id": "jb-lawncare",
+   "name": "JB Lawncare",
+   "category": "landscaping",
+   "city": "Livingston",
+   "address": "309 Windle St, Livingston, TN 38570",
+   "lat": 36.3827515,
+   "lon": -85.31848,
+   "reviews": 11,
+   "rating": 5,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "middle-tennessee-lawn-care",
+   "name": "Middle Tennessee lawn care",
+   "category": "landscaping",
+   "city": "Livingston",
+   "address": "209 Myers St, Livingston, TN 38570, United States",
+   "lat": 36.3842798,
+   "lon": -85.3141532,
+   "reviews": 1,
+   "rating": 5,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "the-emporium",
+   "name": "The Emporium",
+   "category": "gift shops",
+   "city": "Livingston",
+   "address": "108 N Court Square, Livingston, TN 38570, United States",
+   "lat": 36.3838623,
+   "lon": -85.3229517,
+   "reviews": 26,
+   "rating": 4.8,
+   "reason": "facebook-only",
+   "geo_method": "address"
+  },
+  {
+   "id": "keaton-place",
+   "name": "Keaton Place",
+   "category": "gift shops",
+   "city": "Livingston",
+   "address": "120 N Court Square",
+   "lat": 36.3838496,
+   "lon": -85.3230023,
+   "reviews": 11,
+   "rating": 4.8,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "upper-cumberland-family-dentistry",
+   "name": "Upper Cumberland Family Dentistry",
+   "category": "dentists",
+   "city": "Livingston",
+   "address": "215 Oak St",
+   "lat": 36.3834674,
+   "lon": -85.3275609,
+   "reviews": 46,
+   "rating": 4.2,
+   "reason": "facebook-only",
+   "geo_method": "address"
+  },
+  {
+   "id": "parsons-ii-buckie-d-dds",
+   "name": "Parsons II Buckie D DDS",
+   "category": "dentists",
+   "city": "Livingston",
+   "address": "215 Oak St, Livingston, TN 38570, United States",
+   "lat": 36.3834684,
+   "lon": -85.3275609,
+   "reviews": 22,
+   "rating": 4.2,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "atnip-e-alan-dc",
+   "name": "Atnip E Alan DC",
+   "category": "chiropractors",
+   "city": "Livingston",
+   "address": "208 N Church St # A, Livingston, TN 38570, United States",
+   "lat": null,
+   "lon": null,
+   "reviews": 6,
+   "rating": 4.8,
+   "reason": "no-website",
+   "geo_method": null
+  },
+  {
+   "id": "muscle-factory-gym-and-training-facility",
+   "name": "Muscle Factory Gym & Training Facility",
+   "category": "gyms",
+   "city": "Livingston",
+   "address": "714 N Church St",
+   "lat": 36.3910355,
+   "lon": -85.3251168,
+   "reviews": 19,
+   "rating": 4.4,
+   "reason": "facebook-only",
+   "geo_method": "address"
+  },
+  {
+   "id": "muscle-factory-group-fitness",
+   "name": "Muscle Factory Group Fitness",
+   "category": "gyms",
+   "city": "Livingston",
+   "address": "5480 Bradford Hicks Dr, Livingston, TN 38570, United States",
+   "lat": 36.3968504,
+   "lon": -85.3243415,
+   "reviews": 19,
+   "rating": 4.1,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "ms-angies-playhouse",
+   "name": "Ms Angies Playhouse",
+   "category": "daycares",
+   "city": "Livingston",
+   "address": "641 W 4th St, Livingston, TN 38570, United States",
+   "lat": 36.3892593,
+   "lon": -85.3318991,
+   "reviews": null,
+   "rating": null,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "arneys-wrecker-service",
+   "name": "Arneys Wrecker Service",
+   "category": "towing",
+   "city": "Livingston",
+   "address": "306 Kennedy St, Livingston, TN 38570, United States",
+   "lat": 36.4015348,
+   "lon": -85.3118378,
+   "reviews": 29,
+   "rating": 4.8,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "the-coffee-shop",
+   "name": "The Coffee Shop",
+   "category": "bakeries",
+   "city": "Livingston",
+   "address": "101 S Court Square, Livingston, TN 38570, United States",
+   "lat": 36.383082,
+   "lon": -85.322607,
+   "reviews": 94,
+   "rating": 4.8,
+   "reason": "facebook-only",
+   "geo_method": "address"
+  },
+  {
+   "id": "blissful-bundts-and-bakes",
+   "name": "Blissful Bundts and Bakes",
+   "category": "bakeries",
+   "city": "Livingston",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "reviews": 9,
+   "rating": 4.6,
+   "reason": "no-website",
+   "geo_method": null
+  },
+  {
+   "id": "livingston-flower-basket",
+   "name": "Livingston Flower Basket",
+   "category": "florists",
+   "city": "Livingston",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "reviews": 34,
+   "rating": 4.7,
+   "reason": "rented-subdomain",
+   "geo_method": null
+  },
+  {
+   "id": "the-pampered-pooch-pet-salon-and-boarding-kennels",
+   "name": "The Pampered Pooch Pet Salon and Boarding Kennels",
+   "category": "pet grooming",
+   "city": "Livingston",
+   "address": "300 S Church St, Livingston, TN 38570",
+   "lat": 36.38129,
+   "lon": -85.321977,
+   "reviews": 32,
+   "rating": 4.9,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "sweet-and-sassy-dog-grooming",
+   "name": "Sweet and Sassy Dog Grooming",
+   "category": "pet grooming",
+   "city": "Livingston",
+   "address": "237 Ben Ogletree Ln, Livingston, TN 38570, United States",
+   "lat": null,
+   "lon": null,
+   "reviews": 14,
+   "rating": 4.7,
+   "reason": "no-website",
+   "geo_method": null
+  },
+  {
+   "id": "bark-and-bubbles",
+   "name": "Bark and Bubbles",
+   "category": "pet grooming",
+   "city": "Livingston",
+   "address": "3200 Celina Hwy, Allons, TN 38541, United States",
+   "lat": null,
+   "lon": null,
+   "reviews": 11,
+   "rating": 4.3,
+   "reason": "no-website",
+   "geo_method": null
+  },
+  {
+   "id": "david-and-eleanor-york-realtor",
+   "name": "David&Eleanor York, Realtor",
+   "category": "real estate agents",
+   "city": "Livingston",
+   "address": null,
+   "lat": null,
+   "lon": null,
+   "reviews": 10,
+   "rating": 5,
+   "reason": "facebook-only",
+   "geo_method": null
+  },
+  {
+   "id": "the-sunset-restaurant-by-the-steel-coop",
+   "name": "The Sunset Restaurant by The Steel Coop",
+   "category": "restaurants",
+   "city": "Monroe",
+   "address": "2040 Sunset Dock Rd, Monroe, TN 38573",
+   "lat": 36.4345203,
+   "lon": -85.2406862,
+   "reviews": 102,
+   "rating": 4.4,
+   "reason": "no-website",
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "scratch-kitchen",
+   "name": "Scratch Kitchen",
+   "category": "restaurants",
+   "city": "Monroe",
+   "address": "104 N Main St, Byrdstown, TN 38549, United States",
+   "lat": 36.570714,
+   "lon": -85.130515,
+   "reviews": 114,
+   "rating": 4.8,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "identity-hair-co",
+   "name": "Identity Hair Co.",
+   "category": "hair salons",
+   "city": "Monroe",
+   "address": null,
+   "lat": 36.4380643,
+   "lon": -85.2440062,
+   "reviews": 55,
+   "rating": 4.9,
+   "reason": "no-website",
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "roots-salon",
+   "name": "Roots Salon",
+   "category": "hair salons",
+   "city": "Monroe",
+   "address": null,
+   "lat": 36.437440300000006,
+   "lon": -85.2390302,
+   "reviews": 291,
+   "rating": 4.8,
+   "reason": "no-website",
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "hair-station",
+   "name": "Hair Station",
+   "category": "hair salons",
+   "city": "Allons",
+   "address": "218 Mc Arthur Ave",
+   "lat": 36.438271099999994,
+   "lon": -85.34230389999999,
+   "reviews": 16,
+   "rating": 5,
+   "reason": "no-website",
+   "geo_method": "town-approx"
+  },
+  {
+   "id": "light-the-fire-garage-and-fab",
+   "name": "Light the Fire Garage & Fab",
+   "category": "auto repair",
+   "city": "Hilham",
+   "address": "507 Standing Stone Hwy",
+   "lat": 36.3947785,
+   "lon": -85.4413803,
+   "reviews": 4,
+   "rating": 5,
+   "reason": "facebook-only",
+   "geo_method": "address"
+  },
+  {
+   "id": "randy-auto-repair",
+   "name": "Randy's Auto Repair",
+   "category": "auto repair",
+   "city": "Hilham",
+   "address": "2906 Hilham Hwy, Hilham, TN 38568",
+   "lat": 36.4116398,
+   "lon": -85.4606014,
+   "reviews": 6,
+   "rating": 3,
+   "reason": "no-website",
+   "geo_method": "address"
+  },
+  {
+   "id": "floyd-automotive-and-performance",
+   "name": "Floyd's Automotive and Performance",
+   "category": "auto repair",
+   "city": "Rickman",
+   "address": "3812 Rickman Rd",
+   "lat": 36.2632588,
+   "lon": -85.3751842,
+   "reviews": 55,
+   "rating": 4.2,
+   "reason": "facebook-only",
+   "geo_method": "address"
+  },
+  {
+   "id": "murphy-fine-groom-and-shave",
+   "name": "Murphy's Fine Groom and Shave",
+   "category": "barber shops",
+   "city": "Livingston",
+   "address": "204 W Main St, Livingston, TN 38570",
+   "lat": 36.3830528,
+   "lon": -85.3234745,
+   "reviews": 49,
+   "rating": 5,
+   "reason": "facebook-only",
+   "geo_method": "address"
+  },
+  {
+   "id": "by-pass-barber-shop",
+   "name": "By-Pass Barber Shop",
+   "category": "barber shops",
+   "city": "Livingston",
+   "address": "1185 Preston St #5, Livingston, TN 38570, United States",
+   "lat": null,
+   "lon": null,
+   "reviews": 19,
+   "rating": 4.6,
+   "reason": "facebook-only",
+   "geo_method": null
+  }
+ ],
+ "_done": [
+  "HVAC|Livingston",
+  "auto repair|Allons",
+  "auto repair|Alpine",
+  "auto repair|Hilham",
+  "auto repair|Livingston",
+  "auto repair|Monroe",
+  "auto repair|Rickman",
+  "bakeries|Livingston",
+  "barber shops|Livingston",
+  "boutiques|Livingston",
+  "chiropractors|Livingston",
+  "daycares|Livingston",
+  "dentists|Livingston",
+  "electricians|Livingston",
+  "florists|Livingston",
+  "gift shops|Livingston",
+  "gyms|Livingston",
+  "hair salons|Allons",
+  "hair salons|Alpine",
+  "hair salons|Hilham",
+  "hair salons|Livingston",
+  "hair salons|Monroe",
+  "hair salons|Rickman",
+  "hardware stores|Livingston",
+  "insurance agents|Livingston",
+  "landscaping|Livingston",
+  "pet grooming|Livingston",
+  "pharmacies|Livingston",
+  "plumbers|Livingston",
+  "real estate agents|Livingston",
+  "restaurants|Allons",
+  "restaurants|Alpine",
+  "restaurants|Hilham",
+  "restaurants|Livingston",
+  "restaurants|Monroe",
+  "restaurants|Rickman",
+  "roofing contractors|Livingston",
+  "tire shops|Livingston",
+  "towing|Livingston",
+  "veterinarians|Livingston"
+ ],
+ "_kp": {
+  "the coop|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "209 S Spring St, Livingston, TN 38570, United States",
+   "reviews": 944,
+   "rating": 4.3
+  },
+  "livingston house of pizza|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "616 E Main St, Livingston, TN 38570, United States",
+   "reviews": 32,
+   "rating": 4.7
+  },
+  "pamies unisex hair salon|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "116 S Spring St, Livingston, TN 38570",
+   "reviews": 65,
+   "rating": 4.8
+  },
+  "woolbright auto repair|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "617 N Church St, Livingston, TN 38570, United States",
+   "reviews": 46,
+   "rating": 4.5
+  },
+  "t and m automotive|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "800 Rickman Rd, Livingston, TN 38570",
+   "reviews": 31,
+   "rating": 4.7
+  },
+  "waterloo tire service|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "519 W Main St, Livingston, TN 38570, United States",
+   "reviews": 135,
+   "rating": 4.7
+  },
+  "maxdout motors llc and maxdout concepts llc|Livingston": {
+   "found": true,
+   "site": "https://maxdoutconcepts.com/",
+   "address": "207 Fair St, Livingston, TN 38570, Vereinigte Staaten",
+   "reviews": 33,
+   "rating": 5
+  },
+  "low cost heating and cooling|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "401 N Spring St, Livingston, TN 38570, United States",
+   "reviews": 30,
+   "rating": 4.8
+  },
+  "heritage heating and cooling|Livingston": {
+   "found": true,
+   "site": null,
+   "address": null,
+   "reviews": 2,
+   "rating": 5
+  },
+  "jb lawncare|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "309 Windle St, Livingston, TN 38570",
+   "reviews": 11,
+   "rating": 5
+  },
+  "middle tennessee lawn care|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "209 Myers St, Livingston, TN 38570, United States",
+   "reviews": 1,
+   "rating": 5
+  },
+  "the emporium|Livingston": {
+   "found": true,
+   "site": "http://www.facebook.com/livingstonemporium",
+   "address": "108 N Court Square, Livingston, TN 38570, United States",
+   "reviews": 26,
+   "rating": 4.8
+  },
+  "keaton place|Livingston": {
+   "found": true,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null
+  },
+  "restored and co|Livingston": {
+   "found": true,
+   "site": "http://restoredtn.com/",
+   "address": "103 E Court Square, Livingston, TN 38570, United States",
+   "reviews": 9,
+   "rating": 5
+  },
+  "southern belle boutique|Livingston": {
+   "found": true,
+   "site": "https://southernbelleboutique.store/",
+   "address": "211 N Church St, Livingston, TN 38570",
+   "reviews": 8,
+   "rating": 4.1
+  },
+  "sassafras on the square|Livingston": {
+   "found": true,
+   "site": "http://sassafrasonthesquare.myshopify.com/",
+   "address": "104 N Court Square, Livingston, TN 38570",
+   "reviews": 22,
+   "rating": 5
+  },
+  "daisy mae boutique|Livingston": {
+   "found": true,
+   "site": "http://www.daisymaescelina.com/",
+   "address": "101 S Court Square, Livingston, TN 38570",
+   "reviews": 9,
+   "rating": 4.3
+  },
+  "parsons ii buckie d dds|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "215 Oak St, Livingston, TN 38570, United States",
+   "reviews": 22,
+   "rating": 4.2
+  },
+  "crawford family chiropractic livingston tn|Livingston": {
+   "found": true,
+   "site": "http://crawfordfamilychiropractic.com/",
+   "address": "415 E University St, Livingston, TN 38570, United States",
+   "reviews": 147,
+   "rating": 5
+  },
+  "love life chiropractic livingston office|Livingston": {
+   "found": true,
+   "site": "http://www.lovelifechiropractic.info/",
+   "address": "115 S Church St, Livingston, TN 38570, United States",
+   "reviews": 8,
+   "rating": 5
+  },
+  "atnip e alan dc|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "208 N Church St # A, Livingston, TN 38570, United States",
+   "reviews": 6,
+   "rating": 4.8
+  },
+  "muscle factory group fitness|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "5480 Bradford Hicks Dr, Livingston, TN 38570, United States",
+   "reviews": 19,
+   "rating": 4.1
+  },
+  "ms angies playhouse|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "641 W 4th St, Livingston, TN 38570, United States",
+   "reviews": null,
+   "rating": null
+  },
+  "arneys wrecker service|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "306 Kennedy St, Livingston, TN 38570, United States",
+   "reviews": 29,
+   "rating": 4.8
+  },
+  "the coffee shop|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/acsquaredbakery/",
+   "address": "101 S Court Square, Livingston, TN 38570, United States",
+   "reviews": 94,
+   "rating": 4.8
+  },
+  "livingston flower basket|Livingston": {
+   "found": true,
+   "site": "http://livingstonflowerbasket.square.site/",
+   "address": null,
+   "reviews": 34,
+   "rating": 4.7
+  },
+  "bow petals n lace|Livingston": {
+   "found": true,
+   "site": "https://bowspetalsnlace.com/",
+   "address": "802 E Main St, Livingston, TN 38570, United States",
+   "reviews": 32,
+   "rating": 3.8
+  },
+  "brown flower shop|Livingston": {
+   "found": true,
+   "site": "http://www.brownsflowershoptn.com/",
+   "address": "202 E Broad St, Livingston, TN 38570, United States",
+   "reviews": 34,
+   "rating": 4.2
+  },
+  "the pampered pooch pet salon and boarding kennels|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "300 S Church St, Livingston, TN 38570",
+   "reviews": 32,
+   "rating": 4.9
+  },
+  "sweet and sassy dog grooming|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "237 Ben Ogletree Ln, Livingston, TN 38570, United States",
+   "reviews": 14,
+   "rating": 4.7
+  },
+  "bark and bubbles|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "3200 Celina Hwy, Allons, TN 38541, United States",
+   "reviews": 11,
+   "rating": 4.3
+  },
+  "main and monroe|Monroe": {
+   "found": true,
+   "site": "https://mainmonroelex.com/",
+   "address": "40 S Main St, Lexington, TN 38351, United States",
+   "reviews": 144,
+   "rating": 4.6
+  },
+  "the sunset restaurant by the steel coop|Monroe": {
+   "found": true,
+   "site": null,
+   "address": "2040 Sunset Dock Rd, Monroe, TN 38573",
+   "reviews": 102,
+   "rating": 4.4
+  },
+  "scratch kitchen|Monroe": {
+   "found": true,
+   "site": null,
+   "address": "104 N Main St, Byrdstown, TN 38549, United States",
+   "reviews": 114,
+   "rating": 4.8
+  },
+  "the m salon and merle norman|Monroe": {
+   "found": true,
+   "site": "https://www.msalonvonore.com/",
+   "address": "1613 US-411, Vonore, TN 37885",
+   "reviews": 511,
+   "rating": 4.9
+  },
+  "randy auto repair|Hilham": {
+   "found": true,
+   "site": null,
+   "address": "2906 Hilham Hwy, Hilham, TN 38568",
+   "reviews": 6,
+   "rating": 3
+  },
+  "t and m automotive|Rickman": {
+   "found": true,
+   "site": null,
+   "address": "800 Rickman Rd, Livingston, TN 38570, United States",
+   "reviews": 31,
+   "rating": 4.7
+  },
+  "white tail barbershop|Livingston": {
+   "found": true,
+   "site": "https://chelseadurham.glossgenius.com/",
+   "address": "799 W Main St, Livingston, TN 38570, United States",
+   "reviews": 61,
+   "rating": 4.8
+  },
+  "murphy fine groom and shave|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/share/1EAJgFUtZX/?mibextid=wwXIfr",
+   "address": "204 W Main St, Livingston, TN 38570",
+   "reviews": 49,
+   "rating": 5
+  },
+  "by pass barber shop|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/309787359730512/",
+   "address": "1185 Preston St #5, Livingston, TN 38570, United States",
+   "reviews": 19,
+   "rating": 4.6
+  }
+ }
+}

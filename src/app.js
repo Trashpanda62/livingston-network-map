@@ -46,13 +46,35 @@ const CAT_GROUP = {
 };
 const CAT_COLORS = { eats: '#c0442e', town: '#8b5cf6', water: '#1990b8', land: '#5b8a2e' };
 
+// Gold marks "needs a website": beacon pins for swept-up businesses, base
+// rings on already-listed places whose web presence is weak.
+const PROSPECT_GOLD = '#eab308';
+const PROSPECT_REASONS = {
+  'no-website': 'no website at all',
+  'facebook-only': 'Facebook page only',
+  'rented-subdomain': 'rented site-builder page',
+  'aggregator-listing': "only on other people's sites",
+  'dead-site': 'has a domain but effectively no visitors'
+};
+
+// One color per directory/top-list, used by every linkviz variant: badge
+// chips on pins, halo rings, ribbon links, the disc under each directory
+// glyph, and the dots in the info panel.
+const DIR_COLORS = {
+  'livingston-outdoors': '#0f766e',
+  'visit-livingston-tn': '#d97706',
+  'middle-tn-printers': '#1d4ed8',
+  'best-mom-cars': '#db2777'
+};
+
 // Radius (scene units) of the regional map edge; recomputed from region.json
 // at load. Places beyond the region sit on a single band just past the edge.
 let FAR_R = 4300;
 
 const state = {
   mode: 'city', palette: 'dawn', glyph: 'buildings',
-  labels: 'focus', motion: 'full'
+  labels: 'focus', motion: 'full',
+  linkviz: document.documentElement.getAttribute('data-linkviz') || 'badges'
 };
 if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   state.motion = 'calm';
@@ -86,6 +108,7 @@ let region = null; // parsed data/region.json bounds (30-mile z13 base)
 let regionTexture = null; // THREE.Texture of data/region.jpg
 let visitors = null; // parsed data/visitors.json {domain: {uniques,...}}
 let traffic = null; // parsed data/traffic.json {node_id: {reviews, rating, crux}}
+let prospects = null; // parsed data/prospects.json {flagged: {id: {...}}, new: [...]}
 let decor = null; // THREE.Group holding the table + map + rings
 
 // Same local frame as scripts/geo.py: scene units east/south of the square.
@@ -189,6 +212,41 @@ function nodeObject(n) {
   const color = p[n.type] || p.listed;
   const h = heightFor(n);
   const group = new THREE.Group();
+  if (n.type === 'prospect') {
+    // Gold beacon pin: a business worth pitching a Barnraised build.
+    const peg = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.5, 0.95, 7, 10),
+      new THREE.MeshLambertMaterial({ color: p.frame })
+    );
+    peg.position.y = 3.5;
+    group.add(peg);
+    const pr = n.prospect || {};
+    const headR = pr.reviews
+      ? 2.2 + 1.5 * Math.min(1, Math.log10(pr.reviews + 1) / 3.3)
+      : 2.6;
+    const head = new THREE.Mesh(
+      new THREE.SphereGeometry(headR, 16, 12),
+      new THREE.MeshLambertMaterial({ color: PROSPECT_GOLD, emissive: '#6b4e00' })
+    );
+    head.position.y = 8;
+    group.add(head);
+    const ring = new THREE.Mesh(
+      new THREE.RingGeometry(3.4, 4.4, 28),
+      new THREE.MeshBasicMaterial({ color: PROSPECT_GOLD, side: THREE.DoubleSide,
+        transparent: true, opacity: 0.9, depthWrite: false })
+    );
+    ring.rotation.x = -Math.PI / 2;
+    ring.position.y = 0.3;
+    group.add(ring);
+    const sprite = makeLabelSprite(n.name, p.label, 0.8);
+    sprite.position.y = 14.5;
+    sprite.visible = state.labels === 'all';
+    group.add(sprite);
+    group.userData.labelSprite = sprite;
+    group.userData.labelBase = sprite.scale.clone();
+    group.userData.nodeType = n.type;
+    return group;
+  }
   if (n.type === 'listed') {
     // Map-pin: cream peg with a category-colored head — reads as "a place on
     // the map", distinct from our blue/teal buildings. Head size tracks the
@@ -210,11 +268,47 @@ function nodeObject(n) {
     );
     head.position.y = 8;
     group.add(head);
+    // Weak web presence: gold base ring, same read as the prospect beacons.
+    if (n.prospect) {
+      const gold = new THREE.Mesh(
+        new THREE.RingGeometry(4.6, 5.4, 28),
+        new THREE.MeshBasicMaterial({ color: PROSPECT_GOLD, side: THREE.DoubleSide,
+          transparent: true, opacity: 0.9, depthWrite: false })
+      );
+      gold.rotation.x = -Math.PI / 2;
+      gold.position.y = 0.3;
+      group.add(gold);
+    }
+    // Directory-membership viz, variant-dependent (data-linkviz).
+    const dirs = n.listed_in || [];
+    if (state.linkviz === 'badges') {
+      // Small color chips stacked beside the peg, one per directory.
+      dirs.forEach((d, i) => {
+        const chip = new THREE.Sprite(new THREE.SpriteMaterial({
+          color: DIR_COLORS[d] || '#888888', depthWrite: false }));
+        chip.scale.set(1.7, 1.7, 1);
+        chip.position.set(2.6, 3.0 + i * 2.2, 0);
+        group.add(chip);
+      });
+    } else if (state.linkviz === 'halos') {
+      // Concentric ground rings under the pin, one per directory.
+      dirs.forEach((d, i) => {
+        const ring = new THREE.Mesh(
+          new THREE.RingGeometry(3.2 + i * 1.6, 4.0 + i * 1.6, 28),
+          new THREE.MeshBasicMaterial({ color: DIR_COLORS[d] || '#888888',
+            side: THREE.DoubleSide, transparent: true, opacity: 0.85, depthWrite: false })
+        );
+        ring.rotation.x = -Math.PI / 2;
+        ring.position.y = 0.35 + i * 0.05;
+        group.add(ring);
+      });
+    }
     const sprite = makeLabelSprite(n.name, p.label, 0.8);
     sprite.position.y = 14.5;
     sprite.visible = state.labels === 'all';
     group.add(sprite);
     group.userData.labelSprite = sprite;
+    group.userData.labelBase = sprite.scale.clone();
     group.userData.nodeType = n.type;
     return group;
   }
@@ -224,6 +318,18 @@ function nodeObject(n) {
     const mesh = new THREE.Mesh(geo, mat);
     mesh.position.y = h / 2 - 2;
     group.add(mesh);
+    // Each directory building stands on a disc of its color, anchoring the
+    // color key the linkviz variants use on the listed pins.
+    if (n.type === 'directory' && DIR_COLORS[n.id]) {
+      const disc = new THREE.Mesh(
+        new THREE.CircleGeometry(dims.w + 2.5, 24),
+        new THREE.MeshBasicMaterial({ color: DIR_COLORS[n.id],
+          transparent: true, opacity: 0.9, depthWrite: false })
+      );
+      disc.rotation.x = -Math.PI / 2;
+      disc.position.y = 0.3;
+      group.add(disc);
+    }
   } else {
     const geo = new THREE.SphereGeometry(dims.size, 16, 12);
     const mat = new THREE.MeshLambertMaterial({ color });
@@ -237,12 +343,22 @@ function nodeObject(n) {
   sprite.visible = state.labels === 'all' || n.type !== 'listed';
   group.add(sprite);
   group.userData.labelSprite = sprite;
+  group.userData.labelBase = sprite.scale.clone();
   group.userData.nodeType = n.type;
   return group;
 }
 
 function linkColor(l) {
   const p = pal();
+  if (l.kind === 'lists' && state.linkviz === 'ribbons') {
+    // Always-on ribbons tinted by which directory the link comes from;
+    // hovering/selecting either end saturates it.
+    const s = endNode(l, 'source'), t = endNode(l, 'target');
+    const dirId = s.type === 'directory' ? s.id : t.id;
+    const c = new THREE.Color(DIR_COLORS[dirId] || p.linkLists);
+    const a = listTouched(l) ? 0.9 : 0.22;
+    return `rgba(${Math.round(c.r * 255)},${Math.round(c.g * 255)},${Math.round(c.b * 255)},${a})`;
+  }
   return { lists: p.linkLists, built: p.linkBuilt, operates: p.linkOperates, sister: p.linkSister }[l.kind] || p.linkLists;
 }
 
@@ -381,13 +497,16 @@ function buildDecor() {
 }
 
 // Focus-density labels: reveal listed-node names as the camera gets close.
-const LABEL_REVEAL_DIST = 450;
+const LABEL_REVEAL_DIST = 1600;
 let labelTimer = null;
 
 // Keep glyphs a usable on-screen size across the huge zoom range: scale each
 // node group with its distance from the camera, like map pins that never
 // shrink into invisibility. Buildings cap lower so towers stay plausible.
 const SCALE_REF = 300;
+// Labels grow far slower than the glyphs they ride on, so pulling back shrinks
+// their on-screen size instead of holding it constant (the old label soup).
+const LABEL_EXP = 0.7;
 function updateNodeScales() {
   if (!net) return;
   const cam = graph.camera();
@@ -395,25 +514,66 @@ function updateNodeScales() {
     const o = n.__threeObj;
     if (!o) return;
     const d = Math.hypot(cam.position.x - (n.x || 0), cam.position.y - (n.y || 0), cam.position.z - (n.z || 0));
-    const cap = n.type === 'listed' ? 12 : 5;
-    o.scale.setScalar(Math.min(cap, Math.max(1, d / SCALE_REF)));
+    const cap = (n.type === 'listed' || n.type === 'prospect') ? 12 : 5;
+    const g = Math.min(cap, Math.max(1, d / SCALE_REF));
+    o.scale.setScalar(g);
+    const s = o.userData.labelSprite, base = o.userData.labelBase;
+    if (s && base) {
+      const f = Math.min(cap, Math.pow(Math.max(1, d / SCALE_REF), LABEL_EXP));
+      s.scale.set(base.x * f / g, base.y * f / g, 1);
+    }
   });
 }
+// Screen-space declutter: project every candidate label, keep them in priority
+// order (selected/hovered, then our sites, then review count), hide any label
+// whose rect would overlap one already kept or that would render unreadably
+// small. Priority beats proximity, so zooming out keeps the names that matter.
+const MIN_LABEL_PX = 8;
 function updateLabelVisibility() {
   if (!net) return;
   const cam = graph.camera();
+  const W = window.innerWidth, H = window.innerHeight;
+  const fovScale = H / (2 * Math.tan(THREE.MathUtils.degToRad(cam.fov) / 2));
+  const v = new THREE.Vector3();
+  const cands = [];
   net.nodes.forEach(n => {
     const obj = n.__threeObj;
     if (!obj || !obj.userData.labelSprite) return;
-    if (obj.userData.nodeType !== 'listed') { obj.userData.labelSprite.visible = true; return; }
-    if (state.labels === 'all') { obj.userData.labelSprite.visible = true; return; }
+    const s = obj.userData.labelSprite;
     const d = Math.hypot(cam.position.x - (n.x || 0), cam.position.y - (n.y || 0), cam.position.z - (n.z || 0));
-    obj.userData.labelSprite.visible = d < LABEL_REVEAL_DIST;
+    const listed = obj.userData.nodeType === 'listed' || obj.userData.nodeType === 'prospect';
+    if (listed && state.labels !== 'all' && d >= LABEL_REVEAL_DIST) { s.visible = false; return; }
+    const tr = (traffic || {})[n.id] || n.prospect;
+    let pr = listed ? (tr && tr.reviews ? Math.min(tr.reviews, 5000) : 0)
+      : 1e6 + (obj.userData.nodeType === 'hub' ? 2 : 1);
+    if ([selected, hovered].some(f => f && f.id === n.id)) pr = 1e9;
+    cands.push({ n, obj, s, d, pr });
+  });
+  cands.sort((a, b) => b.pr - a.pr);
+  const kept = [];
+  const PAD = 4;
+  cands.forEach(c => {
+    const g = c.obj.scale.x;
+    v.set((c.n.x || 0) + c.s.position.x * g,
+          (c.n.y || 0) + c.s.position.y * g,
+          (c.n.z || 0) + c.s.position.z * g);
+    const dLbl = v.distanceTo(cam.position);
+    v.project(cam);
+    if (v.z > 1 || v.z < -1) { c.s.visible = false; return; }
+    const hPx = c.s.scale.y * g * fovScale / Math.max(1, dLbl);
+    if (hPx < MIN_LABEL_PX) { c.s.visible = false; return; }
+    const wPx = hPx * (c.s.scale.x / c.s.scale.y);
+    const x = (v.x + 1) / 2 * W, y = (1 - v.y) / 2 * H;
+    const r = { x0: x - wPx / 2 - PAD, x1: x + wPx / 2 + PAD, y0: y - hPx / 2 - PAD, y1: y + hPx / 2 + PAD };
+    const hit = kept.some(k => r.x0 < k.x1 && r.x1 > k.x0 && r.y0 < k.y1 && r.y1 > k.y0);
+    if (hit) { c.s.visible = false; return; }
+    kept.push(r);
+    c.s.visible = true;
   });
 }
 function scheduleLabelUpdate() {
   if (labelTimer) return;
-  labelTimer = setTimeout(() => { labelTimer = null; updateLabelVisibility(); }, 250);
+  labelTimer = setTimeout(() => { labelTimer = null; updateLabelVisibility(); }, 120);
 }
 
 function applyMotion() {
@@ -421,7 +581,9 @@ function applyMotion() {
   // Table mode never orbits on its own — you lean over a map, it doesn't spin.
   controls.autoRotate = state.motion === 'full' && state.mode !== 'city';
   controls.autoRotateSpeed = 0.35;
-  graph.linkDirectionalParticles(l => (state.motion === 'full' && l.kind === 'lists' && linkShown(l)) ? 2 : 0)
+  // Particles only on the hovered/selected node's listing links — in ribbons
+  // mode every lists link is shown, and particles on all of them is noise.
+  graph.linkDirectionalParticles(l => (state.motion === 'full' && l.kind === 'lists' && linkShown(l) && listTouched(l)) ? 2 : 0)
     .linkDirectionalParticleSpeed(0.004)
     .linkDirectionalParticleWidth(1.2);
 }
@@ -492,7 +654,7 @@ function defaultCamera(ms) {
 }
 
 // ---- Filters, search, info panel ----
-const filters = { types: new Set(['hub', 'directory', 'built', 'listed']), band: 'all' };
+const filters = { types: new Set(['hub', 'directory', 'built', 'listed', 'prospect']), band: 'all' };
 let selected = null; // clicked node whose 'lists' connections are shown
 let hovered = null;  // node under the cursor — its connections light up too
 
@@ -504,11 +666,17 @@ function endNode(l, side) {
 // The 80 directory→listing links are spaghetti when drawn all at once; the
 // dozen ownership links carry the structure. Listing links appear only for
 // the node you click.
+function listTouched(l) {
+  const s = endNode(l, 'source'), t = endNode(l, 'target');
+  return [selected, hovered].some(f => f && (s.id === f.id || t.id === f.id));
+}
+
 function linkShown(l) {
   const s = endNode(l, 'source'), t = endNode(l, 'target');
   if (!nodeVisible(s) || !nodeVisible(t)) return false;
   if (l.kind !== 'lists') return true;
-  return [selected, hovered].some(f => f && (s.id === f.id || t.id === f.id));
+  if (state.linkviz === 'ribbons') return true;
+  return listTouched(l);
 }
 
 function nodeVisible(n) {
@@ -520,15 +688,17 @@ function nodeVisible(n) {
 }
 
 function applyFilters() {
-  graph.nodeVisibility(nodeVisible).linkVisibility(linkShown);
+  // linkColor re-set with a fresh closure so hover saturation recomputes.
+  graph.nodeVisibility(nodeVisible).linkVisibility(linkShown).linkColor(l => linkColor(l));
   updateStats();
 }
 
 function updateStats() {
   const vis = net.nodes.filter(nodeVisible);
   const c = t => vis.filter(n => n.type === t).length;
+  const needSite = vis.filter(n => n.type === 'prospect' || n.prospect).length;
   document.getElementById('stats').textContent =
-    `${c('directory')} directories · ${c('built')} sites built · ${c('listed')} businesses & places connected — hover or click anything to light up its connections`;
+    `${c('directory')} directories · ${c('built')} sites built · ${c('listed')} businesses & places connected · ${needSite} need a website (gold) — hover or click anything to light up its connections`;
 }
 
 function esc(s) {
@@ -536,7 +706,7 @@ function esc(s) {
     c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
-const TYPE_LABEL = { hub: 'The studio', directory: 'Our directory', built: 'Built by Barnraised', listed: 'Listed business / place' };
+const TYPE_LABEL = { hub: 'The studio', directory: 'Our directory', built: 'Built by Barnraised', listed: 'Listed business / place', prospect: 'Needs a website' };
 const DIR_NAMES = { 'livingston-outdoors': 'Livingston Outdoors', 'visit-livingston-tn': 'Visit Livingston TN', 'middle-tn-printers': 'Middle TN Printers', 'best-mom-cars': 'Best Mom Cars' };
 
 function openPanel(n) {
@@ -549,7 +719,15 @@ function openPanel(n) {
   ].filter(Boolean).join(' · ');
   document.getElementById('panel-blurb').textContent = n.blurb || '';
   const vEl = document.getElementById('panel-visitors');
-  if (n.type === 'listed') {
+  if (n.type === 'prospect') {
+    const pr = n.prospect || {};
+    const bits = [];
+    if (pr.reviews) bits.push(`Google reviews: ${pr.reviews.toLocaleString()}${pr.rating ? ` · ${pr.rating}★` : ''}`);
+    bits.push(`Why talk to them: ${PROSPECT_REASONS[pr.reason] || pr.reason}` +
+      (pr.reviews ? ' — customers are looking, there is nowhere to send them' : ''));
+    if (n.geo_method === 'town-approx') bits.push('(map spot approximate)');
+    vEl.textContent = bits.join(' · ');
+  } else if (n.type === 'listed') {
     const tr = (traffic || {})[n.id];
     const bits = [];
     if (tr && tr.reviews) bits.push(`Google reviews: ${tr.reviews.toLocaleString()} · ${tr.rating}★`);
@@ -557,6 +735,7 @@ function openPanel(n) {
     // traffic number that exists publicly for sites this small.
     if (tr && tr.crux === true) bits.push('website: ~1,000+ visits/mo (est. from Chrome usage data)');
     else if (tr && tr.crux === false) bits.push('website: under ~1,000 visits/mo (est.)');
+    if (n.prospect) bits.push(`Website prospect: ${PROSPECT_REASONS[n.prospect.reason] || n.prospect.reason}`);
     vEl.textContent = bits.length ? bits.join(' · ') : 'No public traffic data';
   } else {
     const v = visitorsFor(n);
@@ -564,9 +743,15 @@ function openPanel(n) {
       ? `Weekly visitors: ${v.uniques.toLocaleString()} (${v.source})`
       : 'Weekly visitors: no data yet';
   }
-  const listedIn = (n.listed_in || []).map(id => DIR_NAMES[id] || id);
-  document.getElementById('panel-listed').textContent =
-    listedIn.length ? 'On our directories: ' + listedIn.join(' · ') : '';
+  const listedEl = document.getElementById('panel-listed');
+  const dirIds = n.listed_in || [];
+  if (dirIds.length) {
+    listedEl.innerHTML = 'On our directories: ' + dirIds.map(id =>
+      `<span class="dir-tag"><span class="dir-dot" style="background:${DIR_COLORS[id] || '#888'}"></span>${esc(DIR_NAMES[id] || id)}</span>`
+    ).join(' · ');
+  } else {
+    listedEl.textContent = '';
+  }
   const visit = document.getElementById('panel-visit');
   visit.href = n.url || '#';
   visit.style.display = n.url ? '' : 'none';
@@ -655,6 +840,7 @@ function selectNode(n) {
   selected = n;
   applyFilters();
   applyMotion();
+  updateLabelVisibility();
   focusNode(n);
 }
 
@@ -671,11 +857,32 @@ Promise.all([
   new THREE.TextureLoader().loadAsync('./data/satellite.jpg'),
   fetch('./data/visitors.json').then(r => r.json()).catch(() => null),
   fetch('./data/region.json').then(r => r.json()).catch(() => null),
-  new THREE.TextureLoader().loadAsync('./data/region.jpg').catch(() => null),
-  fetch('./data/traffic.json').then(r => r.json()).catch(() => null)
+  new THREE.TextureLoader().loadAsync('./data/region.jpg?v=2').catch(() => null),
+  fetch('./data/traffic.json').then(r => r.json()).catch(() => null),
+  fetch('./data/prospects.json').then(r => r.json()).catch(() => null)
 ])
-  .then(([data, satMeta, tex, vis, regionMeta, regionTex, traf]) => {
+  .then(([data, satMeta, tex, vis, regionMeta, regionTex, traf, pros]) => {
     traffic = traf;
+    prospects = pros;
+    if (prospects) {
+      Object.entries(prospects.flagged || {}).forEach(([id, f]) => {
+        const n = data.nodes.find(x => x.id === id);
+        if (n) n.prospect = f;
+      });
+      (prospects.new || []).forEach(r => {
+        data.nodes.push({
+          id: 'p-' + r.id, name: r.name, type: 'prospect',
+          category: r.category, city: r.city,
+          blurb: [r.address, 'Found in a county-wide sweep for businesses without a real website of their own.']
+            .filter(Boolean).join(' — '),
+          url: null,
+          geo: r.lat != null ? toLocal(r.lat, r.lon) : null,
+          geo_method: r.geo_method || null,
+          bearing: Math.abs([...String(r.id)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) | 0, 7)) % 360,
+          prospect: { reason: r.reason, reviews: r.reviews, rating: r.rating, address: r.address }
+        });
+      });
+    }
     sat = satMeta;
     tex.colorSpace = THREE.SRGBColorSpace;
     satTexture = tex;
@@ -701,6 +908,7 @@ Promise.all([
         document.body.style.cursor = h ? 'pointer' : '';
         applyFilters();
         applyMotion();
+        updateLabelVisibility();
       })
       .onBackgroundClick(() => { clearSelection(); })
       .showNavInfo(false);
@@ -722,8 +930,8 @@ new MutationObserver(muts => {
     const val = document.documentElement.getAttribute(m.attributeName);
     if (key in state && val && state[key] !== val) { state[key] = val; dirty = true; }
   });
-  if (dirty && net) applyAll();
-}).observe(document.documentElement, { attributes: true, attributeFilter: ['data-mode', 'data-palette', 'data-glyph', 'data-labels', 'data-motion'] });
+  if (dirty && net) { applyAll(); applyFilters(); }
+}).observe(document.documentElement, { attributes: true, attributeFilter: ['data-mode', 'data-palette', 'data-glyph', 'data-labels', 'data-motion', 'data-linkviz'] });
 
 // Adopt the combo baked onto <html> (or applied by a switcher before this
 // module ran). A reduced-motion preference beats the baked motion axis.

@@ -8,13 +8,13 @@
 - PASS — every node has bearing · missing: none
 - PASS — all edges resolve to nodes · dangling: none
 - PASS — city map has real street grid · 370 streets, 98 buildings, 3 waterways
-- PASS — at least 20 nodes geo-placed on the city map · 21 geo-placed (17 exact, 4 approx)
+- PASS — at least 20 nodes geo-placed on the city map · 69 geo-placed (17 exact, 23 approx)
 - PASS — zero external asset references in index.html · all local
 - PASS — every referenced local asset exists · all present
 - PASS — label contrast >= 4.5 in every palette · {'midnight': 17.02, 'dawn': 14.36, 'print': 16.88}
-- PASS — total payload under 8 MB · 4956 KB
+- PASS — total payload under 8 MB · 7200 KB
 - PASS — satellite imagery + bounds exist · data/satellite.jpg + data/satellite.json
-- PASS — visitors.json covers owned domains · 12 domains, 1 with data
+- PASS — visitors.json covers owned domains · 12 domains, 12 with data
 - PASS — lock state consistent · locked, switcher stripped
 
 Summary: 16/16 checks passing

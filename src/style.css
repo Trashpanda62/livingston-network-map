@@ -16,6 +16,11 @@ body { background: var(--bg); overflow: hidden; font-family: "Segoe UI", system-
 .chip-directory { color: #2dd4bf; }
 .chip-built { color: #7aa2ff; }
 .chip-listed { color: #94a0b4; }
+.chip-prospect { color: #eab308; }
+:root[data-palette="dawn"] .chip-prospect, :root[data-palette="print"] .chip-prospect { color: #a16207; }
+.panel[data-type="prospect"] .panel-kicker { color: #eab308; }
+:root[data-palette="dawn"] .panel[data-type="prospect"] .panel-kicker,
+:root[data-palette="print"] .panel[data-type="prospect"] .panel-kicker { color: #a16207; }
 :root[data-palette="dawn"] .chip-hub { color: #b3541e; }
 :root[data-palette="dawn"] .chip-directory { color: #0f766e; }
 :root[data-palette="dawn"] .chip-built { color: #1d4ed8; }
@@ -46,6 +51,10 @@ body { background: var(--bg); overflow: hidden; font-family: "Segoe UI", system-
 
 .hud-stats { bottom: 58px; left: 22px; font-size: 12px; opacity: 0.7; }
 .hud-credit { bottom: 18px; right: 22px; font-size: 11px; opacity: 0.55; }
+
+.dir-tag { white-space: nowrap; }
+.dir-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%;
+  margin-right: 4px; vertical-align: baseline; }
 .panel-visitors { font-size: 12px; font-weight: 600; margin-bottom: 10px; }
 
 .panel { position: fixed; z-index: 20; top: 84px; right: 22px; width: 300px; max-height: calc(100vh - 130px);

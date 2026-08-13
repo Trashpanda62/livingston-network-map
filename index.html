@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en" data-mode="city" data-palette="dawn" data-glyph="buildings" data-labels="focus" data-motion="full">
+<html lang="en" data-mode="city" data-palette="dawn" data-glyph="buildings" data-labels="focus" data-motion="full" data-linkviz="badges">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Livingston Online — the network map</title>
-<link rel="stylesheet" href="src/style.css?v=17">
+<link rel="stylesheet" href="src/style.css?v=20">
 </head>
 <body>
 <div id="graph"></div>
@@ -19,6 +19,7 @@
   <button class="chip chip-directory is-on" data-filter="directory">Our directories</button>
   <button class="chip chip-built is-on" data-filter="built">Sites we built</button>
   <button class="chip chip-listed is-on" data-filter="listed">Businesses &amp; places listed</button>
+  <button class="chip chip-prospect is-on" data-filter="prospect">Needs a website</button>
   <span class="band-group" role="group" aria-label="Drive time">
     <button class="chip band is-on" data-band="all">Any drive</button>
     <button class="chip band" data-band="15">≤ 15 min</button>
@@ -34,6 +35,9 @@
 <p class="hud hud-stats" id="stats"></p>
 <p class="hud hud-credit">Imagery: USGS</p>
 
+<!-- Directory viz locked 2026-08-13: badges (variant A). Halos/ribbons remain
+     switchable via data-linkviz on <html>; the picker UI was stripped. -->
+
 <aside class="panel" id="panel" role="dialog" aria-labelledby="panel-name" hidden>
   <button class="panel-close" id="panel-close" aria-label="Close">&times;</button>
   <p class="panel-kicker" id="panel-kicker"></p>
@@ -48,6 +52,6 @@
 <!-- Design locked 2026-08-12: force / dawn / buildings / focus / full.
      To remix, restore the selector include from vendor/ (see git history). -->
 <script src="vendor/3d-force-graph.min.js?v=19"></script>
-<script type="module" src="src/app.js?v=26"></script>
+<script type="module" src="src/app.js?v=31"></script>
 </body>
 </html>
