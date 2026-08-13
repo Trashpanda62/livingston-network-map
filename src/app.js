@@ -85,6 +85,7 @@ let satTexture = null; // THREE.Texture of data/satellite.jpg
 let region = null; // parsed data/region.json bounds (30-mile z13 base)
 let regionTexture = null; // THREE.Texture of data/region.jpg
 let visitors = null; // parsed data/visitors.json {domain: {uniques,...}}
+let traffic = null; // parsed data/traffic.json {node_id: {reviews, rating, crux}}
 let decor = null; // THREE.Group holding the table + map + rings
 
 // Same local frame as scripts/geo.py: scene units east/south of the square.
@@ -190,7 +191,8 @@ function nodeObject(n) {
   const group = new THREE.Group();
   if (n.type === 'listed') {
     // Map-pin: cream peg with a category-colored head — reads as "a place on
-    // the map", distinct from our blue/teal buildings.
+    // the map", distinct from our blue/teal buildings. Head size tracks the
+    // business's Google review count (log scale, 2.2–3.7).
     const headColor = CAT_COLORS[CAT_GROUP[n.category]] || p.listed;
     const peg = new THREE.Mesh(
       new THREE.CylinderGeometry(0.5, 0.95, 7, 10),
@@ -198,8 +200,12 @@ function nodeObject(n) {
     );
     peg.position.y = 3.5;
     group.add(peg);
+    const tr = (traffic || {})[n.id];
+    const headR = tr && tr.reviews
+      ? 2.2 + 1.5 * Math.min(1, Math.log10(tr.reviews + 1) / 3.3)
+      : 2.6;
     const head = new THREE.Mesh(
-      new THREE.SphereGeometry(2.6, 16, 12),
+      new THREE.SphereGeometry(headR, 16, 12),
       new THREE.MeshLambertMaterial({ color: headColor })
     );
     head.position.y = 8;
@@ -544,7 +550,11 @@ function openPanel(n) {
   document.getElementById('panel-blurb').textContent = n.blurb || '';
   const vEl = document.getElementById('panel-visitors');
   if (n.type === 'listed') {
-    vEl.textContent = '';
+    const tr = (traffic || {})[n.id];
+    const bits = [];
+    if (tr && tr.reviews) bits.push(`Google reviews: ${tr.reviews.toLocaleString()} · ${tr.rating}★`);
+    if (tr && tr.crux) bits.push('site traffic measurable (Chrome UX)');
+    vEl.textContent = bits.length ? bits.join(' · ') : 'No public traffic data';
   } else {
     const v = visitorsFor(n);
     vEl.textContent = (v && v.uniques != null)
@@ -658,9 +668,11 @@ Promise.all([
   new THREE.TextureLoader().loadAsync('./data/satellite.jpg'),
   fetch('./data/visitors.json').then(r => r.json()).catch(() => null),
   fetch('./data/region.json').then(r => r.json()).catch(() => null),
-  new THREE.TextureLoader().loadAsync('./data/region.jpg').catch(() => null)
+  new THREE.TextureLoader().loadAsync('./data/region.jpg').catch(() => null),
+  fetch('./data/traffic.json').then(r => r.json()).catch(() => null)
 ])
-  .then(([data, satMeta, tex, vis, regionMeta, regionTex]) => {
+  .then(([data, satMeta, tex, vis, regionMeta, regionTex, traf]) => {
+    traffic = traf;
     sat = satMeta;
     tex.colorSpace = THREE.SRGBColorSpace;
     satTexture = tex;
