@@ -553,7 +553,10 @@ function openPanel(n) {
     const tr = (traffic || {})[n.id];
     const bits = [];
     if (tr && tr.reviews) bits.push(`Google reviews: ${tr.reviews.toLocaleString()} · ${tr.rating}★`);
-    if (tr && tr.crux) bits.push('site traffic measurable (Chrome UX)');
+    // CrUX inclusion needs ~1k+ monthly visits — the closest thing to a real
+    // traffic number that exists publicly for sites this small.
+    if (tr && tr.crux === true) bits.push('website: ~1,000+ visits/mo (est. from Chrome usage data)');
+    else if (tr && tr.crux === false) bits.push('website: under ~1,000 visits/mo (est.)');
     vEl.textContent = bits.length ? bits.join(' · ') : 'No public traffic data';
   } else {
     const v = visitorsFor(n);
