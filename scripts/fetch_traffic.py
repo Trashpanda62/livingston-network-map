@@ -115,11 +115,34 @@ def main() -> int:
             print("GOOGLE_CRUX_API_KEY missing from secrets.local.env — create a "
                   "free GCP API key with the Chrome UX Report API enabled.", flush=True)
             return 1
+        # CrUX measures the ORIGIN — only attributable when the business has
+        # its own domain. Shared portals (recreation.gov carries 11 of these
+        # places), .gov/.mil sites, and aggregators say nothing about the
+        # individual business, so they stay unknown.
+        from urllib.parse import urlparse
+        from collections import Counter
+        AGGREGATORS = {"facebook.com", "restaurantji.com", "tripadvisor.com",
+                       "tnstateparks.com", "exploremontereytn.com", "tngenweb.org"}
+
+        def host_of(u):
+            h = (urlparse(u).hostname or "").lower()
+            return h[4:] if h.startswith("www.") else h
+
+        host_counts = Counter(host_of(n["url"]) for n in listed if n.get("url"))
+
+        def attributable(u):
+            h = host_of(u)
+            return (host_counts[h] == 1 and h not in AGGREGATORS
+                    and not h.endswith((".gov", ".mil")))
+
         done = 0
         for n in listed:
             if not n.get("url"):
                 continue
             entry = cache.setdefault(n["id"], {})
+            if not attributable(n["url"]):
+                entry["crux"] = None
+                continue
             if not refresh and "crux" in entry and entry["crux"] is not None:
                 continue
             entry["crux"], _rank = crux_lookup(n["url"], key)

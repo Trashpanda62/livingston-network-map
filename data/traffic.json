@@ -2,386 +2,463 @@
  "livingston-city-park": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "central-park-livingston": {
   "reviews": 505,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "standing-stone-state-forest": {
   "reviews": 2,
   "rating": 5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "sunset-marina-and-resort": {
   "reviews": 993,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "obey-river-park": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "standing-stone-state-park": {
   "reviews": 1300,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "waterloo-falls": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": true
  },
  "cinderella-park": {
   "reviews": 204,
   "rating": 4.1,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "capshaw-park": {
   "reviews": 11,
   "rating": 4.4,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "tennessee-central-trail": {
   "reviews": 4,
   "rating": 4.3,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "dogwood-park": {
   "reviews": 2311,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "dale-hollow-dam-overlook": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "dale-hollow-lake-primitive-camping": {
   "reviews": 342,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "monterey-rail-trail": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "ensor-sink-natural-area": {
   "reviews": 1,
   "rating": 5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "dale-hollow-damsite-recreation-area": {
   "reviews": 342,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "dale-hollow-national-fish-hatchery": {
   "reviews": 60,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "pleasant-grove-recreation-area-dale-hollow-lake": {
   "reviews": 125,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "east-port-marina-and-resort": {
   "reviews": 405,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "bee-rock": {
   "reviews": 340,
   "rating": 4.9,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "city-lake-natural-area": {
   "reviews": 715,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "cordell-hull-birthplace-state-park": {
   "reviews": 247,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "the-boils-wildlife-management-area": {
   "reviews": 167,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "willow-grove-campground": {
   "reviews": 164,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "cane-creek-park": {
   "reviews": 1700,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "roaring-river-park": {
   "reviews": 139,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "cove-creek-recreation-area": {
   "reviews": 64,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "horse-creek-resort": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": false
  },
  "meadow-creek-park": {
   "reviews": 71,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "cordell-hull-wildlife-management-area": {
   "reviews": 35,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "star-point-resort": {
   "reviews": 237,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "wartrace-creek-recreation-area": {
   "reviews": 103,
   "rating": 4.5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "dale-hollow-lake-eagle-watch": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "lillydale-campground-and-day-use": {
   "reviews": 324,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "salt-lick-creek-recreation-area-and-campground": {
   "reviews": 144,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "cummins-falls-state-park": {
   "reviews": 4900,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "dale-hollow-lake-usace-nashville-district": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "granville-historic-district-and-veterans-park": {
   "reviews": 56,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "burgess-falls-state-park": {
   "reviews": 4700,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "sgt-alvin-c-york-state-historic-park": {
   "reviews": 943,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "cub-mountain-atv-park-campground": {
   "reviews": 80,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "cumberland-national-scenic-byway-overton-county-segment": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": false
  },
  "dale-hollow-lake-overton-county-access-mitchell-creek-marina-livingston-boat-dock": {
   "reviews": 278,
   "rating": 4.4,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "hidden-valley-golf-country-club": {
   "reviews": 61,
   "rating": 4.3,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "livingston-city-park-recreation-park-city-ballpark": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "obey-river-park-campground": {
   "reviews": 299,
   "rating": 4.5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "standing-stone-state-forest-wma": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "livingston-mural-trail": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": true
  },
  "livingston-overton-county-farmers-market": {
   "reviews": 37,
   "rating": 4.9,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "millard-oakley-public-library": {
   "reviews": 52,
   "rating": 4.5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "overton-county-arts": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "overton-county-courthouse": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": true
  },
  "overton-county-heritage-museum": {
   "reviews": 14,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "roaring-river-church-and-cemetery": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "the-antique-market": {
   "reviews": 68,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "1806-bbq": {
   "reviews": 189,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "angelina-s-italian-subs-more": {
   "reviews": 25,
   "rating": 4.9,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "brazen-que": {
   "reviews": 321,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "casa-mexicana": {
   "reviews": 527,
   "rating": 4.5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "ruby-lee-coffee-and-bakehouse": {
   "reviews": 94,
   "rating": 4.8,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "stover-s-country-kitchen": {
   "reviews": 626,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "the-sno-shack": {
   "reviews": 38,
   "rating": 4.5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": null
  },
  "wired-coffee-co": {
   "reviews": 252,
   "rating": 4.7,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "fall-o-ween-in-livingston": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": true
  },
  "livingston-overton-county-christmas-parade": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": true
  },
  "overton-county-fair": {
   "reviews": 87,
   "rating": 4.3,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "paint-livingston": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": null
  },
  "phillips-printing-company": {
   "reviews": 62,
   "rating": 4.9,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "pollock-printing": {
   "reviews": 36,
   "rating": 4.3,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "joyner-hogan-printers": {
   "reviews": 10,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "hatch-show-print": {
   "reviews": 274,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": true
  },
  "crown-label-inc": {
   "reviews": 1,
   "rating": 5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "that-s-printing-inc": {
   "reviews": 15,
   "rating": 4.5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "franklin-web-printing-co": {
   "reviews": 13,
   "rating": 4.6,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "quality-printing-company": {
   "reviews": 23,
   "rating": 4.9,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "ledbetter-signs": {
   "reviews": 19,
   "rating": 5,
-  "source": "Google reviews"
+  "source": "Google reviews",
+  "crux": false
  },
  "anderson-printing-solutions": {
   "reviews": null,
   "rating": null,
-  "source": null
+  "source": null,
+  "crux": false
  }
 }
