@@ -44,17 +44,30 @@ def serp_knowledge(query, token):
     return data.get("knowledge") or {}
 
 
-def psi_has_crux(url):
-    """None = quota/error (unknown), True/False = CrUX origin data present."""
-    q = ("https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url="
-         + urllib.parse.quote(url, safe="") + "&category=performance")
+def crux_lookup(url, key):
+    """Query the CrUX API directly (needs GOOGLE_CRUX_API_KEY in secrets —
+    a plain GCP API key with the Chrome UX Report API enabled).
+    Returns (has_data, rank) — rank is the coarse popularity bucket
+    (e.g. 1000000 = top 1M origins) or None. (None, None) on error/no data."""
+    origin = url.rstrip("/")
+    body = json.dumps({"origin": origin}).encode()
+    req = urllib.request.Request(
+        f"https://chromeuxreport.googleapis.com/v1/records:queryRecord?key={key}",
+        data=body, headers={"Content-Type": "application/json"})
     try:
-        with urllib.request.urlopen(q, timeout=120) as r:
+        with urllib.request.urlopen(req, timeout=30) as r:
             data = json.load(r)
-        return bool(data.get("originLoadingExperience", {}).get("metrics"))
-    except Exception as e:  # noqa: BLE001 — quota 429s expected keyless
-        print(f"    psi error: {e}", flush=True)
-        return None
+        rec = data.get("record", {})
+        return bool(rec.get("metrics")), rec.get("collectionPeriod") and (
+            rec.get("urlNormalizationDetails") or {}).get("popularity") or None
+    except urllib.error.HTTPError as e:
+        if e.code == 404:  # no CrUX data for this origin — a real answer
+            return False, None
+        print(f"    crux error: {e}", flush=True)
+        return None, None
+    except Exception as e:  # noqa: BLE001
+        print(f"    crux error: {e}", flush=True)
+        return None, None
 
 
 def main() -> int:
@@ -96,6 +109,12 @@ def main() -> int:
             time.sleep(0.5)
         print(f"reviews: found={done} none={fail} of {len(listed)}", flush=True)
     else:
+        try:
+            key = secret("GOOGLE_CRUX_API_KEY")
+        except KeyError:
+            print("GOOGLE_CRUX_API_KEY missing from secrets.local.env — create a "
+                  "free GCP API key with the Chrome UX Report API enabled.", flush=True)
+            return 1
         done = 0
         for n in listed:
             if not n.get("url"):
@@ -103,12 +122,12 @@ def main() -> int:
             entry = cache.setdefault(n["id"], {})
             if not refresh and "crux" in entry and entry["crux"] is not None:
                 continue
-            entry["crux"] = psi_has_crux(n["url"])
+            entry["crux"], _rank = crux_lookup(n["url"], key)
             done += 1
             print(f"  {n['id']}: crux={entry['crux']}", flush=True)
             OUT.write_text(json.dumps(cache, indent=1), encoding="utf-8")
-            time.sleep(2)
-        print(f"psi checked {done}", flush=True)
+            time.sleep(0.5)
+        print(f"crux checked {done}", flush=True)
     return 0
 
 

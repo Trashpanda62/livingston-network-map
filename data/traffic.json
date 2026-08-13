@@ -2,116 +2,97 @@
  "livingston-city-park": {
   "reviews": null,
   "rating": null,
-  "source": null,
-  "crux": null
+  "source": null
  },
  "central-park-livingston": {
   "reviews": 505,
   "rating": 4.7,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "standing-stone-state-forest": {
   "reviews": 2,
   "rating": 5,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "sunset-marina-and-resort": {
   "reviews": 993,
   "rating": 4.6,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "obey-river-park": {
   "reviews": null,
   "rating": null,
-  "source": null,
-  "crux": null
+  "source": null
  },
  "standing-stone-state-park": {
   "reviews": 1300,
   "rating": 4.7,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "waterloo-falls": {
   "reviews": null,
   "rating": null,
-  "source": null,
-  "crux": null
+  "source": null
  },
  "cinderella-park": {
   "reviews": 204,
   "rating": 4.1,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "capshaw-park": {
   "reviews": 11,
   "rating": 4.4,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "tennessee-central-trail": {
   "reviews": 4,
   "rating": 4.3,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "dogwood-park": {
   "reviews": 2311,
   "rating": 4.8,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "dale-hollow-dam-overlook": {
   "reviews": null,
   "rating": null,
-  "source": null,
-  "crux": null
+  "source": null
  },
  "dale-hollow-lake-primitive-camping": {
   "reviews": 342,
   "rating": 4.7,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "monterey-rail-trail": {
   "reviews": null,
   "rating": null,
-  "source": null,
-  "crux": null
+  "source": null
  },
  "ensor-sink-natural-area": {
   "reviews": 1,
   "rating": 5,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "dale-hollow-damsite-recreation-area": {
   "reviews": 342,
   "rating": 4.7,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "dale-hollow-national-fish-hatchery": {
   "reviews": 60,
   "rating": 4.6,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "pleasant-grove-recreation-area-dale-hollow-lake": {
   "reviews": 125,
   "rating": 4.6,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "east-port-marina-and-resort": {
   "reviews": 405,
   "rating": 4.7,
-  "source": "Google reviews",
-  "crux": null
+  "source": "Google reviews"
  },
  "bee-rock": {
   "reviews": 340,
