@@ -799,6 +799,22 @@
    "geo_method": "address",
    "drive_min": 23,
    "phone": "+1 931-372-8253"
+  },
+  {
+   "id": "the-lavender-on-k-s-farm",
+   "name": "The Lavender On K&S Farm",
+   "category": "lavender farm / agritourism",
+   "city": "Byrdstown",
+   "address": "8554 Faix Rd, Byrdstown, TN 38549",
+   "lat": 36.5779744,
+   "lon": -85.1296595,
+   "reviews": 24,
+   "rating": 5,
+   "reason": "facebook-only",
+   "phone": "+1 860-608-1536",
+   "geo_method": "town-approx",
+   "drive_min": 45,
+   "added_by": "steve 2026-08-13"
   }
  ],
  "_done": [
@@ -1504,6 +1520,14 @@
    "reviews": null,
    "rating": null,
    "phone": null
+  },
+  "the lavender on k and s farm|Byrdstown": {
+   "found": true,
+   "site": "https://m.facebook.com/pages/category/Farm/The-Lavender-on-K-S-Farm-106927767353020/",
+   "address": "8554 Faix Rd, Byrdstown, TN 38549, United States",
+   "reviews": 24,
+   "rating": 5,
+   "phone": "+1 860-608-1536"
   }
  }
 }

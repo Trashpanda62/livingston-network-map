@@ -293,5 +293,15 @@
   "lat": 36.4142281,
   "lon": -85.4416363,
   "method": "address"
+ },
+ "8554 Faix Rd, Byrdstown, TN 38549, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "Byrdstown, Pickett County, TN": {
+  "lat": 36.5745104,
+  "lon": -85.1288435,
+  "method": "address"
  }
 }
