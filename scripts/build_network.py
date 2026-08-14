@@ -1,6 +1,6 @@
 """Build network.json for the Livingston Network Map.
 
-Reads the two directory data files plus the hardcoded built-sites roster,
+Reads the three directory data files plus the hardcoded built-sites roster,
 dedupes places that appear in more than one directory, and emits
 data/network.json (nodes + edges) and reports/network-stats.json.
 
@@ -16,6 +16,16 @@ from geo import to_local
 ROOT = Path(__file__).resolve().parent.parent
 OUTDOORS = Path(r"C:\dev\livingston-outdoors\data\livingston-outdoors.json")
 VISIT = Path(r"C:\dev\visit-livingston\data\places.json")
+PRINTERS = Path(r"C:\dev\mtn-printers\data\mtn-printers.json")
+
+
+# Middle TN Printers covers the whole midstate, but this map is about one
+# county: only its Overton County shops belong here. Today that is Oliver
+# Printing; if the directory adds another Livingston printer it appears on
+# its own. The Nashville / Franklin / Gallatin / Clarksville / Cookeville /
+# La Vergne shops are deliberately not on this map.
+def in_scope(city: str, county: str) -> bool:
+    return (county or "").strip().lower() == "overton"
 
 # Approximate drive minutes from the Livingston square, by city, for sources
 # that carry no routed time. Stylized ring placement only — not navigation.
@@ -45,6 +55,8 @@ BUILT_SITES = [
      "Photo-led directory of 40 outdoor places within 45 minutes of Livingston."),
     ("visit-livingston-tn", "Visit Livingston TN", "https://visitlivingstontn.com", "Livingston", "Overton", "directory",
      "First-timer's editorial guide to Livingston and Overton County — 29 places."),
+    ("middle-tn-printers", "Middle TN Printers", "https://middletnprinters.com", "Livingston", "Overton", "directory",
+     "Directory of eleven Middle Tennessee commercial printers. Only its Overton County shop is on this map."),
     ("livingston-garden-center", "Livingston Garden Center", "https://livingstongardencenter.com", "Livingston", "Overton", "built",
      "Client build — pickup-ordering garden center site, order by 5 PM for next-day pickup."),
     ("tapestry-acres", "Tapestry Acres", "https://tapestryacres.com", "Monroe", "Overton", "built",
@@ -86,7 +98,8 @@ def main() -> int:
             "blurb": blurb, "listed_in": [],
         })
 
-    DIRECTORY_IDS = ("livingston-outdoors", "visit-livingston-tn")
+    DIRECTORY_IDS = ("livingston-outdoors", "visit-livingston-tn",
+                     "middle-tn-printers")
     for site_id in DIRECTORY_IDS:
         edges.append({"source": BR, "target": site_id, "kind": "operates"})
     for nid, *_ in [(r[0],) for r in BUILT_SITES]:
@@ -147,6 +160,16 @@ def main() -> int:
                     p.get("what_it_is") or p.get("blurb", ""),
                     p.get("category", "town"))
 
+    printers = json.loads(PRINTERS.read_text(encoding="utf-8"))
+    printers_in_scope = 0
+    for pr in printers:
+        if not in_scope(pr.get("city", ""), pr.get("county", "")):
+            continue
+        printers_in_scope += 1
+        add_listing("middle-tn-printers", pr["name"], pr["url"], pr.get("city", ""),
+                    pr.get("county", ""), city_minutes(pr.get("city", "")),
+                    pr.get("blurb", ""), "printing")
+
     # Bearing assignment: spread nodes inside their county wedge, ordered by id
     # so the layout is deterministic run-to-run.
     from collections import defaultdict
@@ -177,7 +200,7 @@ def main() -> int:
                 n["geo_method"] = hit["method"]
                 geo_ok += 1
 
-    net = {"generated_from": [str(OUTDOORS), str(VISIT)],
+    net = {"generated_from": [str(OUTDOORS), str(VISIT), str(PRINTERS)],
            "nodes": nodes, "edges": edges}
     out = ROOT / "data" / "network.json"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -190,7 +213,9 @@ def main() -> int:
         "edges_total": len(edges),
         "edges_by_kind": {k: sum(1 for e in edges if e["kind"] == k)
                           for k in ("operates", "built", "lists", "sister")},
-        "source_counts": {"outdoors": len(outdoors), "visit": len(visit)},
+        "source_counts": {"outdoors": len(outdoors), "visit": len(visit),
+                          "printers": len(printers)},
+        "printers_in_scope": printers_in_scope,
         "deduped": dedup,
         "missing_url": [n["id"] for n in nodes if not n["url"]],
         "missing_drive_min": [n["id"] for n in nodes if n["drive_min"] is None],

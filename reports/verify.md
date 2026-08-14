@@ -1,7 +1,7 @@
 # Verify — 20/20 passing
 
-- PASS — listing edges match source rows · 75 lists edges vs {'outdoors': 40, 'visit': 35} = 75
-- PASS — node total = listed + our properties · 81 = 73 + 8
+- PASS — listing edges match source rows · 76 lists edges vs {'outdoors': 40, 'visit': 35, 'printers': 1} = 76
+- PASS — node total = listed + our properties · 82 = 73 + 9
 - PASS — every node has url · missing: none
 - PASS — every node has blurb · missing: none
 - PASS — every node has drive_min · missing: none
@@ -12,7 +12,7 @@
 - PASS — zero external asset references in index.html · all local
 - PASS — every referenced local asset exists · all present
 - PASS — label contrast >= 4.5 in every palette · {'midnight': 17.02, 'dawn': 14.36, 'print': 16.88}
-- PASS — total payload under 8 MB · 7248 KB
+- PASS — total payload under 8 MB · 7249 KB
 - PASS — satellite imagery + bounds exist · data/satellite.jpg + data/satellite.json
 - PASS — visitors.json covers owned domains · 12 domains, 12 with data
 - PASS — prospect ids unique · 42 rows, 42 unique

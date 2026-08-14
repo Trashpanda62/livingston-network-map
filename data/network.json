@@ -1,7 +1,8 @@
 {
  "generated_from": [
   "C:\\dev\\livingston-outdoors\\data\\livingston-outdoors.json",
-  "C:\\dev\\visit-livingston\\data\\places.json"
+  "C:\\dev\\visit-livingston\\data\\places.json",
+  "C:\\dev\\mtn-printers\\data\\mtn-printers.json"
  ],
  "nodes": [
   {
@@ -14,7 +15,7 @@
    "drive_min": 2,
    "blurb": "Steve's web studio \u2014 small-business websites, photography, drone. Every site on this map traces back here.",
    "listed_in": [],
-   "bearing": 155.6
+   "bearing": 155.5
   },
   {
    "id": "livingston-outdoors",
@@ -26,7 +27,7 @@
    "drive_min": 2,
    "blurb": "Photo-led directory of 40 outdoor places within 45 minutes of Livingston.",
    "listed_in": [],
-   "bearing": 196.0
+   "bearing": 195.1
   },
   {
    "id": "visit-livingston-tn",
@@ -38,7 +39,19 @@
    "drive_min": 2,
    "blurb": "First-timer's editorial guide to Livingston and Overton County \u2014 29 places.",
    "listed_in": [],
-   "bearing": 254.4
+   "bearing": 254.5
+  },
+  {
+   "id": "middle-tn-printers",
+   "name": "Middle TN Printers",
+   "type": "directory",
+   "url": "https://middletnprinters.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Directory of eleven Middle Tennessee commercial printers. Only its Overton County shop is on this map.",
+   "listed_in": [],
+   "bearing": 201.7
   },
   {
    "id": "livingston-garden-center",
@@ -50,7 +63,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 pickup-ordering garden center site, order by 5 PM for next-day pickup.",
    "listed_in": [],
-   "bearing": 189.3,
+   "bearing": 188.5,
    "geo": [
     151.07,
     -89.79
@@ -67,7 +80,7 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 alpaca farm and glamping stays outside Livingston.",
    "listed_in": [],
-   "bearing": 238.7,
+   "bearing": 239.1,
    "geo": [
     572.82,
     -1044.6
@@ -84,7 +97,7 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 RV rental based at the Tapestry Acres farm.",
    "listed_in": [],
-   "bearing": 252.1,
+   "bearing": 252.3,
    "geo": [
     583.27,
     -1033.55
@@ -101,7 +114,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 drone and aerial photography, credited to Barnraised.",
    "listed_in": [],
-   "bearing": 223.0
+   "bearing": 223.7
   },
   {
    "id": "oliver-printing",
@@ -112,8 +125,10 @@
    "county": "Overton",
    "drive_min": 2,
    "blurb": "Livingston print shop since 1967 \u2014 Barnraised sample site built; also featured on Middle TN Printers.",
-   "listed_in": [],
-   "bearing": 207.2,
+   "listed_in": [
+    "middle-tn-printers"
+   ],
+   "bearing": 208.3,
    "geo": [
     -20.76,
     13.75
@@ -133,7 +148,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 184.8,
+   "bearing": 184.1,
    "geo": [
     85.61,
     -22.13
@@ -154,7 +169,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 162.3,
+   "bearing": 162.1,
    "geo": [
     -1.01,
     21.76
@@ -174,7 +189,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 229.7,
+   "bearing": 230.3,
    "geo": [
     -1073.95,
     -628.13
@@ -235,7 +250,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 234.2,
+   "bearing": 234.7,
    "geo": [
     -1.01,
     -0.91
@@ -255,7 +270,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 256.6,
+   "bearing": 256.7,
    "geo": [
     -1080.62,
     747.17
@@ -475,7 +490,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 220.7,
+   "bearing": 221.5,
    "geo": [
     -119.93,
     -471.97
@@ -495,7 +510,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 173.6,
+   "bearing": 173.1,
    "geo": [
     1487.36,
     -611.67
@@ -775,7 +790,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 169.1,
+   "bearing": 168.7,
    "geo": [
     -193.97,
     -528.62
@@ -935,7 +950,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 164.6,
+   "bearing": 164.3,
    "geo": [
     1195.79,
     1025.36
@@ -955,7 +970,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 166.8,
+   "bearing": 166.5,
    "geo": [
     30.63,
     -41.89
@@ -975,7 +990,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 171.3,
+   "bearing": 170.9,
    "geo": [
     -109.62,
     -607.22
@@ -995,7 +1010,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 180.3,
+   "bearing": 179.7,
    "geo": [
     -88.63,
     -228.38
@@ -1015,7 +1030,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 187.0,
+   "bearing": 186.3,
    "geo": [
     85.61,
     -22.13
@@ -1035,7 +1050,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 205.0
+   "bearing": 206.1
   },
   {
    "id": "standing-stone-state-forest-wma",
@@ -1050,7 +1065,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 231.9,
+   "bearing": 232.5,
    "geo": [
     -1073.95,
     -628.13
@@ -1070,7 +1085,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 193.8,
+   "bearing": 192.9,
    "geo": [
     -17.17,
     -43.04
@@ -1090,7 +1105,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 200.5,
+   "bearing": 199.5,
    "geo": [
     0.3,
     -7.36
@@ -1110,7 +1125,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 202.8,
+   "bearing": 203.9,
    "geo": [
     4.25,
     9.37
@@ -1130,7 +1145,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 209.5,
+   "bearing": 210.5,
    "geo": [
     -22.79,
     3.77
@@ -1150,7 +1165,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 211.7,
+   "bearing": 212.7,
    "geo": [
     0.38,
     5.97
@@ -1170,7 +1185,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 216.2,
+   "bearing": 217.1,
    "geo": [
     -31.98,
     9.52
@@ -1190,7 +1205,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 225.2,
+   "bearing": 225.9,
    "geo": [
     -39.66,
     -49.98
@@ -1210,7 +1225,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 240.9,
+   "bearing": 241.3,
    "geo": [
     -2.13,
     0.43
@@ -1250,7 +1265,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 153.4,
+   "bearing": 153.3,
    "geo": [
     -78.62,
     32.8
@@ -1270,7 +1285,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 157.9,
+   "bearing": 157.7,
    "geo": [
     -17.66,
     -112.26
@@ -1290,7 +1305,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 160.1,
+   "bearing": 159.9,
    "geo": [
     3.55,
     -130.05
@@ -1310,7 +1325,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 227.4,
+   "bearing": 228.1,
    "geo": [
     0.69,
     7.54
@@ -1330,7 +1345,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 236.4,
+   "bearing": 236.9,
    "geo": [
     43.82,
     -6.48
@@ -1350,7 +1365,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 249.9,
+   "bearing": 250.1,
    "geo": [
     -61.96,
     34.9
@@ -1390,7 +1405,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 175.8,
+   "bearing": 175.3,
    "geo": [
     -4.95,
     5.11
@@ -1410,7 +1425,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 198.3,
+   "bearing": 197.3,
    "geo": [
     77.84,
     -33.44
@@ -1430,7 +1445,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 214.0,
+   "bearing": 214.9,
    "geo": [
     -22.32,
     -49.98
@@ -1450,7 +1465,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 218.5,
+   "bearing": 219.3,
    "geo": [
     -4.95,
     5.11
@@ -1470,7 +1485,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 245.4,
+   "bearing": 245.7,
    "geo": [
     -0.46,
     20.57
@@ -1490,7 +1505,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 178.1,
+   "bearing": 177.5,
    "geo": [
     134.86,
     -45.91
@@ -1510,7 +1525,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 191.5,
+   "bearing": 190.7,
    "geo": [
     52.57,
     -21.74
@@ -1530,7 +1545,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 243.2,
+   "bearing": 243.5,
    "geo": [
     0.69,
     7.54
@@ -1550,7 +1565,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 247.7,
+   "bearing": 247.9,
    "geo": [
     -1.88,
     0.35
@@ -1570,7 +1585,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 182.6,
+   "bearing": 181.9,
    "geo": [
     -2.26,
     0.47
@@ -1587,6 +1602,11 @@
   {
    "source": "barnraised",
    "target": "visit-livingston-tn",
+   "kind": "operates"
+  },
+  {
+   "source": "barnraised",
+   "target": "middle-tn-printers",
    "kind": "operates"
   },
   {
@@ -1992,6 +2012,11 @@
   {
    "source": "visit-livingston-tn",
    "target": "keaton-place",
+   "kind": "lists"
+  },
+  {
+   "source": "middle-tn-printers",
+   "target": "oliver-printing",
    "kind": "lists"
   }
  ]

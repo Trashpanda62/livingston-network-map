@@ -76,6 +76,7 @@ function setCrm(id, patch) {
 const DIR_COLORS = {
   'livingston-outdoors': '#0f766e',
   'visit-livingston-tn': '#d97706',
+  'middle-tn-printers': '#1d4ed8',
 };
 
 // Radius (scene units) of the regional map edge; recomputed from region.json
@@ -161,7 +162,7 @@ function heightFor(n) {
 // 85–168° hold no out-of-town places, so the plot is clear. Only web-only
 // entities live here; anything with a storefront is pinned at its real
 // address on the map instead.
-const CAMPUS = { cx: 250, cz: 176, colGap: 72 };
+const CAMPUS = { cx: 250, cz: 176, colGap: 84 };
 
 // Sign geometry, in scene units off the table.
 const SIGN = { boardY: 84, boardH: 26, railY: 40, placardY: 24, postH: 98, pad: 42,
@@ -873,7 +874,7 @@ function applyAll() {
 // plus the sign standing off to the southeast. A fixed camera framed both on a
 // wide desktop window and pushed the sign clean off the right edge on a phone,
 // where the horizontal field is roughly a third as wide.
-const FRAME = { x0: -270, x1: 375, z0: -300, z1: 240 };
+const FRAME = { x0: -270, x1: 450, z0: -300, z1: 240 };
 
 function defaultCamera(ms) {
   if (state.mode === 'city') {
@@ -1073,7 +1074,7 @@ function esc(s) {
 }
 
 const TYPE_LABEL = { hub: 'The studio', directory: 'Our directory', built: 'Built by Barnraised', listed: 'Listed business / place', prospect: 'Needs a website' };
-const DIR_NAMES = { 'livingston-outdoors': 'Livingston Outdoors', 'visit-livingston-tn': 'Visit Livingston TN' };
+const DIR_NAMES = { 'livingston-outdoors': 'Livingston Outdoors', 'visit-livingston-tn': 'Visit Livingston TN', 'middle-tn-printers': 'Middle TN Printers' };
 
 function openPanel(n) {
   const p = document.getElementById('panel');

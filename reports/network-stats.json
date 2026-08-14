@@ -1,25 +1,28 @@
 {
- "nodes_total": 81,
+ "nodes_total": 82,
  "by_type": {
   "hub": 1,
-  "directory": 2,
+  "directory": 3,
   "built": 5,
   "listed": 73
  },
- "edges_total": 83,
+ "edges_total": 85,
  "edges_by_kind": {
-  "operates": 2,
+  "operates": 3,
   "built": 5,
-  "lists": 75,
+  "lists": 76,
   "sister": 1
  },
  "source_counts": {
   "outdoors": 40,
-  "visit": 35
+  "visit": 35,
+  "printers": 11
  },
+ "printers_in_scope": 1,
  "deduped": [
   "Central Park Livingston -> existing node central-park-livingston (+visit-livingston-tn)",
-  "Standing Stone State Park -> existing node standing-stone-state-park (+visit-livingston-tn)"
+  "Standing Stone State Park -> existing node standing-stone-state-park (+visit-livingston-tn)",
+  "Oliver Printing Company -> existing node oliver-printing (+middle-tn-printers)"
  ],
  "missing_url": [],
  "missing_drive_min": [],

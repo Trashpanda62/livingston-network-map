@@ -9,10 +9,13 @@ import re
 import sys
 from pathlib import Path
 
+from build_network import in_scope
+
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = {
     "outdoors": Path(r"C:\dev\livingston-outdoors\data\livingston-outdoors.json"),
     "visit": Path(r"C:\dev\visit-livingston\data\places.json"),
+    "printers": Path(r"C:\dev\mtn-printers\data\mtn-printers.json"),
 }
 
 results = []
@@ -40,9 +43,17 @@ def main() -> int:
     nodes, edges = net["nodes"], net["edges"]
 
     # 1-3: node counts derive from the live source files.
-    src_counts = {k: (len(json.loads(p.read_text(encoding="utf-8"))["places"])
-                      if k == "visit" else
-                      len(json.loads(p.read_text(encoding="utf-8"))))
+    def rows(key, path):
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        if key == "visit":
+            return raw["places"]
+        return raw
+
+    # Middle TN Printers is midstate-wide; only its Overton County shops are on
+    # this map, so the expected count applies build_network.in_scope, not len().
+    src_counts = {k: (sum(1 for r in rows(k, p)
+                          if in_scope(r.get("city", ""), r.get("county", "")))
+                      if k == "printers" else len(rows(k, p)))
                   for k, p in SOURCES.items()}
     listing_edges = [e for e in edges if e["kind"] == "lists"]
     expected_listings = sum(src_counts.values())
