@@ -697,8 +697,36 @@ function updateStats() {
   const vis = net.nodes.filter(nodeVisible);
   const c = t => vis.filter(n => n.type === t).length;
   const needSite = vis.filter(n => n.type === 'prospect' || n.prospect).length;
-  document.getElementById('stats').textContent =
-    `${c('directory')} directories · ${c('built')} sites built · ${c('listed')} businesses & places connected · ${needSite} need a website (gold) — hover or click anything to light up its connections`;
+  document.getElementById('stats').innerHTML =
+    `${c('directory')} directories · ${c('built')} sites built · ${c('listed')} businesses & places connected · ` +
+    `<button class="stats-link" id="open-drawer">${needSite} need a website (gold) — open the call list</button>`;
+}
+
+function prospectInfo(n) {
+  const pr = n.prospect || {};
+  const tr = (traffic || {})[n.id] || {};
+  return {
+    reviews: pr.reviews || tr.reviews || 0,
+    rating: pr.rating || tr.rating || null,
+    reason: pr.reason,
+    phone: pr.phone || null
+  };
+}
+
+function buildDrawer() {
+  const list = document.getElementById('drawer-list');
+  const rows = net.nodes.filter(n => n.type === 'prospect' || n.prospect)
+    .map(n => ({ n, i: prospectInfo(n) }))
+    .sort((a, b) => b.i.reviews - a.i.reviews);
+  list.innerHTML = rows.map(({ n, i }) => `
+    <li>
+      <button class="drawer-row" data-id="${esc(n.id)}">
+        <strong>${esc(n.name)}</strong>
+        <span class="drawer-meta">${esc(n.city || '')}${i.reviews ? ` · ${i.reviews.toLocaleString()} reviews` : ''}${i.rating ? ` · ${i.rating}★` : ''}</span>
+        <span class="drawer-why">${esc(PROSPECT_REASONS[i.reason] || i.reason || '')}</span>
+      </button>
+      ${i.phone ? `<a class="drawer-call" href="tel:${esc(i.phone.replace(/[^+\d]/g, ''))}">${esc(i.phone)}</a>` : ''}
+    </li>`).join('');
 }
 
 function esc(s) {
@@ -743,6 +771,11 @@ function openPanel(n) {
       ? `Weekly visitors: ${v.uniques.toLocaleString()} (${v.source})`
       : 'Weekly visitors: no data yet';
   }
+  const phEl = document.getElementById('panel-phone');
+  const phone = n.prospect && n.prospect.phone;
+  phEl.innerHTML = phone
+    ? `<a href="tel:${esc(phone.replace(/[^+\d]/g, ''))}">${esc(phone)}</a>`
+    : '';
   const listedEl = document.getElementById('panel-listed');
   const dirIds = n.listed_in || [];
   if (dirIds.length) {
@@ -797,13 +830,35 @@ function wireHud() {
   });
   document.getElementById('panel-close').addEventListener('click', clearSelection);
 
+  // Call-list drawer: opened from the stats line (delegated — the stats line
+  // is re-rendered on every filter change), rows fly to their node.
+  document.getElementById('stats').addEventListener('click', e => {
+    if (e.target.id === 'open-drawer') {
+      buildDrawer();
+      document.getElementById('drawer').hidden = false;
+    }
+  });
+  document.getElementById('drawer-close').addEventListener('click', () => {
+    document.getElementById('drawer').hidden = true;
+  });
+  document.getElementById('drawer-list').addEventListener('click', e => {
+    const row = e.target.closest('.drawer-row');
+    if (!row) return;
+    const n = net.nodes.find(x => x.id === row.dataset.id);
+    if (n) { selectNode(n); openPanel(n); }
+  });
+
   const input = document.getElementById('search');
   const results = document.getElementById('search-results');
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
     results.innerHTML = '';
     if (q.length < 2) { results.hidden = true; return; }
-    const hits = net.nodes.filter(n => nodeVisible(n) && n.name.toLowerCase().includes(q)).slice(0, 8);
+    const hits = net.nodes.filter(n => nodeVisible(n) && (
+      n.name.toLowerCase().includes(q) ||
+      (n.category || '').toLowerCase().includes(q) ||
+      (n.city || '').toLowerCase().includes(q)
+    )).slice(0, 8);
     hits.forEach(n => {
       const li = document.createElement('li');
       li.textContent = n.name;
@@ -879,7 +934,7 @@ Promise.all([
           geo: r.lat != null ? toLocal(r.lat, r.lon) : null,
           geo_method: r.geo_method || null,
           bearing: Math.abs([...String(r.id)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) | 0, 7)) % 360,
-          prospect: { reason: r.reason, reviews: r.reviews, rating: r.rating, address: r.address }
+          prospect: { reason: r.reason, reviews: r.reviews, rating: r.rating, address: r.address, phone: r.phone }
         });
       });
     }

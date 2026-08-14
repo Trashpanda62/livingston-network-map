@@ -215,13 +215,13 @@ def kp_site_lookup(name, town, token, kp_cache):
     if key in kp_cache:
         return kp_cache[key]
     entry = {"found": False, "site": None, "address": None,
-             "reviews": None, "rating": None}
+             "reviews": None, "rating": None, "phone": None}
     try:
         data = serp_raw(f'"{name}" {town} TN', token)
         k = data.get("knowledge") or {}
         if k.get("name"):
             entry = {"found": True, "site": k.get("site"),
-                     "address": k.get("address"),
+                     "address": k.get("address"), "phone": k.get("phone"),
                      "reviews": k.get("reviews_cnt"), "rating": k.get("rating")}
     except Exception as e:  # noqa: BLE001
         print(f"    kp error for {name}: {e}", flush=True)
@@ -399,6 +399,38 @@ def sweep_new(token, net, out_data, geocache, refresh):
     return zero_result
 
 
+def phones_pass(token, net, out_data):
+    """Fill phone (and any missing address) for every prospect — new rows and
+    flagged listed nodes — from their knowledge panels, for the call sheet.
+    Cached entries without a phone key predate this pass and are re-queried."""
+    kp_cache = out_data.setdefault("_kp", {})
+    listed_by_id = {n["id"]: n for n in net["nodes"]}
+    jobs = [(row["name"], row["city"], row) for row in out_data["new"]]
+    for pid, entry in out_data["flagged"].items():
+        n = listed_by_id.get(pid)
+        if n:
+            entry["name"] = n["name"]
+            jobs.append((n["name"], n.get("city") or "Livingston", entry))
+    done = 0
+    for name, town, target in jobs:
+        key = f"{normalize_name(name)}|{town}"
+        e = kp_cache.get(key)
+        if e is None or "phone" not in e:
+            kp_cache.pop(key, None)
+            e = kp_site_lookup(name, town, token, kp_cache)
+        if e.get("phone"):
+            target["phone"] = e["phone"]
+        if e.get("address") and not target.get("address"):
+            target["address"] = e["address"]
+        done += 1
+        if done % 10 == 0:
+            OUT.write_text(json.dumps(out_data, indent=1), encoding="utf-8")
+            print(f"  phones {done}/{len(jobs)}", flush=True)
+    OUT.write_text(json.dumps(out_data, indent=1), encoding="utf-8")
+    with_phone = sum(1 for _, _, t in jobs if t.get("phone"))
+    print(f"phones: {with_phone}/{len(jobs)} filled", flush=True)
+
+
 def main() -> int:
     refresh = "--refresh" in sys.argv
     net = json.loads(NETWORK.read_text(encoding="utf-8"))
@@ -414,6 +446,10 @@ def main() -> int:
     out_data.setdefault("_done", [])
 
     geocache = json.loads(GEOCACHE.read_text(encoding="utf-8")) if GEOCACHE.exists() else {}
+
+    if "--phones" in sys.argv:
+        phones_pass(token, net, out_data)
+        return 0
 
     print("Flagging weak-presence listed nodes...", flush=True)
     out_data["flagged"] = flag_listed(net, traffic)

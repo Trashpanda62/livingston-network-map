@@ -114,6 +114,27 @@ def main() -> int:
     check("visitors.json covers owned domains", len(vis) >= 10,
           f"{len(vis)} domains, {sum(1 for v in vis.values() if v.get('uniques') is not None)} with data")
 
+    # Prospect layer: prospects.json internal consistency.
+    ppath = ROOT / "data" / "prospects.json"
+    if ppath.exists():
+        pros = json.loads(ppath.read_text(encoding="utf-8"))
+        new_rows = pros.get("new", [])
+        pids = [r["id"] for r in new_rows]
+        check("prospect ids unique", len(pids) == len(set(pids)),
+              f"{len(pids)} rows, {len(set(pids))} unique")
+        bad_geo = [r["id"] for r in new_rows if r.get("lat") is not None
+                   and not (35.9 < r["lat"] < 36.9 and -86.0 < r["lon"] < -84.7)]
+        check("prospect coords inside region", not bad_geo, f"outside: {bad_geo[:3] or 'none'}")
+        flagged_ids = set(pros.get("flagged", {}))
+        node_ids = {n["id"] for n in nodes}
+        orphan_flags = sorted(flagged_ids - node_ids)
+        check("flagged prospect ids resolve to nodes", not orphan_flags,
+              f"orphans: {orphan_flags[:3] or 'none'}")
+        with_phone = sum(1 for r in new_rows if r.get("phone")) + \
+            sum(1 for v in pros.get("flagged", {}).values() if v.get("phone"))
+        check("prospects carry phone numbers", with_phone >= (len(new_rows) + len(flagged_ids)) * 0.6,
+              f"{with_phone}/{len(new_rows) + len(flagged_ids)} have phones")
+
     # 12: lock state (informational until locked; FAIL only if half-locked).
     baked = re.search(r"<html[^>]*data-mode", html)
     switcher = "preset-switcher" in html

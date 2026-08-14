@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Livingston Online — the network map</title>
-<link rel="stylesheet" href="src/style.css?v=20">
+<link rel="stylesheet" href="src/style.css?v=21">
 </head>
 <body>
 <div id="graph"></div>
@@ -25,6 +25,12 @@
     <button class="chip band" data-band="15">≤ 15 min</button>
     <button class="chip band" data-band="45">≤ 45 min</button>
   </span>
+  <span class="dir-key" aria-label="Directory colors">
+    <span class="dir-tag"><span class="dir-dot" style="background:#0f766e"></span>Livingston Outdoors</span>
+    <span class="dir-tag"><span class="dir-dot" style="background:#d97706"></span>Visit Livingston</span>
+    <span class="dir-tag"><span class="dir-dot" style="background:#1d4ed8"></span>Middle TN Printers</span>
+    <span class="dir-tag"><span class="dir-dot" style="background:#db2777"></span>Best Mom Cars</span>
+  </span>
 </div>
 
 <div class="hud hud-search">
@@ -38,6 +44,13 @@
 <!-- Directory viz locked 2026-08-13: badges (variant A). Halos/ribbons remain
      switchable via data-linkviz on <html>; the picker UI was stripped. -->
 
+<aside class="drawer" id="drawer" aria-label="Website call list" hidden>
+  <button class="panel-close" id="drawer-close" aria-label="Close">&times;</button>
+  <h2>Call list — needs a website</h2>
+  <p class="drawer-sub">Sorted by Google reviews: proof customers are looking, with nowhere to send them.</p>
+  <ul id="drawer-list"></ul>
+</aside>
+
 <aside class="panel" id="panel" role="dialog" aria-labelledby="panel-name" hidden>
   <button class="panel-close" id="panel-close" aria-label="Close">&times;</button>
   <p class="panel-kicker" id="panel-kicker"></p>
@@ -45,6 +58,7 @@
   <p class="panel-meta" id="panel-meta"></p>
   <p class="panel-blurb" id="panel-blurb"></p>
   <p class="panel-visitors" id="panel-visitors"></p>
+  <p class="panel-phone" id="panel-phone"></p>
   <p class="panel-listed" id="panel-listed"></p>
   <a class="panel-visit" id="panel-visit" target="_blank" rel="noopener">Visit site ↗</a>
 </aside>
@@ -52,6 +66,6 @@
 <!-- Design locked 2026-08-12: force / dawn / buildings / focus / full.
      To remix, restore the selector include from vendor/ (see git history). -->
 <script src="vendor/3d-force-graph.min.js?v=19"></script>
-<script type="module" src="src/app.js?v=31"></script>
+<script type="module" src="src/app.js?v=32"></script>
 </body>
 </html>

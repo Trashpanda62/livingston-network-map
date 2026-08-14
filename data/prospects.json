@@ -2,99 +2,159 @@
  "flagged": {
   "central-park-livingston": {
    "reason": "dead-site",
-   "reviews": 505
+   "reviews": 505,
+   "name": "Central Park (Livingston)",
+   "phone": "+1 931-823-1269",
+   "address": "140 S Spring St, Livingston, TN 38570, United States"
   },
   "horse-creek-resort": {
    "reason": "dead-site",
-   "reviews": null
+   "reviews": null,
+   "name": "Horse Creek Resort"
   },
   "hidden-valley-golf-country-club": {
    "reason": "dead-site",
-   "reviews": 61
+   "reviews": 61,
+   "name": "Hidden Valley Golf & Country Club",
+   "phone": "+1 931-823-1313",
+   "address": "201 Valley Dr, Livingston, TN 38570, United States"
   },
   "livingston-overton-county-farmers-market": {
    "reason": "aggregator-listing",
-   "reviews": 37
+   "reviews": 37,
+   "name": "Livingston-Overton County Farmers Market"
   },
   "millard-oakley-public-library": {
    "reason": "dead-site",
-   "reviews": 52
+   "reviews": 52,
+   "name": "Millard Oakley Public Library",
+   "phone": "+1 931-823-1888",
+   "address": "107 E Main St, Livingston, TN 38570, United States"
   },
   "overton-county-arts": {
    "reason": "aggregator-listing",
-   "reviews": null
+   "reviews": null,
+   "name": "Overton County Arts"
   },
   "overton-county-courthouse": {
    "reason": "aggregator-listing",
-   "reviews": null
+   "reviews": null,
+   "name": "Overton County Courthouse"
   },
   "overton-county-heritage-museum": {
    "reason": "aggregator-listing",
-   "reviews": 14
+   "reviews": 14,
+   "name": "Overton County Heritage Museum",
+   "phone": "(931) 403-0909",
+   "address": "318 W Broad St, Livingston, TN 38570"
   },
   "the-antique-market": {
    "reason": "aggregator-listing",
-   "reviews": 68
+   "reviews": 68,
+   "name": "The Antique Market",
+   "phone": "(931) 823-4943",
+   "address": "116 N Court Square, Livingston, TN 38570"
   },
   "1806-bbq": {
    "reason": "dead-site",
-   "reviews": 189
+   "reviews": 189,
+   "name": "1806 BBQ",
+   "phone": "+1 931-823-1806",
+   "address": "114 N Court Square, Livingston, TN 38570, United States"
   },
   "angelina-s-italian-subs-more": {
    "reason": "aggregator-listing",
-   "reviews": 25
+   "reviews": 25,
+   "name": "Angelina's Italian Subs & More",
+   "phone": "+1 931-823-2867",
+   "address": "920 Overton Plz, Livingston, TN 38570, United States"
   },
   "casa-mexicana": {
    "reason": "aggregator-listing",
-   "reviews": 527
+   "reviews": 527,
+   "name": "Casa Mexicana",
+   "phone": "+1 931-823-8870",
+   "address": "440 Market Square Plaza, Livingston, TN 38570, United States"
   },
   "ruby-lee-coffee-and-bakehouse": {
    "reason": "aggregator-listing",
-   "reviews": 94
+   "reviews": 94,
+   "name": "Ruby & Lee Coffee and Bakehouse"
   },
   "stover-s-country-kitchen": {
    "reason": "aggregator-listing",
-   "reviews": 626
+   "reviews": 626,
+   "name": "Stover's Country Kitchen",
+   "phone": "(931) 823-9550",
+   "address": "511 E Main St, Livingston, TN 38570"
   },
   "the-sno-shack": {
    "reason": "aggregator-listing",
-   "reviews": 38
+   "reviews": 38,
+   "name": "The Sno Shack",
+   "phone": "+1 931-704-2338",
+   "address": "718 W Main St, Livingston, TN 38570, United States"
   },
   "wired-coffee-co": {
    "reason": "rented-subdomain",
-   "reviews": 252
+   "reviews": 252,
+   "name": "Wired Coffee Co",
+   "phone": "+1 931-403-9417",
+   "address": "1185 Preston St, Livingston, TN 38570, United States"
   },
   "pollock-printing": {
    "reason": "dead-site",
-   "reviews": 36
+   "reviews": 36,
+   "name": "Pollock Printing",
+   "phone": "(615) 255-0526",
+   "address": "928 6th Ave S #105, Nashville, TN 37203"
   },
   "joyner-hogan-printers": {
    "reason": "dead-site",
-   "reviews": 10
+   "reviews": 10,
+   "name": "Joyner & Hogan Printers",
+   "phone": "+1 615-562-1362",
+   "address": "545 Mainstream Dr Ste 104, Nashville, TN 37228, United States"
   },
   "crown-label-inc": {
    "reason": "dead-site",
-   "reviews": 1
+   "reviews": 1,
+   "name": "Crown Label, Inc.",
+   "phone": "+1 615-793-9877",
+   "address": "101 Buchanan St, La Vergne, TN 37086, United States"
   },
   "that-s-printing-inc": {
    "reason": "dead-site",
-   "reviews": 15
+   "reviews": 15,
+   "name": "That's Printing, Inc.",
+   "phone": "+1 615-794-1488",
+   "address": "251 2nd Ave S, Franklin, TN 37064, United States"
   },
   "franklin-web-printing-co": {
    "reason": "dead-site",
-   "reviews": 13
+   "reviews": 13,
+   "name": "Franklin Web Printing Co.",
+   "phone": "+1 615-794-7181",
+   "address": "115 Beasley Dr, Franklin, TN 37064, United States"
   },
   "quality-printing-company": {
    "reason": "dead-site",
-   "reviews": 23
+   "reviews": 23,
+   "name": "Quality Printing Company",
+   "phone": "+1 615-452-7653",
+   "address": "402 Maple St, Gallatin, TN 37066, United States"
   },
   "ledbetter-signs": {
    "reason": "dead-site",
-   "reviews": 19
+   "reviews": 19,
+   "name": "LedBetter Signs",
+   "phone": "+1 931-647-3629",
+   "address": "848 Cumberland Dr, Clarksville, TN 37040, United States"
   },
   "anderson-printing-solutions": {
    "reason": "dead-site",
-   "reviews": null
+   "reviews": null,
+   "name": "Anderson Printing Solutions"
   }
  },
  "new": [
@@ -109,20 +169,22 @@
    "reviews": 944,
    "rating": 4.3,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-403-2667"
   },
   {
    "id": "frank-s",
    "name": "Frank\u2019s",
    "category": "restaurants",
    "city": "Livingston",
-   "address": null,
+   "address": "1033 E Main St, Livingston, TN 38570, United States",
    "lat": null,
    "lon": null,
    "reviews": 86,
    "rating": 4.3,
    "reason": "facebook-only",
-   "geo_method": null
+   "geo_method": null,
+   "phone": "+1 931-823-7265"
   },
   {
    "id": "livingston-house-of-pizza",
@@ -135,7 +197,8 @@
    "reviews": 32,
    "rating": 4.7,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-3486"
   },
   {
    "id": "serendipity-salon",
@@ -148,7 +211,8 @@
    "reviews": 18,
    "rating": 4.9,
    "reason": "rented-subdomain",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "(931) 823-2533"
   },
   {
    "id": "pamies-unisex-hair-salon",
@@ -161,7 +225,8 @@
    "reviews": 65,
    "rating": 4.8,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-7666"
   },
   {
    "id": "woolbright-auto-repair",
@@ -174,7 +239,8 @@
    "reviews": 46,
    "rating": 4.5,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-403-5277"
   },
   {
    "id": "t-and-m-automotive",
@@ -187,7 +253,8 @@
    "reviews": 31,
    "rating": 4.7,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "(931) 823-4848"
   },
   {
    "id": "waterloo-tire-service",
@@ -200,7 +267,8 @@
    "reviews": 135,
    "rating": 4.7,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-7442"
   },
   {
    "id": "hwy-tire",
@@ -213,7 +281,8 @@
    "reviews": 52,
    "rating": 4.7,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-8473"
   },
   {
    "id": "low-cost-heating-and-cooling",
@@ -226,7 +295,8 @@
    "reviews": 30,
    "rating": 4.8,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-3340"
   },
   {
    "id": "heritage-heating-and-cooling",
@@ -239,7 +309,8 @@
    "reviews": 2,
    "rating": 5,
    "reason": "no-website",
-   "geo_method": null
+   "geo_method": null,
+   "phone": "+1 931-239-2488"
   },
   {
    "id": "jb-lawncare",
@@ -252,7 +323,8 @@
    "reviews": 11,
    "rating": 5,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-303-3766"
   },
   {
    "id": "middle-tennessee-lawn-care",
@@ -265,7 +337,8 @@
    "reviews": 1,
    "rating": 5,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-239-2317"
   },
   {
    "id": "the-emporium",
@@ -278,7 +351,8 @@
    "reviews": 26,
    "rating": 4.8,
    "reason": "facebook-only",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-6741"
   },
   {
    "id": "keaton-place",
@@ -291,7 +365,8 @@
    "reviews": 11,
    "rating": 4.8,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-2727"
   },
   {
    "id": "upper-cumberland-family-dentistry",
@@ -304,7 +379,8 @@
    "reviews": 46,
    "rating": 4.2,
    "reason": "facebook-only",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-5517"
   },
   {
    "id": "parsons-ii-buckie-d-dds",
@@ -317,7 +393,8 @@
    "reviews": 22,
    "rating": 4.2,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-5517"
   },
   {
    "id": "atnip-e-alan-dc",
@@ -330,7 +407,8 @@
    "reviews": 6,
    "rating": 4.8,
    "reason": "no-website",
-   "geo_method": null
+   "geo_method": null,
+   "phone": "+1 931-823-2108"
   },
   {
    "id": "muscle-factory-gym-and-training-facility",
@@ -343,7 +421,8 @@
    "reviews": 19,
    "rating": 4.4,
    "reason": "facebook-only",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-269-9101"
   },
   {
    "id": "muscle-factory-group-fitness",
@@ -356,7 +435,8 @@
    "reviews": 19,
    "rating": 4.1,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-644-8890"
   },
   {
    "id": "ms-angies-playhouse",
@@ -369,7 +449,8 @@
    "reviews": null,
    "rating": null,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-7070"
   },
   {
    "id": "arneys-wrecker-service",
@@ -382,7 +463,8 @@
    "reviews": 29,
    "rating": 4.8,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-4422"
   },
   {
    "id": "the-coffee-shop",
@@ -395,7 +477,8 @@
    "reviews": 94,
    "rating": 4.8,
    "reason": "facebook-only",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-2253"
   },
   {
    "id": "blissful-bundts-and-bakes",
@@ -421,7 +504,8 @@
    "reviews": 34,
    "rating": 4.7,
    "reason": "rented-subdomain",
-   "geo_method": null
+   "geo_method": null,
+   "phone": "+1 931-823-5758"
   },
   {
    "id": "the-pampered-pooch-pet-salon-and-boarding-kennels",
@@ -434,7 +518,8 @@
    "reviews": 32,
    "rating": 4.9,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-445-5663"
   },
   {
    "id": "sweet-and-sassy-dog-grooming",
@@ -447,7 +532,8 @@
    "reviews": 14,
    "rating": 4.7,
    "reason": "no-website",
-   "geo_method": null
+   "geo_method": null,
+   "phone": "+1 931-260-9092"
   },
   {
    "id": "bark-and-bubbles",
@@ -460,20 +546,22 @@
    "reviews": 11,
    "rating": 4.3,
    "reason": "no-website",
-   "geo_method": null
+   "geo_method": null,
+   "phone": "+1 931-823-1431"
   },
   {
    "id": "david-and-eleanor-york-realtor",
    "name": "David&Eleanor York, Realtor",
    "category": "real estate agents",
    "city": "Livingston",
-   "address": null,
+   "address": "518 W Main St, Livingston, TN 38570, United States",
    "lat": null,
    "lon": null,
    "reviews": 10,
    "rating": 5,
    "reason": "facebook-only",
-   "geo_method": null
+   "geo_method": null,
+   "phone": "+1 931-260-8186"
   },
   {
    "id": "the-sunset-restaurant-by-the-steel-coop",
@@ -486,7 +574,8 @@
    "reviews": 102,
    "rating": 4.4,
    "reason": "no-website",
-   "geo_method": "town-approx"
+   "geo_method": "town-approx",
+   "phone": "(931) 864-4874"
   },
   {
    "id": "scratch-kitchen",
@@ -499,7 +588,8 @@
    "reviews": 114,
    "rating": 4.8,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-864-0090"
   },
   {
    "id": "identity-hair-co",
@@ -538,7 +628,8 @@
    "reviews": 16,
    "rating": 5,
    "reason": "no-website",
-   "geo_method": "town-approx"
+   "geo_method": "town-approx",
+   "phone": "+1 931-243-6666"
   },
   {
    "id": "light-the-fire-garage-and-fab",
@@ -551,7 +642,8 @@
    "reviews": 4,
    "rating": 5,
    "reason": "facebook-only",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-2011"
   },
   {
    "id": "randy-auto-repair",
@@ -564,7 +656,8 @@
    "reviews": 6,
    "rating": 3,
    "reason": "no-website",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-823-6363"
   },
   {
    "id": "floyd-automotive-and-performance",
@@ -577,7 +670,8 @@
    "reviews": 55,
    "rating": 4.2,
    "reason": "facebook-only",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-372-8253"
   },
   {
    "id": "murphy-fine-groom-and-shave",
@@ -590,7 +684,8 @@
    "reviews": 49,
    "rating": 5,
    "reason": "facebook-only",
-   "geo_method": "address"
+   "geo_method": "address",
+   "phone": "+1 931-303-8707"
   },
   {
    "id": "by-pass-barber-shop",
@@ -603,7 +698,8 @@
    "reviews": 19,
    "rating": 4.6,
    "reason": "facebook-only",
-   "geo_method": null
+   "geo_method": null,
+   "phone": "+1 931-510-3459"
   }
  ],
  "_done": [
@@ -649,96 +745,12 @@
   "veterinarians|Livingston"
  ],
  "_kp": {
-  "the coop|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "209 S Spring St, Livingston, TN 38570, United States",
-   "reviews": 944,
-   "rating": 4.3
-  },
-  "livingston house of pizza|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "616 E Main St, Livingston, TN 38570, United States",
-   "reviews": 32,
-   "rating": 4.7
-  },
-  "pamies unisex hair salon|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "116 S Spring St, Livingston, TN 38570",
-   "reviews": 65,
-   "rating": 4.8
-  },
-  "woolbright auto repair|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "617 N Church St, Livingston, TN 38570, United States",
-   "reviews": 46,
-   "rating": 4.5
-  },
-  "t and m automotive|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "800 Rickman Rd, Livingston, TN 38570",
-   "reviews": 31,
-   "rating": 4.7
-  },
-  "waterloo tire service|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "519 W Main St, Livingston, TN 38570, United States",
-   "reviews": 135,
-   "rating": 4.7
-  },
   "maxdout motors llc and maxdout concepts llc|Livingston": {
    "found": true,
    "site": "https://maxdoutconcepts.com/",
    "address": "207 Fair St, Livingston, TN 38570, Vereinigte Staaten",
    "reviews": 33,
    "rating": 5
-  },
-  "low cost heating and cooling|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "401 N Spring St, Livingston, TN 38570, United States",
-   "reviews": 30,
-   "rating": 4.8
-  },
-  "heritage heating and cooling|Livingston": {
-   "found": true,
-   "site": null,
-   "address": null,
-   "reviews": 2,
-   "rating": 5
-  },
-  "jb lawncare|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "309 Windle St, Livingston, TN 38570",
-   "reviews": 11,
-   "rating": 5
-  },
-  "middle tennessee lawn care|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "209 Myers St, Livingston, TN 38570, United States",
-   "reviews": 1,
-   "rating": 5
-  },
-  "the emporium|Livingston": {
-   "found": true,
-   "site": "http://www.facebook.com/livingstonemporium",
-   "address": "108 N Court Square, Livingston, TN 38570, United States",
-   "reviews": 26,
-   "rating": 4.8
-  },
-  "keaton place|Livingston": {
-   "found": true,
-   "site": null,
-   "address": null,
-   "reviews": null,
-   "rating": null
   },
   "restored and co|Livingston": {
    "found": true,
@@ -768,13 +780,6 @@
    "reviews": 9,
    "rating": 4.3
   },
-  "parsons ii buckie d dds|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "215 Oak St, Livingston, TN 38570, United States",
-   "reviews": 22,
-   "rating": 4.2
-  },
   "crawford family chiropractic livingston tn|Livingston": {
    "found": true,
    "site": "http://crawfordfamilychiropractic.com/",
@@ -788,48 +793,6 @@
    "address": "115 S Church St, Livingston, TN 38570, United States",
    "reviews": 8,
    "rating": 5
-  },
-  "atnip e alan dc|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "208 N Church St # A, Livingston, TN 38570, United States",
-   "reviews": 6,
-   "rating": 4.8
-  },
-  "muscle factory group fitness|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "5480 Bradford Hicks Dr, Livingston, TN 38570, United States",
-   "reviews": 19,
-   "rating": 4.1
-  },
-  "ms angies playhouse|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "641 W 4th St, Livingston, TN 38570, United States",
-   "reviews": null,
-   "rating": null
-  },
-  "arneys wrecker service|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "306 Kennedy St, Livingston, TN 38570, United States",
-   "reviews": 29,
-   "rating": 4.8
-  },
-  "the coffee shop|Livingston": {
-   "found": true,
-   "site": "https://www.facebook.com/acsquaredbakery/",
-   "address": "101 S Court Square, Livingston, TN 38570, United States",
-   "reviews": 94,
-   "rating": 4.8
-  },
-  "livingston flower basket|Livingston": {
-   "found": true,
-   "site": "http://livingstonflowerbasket.square.site/",
-   "address": null,
-   "reviews": 34,
-   "rating": 4.7
   },
   "bow petals n lace|Livingston": {
    "found": true,
@@ -845,27 +808,6 @@
    "reviews": 34,
    "rating": 4.2
   },
-  "the pampered pooch pet salon and boarding kennels|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "300 S Church St, Livingston, TN 38570",
-   "reviews": 32,
-   "rating": 4.9
-  },
-  "sweet and sassy dog grooming|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "237 Ben Ogletree Ln, Livingston, TN 38570, United States",
-   "reviews": 14,
-   "rating": 4.7
-  },
-  "bark and bubbles|Livingston": {
-   "found": true,
-   "site": null,
-   "address": "3200 Celina Hwy, Allons, TN 38541, United States",
-   "reviews": 11,
-   "rating": 4.3
-  },
   "main and monroe|Monroe": {
    "found": true,
    "site": "https://mainmonroelex.com/",
@@ -873,33 +815,12 @@
    "reviews": 144,
    "rating": 4.6
   },
-  "the sunset restaurant by the steel coop|Monroe": {
-   "found": true,
-   "site": null,
-   "address": "2040 Sunset Dock Rd, Monroe, TN 38573",
-   "reviews": 102,
-   "rating": 4.4
-  },
-  "scratch kitchen|Monroe": {
-   "found": true,
-   "site": null,
-   "address": "104 N Main St, Byrdstown, TN 38549, United States",
-   "reviews": 114,
-   "rating": 4.8
-  },
   "the m salon and merle norman|Monroe": {
    "found": true,
    "site": "https://www.msalonvonore.com/",
    "address": "1613 US-411, Vonore, TN 37885",
    "reviews": 511,
    "rating": 4.9
-  },
-  "randy auto repair|Hilham": {
-   "found": true,
-   "site": null,
-   "address": "2906 Hilham Hwy, Hilham, TN 38568",
-   "reviews": 6,
-   "rating": 3
   },
   "t and m automotive|Rickman": {
    "found": true,
@@ -915,10 +836,267 @@
    "reviews": 61,
    "rating": 4.8
   },
+  "the coop|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "209 S Spring St, Livingston, TN 38570, United States",
+   "phone": "+1 931-403-2667",
+   "reviews": 944,
+   "rating": 4.3
+  },
+  "livingston house of pizza|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "616 E Main St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-3486",
+   "reviews": 33,
+   "rating": 4.7
+  },
+  "serendipity salon|Livingston": {
+   "found": true,
+   "site": "https://serendipitysalon.square.site/",
+   "address": "207 S Church St, Livingston, TN 38570",
+   "phone": "(931) 823-2533",
+   "reviews": 18,
+   "rating": 4.9
+  },
+  "pamies unisex hair salon|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "116 S Spring St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-7666",
+   "reviews": 65,
+   "rating": 4.8
+  },
+  "woolbright auto repair|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "617 N Church St, Livingston, TN 38570, United States",
+   "phone": "+1 931-403-5277",
+   "reviews": 46,
+   "rating": 4.5
+  },
+  "t and m automotive|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "800 Rickman Rd, Livingston, TN 38570",
+   "phone": "(931) 823-4848",
+   "reviews": 31,
+   "rating": 4.7
+  },
+  "waterloo tire service|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "519 W Main St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-7442",
+   "reviews": 135,
+   "rating": 4.7
+  },
+  "hwy tire|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "2320 Cookeville Hwy, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-8473",
+   "reviews": 52,
+   "rating": 4.7
+  },
+  "low cost heating and cooling|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "401 N Spring St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-3340",
+   "reviews": 30,
+   "rating": 4.8
+  },
+  "heritage heating and cooling|Livingston": {
+   "found": true,
+   "site": null,
+   "address": null,
+   "phone": "+1 931-239-2488",
+   "reviews": 2,
+   "rating": 5
+  },
+  "middle tennessee lawn care|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "209 Myers St, Livingston, TN 38570, United States",
+   "phone": "+1 931-239-2317",
+   "reviews": 1,
+   "rating": 5
+  },
+  "the emporium|Livingston": {
+   "found": true,
+   "site": "http://www.facebook.com/livingstonemporium",
+   "address": "108 N Court Square, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-6741",
+   "reviews": 26,
+   "rating": 4.8
+  },
+  "keaton place|Livingston": {
+   "found": true,
+   "site": "http://www.keatonplace.com/",
+   "address": "120 N Court Square, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-2727",
+   "reviews": 11,
+   "rating": 4.8
+  },
+  "upper cumberland family dentistry|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/waynesgrilllivingston/",
+   "address": "215 Oak St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-5517",
+   "reviews": 46,
+   "rating": 4.2
+  },
+  "parsons ii buckie d dds|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "215 Oak St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-5517",
+   "reviews": 22,
+   "rating": 4.2
+  },
+  "atnip e alan dc|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "208 N Church St # A, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-2108",
+   "reviews": 6,
+   "rating": 4.8
+  },
+  "muscle factory gym and training facility|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/groups/418850723457211",
+   "address": "714 N Church St, Livingston, TN 38570, United States",
+   "phone": "+1 931-269-9101",
+   "reviews": 19,
+   "rating": 4.4
+  },
+  "muscle factory group fitness|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "5480 Bradford Hicks Dr, Livingston, TN 38570, United States",
+   "phone": "+1 931-644-8890",
+   "reviews": 19,
+   "rating": 4.1
+  },
+  "ms angies playhouse|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "641 W 4th St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-7070",
+   "reviews": null,
+   "rating": null
+  },
+  "arneys wrecker service|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "306 Kennedy St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-4422",
+   "reviews": 29,
+   "rating": 4.8
+  },
+  "the coffee shop|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/acsquaredbakery/",
+   "address": "101 S Court Square, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-2253",
+   "reviews": 94,
+   "rating": 4.8
+  },
+  "livingston flower basket|Livingston": {
+   "found": true,
+   "site": "http://livingstonflowerbasket.square.site/",
+   "address": null,
+   "phone": "+1 931-823-5758",
+   "reviews": 34,
+   "rating": 4.7
+  },
+  "the pampered pooch pet salon and boarding kennels|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "300 S Church St, Livingston, TN 38570, United States",
+   "phone": "+1 931-445-5663",
+   "reviews": 32,
+   "rating": 4.9
+  },
+  "sweet and sassy dog grooming|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "237 Ben Ogletree Ln, Livingston, TN 38570, United States",
+   "phone": "+1 931-260-9092",
+   "reviews": 14,
+   "rating": 4.7
+  },
+  "bark and bubbles|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "3200 Celina Hwy, Allons, TN 38541, United States",
+   "phone": "+1 931-823-1431",
+   "reviews": 11,
+   "rating": 4.3
+  },
+  "david and eleanor york realtor|Livingston": {
+   "found": true,
+   "site": "http://www.facebook.com/YorkRealty",
+   "address": "518 W Main St, Livingston, TN 38570, United States",
+   "phone": "+1 931-260-8186",
+   "reviews": 10,
+   "rating": 5
+  },
+  "the sunset restaurant by the steel coop|Monroe": {
+   "found": true,
+   "site": null,
+   "address": "2040 Sunset Dock Rd, Monroe, TN 38573",
+   "phone": "(931) 864-4874",
+   "reviews": 102,
+   "rating": 4.4
+  },
+  "scratch kitchen|Monroe": {
+   "found": true,
+   "site": null,
+   "address": "104 N Main St, Byrdstown, TN 38549, United States",
+   "phone": "+1 931-864-0090",
+   "reviews": 114,
+   "rating": 4.8
+  },
+  "hair station|Allons": {
+   "found": true,
+   "site": null,
+   "address": "218 Mc Arthur Ave, Celina, TN 38551, United States",
+   "phone": "+1 931-243-6666",
+   "reviews": 16,
+   "rating": 5
+  },
+  "light the fire garage and fab|Hilham": {
+   "found": true,
+   "site": "https://www.facebook.com/share/g/1DeCfMNHRJ/?mibextid=wwXIfr",
+   "address": "507 Standing Stone Hwy, Hilham, TN 38568, United States",
+   "phone": "+1 931-823-2011",
+   "reviews": 4,
+   "rating": 5
+  },
+  "randy auto repair|Hilham": {
+   "found": true,
+   "site": null,
+   "address": "2906 Hilham Hwy, Hilham, TN 38568, United States",
+   "phone": "+1 931-823-6363",
+   "reviews": 6,
+   "rating": 3
+  },
+  "floyd automotive and performance|Rickman": {
+   "found": true,
+   "site": "https://www.facebook.com/FloydsAutomotivePerformance",
+   "address": "3812 Rickman Rd, Rickman, TN 38580, United States",
+   "phone": "+1 931-372-8253",
+   "reviews": 55,
+   "rating": 4.2
+  },
   "murphy fine groom and shave|Livingston": {
    "found": true,
    "site": "https://www.facebook.com/share/1EAJgFUtZX/?mibextid=wwXIfr",
-   "address": "204 W Main St, Livingston, TN 38570",
+   "address": "204 W Main St, Livingston, TN 38570, United States",
+   "phone": "+1 931-303-8707",
    "reviews": 49,
    "rating": 5
   },
@@ -926,8 +1104,241 @@
    "found": true,
    "site": "https://www.facebook.com/309787359730512/",
    "address": "1185 Preston St #5, Livingston, TN 38570, United States",
+   "phone": "+1 931-510-3459",
    "reviews": 19,
    "rating": 4.6
+  },
+  "central park livingston|Livingston": {
+   "found": true,
+   "site": "http://www.centralparklivingston.com/",
+   "address": "140 S Spring St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-1269",
+   "reviews": 505,
+   "rating": 4.7
+  },
+  "hidden valley golf and country club|Livingston": {
+   "found": true,
+   "site": "https://hvccgolf.com/",
+   "address": "201 Valley Dr, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-1313",
+   "reviews": 61,
+   "rating": 4.3
+  },
+  "millard oakley public library|Livingston": {
+   "found": true,
+   "site": "https://millardoakleylibrary.org/",
+   "address": "107 E Main St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-1888",
+   "reviews": 52,
+   "rating": 4.5
+  },
+  "overton county heritage museum|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/OvertonCountyHeritageMuseum/",
+   "address": "318 W Broad St, Livingston, TN 38570",
+   "phone": "(931) 403-0909",
+   "reviews": 14,
+   "rating": 4.8
+  },
+  "the antique market|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/profile.php?id=100057312264005",
+   "address": "116 N Court Square, Livingston, TN 38570",
+   "phone": "(931) 823-4943",
+   "reviews": 68,
+   "rating": 4.6
+  },
+  "1806 bbq|Livingston": {
+   "found": true,
+   "site": "https://1806bbq.com/",
+   "address": "114 N Court Square, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-1806",
+   "reviews": 189,
+   "rating": 4.6
+  },
+  "angelina italian subs and more|Livingston": {
+   "found": true,
+   "site": "https://www.toasttab.com/local/order/angelinas-italian-subs-and-more-920-overton-plz",
+   "address": "920 Overton Plz, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-2867",
+   "reviews": 25,
+   "rating": 4.9
+  },
+  "casa mexicana|Livingston": {
+   "found": true,
+   "site": "https://www.casamexicanalivingston.com/",
+   "address": "440 Market Square Plaza, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-8870",
+   "reviews": 527,
+   "rating": 4.5
+  },
+  "stover country kitchen|Livingston": {
+   "found": true,
+   "site": "https://m.facebook.com/stoverscountrykitchen/?view_public_for=985862884854045",
+   "address": "511 E Main St, Livingston, TN 38570",
+   "phone": "(931) 823-9550",
+   "reviews": 626,
+   "rating": 4.6
+  },
+  "the sno shack|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/The-Sno-Shack-171520396349670/",
+   "address": "718 W Main St, Livingston, TN 38570, United States",
+   "phone": "+1 931-704-2338",
+   "reviews": 38,
+   "rating": 4.5
+  },
+  "wired coffee co|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "1185 Preston St, Livingston, TN 38570, United States",
+   "phone": "+1 931-403-9417",
+   "reviews": 252,
+   "rating": 4.7
+  },
+  "pollock printing|Nashville": {
+   "found": true,
+   "site": "http://pollockprinting.com/",
+   "address": "928 6th Ave S #105, Nashville, TN 37203",
+   "phone": "(615) 255-0526",
+   "reviews": 36,
+   "rating": 4.3
+  },
+  "joyner and hogan printers|Nashville": {
+   "found": true,
+   "site": "http://joynerhogan.net/",
+   "address": "545 Mainstream Dr Ste 104, Nashville, TN 37228, United States",
+   "phone": "+1 615-562-1362",
+   "reviews": 10,
+   "rating": 4.6
+  },
+  "crown label inc|La Vergne": {
+   "found": true,
+   "site": "http://www.crownlabelinc.com/",
+   "address": "101 Buchanan St, La Vergne, TN 37086, United States",
+   "phone": "+1 615-793-9877",
+   "reviews": 1,
+   "rating": 5
+  },
+  "that printing inc|Franklin": {
+   "found": true,
+   "site": "https://www.thatsprinting.com/",
+   "address": "251 2nd Ave S, Franklin, TN 37064, United States",
+   "phone": "+1 615-794-1488",
+   "reviews": 15,
+   "rating": 4.5
+  },
+  "franklin web printing co|Franklin": {
+   "found": true,
+   "site": "https://www.fwpco.com/",
+   "address": "115 Beasley Dr, Franklin, TN 37064, United States",
+   "phone": "+1 615-794-7181",
+   "reviews": 13,
+   "rating": 4.6
+  },
+  "quality printing company|Gallatin": {
+   "found": true,
+   "site": "https://www.printshopgallatintn.com/",
+   "address": "402 Maple St, Gallatin, TN 37066, United States",
+   "phone": "+1 615-452-7653",
+   "reviews": 23,
+   "rating": 4.9
+  },
+  "ledbetter signs|Clarksville": {
+   "found": true,
+   "site": "http://ledbettersigns.net/",
+   "address": "848 Cumberland Dr, Clarksville, TN 37040, United States",
+   "phone": "+1 931-647-3629",
+   "reviews": 19,
+   "rating": 5
+  },
+  "frank s|Livingston": {
+   "found": true,
+   "site": "https://www.facebook.com/share/14DnVwBwjGc/?mibextid=wwXIfr",
+   "address": "1033 E Main St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-7265",
+   "reviews": 86,
+   "rating": 4.3
+  },
+  "jb lawncare|Livingston": {
+   "found": true,
+   "site": null,
+   "address": "309 Windle St, Livingston, TN 38570, United States",
+   "phone": "+1 931-303-3766",
+   "reviews": 11,
+   "rating": 5
+  },
+  "blissful bundts and bakes|Livingston": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
+  },
+  "identity hair co|Monroe": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
+  },
+  "roots salon|Monroe": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
+  },
+  "horse creek resort|Celina": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
+  },
+  "livingston overton county farmers market|Livingston": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
+  },
+  "overton county arts|Livingston": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
+  },
+  "overton county courthouse|Livingston": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
+  },
+  "ruby and lee coffee and bakehouse|Livingston": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
+  },
+  "anderson printing solutions|Cookeville": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
   }
  }
 }
