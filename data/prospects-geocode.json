@@ -203,5 +203,95 @@
   "lat": 36.4420071,
   "lon": -85.3446879,
   "method": "address"
+ },
+ "116 S Spring St, Livingston, TN 38570, United States": {
+  "lat": 36.3827124,
+  "lon": -85.3232931,
+  "method": "address"
+ },
+ "113 S Church St, Livingston TN": {
+  "lat": 36.3829724,
+  "lon": -85.3223063,
+  "method": "address"
+ },
+ "204 W Main St, Livingston TN": {
+  "lat": 36.3830529,
+  "lon": -85.3234742,
+  "method": "address"
+ },
+ "1185 Preston St #5, Livingston TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "2320 Cookeville Hwy, Livingston, TN 38570, United States": {
+  "lat": 36.3322048,
+  "lon": -85.3549158,
+  "method": "address"
+ },
+ "309 Windle St, Livingston, TN 38570, United States": {
+  "lat": 36.3827515,
+  "lon": -85.31848,
+  "method": "address"
+ },
+ "303 W Main St, Livingston TN": {
+  "lat": 36.3827145,
+  "lon": -85.3242091,
+  "method": "address"
+ },
+ "300 S Church St, Livingston, TN 38570, United States": {
+  "lat": 36.381291,
+  "lon": -85.321977,
+  "method": "address"
+ },
+ "421 Lafayette Rd, Red Boiling Springs, TN 37150": {
+  "lat": 36.5196171,
+  "lon": -85.8591037,
+  "method": "address"
+ },
+ "2040 Sunset Dock Rd, Monroe, TN 38573, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "989 Wolf River Rd, Byrdstown, TN 38549, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "33 Lily Dale Rd, Allons, TN 38541, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "3880 Cookeville Hwy, Cookeville, TN 38506, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "10131 Darden Christian Chapel Rd, Hilham TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "281 Jerry Bilbrey Ln, Hilham TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "3880 Cookeville Hwy, Cookeville, TN 38506": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "3036 Monterey Hwy, Rickman, TN 38580": {
+  "lat": 36.2698031,
+  "lon": -85.3828852,
+  "method": "address"
+ },
+ "Hilham, Overton County,  TN": {
+  "lat": 36.4142281,
+  "lon": -85.4416363,
+  "method": "address"
  }
 }

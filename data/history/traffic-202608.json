@@ -224,7 +224,7 @@
   "crux": false
  },
  "angelina-s-italian-subs-more": {
-  "reviews": 25,
+  "reviews": 26,
   "crux": false
  },
  "brazen-que": {
@@ -307,6 +307,30 @@
   "reviews": null,
   "crux": false
  },
+ "the-coop": {
+  "reviews": 944,
+  "crux": null
+ },
+ "frank-s": {
+  "reviews": 86,
+  "crux": null
+ },
+ "livingston-house-of-pizza": {
+  "reviews": 33,
+  "crux": null
+ },
+ "the-coffee-shop": {
+  "reviews": 94,
+  "crux": null
+ },
+ "the-emporium": {
+  "reviews": 26,
+  "crux": null
+ },
+ "keaton-place": {
+  "reviews": 11,
+  "crux": null
+ },
  "p-serendipity-salon": {
   "reviews": 18,
   "crux": null
@@ -315,12 +339,24 @@
   "reviews": 65,
   "crux": null
  },
- "p-woolbright-auto-repair": {
-  "reviews": 46,
+ "p-southern-hairitage-salon": {
+  "reviews": 17,
+  "crux": null
+ },
+ "p-murphy-fine-groom-and-shave": {
+  "reviews": 49,
+  "crux": null
+ },
+ "p-by-pass-barber-shop": {
+  "reviews": 19,
   "crux": null
  },
  "p-t-and-m-automotive": {
   "reviews": 31,
+  "crux": null
+ },
+ "p-woolbright-auto-repair": {
+  "reviews": 46,
   "crux": null
  },
  "p-waterloo-tire-service": {
@@ -329,6 +365,26 @@
  },
  "p-hwy-tire": {
   "reviews": 52,
+  "crux": null
+ },
+ "p-palestine-tire-shop": {
+  "reviews": 13,
+  "crux": null
+ },
+ "p-gentry-tires": {
+  "reviews": 60,
+  "crux": null
+ },
+ "p-dave-electric": {
+  "reviews": 70,
+  "crux": null
+ },
+ "p-power-pros-llc": {
+  "reviews": 133,
+  "crux": null
+ },
+ "p-stockton-electric-company": {
+  "reviews": 43,
   "crux": null
  },
  "p-low-cost-heating-and-cooling": {
@@ -343,8 +399,8 @@
   "reviews": 11,
   "crux": null
  },
- "p-middle-tennessee-lawn-care": {
-  "reviews": 1,
+ "p-winningham-true-value": {
+  "reviews": 143,
   "crux": null
  },
  "p-upper-cumberland-family-dentistry": {
@@ -367,16 +423,20 @@
   "reviews": 19,
   "crux": null
  },
- "p-ms-angies-playhouse": {
-  "reviews": null,
-  "crux": null
- },
  "p-arneys-wrecker-service": {
   "reviews": 29,
   "crux": null
  },
+ "p-roadside-rescue-of-the-upper-cumberland": {
+  "reviews": 2,
+  "crux": null
+ },
  "p-blissful-bundts-and-bakes": {
-  "reviews": 9,
+  "reviews": null,
+  "crux": null
+ },
+ "p-southern-dreams-bakery": {
+  "reviews": 91,
   "crux": null
  },
  "p-livingston-flower-basket": {
@@ -391,52 +451,48 @@
   "reviews": 14,
   "crux": null
  },
- "p-bark-and-bubbles": {
-  "reviews": 11,
-  "crux": null
- },
- "p-david-and-eleanor-york-realtor": {
-  "reviews": 10,
+ "p-kritter-kuts-pet-grooming": {
+  "reviews": 17,
   "crux": null
  },
  "p-the-sunset-restaurant-by-the-steel-coop": {
   "reviews": 102,
   "crux": null
  },
- "p-scratch-kitchen": {
-  "reviews": 114,
-  "crux": null
- },
- "p-identity-hair-co": {
-  "reviews": 55,
-  "crux": null
- },
- "p-roots-salon": {
+ "p-river-grill": {
   "reviews": 291,
   "crux": null
  },
- "p-hair-station": {
-  "reviews": 16,
+ "p-reynolds-rolling-auto-repair": {
+  "reviews": 445,
+  "crux": null
+ },
+ "p-the-fork": {
+  "reviews": 133,
+  "crux": null
+ },
+ "p-cowboy-cafe": {
+  "reviews": 116,
+  "crux": null
+ },
+ "p-rapid-response-mobile-auto-repair": {
+  "reviews": 18,
   "crux": null
  },
  "p-light-the-fire-garage-and-fab": {
   "reviews": 4,
   "crux": null
  },
- "p-randy-auto-repair": {
-  "reviews": 6,
+ "p-the-tennessee-hot-rod-shop-llc": {
+  "reviews": 1,
+  "crux": null
+ },
+ "p-bbq-shack": {
+  "reviews": 4,
   "crux": null
  },
  "p-floyd-automotive-and-performance": {
   "reviews": 55,
-  "crux": null
- },
- "p-murphy-fine-groom-and-shave": {
-  "reviews": 49,
-  "crux": null
- },
- "p-by-pass-barber-shop": {
-  "reviews": 19,
   "crux": null
  }
 }

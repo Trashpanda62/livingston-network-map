@@ -336,7 +336,7 @@
   "crux": false
  },
  "angelina-s-italian-subs-more": {
-  "reviews": 25,
+  "reviews": 26,
   "rating": 4.9,
   "source": "Google reviews",
   "crux": false
@@ -460,5 +460,41 @@
   "rating": null,
   "source": null,
   "crux": false
+ },
+ "the-coop": {
+  "reviews": 944,
+  "rating": 4.3,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "frank-s": {
+  "reviews": 86,
+  "rating": 4.3,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "livingston-house-of-pizza": {
+  "reviews": 33,
+  "rating": 4.7,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "the-coffee-shop": {
+  "reviews": 94,
+  "rating": 4.8,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "the-emporium": {
+  "reviews": 26,
+  "rating": 4.8,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "keaton-place": {
+  "reviews": 11,
+  "rating": 4.8,
+  "source": "Google reviews",
+  "crux": null
  }
 }
