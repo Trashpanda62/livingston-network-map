@@ -1,8 +1,7 @@
 {
  "generated_from": [
   "C:\\dev\\livingston-outdoors\\data\\livingston-outdoors.json",
-  "C:\\dev\\visit-livingston\\data\\places.json",
-  "C:\\dev\\mtn-printers\\data\\mtn-printers.json"
+  "C:\\dev\\visit-livingston\\data\\places.json"
  ],
  "nodes": [
   {
@@ -15,7 +14,7 @@
    "drive_min": 2,
    "blurb": "Steve's web studio \u2014 small-business websites, photography, drone. Every site on this map traces back here.",
    "listed_in": [],
-   "bearing": 155.2
+   "bearing": 155.6
   },
   {
    "id": "livingston-outdoors",
@@ -27,7 +26,7 @@
    "drive_min": 2,
    "blurb": "Photo-led directory of 40 outdoor places within 45 minutes of Livingston.",
    "listed_in": [],
-   "bearing": 194.6
+   "bearing": 196.0
   },
   {
    "id": "visit-livingston-tn",
@@ -39,31 +38,7 @@
    "drive_min": 2,
    "blurb": "First-timer's editorial guide to Livingston and Overton County \u2014 29 places.",
    "listed_in": [],
-   "bearing": 254.8
-  },
-  {
-   "id": "middle-tn-printers",
-   "name": "Middle TN Printers",
-   "type": "directory",
-   "url": "https://middletnprinters.com",
-   "city": "Livingston",
-   "county": "Overton",
-   "drive_min": 2,
-   "blurb": "Unranked directory of eleven Middle Tennessee commercial printers.",
-   "listed_in": [],
-   "bearing": 200.8
-  },
-  {
-   "id": "best-mom-cars",
-   "name": "Best Mom Cars",
-   "type": "directory",
-   "url": "https://bestmomcars.com",
-   "city": "Livingston",
-   "county": "Overton",
-   "drive_min": 2,
-   "blurb": "Standalone top-list site, same Obscura custom-HTML pattern as the directories.",
-   "listed_in": [],
-   "bearing": 157.3
+   "bearing": 254.4
   },
   {
    "id": "livingston-garden-center",
@@ -75,7 +50,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 pickup-ordering garden center site, order by 5 PM for next-day pickup.",
    "listed_in": [],
-   "bearing": 188.4,
+   "bearing": 189.3,
    "geo": [
     151.07,
     -89.79
@@ -92,7 +67,12 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 alpaca farm and glamping stays outside Livingston.",
    "listed_in": [],
-   "bearing": 240.3
+   "bearing": 238.7,
+   "geo": [
+    572.82,
+    -1044.6
+   ],
+   "geo_method": "address"
   },
   {
    "id": "to-the-max-rv",
@@ -104,19 +84,12 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 RV rental based at the Tapestry Acres farm.",
    "listed_in": [],
-   "bearing": 252.7
-  },
-  {
-   "id": "oak-ridge-peptides",
-   "name": "Oak Ridge Peptides",
-   "type": "built",
-   "url": "https://oakridgepeptides.com",
-   "city": "Livingston",
-   "county": "Overton",
-   "drive_min": 2,
-   "blurb": "Own venture e-commerce store (successor to Harris Wellness Solutions).",
-   "listed_in": [],
-   "bearing": 205.0
+   "bearing": 252.1,
+   "geo": [
+    583.27,
+    -1033.55
+   ],
+   "geo_method": "address"
   },
   {
    "id": "ridgeline-aerial",
@@ -128,19 +101,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 drone and aerial photography, credited to Barnraised.",
    "listed_in": [],
-   "bearing": 225.8
-  },
-  {
-   "id": "obscura-studio",
-   "name": "Obscura Studio",
-   "type": "built",
-   "url": "https://obscurastudio.design",
-   "city": "Livingston",
-   "county": "Overton",
-   "drive_min": 2,
-   "blurb": "Own platform \u2014 the studio and hosting layer every custom-HTML site here is served from.",
-   "listed_in": [],
-   "bearing": 209.2
+   "bearing": 223.0
   },
   {
    "id": "oliver-printing",
@@ -151,10 +112,8 @@
    "county": "Overton",
    "drive_min": 2,
    "blurb": "Livingston print shop since 1967 \u2014 Barnraised sample site built; also featured on Middle TN Printers.",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 211.2,
+   "listed_in": [],
+   "bearing": 207.2,
    "geo": [
     -20.76,
     13.75
@@ -174,7 +133,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 184.2,
+   "bearing": 184.8,
    "geo": [
     85.61,
     -22.13
@@ -195,7 +154,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 163.5,
+   "bearing": 162.3,
    "geo": [
     -1.01,
     21.76
@@ -215,7 +174,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 232.0,
+   "bearing": 229.7,
    "geo": [
     -1073.95,
     -628.13
@@ -276,7 +235,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 236.1,
+   "bearing": 234.2,
    "geo": [
     -1.01,
     -0.91
@@ -296,7 +255,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 256.9,
+   "bearing": 256.6,
    "geo": [
     -1080.62,
     747.17
@@ -316,7 +275,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 192.9,
+   "bearing": 190.5,
    "geo": [
     -1247.0,
     1870.99
@@ -336,7 +295,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 188.8,
+   "bearing": 185.9,
    "geo": [
     -1279.84,
     2091.89
@@ -356,7 +315,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 217.9,
+   "bearing": 217.7,
    "geo": [
     -1134.41,
     1821.53
@@ -376,7 +335,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 201.2,
+   "bearing": 199.5,
    "geo": [
     -1350.19,
     2024.08
@@ -436,7 +395,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 213.8,
+   "bearing": 213.2,
    "geo": [
     396.65,
     2170.4
@@ -456,7 +415,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 205.4,
+   "bearing": 204.1,
    "geo": [
     -1359.31,
     2141.97
@@ -516,7 +475,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 223.7,
+   "bearing": 220.7,
    "geo": [
     -119.93,
     -471.97
@@ -536,7 +495,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 173.9,
+   "bearing": 173.6,
    "geo": [
     1487.36,
     -611.67
@@ -556,7 +515,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 176.2,
+   "bearing": 172.3,
    "geo": [
     285.23,
     2287.59
@@ -576,7 +535,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 197.1,
+   "bearing": 195.0,
    "geo": [
     -918.94,
     2311.77
@@ -656,7 +615,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 184.6,
+   "bearing": 181.4,
    "geo": [
     -1651.31,
     2037.71
@@ -736,7 +695,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 209.6,
+   "bearing": 208.6,
    "geo": [
     1001.64,
     2458.33
@@ -816,7 +775,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 169.7,
+   "bearing": 169.1,
    "geo": [
     -193.97,
     -528.62
@@ -936,7 +895,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 180.4,
+   "bearing": 176.8,
    "geo": [
     -2061.15,
     3125.42
@@ -976,7 +935,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 165.6,
+   "bearing": 164.6,
    "geo": [
     1195.79,
     1025.36
@@ -996,7 +955,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 167.6,
+   "bearing": 166.8,
    "geo": [
     30.63,
     -41.89
@@ -1016,7 +975,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 171.8,
+   "bearing": 171.3,
    "geo": [
     -109.62,
     -607.22
@@ -1036,7 +995,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 180.1,
+   "bearing": 180.3,
    "geo": [
     -88.63,
     -228.38
@@ -1056,7 +1015,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 186.3,
+   "bearing": 187.0,
    "geo": [
     85.61,
     -22.13
@@ -1076,7 +1035,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 207.1
+   "bearing": 205.0
   },
   {
    "id": "standing-stone-state-forest-wma",
@@ -1091,7 +1050,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 234.1,
+   "bearing": 231.9,
    "geo": [
     -1073.95,
     -628.13
@@ -1111,7 +1070,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 192.5,
+   "bearing": 193.8,
    "geo": [
     -17.17,
     -43.04
@@ -1131,7 +1090,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 198.8,
+   "bearing": 200.5,
    "geo": [
     0.3,
     -7.36
@@ -1151,7 +1110,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 202.9,
+   "bearing": 202.8,
    "geo": [
     4.25,
     9.37
@@ -1171,7 +1130,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 213.3,
+   "bearing": 209.5,
    "geo": [
     -22.79,
     3.77
@@ -1191,7 +1150,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 215.4,
+   "bearing": 211.7,
    "geo": [
     0.38,
     5.97
@@ -1211,7 +1170,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 219.5,
+   "bearing": 216.2,
    "geo": [
     -31.98,
     9.52
@@ -1231,7 +1190,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 227.8,
+   "bearing": 225.2,
    "geo": [
     -39.66,
     -49.98
@@ -1251,7 +1210,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 242.4,
+   "bearing": 240.9,
    "geo": [
     -2.13,
     0.43
@@ -1271,7 +1230,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 151.0,
+   "bearing": 151.1,
    "geo": [
     -2.07,
     0.41
@@ -1291,7 +1250,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 153.1,
+   "bearing": 153.4,
    "geo": [
     -78.62,
     32.8
@@ -1311,7 +1270,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 159.3,
+   "bearing": 157.9,
    "geo": [
     -17.66,
     -112.26
@@ -1331,7 +1290,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 161.4,
+   "bearing": 160.1,
    "geo": [
     3.55,
     -130.05
@@ -1351,7 +1310,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 229.9,
+   "bearing": 227.4,
    "geo": [
     0.69,
     7.54
@@ -1371,7 +1330,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 238.2,
+   "bearing": 236.4,
    "geo": [
     43.82,
     -6.48
@@ -1391,7 +1350,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 250.7,
+   "bearing": 249.9,
    "geo": [
     -61.96,
     34.9
@@ -1411,7 +1370,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 259.0,
+   "bearing": 258.9,
    "geo": [
     15.78,
     -132.87
@@ -1431,7 +1390,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 175.9,
+   "bearing": 175.8,
    "geo": [
     -4.95,
     5.11
@@ -1451,7 +1410,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 196.7,
+   "bearing": 198.3,
    "geo": [
     77.84,
     -33.44
@@ -1471,7 +1430,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 217.5,
+   "bearing": 214.0,
    "geo": [
     -22.32,
     -49.98
@@ -1491,7 +1450,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 221.6,
+   "bearing": 218.5,
    "geo": [
     -4.95,
     5.11
@@ -1511,7 +1470,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 246.5,
+   "bearing": 245.4,
    "geo": [
     -0.46,
     20.57
@@ -1531,7 +1490,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 178.0,
+   "bearing": 178.1,
    "geo": [
     134.86,
     -45.91
@@ -1551,7 +1510,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 190.5,
+   "bearing": 191.5,
    "geo": [
     52.57,
     -21.74
@@ -1571,7 +1530,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 244.4,
+   "bearing": 243.2,
    "geo": [
     0.69,
     7.54
@@ -1591,7 +1550,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 248.6,
+   "bearing": 247.7,
    "geo": [
     -1.88,
     0.35
@@ -1611,167 +1570,12 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 182.2,
+   "bearing": 182.6,
    "geo": [
     -2.26,
     0.47
    ],
    "geo_method": "address"
-  },
-  {
-   "id": "phillips-printing-company",
-   "name": "Phillips Printing Company",
-   "type": "listed",
-   "url": "https://philprint.com/",
-   "city": "Nashville",
-   "county": "Davidson",
-   "drive_min": 100,
-   "blurb": "Phillips pairs G7 Master certification with a six-color Heidelberg CX102 and in-line coating. The company says more than 95% of its work stays in-house, including offset and digital printing, finishing, and mailing. It has operated in Nashville since 1959.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 242.5
-  },
-  {
-   "id": "pollock-printing",
-   "name": "Pollock Printing",
-   "type": "listed",
-   "url": "https://www.pollockprinting.com/",
-   "city": "Nashville",
-   "county": "Davidson",
-   "drive_min": 100,
-   "blurb": "Pollock combines web, sheetfed offset, and digital printing with wide-format work, finishing, mailing, kitting, fulfillment, and warehousing. The Nashville family business has operated since 1972; its range suits jobs that must be printed, assembled, and distributed through one production partner.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 247.5
-  },
-  {
-   "id": "joyner-hogan-printers",
-   "name": "Joyner & Hogan Printers",
-   "type": "listed",
-   "url": "https://www.joynerhogan.net/",
-   "city": "Nashville",
-   "county": "Davidson",
-   "drive_min": 100,
-   "blurb": "Woman-owned and family-run, Joyner & Hogan has printed in Nashville since 1937. Its current services include commercial printing, business forms, campaign materials, and direct mail. Call when a job combines routine business pieces with mailing or campaign production.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 237.5
-  },
-  {
-   "id": "hatch-show-print",
-   "name": "Hatch Show Print",
-   "type": "listed",
-   "url": "https://hatchshowprint.com/",
-   "city": "Nashville",
-   "county": "Davidson",
-   "drive_min": 100,
-   "blurb": "Hatch Show Print has operated as a working letterpress shop since 1879 and is part of the Country Music Hall of Fame and Museum. Its limited-run posters use vintage wood and metal type with hand-carved imagery. Choose it when the letterpress process and the physical poster are central to the job.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 232.5
-  },
-  {
-   "id": "crown-label-inc",
-   "name": "Crown Label, Inc.",
-   "type": "listed",
-   "url": "https://crownlabelinc.com/",
-   "city": "La Vergne",
-   "county": "Rutherford",
-   "drive_min": 90,
-   "blurb": "Crown Label runs eight presses for flexographic and digital label and tag production, with work up to seven colors. Prepress and platemaking are handled in-house. It is the specialist on this list for roll labels and tags rather than general commercial printing.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 210.0
-  },
-  {
-   "id": "that-s-printing-inc",
-   "name": "That's Printing, Inc.",
-   "type": "listed",
-   "url": "https://www.thatsprinting.com/",
-   "city": "Franklin",
-   "county": "Williamson",
-   "drive_min": 115,
-   "blurb": "That's Printing handles offset, digital, and variable-data printing alongside an in-house finishing department. Listed capabilities include folding, saddle stitching, die cutting, coil and perfect binding, foil stamping, and embossing, making the Franklin shop a practical fit for pieces whose finishing is more involved than a straight cut and fold.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 236.2
-  },
-  {
-   "id": "franklin-web-printing-co",
-   "name": "Franklin Web Printing Co.",
-   "type": "listed",
-   "url": "https://www.fwpco.com/",
-   "city": "Franklin",
-   "county": "Williamson",
-   "drive_min": 115,
-   "blurb": "Franklin Web has operated as a non-heatset web printer since 1977. It prints trade publications, newspapers, magazines, and specialty tabloids, with ink-jet addressing, inserting, and direct-mail services available in-house. Start here for recurring or distributed publication work.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 228.8
-  },
-  {
-   "id": "quality-printing-company",
-   "name": "Quality Printing Company",
-   "type": "listed",
-   "url": "https://www.printshopgallatintn.com/",
-   "city": "Gallatin",
-   "county": "Sumner",
-   "drive_min": 85,
-   "blurb": "Family owned and operated in Gallatin since 1969, Quality Printing covers general commercial work close to Sumner County customers. Its current site lists business and marketing pieces, signs, banners, forms, promotional products, copying, and finishing. The business now operates with support from The Print Authority.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 260.0
-  },
-  {
-   "id": "ledbetter-signs",
-   "name": "LedBetter Signs",
-   "type": "listed",
-   "url": "https://ledbettersigns.net/",
-   "city": "Clarksville",
-   "county": "Montgomery",
-   "drive_min": 145,
-   "blurb": "Operating in Clarksville since 1956, LedBetter is a family-owned sign and print shop. Its signs, banners, decals, screen and digital printing, apparel, promotional items, and large-format work make this the profile to use for visible, applied graphics in the Clarksville area.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 280.0
-  },
-  {
-   "id": "anderson-printing-solutions",
-   "name": "Anderson Printing Solutions",
-   "type": "listed",
-   "url": "https://andersonps.com/",
-   "city": "Cookeville",
-   "county": "Putnam",
-   "drive_min": 25,
-   "blurb": "Offset and digital printing sit alongside signs, screen printing, embroidery, promotional products, mailing, and fulfillment at Anderson. The family-owned Cookeville shop was founded in 1976. Its broad service mix fits campaigns that need both printed pieces and branded merchandise.",
-   "category": "printing",
-   "listed_in": [
-    "middle-tn-printers"
-   ],
-   "bearing": 172.1,
-   "geo": [
-    -1309.04,
-    2091.06
-   ],
-   "geo_method": "town-approx"
   }
  ],
  "edges": [
@@ -1783,16 +1587,6 @@
   {
    "source": "barnraised",
    "target": "visit-livingston-tn",
-   "kind": "operates"
-  },
-  {
-   "source": "barnraised",
-   "target": "middle-tn-printers",
-   "kind": "operates"
-  },
-  {
-   "source": "barnraised",
-   "target": "best-mom-cars",
    "kind": "operates"
   },
   {
@@ -1812,17 +1606,7 @@
   },
   {
    "source": "barnraised",
-   "target": "oak-ridge-peptides",
-   "kind": "built"
-  },
-  {
-   "source": "barnraised",
    "target": "ridgeline-aerial",
-   "kind": "built"
-  },
-  {
-   "source": "barnraised",
-   "target": "obscura-studio",
    "kind": "built"
   },
   {
@@ -2208,61 +1992,6 @@
   {
    "source": "visit-livingston-tn",
    "target": "keaton-place",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "phillips-printing-company",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "pollock-printing",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "joyner-hogan-printers",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "hatch-show-print",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "crown-label-inc",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "that-s-printing-inc",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "franklin-web-printing-co",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "quality-printing-company",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "ledbetter-signs",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "anderson-printing-solutions",
-   "kind": "lists"
-  },
-  {
-   "source": "middle-tn-printers",
-   "target": "oliver-printing",
    "kind": "lists"
   }
  ]

@@ -76,8 +76,6 @@ function setCrm(id, patch) {
 const DIR_COLORS = {
   'livingston-outdoors': '#0f766e',
   'visit-livingston-tn': '#d97706',
-  'middle-tn-printers': '#1d4ed8',
-  'best-mom-cars': '#db2777'
 };
 
 // Radius (scene units) of the regional map edge; recomputed from region.json
@@ -159,29 +157,60 @@ function heightFor(n) {
   return 5 + 35 * (Math.log1p(v.uniques) / Math.log1p(maxUniques));
 }
 
-// The online layer stands on the table as a small "campus" southeast of the
-// map — bearings 85–168° hold no out-of-town places, so the plot is clear.
-// Hub in back, directories mid row, built sites front row, all grounded.
-const CAMPUS = { cx: 240, hubZ: 148, dirZ: 180, builtZ: 212, dirGap: 24, builtGap: 19 };
+// The online layer stands on the table southeast of the map — bearings
+// 85–168° hold no out-of-town places, so the plot is clear. Only web-only
+// entities live here; anything with a storefront is pinned at its real
+// address on the map instead.
+const CAMPUS = { cx: 250, cz: 176, colGap: 72 };
+
+// Sign geometry, in scene units off the table.
+const SIGN = { boardY: 84, boardH: 26, railY: 40, placardY: 24, postH: 98, pad: 42,
+  // The board is raked back so its face catches the default overhead camera.
+  // Dead vertical, it goes edge-on the moment you pull out to region scale.
+  rake: -0.42 };
+
+// Campus roster in draw order — hub row, then channels, then builds.
+function campusNodes() {
+  const rank = { hub: 0, directory: 1, built: 2 };
+  return net.nodes
+    .filter(n => !n.geo && rank[n.type] !== undefined)
+    .sort((a, b) => rank[a.type] - rank[b.type] || a.name.localeCompare(b.name));
+}
+
+// The hub rides the header board; every channel hangs from the rail below it,
+// left to right in roster order. Plates sit a few units in front of the timber
+// — a depthWrite:false sprite sharing a plane with a solid board still loses
+// the depth test and disappears into it.
+function campusLayout() {
+  const roster = campusNodes();
+  const pos = new Map();
+  const hub = roster.find(n => n.type === 'hub');
+  if (hub) pos.set(hub.id, { x: CAMPUS.cx, y: SIGN.boardY + 2, z: CAMPUS.cz + 6 });
+  const rail = roster.filter(n => n !== hub);
+  rail.forEach((n, i) => pos.set(n.id, {
+    x: CAMPUS.cx + (i - (rail.length - 1) / 2) * CAMPUS.colGap,
+    y: SIGN.placardY, z: CAMPUS.cz + 3
+  }));
+  return pos;
+}
+
+// City mode pins every node and runs the sim with cooldownTicks(0), so the
+// force engine never ticks — a changed fx alone would leave the node where it
+// was. Write the live coords too and refresh, or a re-layout silently no-ops.
+function place(n, x, y, z) {
+  n.fx = n.x = x; n.fy = n.y = y; n.fz = n.z = z;
+}
 
 function positionNodes() {
-  const virtualDirs = net.nodes.filter(n => n.type === 'directory' && !n.geo);
-  const virtualBuilt = net.nodes.filter(n => n.type === 'built' && !n.geo);
+  const camp = campusLayout();
   net.nodes.forEach(n => {
     if (state.mode !== 'city') { n.fx = n.fy = n.fz = undefined; return; }
     // Real spot on the city map — glyph base sits on the ground.
-    if (n.geo) { n.fx = n.geo[0]; n.fz = n.geo[1]; n.fy = 2; return; }
-    if (n.type === 'hub') { n.fx = CAMPUS.cx; n.fz = CAMPUS.hubZ; n.fy = 2; return; }
+    if (n.geo) { place(n, n.geo[0], 2, n.geo[1]); return; }
+    const c = camp.get(n.id);
+    if (c) { place(n, c.x, c.y, c.z); return; }
     let r, angle, y;
-    if (n.type === 'directory') {
-      const i = virtualDirs.indexOf(n);
-      n.fx = CAMPUS.cx + (i - (virtualDirs.length - 1) / 2) * CAMPUS.dirGap;
-      n.fz = CAMPUS.dirZ; n.fy = 2; return;
-    } else if (n.type === 'built') {
-      const i = virtualBuilt.indexOf(n);
-      n.fx = CAMPUS.cx + (i - (virtualBuilt.length - 1) / 2) * CAMPUS.builtGap;
-      n.fz = CAMPUS.builtZ; n.fy = 2; return;
-    } else if ((n.city || '').toLowerCase() === 'livingston') {
+    if ((n.city || '').toLowerCase() === 'livingston') {
       // In-town place that would not geocode: honest fallback ring at the
       // edge of downtown rather than a fake address.
       r = 62; y = 2; angle = n.bearing || 0;
@@ -190,10 +219,47 @@ function positionNodes() {
       r = FAR_R; y = 2; angle = n.bearing || 0;
     }
     const t = angle * Math.PI / 180;
-    n.fx = r * Math.sin(t);
-    n.fz = -r * Math.cos(t);
-    n.fy = y;
+    place(n, r * Math.sin(t), y, -r * Math.cos(t));
   });
+}
+
+function isCampusNode(n) {
+  return !n.geo && (n.type === 'hub' || n.type === 'directory' || n.type === 'built');
+}
+
+function campusAccent(n) {
+  const p = pal();
+  return DIR_COLORS[n.id] || p[n.type] || p.built;
+}
+
+const CAMPUS_ROLE = { hub: 'the studio', directory: 'directory we run', built: 'site we built' };
+
+// The sign's placards. Every campus node is its own nameplate: the hub rides
+// the header board, the channels hang from the rail on a short timber hanger.
+function campusObject(n, group) {
+  const accent = campusAccent(n);
+  const isHub = n.type === 'hub';
+  if (!isHub) {
+    const hang = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.5, 0.5, 16, 8),
+      new THREE.MeshLambertMaterial({ color: '#6b5a46' })
+    );
+    hang.position.y = 15;
+    group.add(hang);
+  }
+  const panel = makePlateSprite(n.name, {
+    fg: '#f7f3ea',
+    // The hub's board already IS its background; a second plate behind the
+    // name would read as a sticker stuck on the sign.
+    bg: isHub ? 'rgba(0,0,0,0)' : '#211d18',
+    accent: isHub ? null : accent,
+    sub: isHub ? 'every channel we run for Overton County' : CAMPUS_ROLE[n.type],
+    scale: isHub ? 2.6 : 1.8
+  });
+  group.add(panel);
+  group.userData.campus = true;
+  group.userData.nodeType = n.type;
+  return group;
 }
 
 function makeLabelSprite(text, color, scale) {
@@ -217,6 +283,55 @@ function makeLabelSprite(text, color, scale) {
   tex.colorSpace = THREE.SRGBColorSpace;
   const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthWrite: false }));
   sprite.scale.set(w / 88 * 7.5 * scale, 7.5 * scale, 1);
+  return sprite;
+}
+
+// Nameplate: text on an opaque plaque instead of a bare haloed sprite. The
+// campus sits four labels within a few units of each other, and floating text
+// collided into mush there — a plate reads at any angle and any zoom.
+function makePlateSprite(text, opts = {}) {
+  const { fg = '#ffffff', bg = '#1c1a17', accent = null, scale = 1,
+          sub = null, weight = 700, size = 46 } = opts;
+  const c = document.createElement('canvas');
+  const ctx = c.getContext('2d');
+  const font = `${weight} ${size}px "Segoe UI", system-ui, sans-serif`;
+  const subFont = '500 30px "Segoe UI", system-ui, sans-serif';
+  ctx.font = font;
+  let w = ctx.measureText(text).width;
+  if (sub) { ctx.font = subFont; w = Math.max(w, ctx.measureText(sub).width); }
+  w = Math.ceil(w) + 52;
+  const h = sub ? 116 : 78;
+  c.width = w; c.height = h;
+  const r = 14;
+  ctx.beginPath();
+  ctx.moveTo(r, 0); ctx.lineTo(w - r, 0); ctx.quadraticCurveTo(w, 0, w, r);
+  ctx.lineTo(w, h - r); ctx.quadraticCurveTo(w, h, w - r, h);
+  ctx.lineTo(r, h); ctx.quadraticCurveTo(0, h, 0, h - r);
+  ctx.lineTo(0, r); ctx.quadraticCurveTo(0, 0, r, 0);
+  ctx.closePath();
+  ctx.fillStyle = bg;
+  ctx.fill();
+  if (accent) {
+    // Left keyline in the entity's own color — the plate carries the legend.
+    ctx.save(); ctx.clip();
+    ctx.fillStyle = accent;
+    ctx.fillRect(0, 0, 9, h);
+    ctx.restore();
+  }
+  ctx.textBaseline = 'middle';
+  ctx.font = font;
+  ctx.fillStyle = fg;
+  ctx.fillText(text, 26, sub ? 40 : h / 2);
+  if (sub) {
+    ctx.font = subFont;
+    ctx.globalAlpha = 0.72;
+    ctx.fillText(sub, 26, 84);
+    ctx.globalAlpha = 1;
+  }
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthWrite: false }));
+  sprite.scale.set(w / h * 7.5 * scale, 7.5 * scale, 1);
   return sprite;
 }
 
@@ -277,6 +392,7 @@ function nodeObject(n) {
   const color = p[n.type] || p.listed;
   const h = heightFor(n);
   const group = new THREE.Group();
+  if (isCampusNode(n)) return campusObject(n, group);
   if (n.type === 'prospect') {
     // Gold beacon pin: a business worth pitching a Barnraised build. CRM
     // status changes the read: won pins turn built-blue, dead pins grey out.
@@ -541,19 +657,7 @@ function buildDecor() {
   map.position.set(cx, -0.1, cz);
   decor.add(map);
 
-  // The campus plot: a paper card under the online-layer buildings.
-  const plotW = Math.max((5 - 1) * CAMPUS.builtGap, (4 - 1) * CAMPUS.dirGap) + 34;
-  const plotH = CAMPUS.builtZ - CAMPUS.hubZ + 40;
-  const plot = new THREE.Mesh(
-    new THREE.PlaneGeometry(plotW, plotH),
-    new THREE.MeshLambertMaterial({ color: p.frame })
-  );
-  plot.rotation.x = -Math.PI / 2;
-  plot.position.set(CAMPUS.cx, -1.2, (CAMPUS.hubZ + CAMPUS.builtZ) / 2);
-  decor.add(plot);
-  const plotLbl = makeLabelSprite('The online layer — our sites', p.ringText, 0.75);
-  plotLbl.position.set(CAMPUS.cx, 2.5, CAMPUS.builtZ + 26);
-  decor.add(plotLbl);
+  buildCampusPlot(decor, p);
 
   // Single band past the map edge for places beyond the 30-mile region.
   const pts = [];
@@ -570,6 +674,47 @@ function buildDecor() {
   decor.add(lbl);
 
   graph.scene().add(decor);
+}
+
+// The stand the online layer hangs on: two posts, a rail, and a header board.
+// Deliberately not a plot — the campus used to occupy map real estate with a
+// blank card, and a sign says the same thing without covering the county.
+function buildCampusPlot(decor, p) {
+  const roster = campusNodes();
+  if (!roster.length) return;
+  const rail = roster.filter(n => n.type !== 'hub').length;
+  const SW = Math.max(1, rail - 1) * CAMPUS.colGap + SIGN.pad * 2;
+  const cz = CAMPUS.cz;
+  const wood = new THREE.MeshLambertMaterial({ color: '#4b3f31' });
+  [-1, 1].forEach(sx => {
+    const post = new THREE.Mesh(
+      new THREE.CylinderGeometry(2.2, 2.7, SIGN.postH, 10), wood);
+    post.position.set(CAMPUS.cx + sx * (SW / 2 - 4), SIGN.postH / 2, cz);
+    decor.add(post);
+  });
+  const bar = new THREE.Mesh(new THREE.BoxGeometry(SW - 12, 2.2, 2.2), wood);
+  bar.position.set(CAMPUS.cx, SIGN.railY, cz);
+  decor.add(bar);
+  const board = new THREE.Mesh(
+    new THREE.BoxGeometry(SW, SIGN.boardH, 1.8),
+    new THREE.MeshLambertMaterial({ color: '#3b2a1c' })
+  );
+  board.rotation.x = SIGN.rake;
+  board.position.set(CAMPUS.cx, SIGN.boardY, cz);
+  decor.add(board);
+  // Thin reveal along the board's bottom edge so it reads as a made object
+  // against the satellite imagery instead of a flat brown hole. Muted, not
+  // white: a bright stripe at this width becomes the loudest thing on screen.
+  const reveal = new THREE.Mesh(
+    new THREE.BoxGeometry(SW, 0.9, 2.0),
+    new THREE.MeshLambertMaterial({ color: '#8a7358' })
+  );
+  reveal.rotation.x = SIGN.rake;
+  reveal.position.set(
+    CAMPUS.cx,
+    SIGN.boardY - Math.cos(SIGN.rake) * (SIGN.boardH / 2 + 0.25),
+    cz - Math.sin(SIGN.rake) * (SIGN.boardH / 2 + 0.25));
+  decor.add(reveal);
 }
 
 // Focus-density labels: reveal listed-node names as the camera gets close.
@@ -590,6 +735,7 @@ function updateNodeScales() {
     const o = n.__threeObj;
     if (!o) return;
     const d = Math.hypot(cam.position.x - (n.x || 0), cam.position.y - (n.y || 0), cam.position.z - (n.z || 0));
+    if (o.userData.campus) { o.scale.setScalar(1); return; }
     const cap = (n.type === 'listed' || n.type === 'prospect') ? 12 : 5;
     const g = Math.min(cap, Math.max(1, d / SCALE_REF));
     o.scale.setScalar(g);
@@ -716,16 +862,31 @@ function applyAll() {
   applyControls();
   if (state.mode === 'city') {
     graph.cooldownTicks(0);
+    graph.refresh();
   } else {
     graph.cooldownTicks(Infinity);
     graph.d3ReheatSimulation();
   }
 }
 
+// Everything the opening shot has to contain: the town and its ring of pins,
+// plus the sign standing off to the southeast. A fixed camera framed both on a
+// wide desktop window and pushed the sign clean off the right edge on a phone,
+// where the horizontal field is roughly a third as wide.
+const FRAME = { x0: -270, x1: 375, z0: -300, z1: 240 };
+
 function defaultCamera(ms) {
   if (state.mode === 'city') {
-    // Over the town with the surrounding region in view.
-    graph.cameraPosition({ x: 0, y: 520, z: 380 }, { x: 0, y: 0, z: 0 }, ms || 0);
+    const cam = graph.camera();
+    const halfV = Math.tan(THREE.MathUtils.degToRad(cam.fov) / 2);
+    const aspect = Math.max(0.3, window.innerWidth / window.innerHeight);
+    const cx = (FRAME.x0 + FRAME.x1) / 2, cz = (FRAME.z0 + FRAME.z1) / 2;
+    const halfX = (FRAME.x1 - FRAME.x0) / 2, halfZ = (FRAME.z1 - FRAME.z0) / 2;
+    // The camera looks down the tilt, so the depth extent needs the larger of
+    // the two fits; 1.12 keeps the outermost pins off the window edge.
+    const d = Math.max(halfX / (halfV * aspect), halfZ / halfV) * 1.12;
+    graph.cameraPosition(
+      { x: cx, y: d * 0.81, z: cz + d * 0.59 }, { x: cx, y: 0, z: cz }, ms || 0);
   } else {
     graph.cameraPosition({ x: 0, y: 150, z: 290 }, { x: 0, y: 10, z: 0 }, ms || 0);
   }
@@ -912,7 +1073,7 @@ function esc(s) {
 }
 
 const TYPE_LABEL = { hub: 'The studio', directory: 'Our directory', built: 'Built by Barnraised', listed: 'Listed business / place', prospect: 'Needs a website' };
-const DIR_NAMES = { 'livingston-outdoors': 'Livingston Outdoors', 'visit-livingston-tn': 'Visit Livingston TN', 'middle-tn-printers': 'Middle TN Printers', 'best-mom-cars': 'Best Mom Cars' };
+const DIR_NAMES = { 'livingston-outdoors': 'Livingston Outdoors', 'visit-livingston-tn': 'Visit Livingston TN' };
 
 function openPanel(n) {
   const p = document.getElementById('panel');

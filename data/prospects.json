@@ -139,60 +139,6 @@
    "reason": "aggregator-listing",
    "reviews": 11,
    "name": "Keaton Place"
-  },
-  "pollock-printing": {
-   "reason": "dead-site",
-   "reviews": 36,
-   "name": "Pollock Printing",
-   "phone": "+1 615-255-0526",
-   "address": "928 6th Ave S #105, Nashville, TN 37203, United States"
-  },
-  "joyner-hogan-printers": {
-   "reason": "dead-site",
-   "reviews": 10,
-   "name": "Joyner & Hogan Printers",
-   "phone": "+1 615-562-1362",
-   "address": "545 Mainstream Dr Ste 104, Nashville, TN 37228, United States"
-  },
-  "crown-label-inc": {
-   "reason": "dead-site",
-   "reviews": 1,
-   "name": "Crown Label, Inc.",
-   "phone": "+1 615-793-9877",
-   "address": "101 Buchanan St, La Vergne, TN 37086, United States"
-  },
-  "that-s-printing-inc": {
-   "reason": "dead-site",
-   "reviews": 15,
-   "name": "That's Printing, Inc.",
-   "phone": "(615) 794-1488",
-   "address": "251 2nd Ave S, Franklin, TN 37064"
-  },
-  "franklin-web-printing-co": {
-   "reason": "dead-site",
-   "reviews": 13,
-   "name": "Franklin Web Printing Co.",
-   "phone": "+1 615-794-7181",
-   "address": "115 Beasley Dr, Franklin, TN 37064, United States"
-  },
-  "quality-printing-company": {
-   "reason": "dead-site",
-   "reviews": 23,
-   "name": "Quality Printing Company",
-   "phone": "+1 615-452-7653",
-   "address": "402 Maple St, Gallatin, TN 37066, United States"
-  },
-  "ledbetter-signs": {
-   "reason": "dead-site",
-   "reviews": 19,
-   "name": "LedBetter Signs",
-   "phone": "+1 931-647-3629",
-   "address": "848 Cumberland Dr, Clarksville, TN 37040, United States"
-  },
-  "anderson-printing-solutions": {
-   "reason": "dead-site",
-   "reviews": null,
-   "name": "Anderson Printing Solutions"
   }
  },
  "new": [

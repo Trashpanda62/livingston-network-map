@@ -14,32 +14,12 @@
   "lon": null,
   "method": "failed"
  },
- "middle-tn-printers": {
-  "lat": null,
-  "lon": null,
-  "method": "failed"
- },
- "best-mom-cars": {
-  "lat": null,
-  "lon": null,
-  "method": "failed"
- },
  "livingston-garden-center": {
   "lat": 36.393647,
   "lon": -85.3024712,
   "method": "address"
  },
- "oak-ridge-peptides": {
-  "lat": null,
-  "lon": null,
-  "method": "failed"
- },
  "ridgeline-aerial": {
-  "lat": null,
-  "lon": null,
-  "method": "failed"
- },
- "obscura-studio": {
   "lat": null,
   "lon": null,
   "method": "failed"
@@ -462,6 +442,16 @@
  "keaton-place": {
   "lat": 36.3838494,
   "lon": -85.3230022,
+  "method": "address"
+ },
+ "tapestry-acres": {
+  "lat": 36.4973,
+  "lon": -85.246,
+  "method": "address"
+ },
+ "to-the-max-rv": {
+  "lat": 36.4961,
+  "lon": -85.2446,
   "method": "address"
  }
 }

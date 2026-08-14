@@ -1,6 +1,6 @@
 """Build network.json for the Livingston Network Map.
 
-Reads the three directory data files plus the hardcoded built-sites roster,
+Reads the two directory data files plus the hardcoded built-sites roster,
 dedupes places that appear in more than one directory, and emits
 data/network.json (nodes + edges) and reports/network-stats.json.
 
@@ -16,7 +16,6 @@ from geo import to_local
 ROOT = Path(__file__).resolve().parent.parent
 OUTDOORS = Path(r"C:\dev\livingston-outdoors\data\livingston-outdoors.json")
 VISIT = Path(r"C:\dev\visit-livingston\data\places.json")
-PRINTERS = Path(r"C:\dev\mtn-printers\data\mtn-printers.json")
 
 # Approximate drive minutes from the Livingston square, by city, for sources
 # that carry no routed time. Stylized ring placement only — not navigation.
@@ -46,22 +45,14 @@ BUILT_SITES = [
      "Photo-led directory of 40 outdoor places within 45 minutes of Livingston."),
     ("visit-livingston-tn", "Visit Livingston TN", "https://visitlivingstontn.com", "Livingston", "Overton", "directory",
      "First-timer's editorial guide to Livingston and Overton County — 29 places."),
-    ("middle-tn-printers", "Middle TN Printers", "https://middletnprinters.com", "Livingston", "Overton", "directory",
-     "Unranked directory of eleven Middle Tennessee commercial printers."),
-    ("best-mom-cars", "Best Mom Cars", "https://bestmomcars.com", "Livingston", "Overton", "directory",
-     "Standalone top-list site, same Obscura custom-HTML pattern as the directories."),
     ("livingston-garden-center", "Livingston Garden Center", "https://livingstongardencenter.com", "Livingston", "Overton", "built",
      "Client build — pickup-ordering garden center site, order by 5 PM for next-day pickup."),
     ("tapestry-acres", "Tapestry Acres", "https://tapestryacres.com", "Monroe", "Overton", "built",
      "Own venture — alpaca farm and glamping stays outside Livingston."),
     ("to-the-max-rv", "To The Max RV", "https://sites.obscurastudio.design/s/to-the-max-rv", "Monroe", "Overton", "built",
      "Own venture — RV rental based at the Tapestry Acres farm."),
-    ("oak-ridge-peptides", "Oak Ridge Peptides", "https://oakridgepeptides.com", "Livingston", "Overton", "built",
-     "Own venture e-commerce store (successor to Harris Wellness Solutions)."),
     ("ridgeline-aerial", "Ridgeline Aerial", "https://sites.obscurastudio.design/s/ridgeline-aerial", "Livingston", "Overton", "built",
      "Client build — drone and aerial photography, credited to Barnraised."),
-    ("obscura-studio", "Obscura Studio", "https://obscurastudio.design", "Livingston", "Overton", "built",
-     "Own platform — the studio and hosting layer every custom-HTML site here is served from."),
     ("oliver-printing", "Oliver Printing Company", "https://oliverprintingcompany.com", "Livingston", "Overton", "built",
      "Livingston print shop since 1967 — Barnraised sample site built; also featured on Middle TN Printers."),
 ]
@@ -95,12 +86,11 @@ def main() -> int:
             "blurb": blurb, "listed_in": [],
         })
 
-    for site_id in ("livingston-outdoors", "visit-livingston-tn",
-                    "middle-tn-printers", "best-mom-cars"):
+    DIRECTORY_IDS = ("livingston-outdoors", "visit-livingston-tn")
+    for site_id in DIRECTORY_IDS:
         edges.append({"source": BR, "target": site_id, "kind": "operates"})
     for nid, *_ in [(r[0],) for r in BUILT_SITES]:
-        if nid != BR and nid not in ("livingston-outdoors", "visit-livingston-tn",
-                                     "middle-tn-printers", "best-mom-cars"):
+        if nid != BR and nid not in DIRECTORY_IDS:
             edges.append({"source": BR, "target": nid, "kind": "built"})
     edges.append({"source": "livingston-outdoors", "target": "visit-livingston-tn",
                   "kind": "sister"})
@@ -157,12 +147,6 @@ def main() -> int:
                     p.get("what_it_is") or p.get("blurb", ""),
                     p.get("category", "town"))
 
-    printers = json.loads(PRINTERS.read_text(encoding="utf-8"))
-    for p in printers:
-        add_listing("middle-tn-printers", p["name"], p["url"], p.get("city", ""),
-                    p.get("county", ""), city_minutes(p.get("city", "")),
-                    p.get("blurb", ""), "printing")
-
     # Bearing assignment: spread nodes inside their county wedge, ordered by id
     # so the layout is deterministic run-to-run.
     from collections import defaultdict
@@ -178,7 +162,7 @@ def main() -> int:
 
     # Merge geocoded scene coords (scripts/geocode_nodes.py output). Any node
     # inside the 30-mile regional map gets its real spot; farther places
-    # (Nashville printers) keep the ring fallback past the map edge.
+    # (out-of-region places) keep the ring fallback past the map edge.
     REGION = {"S": 35.9471, "W": -85.8614, "N": 36.8207, "E": -84.7840}  # sync with fetch_region.py
     geo_path = ROOT / "data" / "geocode.json"
     geo_ok = 0
@@ -193,7 +177,7 @@ def main() -> int:
                 n["geo_method"] = hit["method"]
                 geo_ok += 1
 
-    net = {"generated_from": [str(OUTDOORS), str(VISIT), str(PRINTERS)],
+    net = {"generated_from": [str(OUTDOORS), str(VISIT)],
            "nodes": nodes, "edges": edges}
     out = ROOT / "data" / "network.json"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -206,8 +190,7 @@ def main() -> int:
         "edges_total": len(edges),
         "edges_by_kind": {k: sum(1 for e in edges if e["kind"] == k)
                           for k in ("operates", "built", "lists", "sister")},
-        "source_counts": {"outdoors": len(outdoors), "visit": len(visit),
-                          "printers": len(printers)},
+        "source_counts": {"outdoors": len(outdoors), "visit": len(visit)},
         "deduped": dedup,
         "missing_url": [n["id"] for n in nodes if not n["url"]],
         "missing_drive_min": [n["id"] for n in nodes if n["drive_min"] is None],
