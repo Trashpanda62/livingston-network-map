@@ -15,7 +15,7 @@
    "drive_min": 2,
    "blurb": "Steve's web studio \u2014 small-business websites, photography, drone. Every site on this map traces back here.",
    "listed_in": [],
-   "bearing": 155.9
+   "bearing": 155.2
   },
   {
    "id": "livingston-outdoors",
@@ -27,7 +27,7 @@
    "drive_min": 2,
    "blurb": "Photo-led directory of 40 outdoor places within 45 minutes of Livingston.",
    "listed_in": [],
-   "bearing": 193.3
+   "bearing": 194.6
   },
   {
    "id": "visit-livingston-tn",
@@ -39,7 +39,7 @@
    "drive_min": 2,
    "blurb": "First-timer's editorial guide to Livingston and Overton County \u2014 29 places.",
    "listed_in": [],
-   "bearing": 254.1
+   "bearing": 254.8
   },
   {
    "id": "middle-tn-printers",
@@ -51,7 +51,7 @@
    "drive_min": 2,
    "blurb": "Unranked directory of eleven Middle Tennessee commercial printers.",
    "listed_in": [],
-   "bearing": 200.3
+   "bearing": 200.8
   },
   {
    "id": "best-mom-cars",
@@ -63,7 +63,7 @@
    "drive_min": 2,
    "blurb": "Standalone top-list site, same Obscura custom-HTML pattern as the directories.",
    "listed_in": [],
-   "bearing": 158.2
+   "bearing": 157.3
   },
   {
    "id": "livingston-garden-center",
@@ -75,7 +75,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 pickup-ordering garden center site, order by 5 PM for next-day pickup.",
    "listed_in": [],
-   "bearing": 188.6,
+   "bearing": 188.4,
    "geo": [
     151.07,
     -89.79
@@ -92,7 +92,7 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 alpaca farm and glamping stays outside Livingston.",
    "listed_in": [],
-   "bearing": 244.8
+   "bearing": 240.3
   },
   {
    "id": "to-the-max-rv",
@@ -104,7 +104,7 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 RV rental based at the Tapestry Acres farm.",
    "listed_in": [],
-   "bearing": 251.8
+   "bearing": 252.7
   },
   {
    "id": "oak-ridge-peptides",
@@ -128,7 +128,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 drone and aerial photography, credited to Barnraised.",
    "listed_in": [],
-   "bearing": 228.4
+   "bearing": 225.8
   },
   {
    "id": "obscura-studio",
@@ -140,7 +140,7 @@
    "drive_min": 2,
    "blurb": "Own platform \u2014 the studio and hosting layer every custom-HTML site here is served from.",
    "listed_in": [],
-   "bearing": 209.7
+   "bearing": 209.2
   },
   {
    "id": "oliver-printing",
@@ -154,7 +154,7 @@
    "listed_in": [
     "middle-tn-printers"
    ],
-   "bearing": 212.0,
+   "bearing": 211.2,
    "geo": [
     -20.76,
     13.75
@@ -174,7 +174,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 183.9,
+   "bearing": 184.2,
    "geo": [
     85.61,
     -22.13
@@ -195,7 +195,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 165.2,
+   "bearing": 163.5,
    "geo": [
     -1.01,
     21.76
@@ -215,7 +215,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 235.4,
+   "bearing": 232.0,
    "geo": [
     -1073.95,
     -628.13
@@ -276,7 +276,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 240.1,
+   "bearing": 236.1,
    "geo": [
     -1.01,
     -0.91
@@ -296,7 +296,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 256.5,
+   "bearing": 256.9,
    "geo": [
     -1080.62,
     747.17
@@ -516,7 +516,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 226.1,
+   "bearing": 223.7,
    "geo": [
     -119.93,
     -471.97
@@ -536,7 +536,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 176.9,
+   "bearing": 173.9,
    "geo": [
     1487.36,
     -611.67
@@ -816,7 +816,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 172.2,
+   "bearing": 169.7,
    "geo": [
     -193.97,
     -528.62
@@ -976,7 +976,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 167.6,
+   "bearing": 165.6,
    "geo": [
     1195.79,
     1025.36
@@ -996,7 +996,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 169.9,
+   "bearing": 167.6,
    "geo": [
     30.63,
     -41.89
@@ -1016,7 +1016,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 174.6,
+   "bearing": 171.8,
    "geo": [
     -109.62,
     -607.22
@@ -1036,7 +1036,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 181.6,
+   "bearing": 180.1,
    "geo": [
     -88.63,
     -228.38
@@ -1076,7 +1076,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 207.3
+   "bearing": 207.1
   },
   {
    "id": "standing-stone-state-forest-wma",
@@ -1091,7 +1091,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 237.8,
+   "bearing": 234.1,
    "geo": [
     -1073.95,
     -628.13
@@ -1111,7 +1111,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 191.0,
+   "bearing": 192.5,
    "geo": [
     -17.17,
     -43.04
@@ -1131,7 +1131,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 198.0,
+   "bearing": 198.8,
    "geo": [
     0.3,
     -7.36
@@ -1151,7 +1151,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 202.7,
+   "bearing": 202.9,
    "geo": [
     4.25,
     9.37
@@ -1171,7 +1171,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 214.4,
+   "bearing": 213.3,
    "geo": [
     -22.79,
     3.77
@@ -1191,7 +1191,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 216.7,
+   "bearing": 215.4,
    "geo": [
     0.38,
     5.97
@@ -1211,7 +1211,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 221.4,
+   "bearing": 219.5,
    "geo": [
     -31.98,
     9.52
@@ -1231,7 +1231,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 230.7,
+   "bearing": 227.8,
    "geo": [
     -39.66,
     -49.98
@@ -1251,7 +1251,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 247.1,
+   "bearing": 242.4,
    "geo": [
     -2.13,
     0.43
@@ -1271,7 +1271,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 151.2,
+   "bearing": 151.0,
    "geo": [
     -2.07,
     0.41
@@ -1291,7 +1291,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 153.5,
+   "bearing": 153.1,
    "geo": [
     -78.62,
     32.8
@@ -1311,7 +1311,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 160.5,
+   "bearing": 159.3,
    "geo": [
     -17.66,
     -112.26
@@ -1331,7 +1331,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 162.9,
+   "bearing": 161.4,
    "geo": [
     3.55,
     -130.05
@@ -1351,7 +1351,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 233.1,
+   "bearing": 229.9,
    "geo": [
     0.69,
     7.54
@@ -1371,7 +1371,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 242.4,
+   "bearing": 238.2,
    "geo": [
     43.82,
     -6.48
@@ -1391,7 +1391,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 249.5,
+   "bearing": 250.7,
    "geo": [
     -61.96,
     34.9
@@ -1411,7 +1411,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 258.8,
+   "bearing": 259.0,
    "geo": [
     15.78,
     -132.87
@@ -1431,7 +1431,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 179.3,
+   "bearing": 175.9,
    "geo": [
     -4.95,
     5.11
@@ -1451,7 +1451,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 195.6,
+   "bearing": 196.7,
    "geo": [
     77.84,
     -33.44
@@ -1471,7 +1471,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 219.0,
+   "bearing": 217.5,
    "geo": [
     -22.32,
     -49.98
@@ -1491,12 +1491,132 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 223.7,
+   "bearing": 221.6,
    "geo": [
     -4.95,
     5.11
    ],
    "geo_method": "venue-approx"
+  },
+  {
+   "id": "the-coop",
+   "name": "The Coop",
+   "type": "listed",
+   "url": "https://www.google.com/maps/search/?api=1&query=The+Coop+Livingston+TN",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A hometown restaurant a block off the courthouse square on S Spring Street, open seven days and late on Friday and Saturday nights. One of the most-reviewed restaurants in town.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 246.5,
+   "geo": [
+    -0.46,
+    20.57
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "frank-s",
+   "name": "Frank's",
+   "type": "listed",
+   "url": "https://www.google.com/maps/search/?api=1&query=Frank%27s+1033+E+Main+St+Livingston+TN",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A local restaurant on E Main Street east of downtown.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 178.0,
+   "geo": [
+    134.86,
+    -45.91
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "livingston-house-of-pizza",
+   "name": "Livingston House of Pizza",
+   "type": "listed",
+   "url": "https://www.google.com/maps/search/?api=1&query=Livingston+House+of+Pizza+Livingston+TN",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A pizza restaurant on E Main Street.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 190.5,
+   "geo": [
+    52.57,
+    -21.74
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "the-coffee-shop",
+   "name": "The Coffee Shop",
+   "type": "listed",
+   "url": "https://www.facebook.com/acsquaredbakery/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A bakery and coffee shop right on the courthouse square, run as A.C. Squared Bakery.",
+   "category": "eats",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 244.4,
+   "geo": [
+    0.69,
+    7.54
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "the-emporium",
+   "name": "The Emporium",
+   "type": "listed",
+   "url": "http://www.facebook.com/livingstonemporium",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A gift shop on the north side of the courthouse square.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 248.6,
+   "geo": [
+    -1.88,
+    0.35
+   ],
+   "geo_method": "address"
+  },
+  {
+   "id": "keaton-place",
+   "name": "Keaton Place",
+   "type": "listed",
+   "url": "https://www.google.com/maps/search/?api=1&query=Keaton+Place+120+N+Court+Square+Livingston+TN",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A gift shop on the courthouse square, a few doors from The Emporium.",
+   "category": "square",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 182.2,
+   "geo": [
+    -2.26,
+    0.47
+   ],
+   "geo_method": "address"
   },
   {
    "id": "phillips-printing-company",
@@ -2058,6 +2178,36 @@
   {
    "source": "visit-livingston-tn",
    "target": "paint-livingston",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "the-coop",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "frank-s",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "livingston-house-of-pizza",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "the-coffee-shop",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "the-emporium",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "keaton-place",
    "kind": "lists"
   },
   {

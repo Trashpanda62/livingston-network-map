@@ -433,5 +433,35 @@
   "lat": 36.156898403921566,
   "lon": -85.49798020980393,
   "method": "town-approx"
+ },
+ "the-coop": {
+  "lat": 36.3816672,
+  "lon": -85.3227614,
+  "method": "address"
+ },
+ "frank-s": {
+  "lat": 36.388884,
+  "lon": -85.304642,
+  "method": "address"
+ },
+ "livingston-house-of-pizza": {
+  "lat": 36.3862602,
+  "lon": -85.3156605,
+  "method": "address"
+ },
+ "the-coffee-shop": {
+  "lat": 36.383082,
+  "lon": -85.322607,
+  "method": "address"
+ },
+ "the-emporium": {
+  "lat": 36.3838623,
+  "lon": -85.3229517,
+  "method": "address"
+ },
+ "keaton-place": {
+  "lat": 36.3838494,
+  "lon": -85.3230022,
+  "method": "address"
  }
 }

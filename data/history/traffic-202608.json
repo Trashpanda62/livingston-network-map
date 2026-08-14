@@ -1,0 +1,442 @@
+{
+ "livingston-city-park": {
+  "reviews": null,
+  "crux": null
+ },
+ "central-park-livingston": {
+  "reviews": 505,
+  "crux": false
+ },
+ "standing-stone-state-forest": {
+  "reviews": 2,
+  "crux": null
+ },
+ "sunset-marina-and-resort": {
+  "reviews": 993,
+  "crux": true
+ },
+ "obey-river-park": {
+  "reviews": null,
+  "crux": null
+ },
+ "standing-stone-state-park": {
+  "reviews": 1300,
+  "crux": null
+ },
+ "waterloo-falls": {
+  "reviews": null,
+  "crux": true
+ },
+ "cinderella-park": {
+  "reviews": 204,
+  "crux": null
+ },
+ "capshaw-park": {
+  "reviews": 11,
+  "crux": null
+ },
+ "tennessee-central-trail": {
+  "reviews": 4,
+  "crux": false
+ },
+ "dogwood-park": {
+  "reviews": 2311,
+  "crux": null
+ },
+ "dale-hollow-dam-overlook": {
+  "reviews": null,
+  "crux": null
+ },
+ "dale-hollow-lake-primitive-camping": {
+  "reviews": 342,
+  "crux": null
+ },
+ "monterey-rail-trail": {
+  "reviews": null,
+  "crux": null
+ },
+ "ensor-sink-natural-area": {
+  "reviews": 1,
+  "crux": null
+ },
+ "dale-hollow-damsite-recreation-area": {
+  "reviews": 342,
+  "crux": null
+ },
+ "dale-hollow-national-fish-hatchery": {
+  "reviews": 60,
+  "crux": null
+ },
+ "pleasant-grove-recreation-area-dale-hollow-lake": {
+  "reviews": 125,
+  "crux": null
+ },
+ "east-port-marina-and-resort": {
+  "reviews": 405,
+  "crux": true
+ },
+ "bee-rock": {
+  "reviews": 340,
+  "crux": null
+ },
+ "city-lake-natural-area": {
+  "reviews": 715,
+  "crux": null
+ },
+ "cordell-hull-birthplace-state-park": {
+  "reviews": 247,
+  "crux": null
+ },
+ "the-boils-wildlife-management-area": {
+  "reviews": 167,
+  "crux": null
+ },
+ "willow-grove-campground": {
+  "reviews": 164,
+  "crux": null
+ },
+ "cane-creek-park": {
+  "reviews": 1700,
+  "crux": null
+ },
+ "roaring-river-park": {
+  "reviews": 139,
+  "crux": null
+ },
+ "cove-creek-recreation-area": {
+  "reviews": 64,
+  "crux": null
+ },
+ "horse-creek-resort": {
+  "reviews": null,
+  "crux": false
+ },
+ "meadow-creek-park": {
+  "reviews": 71,
+  "crux": null
+ },
+ "cordell-hull-wildlife-management-area": {
+  "reviews": 35,
+  "crux": null
+ },
+ "star-point-resort": {
+  "reviews": 237,
+  "crux": true
+ },
+ "wartrace-creek-recreation-area": {
+  "reviews": 103,
+  "crux": null
+ },
+ "dale-hollow-lake-eagle-watch": {
+  "reviews": null,
+  "crux": null
+ },
+ "lillydale-campground-and-day-use": {
+  "reviews": 324,
+  "crux": null
+ },
+ "salt-lick-creek-recreation-area-and-campground": {
+  "reviews": 144,
+  "crux": null
+ },
+ "cummins-falls-state-park": {
+  "reviews": 4900,
+  "crux": null
+ },
+ "dale-hollow-lake-usace-nashville-district": {
+  "reviews": null,
+  "crux": null
+ },
+ "granville-historic-district-and-veterans-park": {
+  "reviews": 56,
+  "crux": false
+ },
+ "burgess-falls-state-park": {
+  "reviews": 4700,
+  "crux": null
+ },
+ "sgt-alvin-c-york-state-historic-park": {
+  "reviews": 943,
+  "crux": null
+ },
+ "cub-mountain-atv-park-campground": {
+  "reviews": 80,
+  "crux": true
+ },
+ "cumberland-national-scenic-byway-overton-county-segment": {
+  "reviews": null,
+  "crux": false
+ },
+ "dale-hollow-lake-overton-county-access-mitchell-creek-marina-livingston-boat-dock": {
+  "reviews": 278,
+  "crux": true
+ },
+ "hidden-valley-golf-country-club": {
+  "reviews": 61,
+  "crux": false
+ },
+ "livingston-city-park-recreation-park-city-ballpark": {
+  "reviews": null,
+  "crux": null
+ },
+ "obey-river-park-campground": {
+  "reviews": 299,
+  "crux": null
+ },
+ "standing-stone-state-forest-wma": {
+  "reviews": null,
+  "crux": null
+ },
+ "livingston-mural-trail": {
+  "reviews": null,
+  "crux": true
+ },
+ "livingston-overton-county-farmers-market": {
+  "reviews": 37,
+  "crux": true
+ },
+ "millard-oakley-public-library": {
+  "reviews": 52,
+  "crux": false
+ },
+ "overton-county-arts": {
+  "reviews": null,
+  "crux": null
+ },
+ "overton-county-courthouse": {
+  "reviews": null,
+  "crux": true
+ },
+ "overton-county-heritage-museum": {
+  "reviews": 14,
+  "crux": null
+ },
+ "roaring-river-church-and-cemetery": {
+  "reviews": null,
+  "crux": null
+ },
+ "the-antique-market": {
+  "reviews": 68,
+  "crux": true
+ },
+ "1806-bbq": {
+  "reviews": 189,
+  "crux": false
+ },
+ "angelina-s-italian-subs-more": {
+  "reviews": 25,
+  "crux": false
+ },
+ "brazen-que": {
+  "reviews": 321,
+  "crux": true
+ },
+ "casa-mexicana": {
+  "reviews": 527,
+  "crux": null
+ },
+ "ruby-lee-coffee-and-bakehouse": {
+  "reviews": 94,
+  "crux": null
+ },
+ "stover-s-country-kitchen": {
+  "reviews": 626,
+  "crux": null
+ },
+ "the-sno-shack": {
+  "reviews": 38,
+  "crux": null
+ },
+ "wired-coffee-co": {
+  "reviews": 252,
+  "crux": false
+ },
+ "fall-o-ween-in-livingston": {
+  "reviews": null,
+  "crux": true
+ },
+ "livingston-overton-county-christmas-parade": {
+  "reviews": null,
+  "crux": true
+ },
+ "overton-county-fair": {
+  "reviews": 87,
+  "crux": true
+ },
+ "paint-livingston": {
+  "reviews": null,
+  "crux": null
+ },
+ "phillips-printing-company": {
+  "reviews": 62,
+  "crux": true
+ },
+ "pollock-printing": {
+  "reviews": 36,
+  "crux": false
+ },
+ "joyner-hogan-printers": {
+  "reviews": 10,
+  "crux": false
+ },
+ "hatch-show-print": {
+  "reviews": 274,
+  "crux": true
+ },
+ "crown-label-inc": {
+  "reviews": 1,
+  "crux": false
+ },
+ "that-s-printing-inc": {
+  "reviews": 15,
+  "crux": false
+ },
+ "franklin-web-printing-co": {
+  "reviews": 13,
+  "crux": false
+ },
+ "quality-printing-company": {
+  "reviews": 23,
+  "crux": false
+ },
+ "ledbetter-signs": {
+  "reviews": 19,
+  "crux": false
+ },
+ "anderson-printing-solutions": {
+  "reviews": null,
+  "crux": false
+ },
+ "p-serendipity-salon": {
+  "reviews": 18,
+  "crux": null
+ },
+ "p-pamies-unisex-hair-salon": {
+  "reviews": 65,
+  "crux": null
+ },
+ "p-woolbright-auto-repair": {
+  "reviews": 46,
+  "crux": null
+ },
+ "p-t-and-m-automotive": {
+  "reviews": 31,
+  "crux": null
+ },
+ "p-waterloo-tire-service": {
+  "reviews": 135,
+  "crux": null
+ },
+ "p-hwy-tire": {
+  "reviews": 52,
+  "crux": null
+ },
+ "p-low-cost-heating-and-cooling": {
+  "reviews": 30,
+  "crux": null
+ },
+ "p-heritage-heating-and-cooling": {
+  "reviews": 2,
+  "crux": null
+ },
+ "p-jb-lawncare": {
+  "reviews": 11,
+  "crux": null
+ },
+ "p-middle-tennessee-lawn-care": {
+  "reviews": 1,
+  "crux": null
+ },
+ "p-upper-cumberland-family-dentistry": {
+  "reviews": 46,
+  "crux": null
+ },
+ "p-parsons-ii-buckie-d-dds": {
+  "reviews": 22,
+  "crux": null
+ },
+ "p-atnip-e-alan-dc": {
+  "reviews": 6,
+  "crux": null
+ },
+ "p-muscle-factory-gym-and-training-facility": {
+  "reviews": 19,
+  "crux": null
+ },
+ "p-muscle-factory-group-fitness": {
+  "reviews": 19,
+  "crux": null
+ },
+ "p-ms-angies-playhouse": {
+  "reviews": null,
+  "crux": null
+ },
+ "p-arneys-wrecker-service": {
+  "reviews": 29,
+  "crux": null
+ },
+ "p-blissful-bundts-and-bakes": {
+  "reviews": 9,
+  "crux": null
+ },
+ "p-livingston-flower-basket": {
+  "reviews": 34,
+  "crux": null
+ },
+ "p-the-pampered-pooch-pet-salon-and-boarding-kennels": {
+  "reviews": 32,
+  "crux": null
+ },
+ "p-sweet-and-sassy-dog-grooming": {
+  "reviews": 14,
+  "crux": null
+ },
+ "p-bark-and-bubbles": {
+  "reviews": 11,
+  "crux": null
+ },
+ "p-david-and-eleanor-york-realtor": {
+  "reviews": 10,
+  "crux": null
+ },
+ "p-the-sunset-restaurant-by-the-steel-coop": {
+  "reviews": 102,
+  "crux": null
+ },
+ "p-scratch-kitchen": {
+  "reviews": 114,
+  "crux": null
+ },
+ "p-identity-hair-co": {
+  "reviews": 55,
+  "crux": null
+ },
+ "p-roots-salon": {
+  "reviews": 291,
+  "crux": null
+ },
+ "p-hair-station": {
+  "reviews": 16,
+  "crux": null
+ },
+ "p-light-the-fire-garage-and-fab": {
+  "reviews": 4,
+  "crux": null
+ },
+ "p-randy-auto-repair": {
+  "reviews": 6,
+  "crux": null
+ },
+ "p-floyd-automotive-and-performance": {
+  "reviews": 55,
+  "crux": null
+ },
+ "p-murphy-fine-groom-and-shave": {
+  "reviews": 49,
+  "crux": null
+ },
+ "p-by-pass-barber-shop": {
+  "reviews": 19,
+  "crux": null
+ }
+}

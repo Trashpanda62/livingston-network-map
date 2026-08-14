@@ -78,12 +78,51 @@ body { background: var(--bg); overflow: hidden; font-family: "Segoe UI", system-
 .dir-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%;
   margin-right: 4px; vertical-align: baseline; }
 
+.drawer-tools { display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  margin-bottom: 8px; }
+.drawer-tools .chip { pointer-events: auto; cursor: pointer; font-family: inherit;
+  color: var(--label); opacity: 0.55; font-size: 11px; padding: 3px 8px; }
+.drawer-tools .chip.is-on { opacity: 1; }
+#drawer-csv { margin-left: auto; opacity: 0.85; }
+.drawer-meta em { font-style: normal; font-weight: 600; }
+.st-won { color: #15803d; }
+.st-dead { color: #9ca3af; }
+.st-called, .st-meeting, .st-sample { color: #a16207; }
+
+.panel-crm { font-size: 12px; margin-bottom: 12px; }
+.panel-crm select { font: inherit; padding: 3px 6px; border-radius: 6px; }
+.panel-crm a { color: inherit; font-weight: 600; }
+
+.hint { top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 400px;
+  background: var(--card); padding: 18px 20px; border-radius: 14px; z-index: 30;
+  border: 1px solid rgba(128,140,170,0.3); pointer-events: auto; }
+.hint p { font-size: 13px; line-height: 1.55; margin-bottom: 12px; }
+.hint .chip { cursor: pointer; color: var(--label); font-family: inherit; }
+
+.tip-card { position: fixed; z-index: 25; pointer-events: none; max-width: 230px;
+  background: var(--card); color: var(--label); padding: 8px 11px;
+  border-radius: 9px; border: 1px solid rgba(128,140,170,0.3); }
+.tip-card strong { display: block; font-size: 12px; }
+.tip-card span { display: block; font-size: 11px; opacity: 0.8; }
+
 @media (max-width: 640px) {
   /* Phone: the call list becomes a bottom sheet; the directory key rides in
      the scrolling legend row. */
   .drawer { top: auto; bottom: 0; left: 0; right: 0; width: auto;
     max-height: 60vh; border-radius: 16px 16px 0 0; }
   .drawer-call { min-height: 40px; display: inline-flex; align-items: center; }
+  .tip-card { display: none; }
+}
+
+@media print {
+  /* Printing yields the call list, not a dark canvas screenshot. */
+  #graph, .hud, .panel, .panel-close, .drawer-tools, canvas { display: none !important; }
+  body { background: #fff; overflow: visible; }
+  .drawer, .drawer[hidden] { display: block !important; position: static;
+    width: auto; max-height: none; overflow: visible; background: #fff;
+    color: #000; border: none; }
+  #drawer-list li { page-break-inside: avoid; }
+  .drawer-call { border: none; }
 }
 .panel-visitors { font-size: 12px; font-weight: 600; margin-bottom: 10px; }
 .panel-phone { font-size: 13px; font-weight: 600; margin-bottom: 10px; }

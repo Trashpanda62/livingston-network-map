@@ -472,6 +472,16 @@ def main() -> int:
         print(f"  deduped {len(out_data['new']) - len(by_name)} repeat rows", flush=True)
     out_data["new"] = list(by_name.values())
 
+    # A prospect that later becomes a real directory listing turns into a
+    # listed node on the map — drop its standalone row (flag_listed will mark
+    # the listed node gold instead if its web presence is still weak).
+    net_names = [normalize_name(n["name"]) for n in net["nodes"]]
+    before = len(out_data["new"])
+    out_data["new"] = [r for r in out_data["new"]
+                       if not any(fuzzy_match(normalize_name(r["name"]), nn) for nn in net_names)]
+    if len(out_data["new"]) != before:
+        print(f"  promoted to listings: {before - len(out_data['new'])} rows dropped", flush=True)
+
     # Satellite-town rows with no street geocode get their town center plus a
     # deterministic sub-km jitter, marked geo_method town-approx so the panel
     # can say the position is approximate. Livingston rows stay null: the map
@@ -487,6 +497,15 @@ def main() -> int:
             row["lat"] = tc["lat"] + ((h % 1000) / 1000 - 0.5) * 0.008
             row["lon"] = tc["lon"] + ((h // 1000 % 1000) / 1000 - 0.5) * 0.008
             row["geo_method"] = "town-approx"
+
+    # Drive-time estimate from the square: crow-fly km x 1.5 road factor at
+    # 55 km/h, floor 3 min. Ring-fallback Livingston rows are in-town: 4 min.
+    for row in out_data["new"]:
+        if row.get("lat") is not None:
+            km = haversine_km(row["lat"], row["lon"], LIVINGSTON_LAT, LIVINGSTON_LON)
+            row["drive_min"] = max(3, round(km * 1.5 / 55 * 60))
+        else:
+            row["drive_min"] = 4
     OUT.write_text(json.dumps(out_data, indent=1), encoding="utf-8")
     GEOCACHE.write_text(json.dumps(geocache, indent=1), encoding="utf-8")
 

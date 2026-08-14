@@ -57,6 +57,19 @@ const PROSPECT_REASONS = {
   'dead-site': 'has a domain but effectively no visitors'
 };
 
+// Call-status CRM, persisted locally in this browser. {nodeId: {status, sample}}
+const CRM_KEY = 'lnm-status-v1';
+const STATUSES = ['none', 'called', 'meeting', 'sample', 'won', 'dead'];
+const STATUS_LABEL = { none: 'to call', called: 'called', meeting: 'meeting',
+  sample: 'sample built', won: 'won', dead: 'dead' };
+let crm = {};
+try { crm = JSON.parse(localStorage.getItem(CRM_KEY) || '{}'); } catch { crm = {}; }
+function crmFor(id) { return crm[id] || { status: 'none' }; }
+function setCrm(id, patch) {
+  crm[id] = { ...crmFor(id), ...patch };
+  try { localStorage.setItem(CRM_KEY, JSON.stringify(crm)); } catch { /* private mode */ }
+}
+
 // One color per directory/top-list, used by every linkviz variant: badge
 // chips on pins, halo rings, ribbon links, the disc under each directory
 // glyph, and the dots in the info panel.
@@ -109,6 +122,7 @@ let regionTexture = null; // THREE.Texture of data/region.jpg
 let visitors = null; // parsed data/visitors.json {domain: {uniques,...}}
 let traffic = null; // parsed data/traffic.json {node_id: {reviews, rating, crux}}
 let prospects = null; // parsed data/prospects.json {flagged: {id: {...}}, new: [...]}
+let prevTraffic = null; // previous monthly snapshot {node_id: {reviews, crux}} for trend arrows
 let decor = null; // THREE.Group holding the table + map + rings
 
 // Same local frame as scripts/geo.py: scene units east/south of the square.
@@ -206,6 +220,57 @@ function makeLabelSprite(text, color, scale) {
   return sprite;
 }
 
+// Small emoji glyph riding the pin head so categories read at a glance.
+const GROUP_EMOJI = { eats: '🍽️', town: '🏛️', water: '🌊', land: '🌲' };
+const PROSPECT_EMOJI = [
+  [/restaurant|bakery|coffee/, '🍽️'], [/hair|barber/, '💈'],
+  [/auto|tire|towing/, '🔧'], [/gift|boutique|hardware|florist/, '🛍️'],
+  [/dentist|chiropractor|pharmac/, '🩺'], [/veterinar|pet/, '🐾'],
+  [/gym/, '🏋️'], [/daycare/, '🧸'], [/plumb|electric|hvac|roof|landscap|lawn/, '🛠️'],
+  [/real estate|insurance/, '🏠']
+];
+const iconCache = {};
+function catEmoji(n) {
+  if (n.type === 'listed') return GROUP_EMOJI[CAT_GROUP[n.category]] || null;
+  const cat = (n.category || '').toLowerCase();
+  const hit = PROSPECT_EMOJI.find(([re]) => re.test(cat));
+  return hit ? hit[1] : '⭐';
+}
+function addCatIcon(group, n, y) {
+  const em = catEmoji(n);
+  if (!em) return;
+  if (!iconCache[em]) {
+    const c = document.createElement('canvas');
+    c.width = c.height = 64;
+    const ctx = c.getContext('2d');
+    ctx.font = '48px "Segoe UI Emoji", sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(em, 32, 36);
+    const tex = new THREE.CanvasTexture(c);
+    tex.colorSpace = THREE.SRGBColorSpace;
+    iconCache[em] = tex;
+  }
+  const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: iconCache[em], depthWrite: false, transparent: true }));
+  sprite.scale.set(3.4, 3.4, 1);
+  sprite.position.y = y;
+  sprite.position.z = 0.1;
+  group.add(sprite);
+}
+
+// Gentle pulse on gold beacons — skipped for reduced-motion/calm, paused
+// when the tab is hidden, and absent on won/dead pins (no pulseHead set).
+(function pulseLoop() {
+  requestAnimationFrame(pulseLoop);
+  if (!net || state.motion === 'calm' || document.hidden) return;
+  const s = 1 + 0.1 * Math.sin(performance.now() / 320);
+  net.nodes.forEach(nn => {
+    const h = nn.__threeObj && nn.__threeObj.userData.pulseHead;
+    if (h) h.scale.setScalar(s);
+  });
+})();
+
 function nodeObject(n) {
   const p = pal();
   const dims = NODE_DIMS[n.type] || NODE_DIMS.listed;
@@ -213,7 +278,10 @@ function nodeObject(n) {
   const h = heightFor(n);
   const group = new THREE.Group();
   if (n.type === 'prospect') {
-    // Gold beacon pin: a business worth pitching a Barnraised build.
+    // Gold beacon pin: a business worth pitching a Barnraised build. CRM
+    // status changes the read: won pins turn built-blue, dead pins grey out.
+    const st = crmFor(n.id).status;
+    const headColor = st === 'won' ? p.built : (st === 'dead' ? '#8a8578' : PROSPECT_GOLD);
     const peg = new THREE.Mesh(
       new THREE.CylinderGeometry(0.5, 0.95, 7, 10),
       new THREE.MeshLambertMaterial({ color: p.frame })
@@ -226,18 +294,23 @@ function nodeObject(n) {
       : 2.6;
     const head = new THREE.Mesh(
       new THREE.SphereGeometry(headR, 16, 12),
-      new THREE.MeshLambertMaterial({ color: PROSPECT_GOLD, emissive: '#6b4e00' })
+      new THREE.MeshLambertMaterial({ color: headColor,
+        emissive: st === 'won' || st === 'dead' ? '#000000' : '#6b4e00' })
     );
     head.position.y = 8;
     group.add(head);
-    const ring = new THREE.Mesh(
-      new THREE.RingGeometry(3.4, 4.4, 28),
-      new THREE.MeshBasicMaterial({ color: PROSPECT_GOLD, side: THREE.DoubleSide,
-        transparent: true, opacity: 0.9, depthWrite: false })
-    );
-    ring.rotation.x = -Math.PI / 2;
-    ring.position.y = 0.3;
-    group.add(ring);
+    if (st !== 'won' && st !== 'dead') {
+      const ring = new THREE.Mesh(
+        new THREE.RingGeometry(3.4, 4.4, 28),
+        new THREE.MeshBasicMaterial({ color: PROSPECT_GOLD, side: THREE.DoubleSide,
+          transparent: true, opacity: 0.9, depthWrite: false })
+      );
+      ring.rotation.x = -Math.PI / 2;
+      ring.position.y = 0.3;
+      group.add(ring);
+      group.userData.pulseHead = head;
+    }
+    addCatIcon(group, n, 8);
     const sprite = makeLabelSprite(n.name, p.label, 0.8);
     sprite.position.y = 14.5;
     sprite.visible = state.labels === 'all';
@@ -269,7 +342,8 @@ function nodeObject(n) {
     head.position.y = 8;
     group.add(head);
     // Weak web presence: gold base ring, same read as the prospect beacons.
-    if (n.prospect) {
+    // A won engagement drops the ring; dead drops it too (stop signaling).
+    if (n.prospect && !['won', 'dead'].includes(crmFor(n.id).status)) {
       const gold = new THREE.Mesh(
         new THREE.RingGeometry(4.6, 5.4, 28),
         new THREE.MeshBasicMaterial({ color: PROSPECT_GOLD, side: THREE.DoubleSide,
@@ -278,7 +352,9 @@ function nodeObject(n) {
       gold.rotation.x = -Math.PI / 2;
       gold.position.y = 0.3;
       group.add(gold);
+      group.userData.pulseHead = gold;
     }
+    addCatIcon(group, n, 8);
     // Directory-membership viz, variant-dependent (data-linkviz).
     const dirs = n.listed_in || [];
     if (state.linkviz === 'badges') {
@@ -627,8 +703,10 @@ function applyAll() {
     .linkOpacity(0.9);
   graph.controls().addEventListener('change', scheduleLabelUpdate);
   graph.controls().addEventListener('change', updateNodeScales);
+  graph.controls().addEventListener('change', scheduleClusterUpdate);
   setTimeout(updateLabelVisibility, 300);
   setTimeout(updateNodeScales, 300);
+  setTimeout(updateClusters, 350);
   const cam = graph.camera();
   cam.far = 40000; // region map + table extend past the default far plane
   cam.near = 5;    // default 0.1 wrecks depth precision at region distances
@@ -681,10 +759,83 @@ function linkShown(l) {
 
 function nodeVisible(n) {
   if (!filters.types.has(n.type)) return false;
+  if (clusteredIds.has(n.id)) return false;
   // Unknown distance means "always show" — hiding it would read as a data gap.
-  if (filters.band !== 'all' && n.type === 'listed' &&
+  if (filters.band !== 'all' && (n.type === 'listed' || n.type === 'prospect') &&
       n.drive_min != null && n.drive_min > Number(filters.band)) return false;
   return true;
+}
+
+// Far-zoom clustering: past CLUSTER_DIST, downtown pins collapse into count
+// badges (gold-tinged when the bucket holds prospects); clicking one zooms in.
+const CLUSTER_DIST = 2600, CLUSTER_CELL = 150, CLUSTER_MIN = 4;
+let clusterLayer = null;
+const clusteredIds = new Set();
+function clusterBadge(count, hasGold) {
+  const c = document.createElement('canvas');
+  c.width = c.height = 128;
+  const ctx = c.getContext('2d');
+  ctx.beginPath();
+  ctx.arc(64, 64, 56, 0, Math.PI * 2);
+  ctx.fillStyle = hasGold ? '#b8860b' : '#4a5568';
+  ctx.fill();
+  ctx.lineWidth = 8;
+  ctx.strokeStyle = '#ffffff';
+  ctx.stroke();
+  ctx.fillStyle = '#ffffff';
+  ctx.font = '700 52px "Segoe UI", sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(String(count), 64, 66);
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  return new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthWrite: false, transparent: true }));
+}
+function updateClusters() {
+  if (!net) return;
+  const cam = graph.camera();
+  const d = cam.position.distanceTo(graph.controls().target);
+  if (clusterLayer) {
+    clusterLayer.traverse(o => {
+      if (o.material) { if (o.material.map) o.material.map.dispose(); o.material.dispose(); }
+    });
+    graph.scene().remove(clusterLayer);
+    clusterLayer = null;
+  }
+  const had = clusteredIds.size > 0;
+  clusteredIds.clear();
+  if (d > CLUSTER_DIST) {
+    const buckets = {};
+    net.nodes.forEach(n => {
+      if (n.type !== 'listed' && n.type !== 'prospect') return;
+      if (!filters.types.has(n.type)) return;
+      const x = n.fx || 0, z = n.fz || 0;
+      if (Math.hypot(x, z) >= FAR_R - 10) return; // beyond-region band stays individual
+      const key = Math.round(x / CLUSTER_CELL) + '|' + Math.round(z / CLUSTER_CELL);
+      (buckets[key] = buckets[key] || []).push(n);
+    });
+    clusterLayer = new THREE.Group();
+    Object.values(buckets).forEach(list => {
+      if (list.length < CLUSTER_MIN) return;
+      list.forEach(n => clusteredIds.add(n.id));
+      const cx = list.reduce((a, n) => a + (n.fx || 0), 0) / list.length;
+      const cz = list.reduce((a, n) => a + (n.fz || 0), 0) / list.length;
+      const gold = list.some(n => n.type === 'prospect' || (n.prospect && !['won', 'dead'].includes(crmFor(n.id).status)));
+      const s = clusterBadge(list.length, gold);
+      const k = Math.max(30, d / 40);
+      s.scale.set(k, k, 1);
+      s.position.set(cx, 24, cz);
+      s.userData.clusterAt = { x: cx, z: cz };
+      clusterLayer.add(s);
+    });
+    graph.scene().add(clusterLayer);
+  }
+  if (clusteredIds.size || had) applyFilters();
+}
+let clusterTimer = null;
+function scheduleClusterUpdate() {
+  if (clusterTimer) return;
+  clusterTimer = setTimeout(() => { clusterTimer = null; updateClusters(); }, 200);
 }
 
 function applyFilters() {
@@ -697,9 +848,10 @@ function updateStats() {
   const vis = net.nodes.filter(nodeVisible);
   const c = t => vis.filter(n => n.type === t).length;
   const needSite = vis.filter(n => n.type === 'prospect' || n.prospect).length;
+  const drawerOpen = !document.getElementById('drawer').hidden;
   document.getElementById('stats').innerHTML =
     `${c('directory')} directories · ${c('built')} sites built · ${c('listed')} businesses & places connected · ` +
-    `<button class="stats-link" id="open-drawer">${needSite} need a website (gold) — open the call list</button>`;
+    `<button class="stats-link" id="open-drawer" aria-expanded="${drawerOpen}">${needSite} need a website (gold) — open the call list</button>`;
 }
 
 function prospectInfo(n) {
@@ -713,20 +865,45 @@ function prospectInfo(n) {
   };
 }
 
+let drawerFilter = 'all';
+function prospectRows() {
+  return net.nodes.filter(n => n.type === 'prospect' || n.prospect)
+    .map(n => ({ n, i: prospectInfo(n), c: crmFor(n.id) }))
+    .sort((a, b) => (STATUSES.indexOf(a.c.status) - STATUSES.indexOf(b.c.status))
+      || (b.i.reviews - a.i.reviews));
+}
 function buildDrawer() {
-  const list = document.getElementById('drawer-list');
-  const rows = net.nodes.filter(n => n.type === 'prospect' || n.prospect)
-    .map(n => ({ n, i: prospectInfo(n) }))
-    .sort((a, b) => b.i.reviews - a.i.reviews);
-  list.innerHTML = rows.map(({ n, i }) => `
+  const rows = prospectRows();
+  const counts = {};
+  rows.forEach(r => { counts[r.c.status] = (counts[r.c.status] || 0) + 1; });
+  document.getElementById('drawer-filters').innerHTML =
+    ['all', ...STATUSES].map(s => `<button class="chip drawer-filter ${drawerFilter === s ? 'is-on' : ''}"
+      data-f="${s}" aria-pressed="${drawerFilter === s}">${s === 'all' ? `all (${rows.length})` : `${STATUS_LABEL[s]} (${counts[s] || 0})`}</button>`).join(' ');
+  const shown = rows.filter(r => drawerFilter === 'all' || r.c.status === drawerFilter);
+  document.getElementById('drawer-list').innerHTML = shown.map(({ n, i, c }) => `
     <li>
       <button class="drawer-row" data-id="${esc(n.id)}">
         <strong>${esc(n.name)}</strong>
-        <span class="drawer-meta">${esc(n.city || '')}${i.reviews ? ` · ${i.reviews.toLocaleString()} reviews` : ''}${i.rating ? ` · ${i.rating}★` : ''}</span>
+        <span class="drawer-meta">${esc(n.city || '')}${i.reviews ? ` · ${i.reviews.toLocaleString()} reviews` : ''}${i.rating ? ` · ${i.rating}★` : ''}${c.status !== 'none' ? ` · <em class="st-${esc(c.status)}">${STATUS_LABEL[c.status]}</em>` : ''}</span>
         <span class="drawer-why">${esc(PROSPECT_REASONS[i.reason] || i.reason || '')}</span>
       </button>
       ${i.phone ? `<a class="drawer-call" href="tel:${esc(i.phone.replace(/[^+\d]/g, ''))}">${esc(i.phone)}</a>` : ''}
     </li>`).join('');
+}
+function exportCsv() {
+  const q = v => `"${String(v == null ? '' : v).replace(/"/g, '""')}"`;
+  const lines = [['Business', 'Town', 'Category', 'Phone', 'Google reviews', 'Rating',
+    'Why they need a site', 'Status', 'Sample URL'].join(',')];
+  prospectRows().forEach(({ n, i, c }) => {
+    lines.push([q(n.name), q(n.city), q(n.category), q(i.phone), i.reviews || '',
+      i.rating || '', q(PROSPECT_REASONS[i.reason] || i.reason),
+      q(STATUS_LABEL[c.status]), q(c.sample)].join(','));
+  });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([lines.join('\n')], { type: 'text/csv' }));
+  a.download = 'livingston-call-list.csv';
+  a.click();
+  URL.revokeObjectURL(a.href);
 }
 
 function esc(s) {
@@ -763,6 +940,11 @@ function openPanel(n) {
     // traffic number that exists publicly for sites this small.
     if (tr && tr.crux === true) bits.push('website: ~1,000+ visits/mo (est. from Chrome usage data)');
     else if (tr && tr.crux === false) bits.push('website: under ~1,000 visits/mo (est.)');
+    const pv = prevTraffic && prevTraffic[n.id];
+    if (tr && tr.reviews && pv && pv.reviews && pv.reviews !== tr.reviews) {
+      const dlt = tr.reviews - pv.reviews;
+      bits.push(`${dlt > 0 ? '▲' : '▼'} ${Math.abs(dlt)} reviews since last snapshot`);
+    }
     if (n.prospect) bits.push(`Website prospect: ${PROSPECT_REASONS[n.prospect.reason] || n.prospect.reason}`);
     vEl.textContent = bits.length ? bits.join(' · ') : 'No public traffic data';
   } else {
@@ -776,6 +958,29 @@ function openPanel(n) {
   phEl.innerHTML = phone
     ? `<a href="tel:${esc(phone.replace(/[^+\d]/g, ''))}">${esc(phone)}</a>`
     : '';
+  const crmEl = document.getElementById('panel-crm');
+  if (n.type === 'prospect' || n.prospect) {
+    const st = crmFor(n.id);
+    crmEl.innerHTML = `<label>Status: <select id="crm-status" aria-label="Call status">` +
+      STATUSES.map(s => `<option value="${s}" ${s === st.status ? 'selected' : ''}>${STATUS_LABEL[s]}</option>`).join('') +
+      `</select></label>` +
+      (st.sample ? ` <a href="${esc(st.sample)}" target="_blank" rel="noopener">sample site ↗</a>` : '');
+    crmEl.querySelector('#crm-status').addEventListener('change', e => {
+      const v = e.target.value;
+      const patch = { status: v };
+      if ((v === 'sample' || v === 'won') && !crmFor(n.id).sample) {
+        const u = window.prompt('Sample/live site URL (optional):') || '';
+        if (/^https?:\/\//.test(u)) patch.sample = u;
+      }
+      setCrm(n.id, patch);
+      graph.nodeThreeObject(x => nodeObject(x));
+      setTimeout(() => { updateNodeScales(); updateLabelVisibility(); }, 100);
+      openPanel(n);
+      buildDrawer();
+    });
+  } else {
+    crmEl.innerHTML = '';
+  }
   const listedEl = document.getElementById('panel-listed');
   const dirIds = n.listed_in || [];
   if (dirIds.length) {
@@ -832,20 +1037,63 @@ function wireHud() {
 
   // Call-list drawer: opened from the stats line (delegated — the stats line
   // is re-rendered on every filter change), rows fly to their node.
+  const drawer = document.getElementById('drawer');
   document.getElementById('stats').addEventListener('click', e => {
     if (e.target.id === 'open-drawer') {
       buildDrawer();
-      document.getElementById('drawer').hidden = false;
+      drawer.hidden = false;
+      e.target.setAttribute('aria-expanded', 'true');
+      drawer.focus({ preventScroll: true });
     }
   });
   document.getElementById('drawer-close').addEventListener('click', () => {
-    document.getElementById('drawer').hidden = true;
+    drawer.hidden = true;
+    const b = document.getElementById('open-drawer');
+    if (b) b.setAttribute('aria-expanded', 'false');
   });
   document.getElementById('drawer-list').addEventListener('click', e => {
     const row = e.target.closest('.drawer-row');
     if (!row) return;
     const n = net.nodes.find(x => x.id === row.dataset.id);
     if (n) { selectNode(n); openPanel(n); }
+  });
+  document.getElementById('drawer-filters').addEventListener('click', e => {
+    const b = e.target.closest('.drawer-filter');
+    if (!b) return;
+    drawerFilter = b.dataset.f;
+    buildDrawer();
+  });
+  document.getElementById('drawer-csv').addEventListener('click', exportCsv);
+
+  // Escape closes whatever is open, top-most first.
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const panel = document.getElementById('panel');
+    if (!panel.hidden) { clearSelection(); return; }
+    if (!drawer.hidden) { document.getElementById('drawer-close').click(); }
+  });
+
+  // Cluster badges live outside the graph's node picking — raycast manually.
+  const ray = new THREE.Raycaster(), mouse = new THREE.Vector2();
+  graph.renderer().domElement.addEventListener('click', e => {
+    if (!clusterLayer || !clusterLayer.children.length) return;
+    const r = graph.renderer().domElement.getBoundingClientRect();
+    mouse.x = ((e.clientX - r.left) / r.width) * 2 - 1;
+    mouse.y = -((e.clientY - r.top) / r.height) * 2 + 1;
+    ray.setFromCamera(mouse, graph.camera());
+    const hit = ray.intersectObjects(clusterLayer.children)[0];
+    if (hit) {
+      const { x, z } = hit.object.userData.clusterAt;
+      graph.cameraPosition({ x, y: 620, z: z + 450 }, { x, y: 0, z }, 800);
+    }
+  });
+
+  // First-visit hint.
+  const hint = document.getElementById('hint');
+  if (!localStorage.getItem('lnm-hint')) hint.hidden = false;
+  document.getElementById('hint-close').addEventListener('click', () => {
+    hint.hidden = true;
+    try { localStorage.setItem('lnm-hint', '1'); } catch { /* private mode */ }
   });
 
   const input = document.getElementById('search');
@@ -893,6 +1141,7 @@ function wireHud() {
 
 function selectNode(n) {
   selected = n;
+  history.replaceState(null, '', '#' + encodeURIComponent(n.id));
   applyFilters();
   applyMotion();
   updateLabelVisibility();
@@ -901,10 +1150,32 @@ function selectNode(n) {
 
 function clearSelection() {
   selected = null;
+  history.replaceState(null, '', location.pathname + location.search);
   document.getElementById('panel').hidden = true;
   applyFilters();
   applyMotion();
 }
+
+// Hover mini-card: name + the numbers that matter, following the cursor.
+const tipEl = () => document.getElementById('tip');
+function showTip(n) {
+  const t = tipEl();
+  if (!n) { t.hidden = true; return; }
+  const i = prospectInfo(n);
+  const bits = [];
+  if (i.reviews) bits.push(`${i.reviews.toLocaleString()} reviews${i.rating ? ` · ${i.rating}★` : ''}`);
+  if (n.type === 'prospect' || n.prospect) bits.push(PROSPECT_REASONS[i.reason] || i.reason || '');
+  else bits.push(TYPE_LABEL[n.type] || '');
+  t.innerHTML = `<strong>${esc(n.name)}</strong><span>${esc(bits.filter(Boolean).join(' · '))}</span>`;
+  t.hidden = false;
+}
+document.addEventListener('mousemove', e => {
+  const t = tipEl();
+  if (t && !t.hidden) {
+    t.style.left = Math.min(window.innerWidth - 240, e.clientX + 14) + 'px';
+    t.style.top = (e.clientY + 16) + 'px';
+  }
+});
 
 Promise.all([
   fetch('./data/network.json').then(r => r.json()),
@@ -914,9 +1185,15 @@ Promise.all([
   fetch('./data/region.json').then(r => r.json()).catch(() => null),
   new THREE.TextureLoader().loadAsync('./data/region.jpg?v=2').catch(() => null),
   fetch('./data/traffic.json').then(r => r.json()).catch(() => null),
-  fetch('./data/prospects.json').then(r => r.json()).catch(() => null)
+  fetch('./data/prospects.json').then(r => r.json()).catch(() => null),
+  fetch('./data/history/index.json').then(r => r.json()).catch(() => null)
 ])
-  .then(([data, satMeta, tex, vis, regionMeta, regionTex, traf, pros]) => {
+  .then(([data, satMeta, tex, vis, regionMeta, regionTex, traf, pros, hist]) => {
+    // Trend arrows need two monthly snapshots; until then prevTraffic stays null.
+    if (Array.isArray(hist) && hist.length >= 2) {
+      fetch('./data/history/' + hist[hist.length - 2].file).then(r => r.json())
+        .then(prev => { prevTraffic = prev; }).catch(() => {});
+    }
     traffic = traf;
     prospects = pros;
     if (prospects) {
@@ -933,6 +1210,7 @@ Promise.all([
           url: null,
           geo: r.lat != null ? toLocal(r.lat, r.lon) : null,
           geo_method: r.geo_method || null,
+          drive_min: r.drive_min != null ? r.drive_min : null,
           bearing: Math.abs([...String(r.id)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) | 0, 7)) % 360,
           prospect: { reason: r.reason, reviews: r.reviews, rating: r.rating, address: r.address, phone: r.phone }
         });
@@ -961,6 +1239,7 @@ Promise.all([
         if (h === hovered) return;
         hovered = h;
         document.body.style.cursor = h ? 'pointer' : '';
+        showTip(h);
         applyFilters();
         applyMotion();
         updateLabelVisibility();
@@ -970,7 +1249,14 @@ Promise.all([
     applyAll();
     wireHud();
     applyFilters();
+    buildDrawer(); // populated up-front so printing always has the call list
     defaultCamera(0);
+    // Deep link: #<node-id> flies straight to that node.
+    const hashId = decodeURIComponent((location.hash || '').slice(1));
+    if (hashId) {
+      const target = net.nodes.find(x => x.id === hashId);
+      if (target) setTimeout(() => { selectNode(target); openPanel(target); }, 700);
+    }
     window.__mapReady = true;
   })
   .catch(err => {

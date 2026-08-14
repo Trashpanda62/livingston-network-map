@@ -1,21 +1,21 @@
 {
- "nodes_total": 89,
+ "nodes_total": 95,
  "by_type": {
   "hub": 1,
   "directory": 4,
   "built": 7,
-  "listed": 77
+  "listed": 83
  },
- "edges_total": 92,
+ "edges_total": 98,
  "edges_by_kind": {
   "operates": 4,
   "built": 7,
-  "lists": 80,
+  "lists": 86,
   "sister": 1
  },
  "source_counts": {
   "outdoors": 40,
-  "visit": 29,
+  "visit": 35,
   "printers": 11
  },
  "deduped": [
@@ -25,5 +25,5 @@
  ],
  "missing_url": [],
  "missing_drive_min": [],
- "geo_placed": 69
+ "geo_placed": 75
 }

@@ -102,6 +102,46 @@
    "phone": "+1 931-403-9417",
    "address": "1185 Preston St, Livingston, TN 38570, United States"
   },
+  "the-coop": {
+   "reason": "aggregator-listing",
+   "reviews": null,
+   "name": "The Coop",
+   "phone": "+1 931-403-2667",
+   "address": "209 S Spring St, Livingston, TN 38570, United States"
+  },
+  "frank-s": {
+   "reason": "aggregator-listing",
+   "reviews": null,
+   "name": "Frank's"
+  },
+  "livingston-house-of-pizza": {
+   "reason": "aggregator-listing",
+   "reviews": null,
+   "name": "Livingston House of Pizza",
+   "phone": "+1 931-823-3486",
+   "address": "616 E Main St, Livingston, TN 38570, United States"
+  },
+  "the-coffee-shop": {
+   "reason": "facebook-only",
+   "reviews": null,
+   "name": "The Coffee Shop",
+   "phone": "+1 931-823-2253",
+   "address": "101 S Court Square, Livingston, TN 38570, United States"
+  },
+  "the-emporium": {
+   "reason": "facebook-only",
+   "reviews": null,
+   "name": "The Emporium",
+   "phone": "+1 931-823-6741",
+   "address": "108 N Court Square, Livingston, TN 38570, United States"
+  },
+  "keaton-place": {
+   "reason": "aggregator-listing",
+   "reviews": null,
+   "name": "Keaton Place",
+   "phone": "+1 931-823-2727",
+   "address": "120 N Court Square, Livingston, TN 38570, United States"
+  },
   "pollock-printing": {
    "reason": "dead-site",
    "reviews": 36,
@@ -159,48 +199,6 @@
  },
  "new": [
   {
-   "id": "the-coop",
-   "name": "The Coop",
-   "category": "restaurants",
-   "city": "Livingston",
-   "address": "209 S Spring St, Livingston, TN 38570, United States",
-   "lat": 36.3816662,
-   "lon": -85.3227614,
-   "reviews": 944,
-   "rating": 4.3,
-   "reason": "no-website",
-   "geo_method": "address",
-   "phone": "+1 931-403-2667"
-  },
-  {
-   "id": "frank-s",
-   "name": "Frank\u2019s",
-   "category": "restaurants",
-   "city": "Livingston",
-   "address": "1033 E Main St, Livingston, TN 38570, United States",
-   "lat": null,
-   "lon": null,
-   "reviews": 86,
-   "rating": 4.3,
-   "reason": "facebook-only",
-   "geo_method": null,
-   "phone": "+1 931-823-7265"
-  },
-  {
-   "id": "livingston-house-of-pizza",
-   "name": "Livingston House of Pizza",
-   "category": "restaurants",
-   "city": "Livingston",
-   "address": "616 E Main St, Livingston, TN 38570, United States",
-   "lat": 36.3862596,
-   "lon": -85.31566,
-   "reviews": 32,
-   "rating": 4.7,
-   "reason": "no-website",
-   "geo_method": "address",
-   "phone": "+1 931-823-3486"
-  },
-  {
    "id": "serendipity-salon",
    "name": "Serendipity Salon",
    "category": "hair salons",
@@ -212,7 +210,8 @@
    "rating": 4.9,
    "reason": "rented-subdomain",
    "geo_method": "address",
-   "phone": "(931) 823-2533"
+   "phone": "(931) 823-2533",
+   "drive_min": 3
   },
   {
    "id": "pamies-unisex-hair-salon",
@@ -226,7 +225,8 @@
    "rating": 4.8,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-823-7666"
+   "phone": "+1 931-823-7666",
+   "drive_min": 3
   },
   {
    "id": "woolbright-auto-repair",
@@ -240,7 +240,8 @@
    "rating": 4.5,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-403-5277"
+   "phone": "+1 931-403-5277",
+   "drive_min": 3
   },
   {
    "id": "t-and-m-automotive",
@@ -254,7 +255,8 @@
    "rating": 4.7,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "(931) 823-4848"
+   "phone": "(931) 823-4848",
+   "drive_min": 4
   },
   {
    "id": "waterloo-tire-service",
@@ -268,7 +270,8 @@
    "rating": 4.7,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-823-7442"
+   "phone": "+1 931-823-7442",
+   "drive_min": 3
   },
   {
    "id": "hwy-tire",
@@ -282,7 +285,8 @@
    "rating": 4.7,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-823-8473"
+   "phone": "+1 931-823-8473",
+   "drive_min": 9
   },
   {
    "id": "low-cost-heating-and-cooling",
@@ -296,7 +300,8 @@
    "rating": 4.8,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-823-3340"
+   "phone": "+1 931-823-3340",
+   "drive_min": 3
   },
   {
    "id": "heritage-heating-and-cooling",
@@ -310,7 +315,8 @@
    "rating": 5,
    "reason": "no-website",
    "geo_method": null,
-   "phone": "+1 931-239-2488"
+   "phone": "+1 931-239-2488",
+   "drive_min": 4
   },
   {
    "id": "jb-lawncare",
@@ -324,7 +330,8 @@
    "rating": 5,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-303-3766"
+   "phone": "+1 931-303-3766",
+   "drive_min": 3
   },
   {
    "id": "middle-tennessee-lawn-care",
@@ -338,35 +345,8 @@
    "rating": 5,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-239-2317"
-  },
-  {
-   "id": "the-emporium",
-   "name": "The Emporium",
-   "category": "gift shops",
-   "city": "Livingston",
-   "address": "108 N Court Square, Livingston, TN 38570, United States",
-   "lat": 36.3838623,
-   "lon": -85.3229517,
-   "reviews": 26,
-   "rating": 4.8,
-   "reason": "facebook-only",
-   "geo_method": "address",
-   "phone": "+1 931-823-6741"
-  },
-  {
-   "id": "keaton-place",
-   "name": "Keaton Place",
-   "category": "gift shops",
-   "city": "Livingston",
-   "address": "120 N Court Square",
-   "lat": 36.3838496,
-   "lon": -85.3230023,
-   "reviews": 11,
-   "rating": 4.8,
-   "reason": "no-website",
-   "geo_method": "address",
-   "phone": "+1 931-823-2727"
+   "phone": "+1 931-239-2317",
+   "drive_min": 3
   },
   {
    "id": "upper-cumberland-family-dentistry",
@@ -380,7 +360,8 @@
    "rating": 4.2,
    "reason": "facebook-only",
    "geo_method": "address",
-   "phone": "+1 931-823-5517"
+   "phone": "+1 931-823-5517",
+   "drive_min": 3
   },
   {
    "id": "parsons-ii-buckie-d-dds",
@@ -394,7 +375,8 @@
    "rating": 4.2,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-823-5517"
+   "phone": "+1 931-823-5517",
+   "drive_min": 3
   },
   {
    "id": "atnip-e-alan-dc",
@@ -408,7 +390,8 @@
    "rating": 4.8,
    "reason": "no-website",
    "geo_method": null,
-   "phone": "+1 931-823-2108"
+   "phone": "+1 931-823-2108",
+   "drive_min": 4
   },
   {
    "id": "muscle-factory-gym-and-training-facility",
@@ -422,7 +405,8 @@
    "rating": 4.4,
    "reason": "facebook-only",
    "geo_method": "address",
-   "phone": "+1 931-269-9101"
+   "phone": "+1 931-269-9101",
+   "drive_min": 3
   },
   {
    "id": "muscle-factory-group-fitness",
@@ -436,7 +420,8 @@
    "rating": 4.1,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-644-8890"
+   "phone": "+1 931-644-8890",
+   "drive_min": 3
   },
   {
    "id": "ms-angies-playhouse",
@@ -450,7 +435,8 @@
    "rating": null,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-823-7070"
+   "phone": "+1 931-823-7070",
+   "drive_min": 3
   },
   {
    "id": "arneys-wrecker-service",
@@ -464,21 +450,8 @@
    "rating": 4.8,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-823-4422"
-  },
-  {
-   "id": "the-coffee-shop",
-   "name": "The Coffee Shop",
-   "category": "bakeries",
-   "city": "Livingston",
-   "address": "101 S Court Square, Livingston, TN 38570, United States",
-   "lat": 36.383082,
-   "lon": -85.322607,
-   "reviews": 94,
-   "rating": 4.8,
-   "reason": "facebook-only",
-   "geo_method": "address",
-   "phone": "+1 931-823-2253"
+   "phone": "+1 931-823-4422",
+   "drive_min": 4
   },
   {
    "id": "blissful-bundts-and-bakes",
@@ -491,7 +464,8 @@
    "reviews": 9,
    "rating": 4.6,
    "reason": "no-website",
-   "geo_method": null
+   "geo_method": null,
+   "drive_min": 4
   },
   {
    "id": "livingston-flower-basket",
@@ -505,7 +479,8 @@
    "rating": 4.7,
    "reason": "rented-subdomain",
    "geo_method": null,
-   "phone": "+1 931-823-5758"
+   "phone": "+1 931-823-5758",
+   "drive_min": 4
   },
   {
    "id": "the-pampered-pooch-pet-salon-and-boarding-kennels",
@@ -519,7 +494,8 @@
    "rating": 4.9,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-445-5663"
+   "phone": "+1 931-445-5663",
+   "drive_min": 3
   },
   {
    "id": "sweet-and-sassy-dog-grooming",
@@ -533,7 +509,8 @@
    "rating": 4.7,
    "reason": "no-website",
    "geo_method": null,
-   "phone": "+1 931-260-9092"
+   "phone": "+1 931-260-9092",
+   "drive_min": 4
   },
   {
    "id": "bark-and-bubbles",
@@ -547,7 +524,8 @@
    "rating": 4.3,
    "reason": "no-website",
    "geo_method": null,
-   "phone": "+1 931-823-1431"
+   "phone": "+1 931-823-1431",
+   "drive_min": 4
   },
   {
    "id": "david-and-eleanor-york-realtor",
@@ -561,7 +539,8 @@
    "rating": 5,
    "reason": "facebook-only",
    "geo_method": null,
-   "phone": "+1 931-260-8186"
+   "phone": "+1 931-260-8186",
+   "drive_min": 4
   },
   {
    "id": "the-sunset-restaurant-by-the-steel-coop",
@@ -575,7 +554,8 @@
    "rating": 4.4,
    "reason": "no-website",
    "geo_method": "town-approx",
-   "phone": "(931) 864-4874"
+   "phone": "(931) 864-4874",
+   "drive_min": 15
   },
   {
    "id": "scratch-kitchen",
@@ -589,7 +569,8 @@
    "rating": 4.8,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-864-0090"
+   "phone": "+1 931-864-0090",
+   "drive_min": 44
   },
   {
    "id": "identity-hair-co",
@@ -602,7 +583,8 @@
    "reviews": 55,
    "rating": 4.9,
    "reason": "no-website",
-   "geo_method": "town-approx"
+   "geo_method": "town-approx",
+   "drive_min": 15
   },
   {
    "id": "roots-salon",
@@ -615,7 +597,8 @@
    "reviews": 291,
    "rating": 4.8,
    "reason": "no-website",
-   "geo_method": "town-approx"
+   "geo_method": "town-approx",
+   "drive_min": 16
   },
   {
    "id": "hair-station",
@@ -629,7 +612,8 @@
    "rating": 5,
    "reason": "no-website",
    "geo_method": "town-approx",
-   "phone": "+1 931-243-6666"
+   "phone": "+1 931-243-6666",
+   "drive_min": 10
   },
   {
    "id": "light-the-fire-garage-and-fab",
@@ -643,7 +627,8 @@
    "rating": 5,
    "reason": "facebook-only",
    "geo_method": "address",
-   "phone": "+1 931-823-2011"
+   "phone": "+1 931-823-2011",
+   "drive_min": 17
   },
   {
    "id": "randy-auto-repair",
@@ -657,7 +642,8 @@
    "rating": 3,
    "reason": "no-website",
    "geo_method": "address",
-   "phone": "+1 931-823-6363"
+   "phone": "+1 931-823-6363",
+   "drive_min": 21
   },
   {
    "id": "floyd-automotive-and-performance",
@@ -671,7 +657,8 @@
    "rating": 4.2,
    "reason": "facebook-only",
    "geo_method": "address",
-   "phone": "+1 931-372-8253"
+   "phone": "+1 931-372-8253",
+   "drive_min": 23
   },
   {
    "id": "murphy-fine-groom-and-shave",
@@ -685,7 +672,8 @@
    "rating": 5,
    "reason": "facebook-only",
    "geo_method": "address",
-   "phone": "+1 931-303-8707"
+   "phone": "+1 931-303-8707",
+   "drive_min": 3
   },
   {
    "id": "by-pass-barber-shop",
@@ -699,7 +687,8 @@
    "rating": 4.6,
    "reason": "facebook-only",
    "geo_method": null,
-   "phone": "+1 931-510-3459"
+   "phone": "+1 931-510-3459",
+   "drive_min": 4
   }
  ],
  "_done": [
@@ -1333,6 +1322,14 @@
    "phone": null
   },
   "anderson printing solutions|Cookeville": {
+   "found": false,
+   "site": null,
+   "address": null,
+   "reviews": null,
+   "rating": null,
+   "phone": null
+  },
+  "frank|Livingston": {
    "found": false,
    "site": null,
    "address": null,
