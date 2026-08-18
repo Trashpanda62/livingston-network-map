@@ -1,6 +1,6 @@
 """Build network.json for the Livingston Network Map.
 
-Reads the three directory data files plus the hardcoded built-sites roster,
+Reads the five directory data files plus the hardcoded built-sites roster,
 dedupes places that appear in more than one directory, and emits
 data/network.json (nodes + edges) and reports/network-stats.json.
 
@@ -17,6 +17,8 @@ ROOT = Path(__file__).resolve().parent.parent
 OUTDOORS = Path(r"C:\dev\livingston-outdoors\data\livingston-outdoors.json")
 VISIT = Path(r"C:\dev\visit-livingston\data\places.json")
 PRINTERS = Path(r"C:\dev\mtn-printers\data\mtn-printers.json")
+EAT = Path(r"C:\dev\eat-livingston\data\roster.json")
+AUTO = Path(r"C:\dev\overton-auto\data\roster.json")
 
 
 # Middle TN Printers covers the whole midstate, but this map is about one
@@ -54,9 +56,13 @@ BUILT_SITES = [
     ("livingston-outdoors", "Livingston Outdoors", "https://livingstonoutdoors.com", "Livingston", "Overton", "directory",
      "Photo-led directory of 40 outdoor places within 45 minutes of Livingston."),
     ("visit-livingston-tn", "Visit Livingston TN", "https://visitlivingstontn.com", "Livingston", "Overton", "directory",
-     "First-timer's editorial guide to Livingston and Overton County — 29 places."),
+     "First-timer's editorial guide to Livingston and Overton County — 35 places."),
     ("middle-tn-printers", "Middle TN Printers", "https://middletnprinters.com", "Livingston", "Overton", "directory",
      "Directory of eleven Middle Tennessee commercial printers. Only its Overton County shop is on this map."),
+    ("eat-livingston-tn", "Eat Livingston TN", "https://eatlivingstontn.com", "Livingston", "Overton", "directory",
+     "Every place to eat in Overton County, with the hours each one publishes and the date they were read."),
+    ("upper-cumberland-auto", "Upper Cumberland Auto", "https://overtoncountyauto.com", "Livingston", "Overton", "directory",
+     "Auto repair, tire, body and towing shops across six counties. Only its Overton County shops are on this map."),
     ("livingston-garden-center", "Livingston Garden Center", "https://livingstongardencenter.com", "Livingston", "Overton", "built",
      "Client build — pickup-ordering garden center site, order by 5 PM for next-day pickup."),
     ("tapestry-acres", "Tapestry Acres", "https://tapestryacres.com", "Monroe", "Overton", "built",
@@ -99,7 +105,8 @@ def main() -> int:
         })
 
     DIRECTORY_IDS = ("livingston-outdoors", "visit-livingston-tn",
-                     "middle-tn-printers")
+                     "middle-tn-printers", "eat-livingston-tn",
+                     "upper-cumberland-auto")
     for site_id in DIRECTORY_IDS:
         edges.append({"source": BR, "target": site_id, "kind": "operates"})
     for nid, *_ in [(r[0],) for r in BUILT_SITES]:
@@ -170,6 +177,38 @@ def main() -> int:
                     pr.get("county", ""), city_minutes(pr.get("city", "")),
                     pr.get("blurb", ""), "printing")
 
+    # Eat Livingston is single-county by design, so every listed record is in
+    # scope; the excluded ones carry a reason in the roster and stay off the map.
+    eat = json.loads(EAT.read_text(encoding="utf-8"))["businesses"]
+    eat_in_scope = 0
+    for b in eat:
+        if b.get("excluded") or not b.get("in_overton"):
+            continue
+        eat_in_scope += 1
+        cats = b.get("categories") or ["restaurants"]
+        add_listing("eat-livingston-tn", b["name"],
+                    b.get("site") or "https://eatlivingstontn.com/",
+                    b.get("city") or "", "Overton",
+                    city_minutes(b.get("city") or "") or 20,
+                    # derived from the roster's own category list, nothing invented
+                    ", ".join(cats[:3]).capitalize() + f" in {b.get('city') or 'Overton County'}.",
+                    cats[0])
+
+    # Upper Cumberland Auto spans six counties; the same county filter the
+    # printers use keeps this map to Overton County shops only.
+    auto = json.loads(AUTO.read_text(encoding="utf-8"))["businesses"]
+    auto_in_scope = 0
+    for b in auto:
+        if b.get("excluded") or not in_scope(b.get("city", ""), b.get("county", "")):
+            continue
+        auto_in_scope += 1
+        cats = b.get("categories") or ["auto repair"]
+        add_listing("upper-cumberland-auto", b["name"],
+                    b.get("site") or "https://overtoncountyauto.com/",
+                    b.get("city", ""), b.get("county", ""),
+                    city_minutes(b.get("city", "")),
+                    b.get("blurb", ""), cats[0])
+
     # Bearing assignment: spread nodes inside their county wedge, ordered by id
     # so the layout is deterministic run-to-run.
     from collections import defaultdict
@@ -216,6 +255,8 @@ def main() -> int:
         "source_counts": {"outdoors": len(outdoors), "visit": len(visit),
                           "printers": len(printers)},
         "printers_in_scope": printers_in_scope,
+        "eat_in_scope": eat_in_scope,
+        "auto_in_scope": auto_in_scope,
         "deduped": dedup,
         "missing_url": [n["id"] for n in nodes if not n["url"]],
         "missing_drive_min": [n["id"] for n in nodes if n["drive_min"] is None],

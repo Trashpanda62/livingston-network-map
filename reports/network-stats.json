@@ -1,16 +1,16 @@
 {
- "nodes_total": 82,
+ "nodes_total": 113,
  "by_type": {
   "hub": 1,
-  "directory": 3,
+  "directory": 5,
   "built": 5,
-  "listed": 73
+  "listed": 102
  },
- "edges_total": 85,
+ "edges_total": 125,
  "edges_by_kind": {
-  "operates": 3,
+  "operates": 5,
   "built": 5,
-  "lists": 76,
+  "lists": 114,
   "sister": 1
  },
  "source_counts": {
@@ -19,10 +19,21 @@
   "printers": 11
  },
  "printers_in_scope": 1,
+ "eat_in_scope": 18,
+ "auto_in_scope": 20,
  "deduped": [
   "Central Park Livingston -> existing node central-park-livingston (+visit-livingston-tn)",
   "Standing Stone State Park -> existing node standing-stone-state-park (+visit-livingston-tn)",
-  "Oliver Printing Company -> existing node oliver-printing (+middle-tn-printers)"
+  "Oliver Printing Company -> existing node oliver-printing (+middle-tn-printers)",
+  "The Coop -> existing node the-coop (+eat-livingston-tn)",
+  "Casa Mexicana -> existing node casa-mexicana (+eat-livingston-tn)",
+  "Brazen Que -> existing node brazen-que (+eat-livingston-tn)",
+  "Wired Coffee Co. -> existing node wired-coffee-co (+eat-livingston-tn)",
+  "1806 BBQ -> existing node 1806-bbq (+eat-livingston-tn)",
+  "The Coffee Shop -> existing node the-coffee-shop (+eat-livingston-tn)",
+  "Frank\u2019s -> existing node frank-s (+eat-livingston-tn)",
+  "Livingston House of Pizza -> existing node livingston-house-of-pizza (+eat-livingston-tn)",
+  "Angelina's Italian Subs & More -> existing node angelina-s-italian-subs-more (+eat-livingston-tn)"
  ],
  "missing_url": [],
  "missing_drive_min": [],

@@ -15,7 +15,7 @@
    "drive_min": 2,
    "blurb": "Steve's web studio \u2014 small-business websites, photography, drone. Every site on this map traces back here.",
    "listed_in": [],
-   "bearing": 155.5
+   "bearing": 156.1
   },
   {
    "id": "livingston-outdoors",
@@ -27,7 +27,7 @@
    "drive_min": 2,
    "blurb": "Photo-led directory of 40 outdoor places within 45 minutes of Livingston.",
    "listed_in": [],
-   "bearing": 195.1
+   "bearing": 195.5
   },
   {
    "id": "visit-livingston-tn",
@@ -37,9 +37,9 @@
    "city": "Livingston",
    "county": "Overton",
    "drive_min": 2,
-   "blurb": "First-timer's editorial guide to Livingston and Overton County \u2014 29 places.",
+   "blurb": "First-timer's editorial guide to Livingston and Overton County \u2014 35 places.",
    "listed_in": [],
-   "bearing": 254.5
+   "bearing": 249.8
   },
   {
    "id": "middle-tn-printers",
@@ -51,7 +51,31 @@
    "drive_min": 2,
    "blurb": "Directory of eleven Middle Tennessee commercial printers. Only its Overton County shop is on this map.",
    "listed_in": [],
-   "bearing": 201.7
+   "bearing": 202.3
+  },
+  {
+   "id": "eat-livingston-tn",
+   "name": "Eat Livingston TN",
+   "type": "directory",
+   "url": "https://eatlivingstontn.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Every place to eat in Overton County, with the hours each one publishes and the date they were read.",
+   "listed_in": [],
+   "bearing": 171.0
+  },
+  {
+   "id": "upper-cumberland-auto",
+   "name": "Upper Cumberland Auto",
+   "type": "directory",
+   "url": "https://overtoncountyauto.com",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Auto repair, tire, body and towing shops across six counties. Only its Overton County shops are on this map.",
+   "listed_in": [],
+   "bearing": 247.1
   },
   {
    "id": "livingston-garden-center",
@@ -63,7 +87,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 pickup-ordering garden center site, order by 5 PM for next-day pickup.",
    "listed_in": [],
-   "bearing": 188.5,
+   "bearing": 191.4,
    "geo": [
     151.07,
     -89.79
@@ -80,7 +104,7 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 alpaca farm and glamping stays outside Livingston.",
    "listed_in": [],
-   "bearing": 239.1,
+   "bearing": 232.2,
    "geo": [
     572.82,
     -1044.6
@@ -97,7 +121,7 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 RV rental based at the Tapestry Acres farm.",
    "listed_in": [],
-   "bearing": 252.3,
+   "bearing": 244.4,
    "geo": [
     583.27,
     -1033.55
@@ -114,7 +138,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 drone and aerial photography, credited to Barnraised.",
    "listed_in": [],
-   "bearing": 223.7
+   "bearing": 218.6
   },
   {
    "id": "oliver-printing",
@@ -128,7 +152,7 @@
    "listed_in": [
     "middle-tn-printers"
    ],
-   "bearing": 208.3,
+   "bearing": 206.4,
    "geo": [
     -20.76,
     13.75
@@ -148,7 +172,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 184.1,
+   "bearing": 188.7,
    "geo": [
     85.61,
     -22.13
@@ -169,7 +193,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 162.1,
+   "bearing": 161.5,
    "geo": [
     -1.01,
     21.76
@@ -189,7 +213,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 230.3,
+   "bearing": 224.0,
    "geo": [
     -1073.95,
     -628.13
@@ -250,7 +274,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 234.7,
+   "bearing": 226.7,
    "geo": [
     -1.01,
     -0.91
@@ -270,7 +294,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 256.7,
+   "bearing": 251.2,
    "geo": [
     -1080.62,
     747.17
@@ -490,7 +514,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 221.5,
+   "bearing": 217.2,
    "geo": [
     -119.93,
     -471.97
@@ -510,7 +534,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 173.1,
+   "bearing": 169.7,
    "geo": [
     1487.36,
     -611.67
@@ -790,7 +814,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 168.7,
+   "bearing": 167.0,
    "geo": [
     -193.97,
     -528.62
@@ -970,7 +994,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 166.5,
+   "bearing": 165.6,
    "geo": [
     30.63,
     -41.89
@@ -990,7 +1014,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 170.9,
+   "bearing": 168.3,
    "geo": [
     -109.62,
     -607.22
@@ -1010,7 +1034,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 179.7,
+   "bearing": 179.2,
    "geo": [
     -88.63,
     -228.38
@@ -1030,7 +1054,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 186.3,
+   "bearing": 190.1,
    "geo": [
     85.61,
     -22.13
@@ -1050,7 +1074,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 206.1
+   "bearing": 205.0
   },
   {
    "id": "standing-stone-state-forest-wma",
@@ -1065,7 +1089,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 232.5,
+   "bearing": 225.4,
    "geo": [
     -1073.95,
     -628.13
@@ -1085,7 +1109,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 192.9,
+   "bearing": 194.1,
    "geo": [
     -17.17,
     -43.04
@@ -1105,7 +1129,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 199.5,
+   "bearing": 198.2,
    "geo": [
     0.3,
     -7.36
@@ -1125,7 +1149,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 203.9,
+   "bearing": 203.6,
    "geo": [
     4.25,
     9.37
@@ -1145,7 +1169,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 210.5,
+   "bearing": 207.7,
    "geo": [
     -22.79,
     3.77
@@ -1165,7 +1189,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 212.7,
+   "bearing": 209.1,
    "geo": [
     0.38,
     5.97
@@ -1185,7 +1209,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 217.1,
+   "bearing": 211.8,
    "geo": [
     -31.98,
     9.52
@@ -1205,7 +1229,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 225.9,
+   "bearing": 221.3,
    "geo": [
     -39.66,
     -49.98
@@ -1225,7 +1249,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 241.3,
+   "bearing": 233.5,
    "geo": [
     -2.13,
     0.43
@@ -1243,9 +1267,10 @@
    "blurb": "A barbecue restaurant right on the courthouse square offering pulled pork, smoked brisket, wings, and a salad bar, along with burgers and appetizers. Offers dine-in, takeout, and delivery.",
    "category": "eats",
    "listed_in": [
-    "visit-livingston-tn"
+    "visit-livingston-tn",
+    "eat-livingston-tn"
    ],
-   "bearing": 151.1,
+   "bearing": 150.7,
    "geo": [
     -2.07,
     0.41
@@ -1263,9 +1288,10 @@
    "blurb": "A counter-service sub shop making Italian subs and pasta from family recipes, named after the owner's husband's grandmother. Offers takeout.",
    "category": "eats",
    "listed_in": [
-    "visit-livingston-tn"
+    "visit-livingston-tn",
+    "eat-livingston-tn"
    ],
-   "bearing": 153.3,
+   "bearing": 152.0,
    "geo": [
     -78.62,
     32.8
@@ -1283,9 +1309,10 @@
    "blurb": "A Texas-style craft barbecue restaurant cooking brisket, sausages, and ribs over live oak fire. Offers outdoor dining, catering, and is wheelchair accessible; has recent 5-star reviews into January 2026.",
    "category": "eats",
    "listed_in": [
-    "visit-livingston-tn"
+    "visit-livingston-tn",
+    "eat-livingston-tn"
    ],
-   "bearing": 157.7,
+   "bearing": 157.5,
    "geo": [
     -17.66,
     -112.26
@@ -1303,9 +1330,10 @@
    "blurb": "A sit-down Mexican restaurant near the square serving standard Tex-Mex fare. Has an active review history into January 2026 with no closure indications.",
    "category": "eats",
    "listed_in": [
-    "visit-livingston-tn"
+    "visit-livingston-tn",
+    "eat-livingston-tn"
    ],
-   "bearing": 159.9,
+   "bearing": 158.8,
    "geo": [
     3.55,
     -130.05
@@ -1325,7 +1353,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 228.1,
+   "bearing": 222.7,
    "geo": [
     0.69,
     7.54
@@ -1345,7 +1373,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 236.9,
+   "bearing": 228.1,
    "geo": [
     43.82,
     -6.48
@@ -1365,7 +1393,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 250.1,
+   "bearing": 240.3,
    "geo": [
     -61.96,
     34.9
@@ -1383,9 +1411,10 @@
    "blurb": "A locally owned coffee shop established in 2017 serving espresso drinks, cold brew, smoothies, and a well-known chicken salad sandwich. Described by its owners as a family-friendly business.",
    "category": "eats",
    "listed_in": [
-    "visit-livingston-tn"
+    "visit-livingston-tn",
+    "eat-livingston-tn"
    ],
-   "bearing": 258.9,
+   "bearing": 258.0,
    "geo": [
     15.78,
     -132.87
@@ -1405,7 +1434,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 175.3,
+   "bearing": 172.4,
    "geo": [
     -4.95,
     5.11
@@ -1425,7 +1454,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 197.3,
+   "bearing": 196.9,
    "geo": [
     77.84,
     -33.44
@@ -1445,7 +1474,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 214.9,
+   "bearing": 210.4,
    "geo": [
     -22.32,
     -49.98
@@ -1465,7 +1494,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 219.3,
+   "bearing": 213.1,
    "geo": [
     -4.95,
     5.11
@@ -1483,9 +1512,10 @@
    "blurb": "A hometown restaurant a block off the courthouse square on S Spring Street, open seven days and late on Friday and Saturday nights. One of the most-reviewed restaurants in town.",
    "category": "eats",
    "listed_in": [
-    "visit-livingston-tn"
+    "visit-livingston-tn",
+    "eat-livingston-tn"
    ],
-   "bearing": 245.7,
+   "bearing": 236.2,
    "geo": [
     -0.46,
     20.57
@@ -1503,9 +1533,10 @@
    "blurb": "A local restaurant on E Main Street east of downtown.",
    "category": "eats",
    "listed_in": [
-    "visit-livingston-tn"
+    "visit-livingston-tn",
+    "eat-livingston-tn"
    ],
-   "bearing": 177.5,
+   "bearing": 176.5,
    "geo": [
     134.86,
     -45.91
@@ -1523,9 +1554,10 @@
    "blurb": "A pizza restaurant on E Main Street.",
    "category": "eats",
    "listed_in": [
-    "visit-livingston-tn"
+    "visit-livingston-tn",
+    "eat-livingston-tn"
    ],
-   "bearing": 190.7,
+   "bearing": 192.8,
    "geo": [
     52.57,
     -21.74
@@ -1543,9 +1575,10 @@
    "blurb": "A bakery and coffee shop right on the courthouse square, run as A.C. Squared Bakery.",
    "category": "eats",
    "listed_in": [
-    "visit-livingston-tn"
+    "visit-livingston-tn",
+    "eat-livingston-tn"
    ],
-   "bearing": 243.5,
+   "bearing": 234.9,
    "geo": [
     0.69,
     7.54
@@ -1565,7 +1598,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 247.9,
+   "bearing": 237.6,
    "geo": [
     -1.88,
     0.35
@@ -1585,12 +1618,447 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 181.9,
+   "bearing": 184.6,
    "geo": [
     -2.26,
     0.47
    ],
    "geo_method": "address"
+  },
+  {
+   "id": "casa-nueva-mexican-bar-grill-inc",
+   "name": "Casa Nueva Mexican Bar & Grill Inc.",
+   "type": "listed",
+   "url": "http://www.casanuevatn.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Mexican restaurant in Livingston.",
+   "category": "mexican restaurant",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 160.2
+  },
+  {
+   "id": "pizza-hut",
+   "name": "Pizza Hut",
+   "type": "listed",
+   "url": "https://locations.pizzahut.com/tn/livingston/1201-w-main-st?utm_medium=organic&utm_source=local&utm_campaign=googlelistings&utm_content=website&utm_term=292206",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Pizza in Livingston.",
+   "category": "pizza",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 215.9
+  },
+  {
+   "id": "j-d-s-sandwich-shop",
+   "name": "J D's Sandwich Shop",
+   "type": "listed",
+   "url": "https://m.facebook.com/JDs-Livingston-200398626685583/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Delis in Livingston.",
+   "category": "delis",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 183.3
+  },
+  {
+   "id": "the-fork",
+   "name": "The Fork",
+   "type": "listed",
+   "url": "https://eatlivingstontn.com/",
+   "city": "Allons",
+   "county": "Overton",
+   "drive_min": 12,
+   "blurb": "Cafe in Allons.",
+   "category": "cafe",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 239.0
+  },
+  {
+   "id": "the-sunset-restaurant-by-the-steel-coop",
+   "name": "The Sunset Restaurant by The Steel Coop",
+   "type": "listed",
+   "url": "https://eatlivingstontn.com/",
+   "city": "Monroe",
+   "county": "Overton",
+   "drive_min": 15,
+   "blurb": "Restaurants in Monroe.",
+   "category": "restaurants",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 241.7
+  },
+  {
+   "id": "fiesta-livingston",
+   "name": "Fiesta Livingston",
+   "type": "listed",
+   "url": "https://fiestacancuncookeville.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Mexican restaurant, burgers, seafood in Livingston.",
+   "category": "mexican restaurant",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 173.8
+  },
+  {
+   "id": "gio-s-deli",
+   "name": "Gio\u2019s Deli",
+   "type": "listed",
+   "url": "https://eatlivingstontn.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Delis in Livingston.",
+   "category": "delis",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 177.8
+  },
+  {
+   "id": "uncle-goose-coffee",
+   "name": "Uncle Goose Coffee",
+   "type": "listed",
+   "url": "https://eatlivingstontn.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Coffee shops, cafe in Livingston.",
+   "category": "coffee shops",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 245.7
+  },
+  {
+   "id": "local-ground",
+   "name": "Local Ground",
+   "type": "listed",
+   "url": "https://localgroundtn.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Cafe in Livingston.",
+   "category": "cafe",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 199.6
+  },
+  {
+   "id": "strickland-brothers-10-minute-oil-change",
+   "name": "Strickland Brothers 10 Minute Oil Change",
+   "type": "listed",
+   "url": "https://sboilchange.com/locations/livingston-tn-0041/?utm_source=gbp&utm_medium=organic&utm_campaign=yext",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "A franchise oil-change bay on West Main. The link goes to the chain's Livingston location page rather than to anything the Livingston store controls.",
+   "category": "auto repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 229.4
+  },
+  {
+   "id": "kent-s-wholesale-tire",
+   "name": "Kent's Wholesale Tire",
+   "type": "listed",
+   "url": "http://kents-wholesale-tire.edan.io/",
+   "city": "Rickman",
+   "county": "Overton",
+   "drive_min": 15,
+   "blurb": "The site on this profile sits at kents-wholesale-tire.edan.io \u2014 a builder subdomain rather than a domain the shop owns \u2014 and it refused our automated request, which usually means a bot filter and nothing worse. Google's category line places this one in Clarkrange; the harvest recorded Rickman, and the address it carries is a Deer Lodge Highway number that could sit on either side of that line.",
+   "category": "tire shops",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 186.0
+  },
+  {
+   "id": "waterloo-tire-service",
+   "name": "Waterloo Tire Service",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "West Main Street, Livingston. No website of any kind.",
+   "category": "tire shops",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 252.5
+  },
+  {
+   "id": "maynord-bros-automotive",
+   "name": "Maynord Bros Automotive",
+   "type": "listed",
+   "url": "http://www.maynordautos.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Listed as a body shop on East Main. The website on its profile was fetched on 2026-08-14 and belongs to Maynord Auto Sales LLC, a Livingston dealer whose menu carries a Body Shop entry \u2014 it is not a standalone body-shop site, and it answers only over plain http.",
+   "category": "auto body shop",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 200.9
+  },
+  {
+   "id": "floyd-s-automotive-and-performance",
+   "name": "Floyd's Automotive and Performance",
+   "type": "listed",
+   "url": "https://www.facebook.com/FloydsAutomotivePerformance",
+   "city": "Rickman",
+   "county": "Overton",
+   "drive_min": 15,
+   "blurb": "Rickman Road. The only web presence on the profile is a Facebook page.",
+   "category": "auto repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 175.1
+  },
+  {
+   "id": "hwy-tire",
+   "name": "HWY TIRE",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Cookeville Highway, Livingston. Google files it under auto repair in Overton County rather than under tire, so it is listed under both. No website.",
+   "category": "tire shops",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 181.9
+  },
+  {
+   "id": "woolbright-auto-repair",
+   "name": "Woolbright Auto Repair",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "North Church Street, Livingston. No website.",
+   "category": "auto repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 259.3
+  },
+  {
+   "id": "vaughn-s-collision",
+   "name": "Vaughn's Collision",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Byrdstown Highway, Livingston. Collision work, no website.",
+   "category": "auto body shop",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 248.5
+  },
+  {
+   "id": "watkins-langford-wrecker-services",
+   "name": "Watkins & Langford Wrecker Services",
+   "type": "listed",
+   "url": "https://m.facebook.com/pages/Watkins-Langford-Wrecker-Service/161385990889153",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "The address is Oak Street in Livingston. What the profile files as a website is an m.facebook.com page, so this is a Facebook-only business by any reasonable reading, whatever the harvest recorded.",
+   "category": "towing",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 253.9
+  },
+  {
+   "id": "t-m-automotive",
+   "name": "T & M Automotive",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Rickman Road, Livingston. Repair and transmission work, no website.",
+   "category": "auto repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 230.8
+  },
+  {
+   "id": "arneys-wrecker-service",
+   "name": "Arneys Wrecker Service",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Kennedy Street, Livingston. No website.",
+   "category": "towing",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 153.4
+  },
+  {
+   "id": "auto-worx-of-livingston-llc",
+   "name": "Auto Worx of Livingston LLC",
+   "type": "listed",
+   "url": "http://www.autoworxlivingston.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Cookeville Highway, Livingston. Its site answers over plain http and refused our automated request; that is almost always a bot filter rather than a broken site. Google files the business as a used car dealer, while the query that surfaced it was auto repair \u2014 worth resolving before either label is quoted.",
+   "category": "auto repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 154.8
+  },
+  {
+   "id": "waynes-transmission-repair",
+   "name": "Waynes Transmission Repair",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Little Opossum Creek Road. Transmission work, no website, and no hours on the profile.",
+   "category": "transmission repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 256.6
+  },
+  {
+   "id": "wayne-s-customs-automotive-and-towing",
+   "name": "Wayne's Customs Automotive and Towing",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "East Main Street, Livingston, doing both repair and towing per its own name and profile. No website.",
+   "category": "auto repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 255.2
+  },
+  {
+   "id": "palestine-tire-shop",
+   "name": "Palestine tire shop",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Palestine Road, Allons. The profile carries no phone number and no website; the address is the whole of what is known.",
+   "category": "tire shops",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 214.5
+  },
+  {
+   "id": "crossroads-diesel-and-auto",
+   "name": "Crossroads Diesel and Auto",
+   "type": "listed",
+   "url": "http://www.uppercumberlandcrossroadstn.com/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Its own site, fetched 2026-08-14, gives the address as 3913 Rickman Road, Rickman, and lists routine maintenance, diesel engine repair, diagnostics, brake work, suspension and steering, and performance work. The site answers over plain http.",
+   "category": "transmission repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 162.9
+  },
+  {
+   "id": "light-the-fire-garage-fab",
+   "name": "Light the Fire Garage & Fab",
+   "type": "listed",
+   "url": "https://www.facebook.com/share/g/1DeCfMNHRJ/?mibextid=wwXIfr",
+   "city": "Hilham",
+   "county": "Overton",
+   "drive_min": 15,
+   "blurb": "Standing Stone Highway, Hilham. The web link on the profile points at a Facebook group rather than a business page.",
+   "category": "auto repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 187.3
+  },
+  {
+   "id": "roadside-rescue-of-the-upper-cumberland",
+   "name": "Roadside rescue of the upper Cumberland",
+   "type": "listed",
+   "url": "https://www.facebook.com/share/18uxb7vjCv/?mibextid=wwXIfr",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Listed at the corner of Tennessee Drive and Fletcher in Livingston. Facebook page only.",
+   "category": "towing",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 219.9
+  },
+  {
+   "id": "hunters-garage-inc",
+   "name": "Hunters Garage Inc.",
+   "type": "listed",
+   "url": "http://huntersgarage.net/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Mountain Road, Livingston. The site is there, but it redirects away from https down to plain http, so a browser will mark it not secure.",
+   "category": "auto repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 180.6
+  },
+  {
+   "id": "the-tennessee-hot-rod-shop-llc",
+   "name": "The Tennessee Hot Rod Shop LLC",
+   "type": "listed",
+   "url": "https://overtoncountyauto.com/",
+   "city": "Hilham",
+   "county": "Overton",
+   "drive_min": 15,
+   "blurb": "Jerry Bilbrey Lane, Hilham. No website.",
+   "category": "auto repair",
+   "listed_in": [
+    "upper-cumberland-auto"
+   ],
+   "bearing": 243.0
   }
  ],
  "edges": [
@@ -1607,6 +2075,16 @@
   {
    "source": "barnraised",
    "target": "middle-tn-printers",
+   "kind": "operates"
+  },
+  {
+   "source": "barnraised",
+   "target": "eat-livingston-tn",
+   "kind": "operates"
+  },
+  {
+   "source": "barnraised",
+   "target": "upper-cumberland-auto",
    "kind": "operates"
   },
   {
@@ -2017,6 +2495,196 @@
   {
    "source": "middle-tn-printers",
    "target": "oliver-printing",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "the-coop",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "casa-mexicana",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "casa-nueva-mexican-bar-grill-inc",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "pizza-hut",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "brazen-que",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "wired-coffee-co",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "j-d-s-sandwich-shop",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "1806-bbq",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "the-fork",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "the-sunset-restaurant-by-the-steel-coop",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "the-coffee-shop",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "frank-s",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "fiesta-livingston",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "livingston-house-of-pizza",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "angelina-s-italian-subs-more",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "gio-s-deli",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "uncle-goose-coffee",
+   "kind": "lists"
+  },
+  {
+   "source": "eat-livingston-tn",
+   "target": "local-ground",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "strickland-brothers-10-minute-oil-change",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "kent-s-wholesale-tire",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "waterloo-tire-service",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "maynord-bros-automotive",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "floyd-s-automotive-and-performance",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "hwy-tire",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "woolbright-auto-repair",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "vaughn-s-collision",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "watkins-langford-wrecker-services",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "t-m-automotive",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "arneys-wrecker-service",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "auto-worx-of-livingston-llc",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "waynes-transmission-repair",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "wayne-s-customs-automotive-and-towing",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "palestine-tire-shop",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "crossroads-diesel-and-auto",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "light-the-fire-garage-fab",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "roadside-rescue-of-the-upper-cumberland",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "hunters-garage-inc",
+   "kind": "lists"
+  },
+  {
+   "source": "upper-cumberland-auto",
+   "target": "the-tennessee-hot-rod-shop-llc",
    "kind": "lists"
   }
  ]

@@ -16,6 +16,8 @@ SOURCES = {
     "outdoors": Path(r"C:\dev\livingston-outdoors\data\livingston-outdoors.json"),
     "visit": Path(r"C:\dev\visit-livingston\data\places.json"),
     "printers": Path(r"C:\dev\mtn-printers\data\mtn-printers.json"),
+    "eat": Path(r"C:\dev\eat-livingston\data\roster.json"),
+    "auto": Path(r"C:\dev\overton-auto\data\roster.json"),
 }
 
 results = []
@@ -47,13 +49,22 @@ def main() -> int:
         raw = json.loads(path.read_text(encoding="utf-8"))
         if key == "visit":
             return raw["places"]
+        if key in ("eat", "auto"):
+            # These rosters carry their own exclusions, each with a written
+            # reason; an excluded record is not a listing and never reaches
+            # the map.
+            return [r for r in raw["businesses"] if not r.get("excluded")]
         return raw
 
     # Middle TN Printers is midstate-wide; only its Overton County shops are on
     # this map, so the expected count applies build_network.in_scope, not len().
+    # Middle TN Printers and Upper Cumberland Auto both reach past the county
+    # line, so their expected counts apply build_network.in_scope rather than
+    # len(). Eat Livingston is single-county already.
+    scoped = ("printers", "auto")
     src_counts = {k: (sum(1 for r in rows(k, p)
                           if in_scope(r.get("city", ""), r.get("county", "")))
-                      if k == "printers" else len(rows(k, p)))
+                      if k in scoped else len(rows(k, p)))
                   for k, p in SOURCES.items()}
     listing_edges = [e for e in edges if e["kind"] == "lists"]
     expected_listings = sum(src_counts.values())
