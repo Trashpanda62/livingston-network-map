@@ -1,0 +1,159 @@
+{
+ "concept": "Livingston Events",
+ "scope": "overton",
+ "businesses": [
+  {
+   "id": "the-coop",
+   "name": "The Coop",
+   "categories": [
+    "live music venues"
+   ],
+   "city": "Livingston",
+   "address": "209 S Spring St, Livingston, TN 38570",
+   "phone": "(931) 403-2667",
+   "site": null,
+   "site_host": null,
+   "has_own_site": false,
+   "web_gap": "no-website",
+   "reviews": 944,
+   "rating": 4.3,
+   "is_chain": false,
+   "in_overton": true,
+   "found_by": "live music venues|Livingston",
+   "verified": "2026-08-13",
+   "out_of_state": false,
+   "site_status": "no-website",
+   "in_overton_source": "address"
+  },
+  {
+   "id": "central-park-livingston",
+   "name": "Central Park Livingston",
+   "categories": [
+    "live music venues"
+   ],
+   "city": "Livingston",
+   "address": "140 S Spring St, Livingston, TN 38570, United States",
+   "phone": "+1 931-823-1269",
+   "site": "http://www.centralparklivingston.com/",
+   "site_host": "centralparklivingston.com",
+   "has_own_site": true,
+   "web_gap": null,
+   "reviews": 505,
+   "rating": 4.7,
+   "is_chain": false,
+   "in_overton": true,
+   "found_by": "live music venues|Livingston",
+   "verified": "2026-08-13",
+   "out_of_state": false,
+   "site_status": "has-site",
+   "in_overton_source": "address"
+  },
+  {
+   "id": "empire-twin-theatre",
+   "name": "Empire Twin Theatre",
+   "categories": [
+    "theater"
+   ],
+   "city": "Livingston",
+   "address": "106 N 2nd St",
+   "phone": null,
+   "site": "http://www.livingstonmovies.com/",
+   "site_host": "livingstonmovies.com",
+   "has_own_site": true,
+   "web_gap": null,
+   "reviews": 191,
+   "rating": 4.6,
+   "is_chain": false,
+   "in_overton": false,
+   "found_by": "theater|Livingston",
+   "verified": "2026-08-13",
+   "out_of_state": false,
+   "site_status": "has-site",
+   "in_overton_source": "address"
+  },
+  {
+   "id": "the-barn-at-bilbrey-s-crossing",
+   "name": "The Barn at Bilbrey\u2019s Crossing",
+   "categories": [
+    "event venues"
+   ],
+   "city": "Livingston",
+   "address": "119 Rickman Monterey Hwy, Cookeville, TN 38506, United States",
+   "phone": "+1 931-265-5337",
+   "site": "http://www.bilbreyscrossing.com/",
+   "site_host": "bilbreyscrossing.com",
+   "has_own_site": true,
+   "web_gap": null,
+   "reviews": 40,
+   "rating": 4.7,
+   "is_chain": false,
+   "in_overton": true,
+   "found_by": "event venues|Livingston",
+   "verified": "2026-08-13",
+   "out_of_state": false,
+   "site_status": "has-site",
+   "in_overton_source": "address"
+  },
+  {
+   "id": "bilbrey-crossing-weddings-and-events",
+   "name": "Bilbrey's Crossing Weddings & Events",
+   "categories": [
+    "event venues"
+   ],
+   "city": "Livingston",
+   "address": "119 Rickman Monterey Hwy, Cookeville, TN 38506",
+   "phone": "(931) 265-5337",
+   "site": "https://www.bilbreyscrossing.com/?utm_source=HDMA&utm_medium=GBP/ListingCitations&utm_campaign=2024",
+   "site_host": "bilbreyscrossing.com",
+   "has_own_site": true,
+   "web_gap": null,
+   "reviews": 29,
+   "rating": 4.7,
+   "is_chain": false,
+   "in_overton": true,
+   "found_by": "event venues|Livingston",
+   "verified": "2026-08-13",
+   "out_of_state": false,
+   "site_status": "has-site",
+   "in_overton_source": "address"
+  },
+  {
+   "id": "iron-and-oak-event-center",
+   "name": "Iron & Oak Event Center",
+   "categories": [
+    "event venues",
+    "live music venues",
+    "theater"
+   ],
+   "city": "Livingston",
+   "address": "208 S Church St, Livingston, TN 38570, United States",
+   "phone": "+1 931-854-8429",
+   "site": "https://www.facebook.com/Iron-Oak-Event-Center-109333824138030/",
+   "site_host": "facebook.com",
+   "has_own_site": false,
+   "web_gap": "facebook-only",
+   "reviews": 25,
+   "rating": 4.4,
+   "is_chain": false,
+   "in_overton": true,
+   "found_by": "event venues|Livingston",
+   "verified": "2026-08-13",
+   "out_of_state": false,
+   "site_status": "weak-web",
+   "in_overton_source": "address"
+  }
+ ],
+ "_done": [
+  "banquet hall|Livingston",
+  "community centers|Livingston",
+  "event venues|Livingston",
+  "fairgrounds|Livingston",
+  "live music venues|Livingston",
+  "theater|Livingston"
+ ],
+ "_zero": [
+  "community centers|Livingston",
+  "banquet hall|Livingston",
+  "fairgrounds|Livingston"
+ ]
+}

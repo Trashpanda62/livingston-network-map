@@ -6,7 +6,7 @@
   "crux": null
  },
  "central-park-livingston": {
-  "reviews": 505,
+  "reviews": 506,
   "rating": 4.7,
   "source": "Google reviews",
   "crux": false
@@ -18,7 +18,7 @@
   "crux": null
  },
  "sunset-marina-and-resort": {
-  "reviews": 993,
+  "reviews": 998,
   "rating": 4.6,
   "source": "Google reviews",
   "crux": true
@@ -60,7 +60,7 @@
   "crux": false
  },
  "dogwood-park": {
-  "reviews": 2311,
+  "reviews": 2310,
   "rating": 4.8,
   "source": "Google reviews",
   "crux": null
@@ -72,7 +72,7 @@
   "crux": null
  },
  "dale-hollow-lake-primitive-camping": {
-  "reviews": 342,
+  "reviews": 343,
   "rating": 4.7,
   "source": "Google reviews",
   "crux": null
@@ -90,7 +90,7 @@
   "crux": null
  },
  "dale-hollow-damsite-recreation-area": {
-  "reviews": 342,
+  "reviews": 343,
   "rating": 4.7,
   "source": "Google reviews",
   "crux": null
@@ -108,19 +108,19 @@
   "crux": null
  },
  "east-port-marina-and-resort": {
-  "reviews": 405,
+  "reviews": 410,
   "rating": 4.7,
   "source": "Google reviews",
   "crux": true
  },
  "bee-rock": {
-  "reviews": 340,
+  "reviews": 343,
   "rating": 4.9,
   "source": "Google reviews",
   "crux": null
  },
  "city-lake-natural-area": {
-  "reviews": 715,
+  "reviews": 718,
   "rating": 4.6,
   "source": "Google reviews",
   "crux": null
@@ -132,13 +132,13 @@
   "crux": null
  },
  "the-boils-wildlife-management-area": {
-  "reviews": 167,
+  "reviews": 168,
   "rating": 4.7,
   "source": "Google reviews",
   "crux": null
  },
  "willow-grove-campground": {
-  "reviews": 164,
+  "reviews": 167,
   "rating": 4.6,
   "source": "Google reviews",
   "crux": null
@@ -168,7 +168,7 @@
   "crux": false
  },
  "meadow-creek-park": {
-  "reviews": 71,
+  "reviews": 73,
   "rating": 4.6,
   "source": "Google reviews",
   "crux": null
@@ -180,7 +180,7 @@
   "crux": null
  },
  "star-point-resort": {
-  "reviews": 237,
+  "reviews": 238,
   "rating": 4.8,
   "source": "Google reviews",
   "crux": true
@@ -198,13 +198,13 @@
   "crux": null
  },
  "lillydale-campground-and-day-use": {
-  "reviews": 324,
+  "reviews": 325,
   "rating": 4.7,
   "source": "Google reviews",
   "crux": null
  },
  "salt-lick-creek-recreation-area-and-campground": {
-  "reviews": 144,
+  "reviews": 145,
   "rating": 4.8,
   "source": "Google reviews",
   "crux": null
@@ -228,19 +228,19 @@
   "crux": false
  },
  "burgess-falls-state-park": {
-  "reviews": 4700,
+  "reviews": 47000,
   "rating": 4.8,
   "source": "Google reviews",
   "crux": null
  },
  "sgt-alvin-c-york-state-historic-park": {
-  "reviews": 943,
+  "reviews": 950,
   "rating": 4.8,
   "source": "Google reviews",
   "crux": null
  },
  "cub-mountain-atv-park-campground": {
-  "reviews": 80,
+  "reviews": 81,
   "rating": 4.8,
   "source": "Google reviews",
   "crux": true
@@ -252,7 +252,7 @@
   "crux": false
  },
  "dale-hollow-lake-overton-county-access-mitchell-creek-marina-livingston-boat-dock": {
-  "reviews": 278,
+  "reviews": 280,
   "rating": 4.4,
   "source": "Google reviews",
   "crux": true
@@ -270,7 +270,7 @@
   "crux": null
  },
  "obey-river-park-campground": {
-  "reviews": 299,
+  "reviews": 302,
   "rating": 4.5,
   "source": "Google reviews",
   "crux": null
@@ -288,13 +288,13 @@
   "crux": true
  },
  "livingston-overton-county-farmers-market": {
-  "reviews": 37,
+  "reviews": 39,
   "rating": 4.9,
   "source": "Google reviews",
   "crux": true
  },
  "millard-oakley-public-library": {
-  "reviews": 52,
+  "reviews": 54,
   "rating": 4.5,
   "source": "Google reviews",
   "crux": false
@@ -324,31 +324,31 @@
   "crux": null
  },
  "the-antique-market": {
-  "reviews": 68,
-  "rating": 4.6,
+  "reviews": 69,
+  "rating": 4.7,
   "source": "Google reviews",
   "crux": true
  },
  "1806-bbq": {
-  "reviews": 189,
+  "reviews": 192,
   "rating": 4.6,
   "source": "Google reviews",
-  "crux": false
+  "crux": true
  },
  "angelina-s-italian-subs-more": {
-  "reviews": 26,
+  "reviews": 32,
   "rating": 4.9,
   "source": "Google reviews",
   "crux": false
  },
  "brazen-que": {
-  "reviews": 321,
+  "reviews": 324,
   "rating": 4.8,
   "source": "Google reviews",
   "crux": true
  },
  "casa-mexicana": {
-  "reviews": 527,
+  "reviews": 528,
   "rating": 4.5,
   "source": "Google reviews",
   "crux": null
@@ -360,7 +360,7 @@
   "crux": null
  },
  "stover-s-country-kitchen": {
-  "reviews": 626,
+  "reviews": 631,
   "rating": 4.6,
   "source": "Google reviews",
   "crux": null
@@ -372,7 +372,7 @@
   "crux": null
  },
  "wired-coffee-co": {
-  "reviews": 252,
+  "reviews": 253,
   "rating": 4.7,
   "source": "Google reviews",
   "crux": false
@@ -462,19 +462,19 @@
   "crux": false
  },
  "the-coop": {
-  "reviews": 944,
+  "reviews": 946,
   "rating": 4.3,
   "source": "Google reviews",
   "crux": null
  },
  "frank-s": {
-  "reviews": 86,
+  "reviews": 87,
   "rating": 4.3,
   "source": "Google reviews",
   "crux": null
  },
  "livingston-house-of-pizza": {
-  "reviews": 33,
+  "reviews": 34,
   "rating": 4.7,
   "source": "Google reviews",
   "crux": null
@@ -486,8 +486,8 @@
   "crux": null
  },
  "the-emporium": {
-  "reviews": 26,
-  "rating": 4.8,
+  "reviews": 27,
+  "rating": 4.9,
   "source": "Google reviews",
   "crux": null
  },
@@ -496,5 +496,178 @@
   "rating": 4.8,
   "source": "Google reviews",
   "crux": null
+ },
+ "casa-nueva-mexican-bar-grill-inc": {
+  "reviews": 447,
+  "rating": 4.5,
+  "source": "Google reviews",
+  "crux": false
+ },
+ "pizza-hut": {
+  "reviews": 407,
+  "rating": 4.1,
+  "source": "Google reviews",
+  "crux": true
+ },
+ "j-d-s-sandwich-shop": {
+  "reviews": 202,
+  "rating": 4.4,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "the-fork": {
+  "reviews": 134,
+  "rating": 4.9,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "the-sunset-restaurant-by-the-steel-coop": {
+  "reviews": 106,
+  "rating": 4.4,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "fiesta-livingston": {
+  "reviews": 78,
+  "rating": 4.5,
+  "source": "Google reviews",
+  "crux": true
+ },
+ "gio-s-deli": {
+  "reviews": 26,
+  "rating": 5,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "uncle-goose-coffee": {
+  "reviews": 17,
+  "rating": 5,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "local-ground": {
+  "reviews": 6,
+  "rating": 5,
+  "source": "Google reviews",
+  "crux": false
+ },
+ "strickland-brothers-10-minute-oil-change": {
+  "reviews": 746,
+  "rating": 4.9,
+  "source": "Google reviews",
+  "crux": true
+ },
+ "kent-s-wholesale-tire": {
+  "reviews": 499,
+  "rating": 4.8,
+  "source": "Google reviews",
+  "crux": false
+ },
+ "waterloo-tire-service": {
+  "reviews": 136,
+  "rating": 4.7,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "maynord-bros-automotive": {
+  "reviews": 67,
+  "rating": 4.5,
+  "source": "Google reviews",
+  "crux": false
+ },
+ "floyd-s-automotive-and-performance": {
+  "reviews": 56,
+  "rating": 4.2,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "hwy-tire": {
+  "reviews": 53,
+  "rating": 4.7,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "woolbright-auto-repair": {
+  "reviews": 46,
+  "rating": 4.5,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "vaughn-s-collision": {
+  "reviews": 36,
+  "rating": 4.9,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "watkins-langford-wrecker-services": {
+  "reviews": 34,
+  "rating": 4.7,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "t-m-automotive": {
+  "reviews": 31,
+  "rating": 4.7,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "arneys-wrecker-service": {
+  "reviews": 29,
+  "rating": 4.8,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "auto-worx-of-livingston-llc": {
+  "reviews": 28,
+  "rating": 4.6,
+  "source": "Google reviews",
+  "crux": false
+ },
+ "waynes-transmission-repair": {
+  "reviews": null,
+  "rating": null,
+  "source": null,
+  "crux": null
+ },
+ "wayne-s-customs-automotive-and-towing": {
+  "reviews": 19,
+  "rating": 4.2,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "palestine-tire-shop": {
+  "reviews": null,
+  "rating": null,
+  "source": null,
+  "crux": null
+ },
+ "crossroads-diesel-and-auto": {
+  "reviews": 12,
+  "rating": 4.7,
+  "source": "Google reviews",
+  "crux": false
+ },
+ "light-the-fire-garage-fab": {
+  "reviews": 4,
+  "rating": 5,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "roadside-rescue-of-the-upper-cumberland": {
+  "reviews": 3,
+  "rating": 3.7,
+  "source": "Google reviews",
+  "crux": null
+ },
+ "hunters-garage-inc": {
+  "reviews": 2,
+  "rating": 3,
+  "source": "Google reviews",
+  "crux": false
+ },
+ "the-tennessee-hot-rod-shop-llc": {
+  "reviews": 1,
+  "rating": 5,
+  "source": "Google reviews"
  }
 }

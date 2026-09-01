@@ -303,5 +303,100 @@
   "lat": 36.5745104,
   "lon": -85.1288435,
   "method": "address"
+ },
+ "799 W Main St, Livingston TN": {
+  "lat": 36.37792,
+  "lon": -85.335034,
+  "method": "address"
+ },
+ "204 W Main St, Livingston, TN 38570, United States": {
+  "lat": 36.3830528,
+  "lon": -85.3234745,
+  "method": "address"
+ },
+ "412 Mountain View Dr, Livingston TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "501 W Main St A, Livingston, TN 38570, United States": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "802 Tower Hill Rd, Livingston, TN 38570, United States": {
+  "lat": 36.4129473,
+  "lon": -85.3456805,
+  "method": "address"
+ },
+ "415 E University St, Livingston, TN 38570, United States": {
+  "lat": 36.3861921,
+  "lon": -85.3199866,
+  "method": "address"
+ },
+ "714 N Church St, Livingston, TN 38570, United States": {
+  "lat": 36.3910355,
+  "lon": -85.3251168,
+  "method": "address"
+ },
+ "1008 E Main St, Livingston TN": {
+  "lat": 36.388494,
+  "lon": -85.3065577,
+  "method": "address"
+ },
+ "6340 Martin Creek Rd, Livingston TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "1034 E Main St, Livingston, TN 38570": {
+  "lat": 36.3888927,
+  "lon": -85.3046304,
+  "method": "address"
+ },
+ "237 Ben Ogletree Ln, Livingston TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "518 W Main St, Livingston, TN 38570": {
+  "lat": 36.3817085,
+  "lon": -85.3273487,
+  "method": "address"
+ },
+ "450 Market Square Plaza, Livingston, TN 38570, United States": {
+  "lat": 36.3980517,
+  "lon": -85.3222303,
+  "method": "address"
+ },
+ "1736 Dickerson Blvd, Monroe TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "336 Oakley Allons Rd, Allons TN": {
+  "lat": 36.4478559,
+  "lon": -85.3366905,
+  "method": "address"
+ },
+ "218 Mc Arthur Ave, Celina, TN 38551, United States": {
+  "lat": 36.5443863,
+  "lon": -85.5021585,
+  "method": "address"
+ },
+ "507 W Main St, Hilham TN": {
+  "lat": null,
+  "lon": null,
+  "method": "town-center"
+ },
+ "1918 Bradford Hicks Dr, Livingston, TN 38570, United States": {
+  "lat": 36.3884886,
+  "lon": -85.3347051,
+  "method": "address"
+ },
+ "113 S Church St, Livingston, TN 38570": {
+  "lat": 36.3829724,
+  "lon": -85.3223063,
+  "method": "address"
  }
 }
