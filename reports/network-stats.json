@@ -6,16 +6,16 @@
   "built": 5,
   "listed": 102
  },
- "edges_total": 126,
+ "edges_total": 125,
  "edges_by_kind": {
   "operates": 6,
   "built": 5,
-  "lists": 114,
+  "lists": 113,
   "sister": 1
  },
  "source_counts": {
   "outdoors": 40,
-  "visit": 35,
+  "visit": 34,
   "printers": 11
  },
  "printers_in_scope": 1,
@@ -30,12 +30,11 @@
   "Brazen Que -> existing node brazen-que (+eat-livingston-tn)",
   "Wired Coffee Co. -> existing node wired-coffee-co (+eat-livingston-tn)",
   "1806 BBQ -> existing node 1806-bbq (+eat-livingston-tn)",
-  "The Coffee Shop -> existing node the-coffee-shop (+eat-livingston-tn)",
   "Frank\u2019s -> existing node frank-s (+eat-livingston-tn)",
   "Livingston House of Pizza -> existing node livingston-house-of-pizza (+eat-livingston-tn)",
   "Angelina's Italian Subs & More -> existing node angelina-s-italian-subs-more (+eat-livingston-tn)"
  ],
  "missing_url": [],
  "missing_drive_min": [],
- "geo_placed": 76
+ "geo_placed": 75
 }

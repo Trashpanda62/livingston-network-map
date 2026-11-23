@@ -116,7 +116,7 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 alpaca farm and glamping stays outside Livingston.",
    "listed_in": [],
-   "bearing": 232.5,
+   "bearing": 233.8,
    "geo": [
     572.82,
     -1044.6
@@ -225,7 +225,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 224.5,
+   "bearing": 225.8,
    "geo": [
     -1073.95,
     -628.13
@@ -286,7 +286,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 227.1,
+   "bearing": 228.5,
    "geo": [
     -1.01,
     -0.91
@@ -1101,7 +1101,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 225.8,
+   "bearing": 227.1,
    "geo": [
     -1073.95,
     -628.13
@@ -1112,7 +1112,7 @@
    "id": "livingston-mural-trail",
    "name": "Livingston Mural Trail",
    "type": "listed",
-   "url": "https://web.archive.org/web/2026/https://discoverlivingstontn.com/mural-trail/",
+   "url": "https://livingstonovertonchamber.com/",
    "city": "Livingston",
    "county": "Overton",
    "drive_min": 2,
@@ -1261,7 +1261,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 233.8,
+   "bearing": 235.2,
    "geo": [
     -2.13,
     0.43
@@ -1356,11 +1356,11 @@
    "id": "ruby-lee-coffee-and-bakehouse",
    "name": "Ruby & Lee Coffee and Bakehouse",
    "type": "listed",
-   "url": "https://www.restaurantji.com/tn/livingston/ruby-and-lee-coffee-and-bakehouse-/",
+   "url": "https://www.127yardsale.com/food-drink/bakery/ruby-and-lee-coffee-and-bakehouse",
    "city": "Livingston",
    "county": "Overton",
    "drive_min": 2,
-   "blurb": "A bakery and coffee shop on the downtown square inside the Market on Main boutique, serving cinnamon rolls, muffins, breakfast sandwiches, and espresso drinks. This is a rebrand of the same location previously known as AC Squared Bakery.",
+   "blurb": "A bakery and coffee shop on South Church Street serving cinnamon rolls, muffins, breakfast sandwiches, and espresso drinks. It is the rebrand of the business previously known as AC Squared Bakery and The Coffee Shop.",
    "category": "eats",
    "listed_in": [
     "visit-livingston-tn"
@@ -1385,7 +1385,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 228.5,
+   "bearing": 229.8,
    "geo": [
     43.82,
     -6.48
@@ -1577,27 +1577,6 @@
    "geo_method": "address"
   },
   {
-   "id": "the-coffee-shop",
-   "name": "The Coffee Shop",
-   "type": "listed",
-   "url": "https://www.facebook.com/acsquaredbakery/",
-   "city": "Livingston",
-   "county": "Overton",
-   "drive_min": 2,
-   "blurb": "A bakery and coffee shop right on the courthouse square, run as A.C. Squared Bakery.",
-   "category": "eats",
-   "listed_in": [
-    "visit-livingston-tn",
-    "eat-livingston-tn"
-   ],
-   "bearing": 235.2,
-   "geo": [
-    0.69,
-    7.54
-   ],
-   "geo_method": "address"
-  },
-  {
    "id": "the-emporium",
    "name": "The Emporium",
    "type": "listed",
@@ -1713,6 +1692,21 @@
    "bearing": 241.9
   },
   {
+   "id": "ruby-lee-coffee-bakehouse",
+   "name": "Ruby & Lee Coffee & Bakehouse",
+   "type": "listed",
+   "url": "https://www.facebook.com/acsquaredbakery/",
+   "city": "Livingston",
+   "county": "Overton",
+   "drive_min": 2,
+   "blurb": "Coffee shops, cafe in Livingston.",
+   "category": "coffee shops",
+   "listed_in": [
+    "eat-livingston-tn"
+   ],
+   "bearing": 224.5
+  },
+  {
    "id": "fiesta-livingston",
    "name": "Fiesta Livingston",
    "type": "listed",
@@ -1785,7 +1779,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 229.8
+   "bearing": 231.2
   },
   {
    "id": "kent-s-wholesale-tire",
@@ -1920,7 +1914,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 231.2
+   "bearing": 232.5
   },
   {
    "id": "arneys-wrecker-service",
@@ -2496,11 +2490,6 @@
   },
   {
    "source": "visit-livingston-tn",
-   "target": "the-coffee-shop",
-   "kind": "lists"
-  },
-  {
-   "source": "visit-livingston-tn",
    "target": "the-emporium",
    "kind": "lists"
   },
@@ -2566,7 +2555,7 @@
   },
   {
    "source": "eat-livingston-tn",
-   "target": "the-coffee-shop",
+   "target": "ruby-lee-coffee-bakehouse",
    "kind": "lists"
   },
   {
