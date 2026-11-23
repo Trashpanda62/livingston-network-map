@@ -63,6 +63,8 @@ BUILT_SITES = [
      "Every place to eat in Overton County, with the hours each one publishes and the date they were read."),
     ("upper-cumberland-auto", "Upper Cumberland Auto", "https://overtoncountyauto.com", "Livingston", "Overton", "directory",
      "Auto repair, tire, body and towing shops across six counties. Only its Overton County shops are on this map."),
+    ("cookeville-garden-guide", "Cookeville Garden Guide", "https://cookevillegardenguide.com", "Livingston", "Overton", "directory",
+     "Garden centers, nurseries and growers around Cookeville and Livingston, each checked against its own published source."),
     ("livingston-garden-center", "Livingston Garden Center", "https://livingstongardencenter.com", "Livingston", "Overton", "built",
      "Client build — pickup-ordering garden center site, order by 5 PM for next-day pickup."),
     ("tapestry-acres", "Tapestry Acres", "https://tapestryacres.com", "Monroe", "Overton", "built",
@@ -106,7 +108,7 @@ def main() -> int:
 
     DIRECTORY_IDS = ("livingston-outdoors", "visit-livingston-tn",
                      "middle-tn-printers", "eat-livingston-tn",
-                     "upper-cumberland-auto")
+                     "upper-cumberland-auto", "cookeville-garden-guide")
     for site_id in DIRECTORY_IDS:
         edges.append({"source": BR, "target": site_id, "kind": "operates"})
     for nid, *_ in [(r[0],) for r in BUILT_SITES]:

@@ -1,14 +1,14 @@
 {
- "nodes_total": 113,
+ "nodes_total": 114,
  "by_type": {
   "hub": 1,
-  "directory": 5,
+  "directory": 6,
   "built": 5,
   "listed": 102
  },
- "edges_total": 125,
+ "edges_total": 126,
  "edges_by_kind": {
-  "operates": 5,
+  "operates": 6,
   "built": 5,
   "lists": 114,
   "sister": 1
