@@ -3,9 +3,19 @@
   "central-park-livingston": {
    "reason": "dead-site",
    "reviews": 506,
-   "name": "Central Park (Livingston)",
    "phone": "+1 931-823-1269",
-   "address": "140 S Spring St, Livingston, TN 38570, United States"
+   "address": "140 S Spring St, Livingston, TN 38570, United States",
+   "name": "Central Park (Livingston)"
+  },
+  "waterloo-falls": {
+   "reason": "dead-site",
+   "reviews": null,
+   "name": "Waterloo Falls"
+  },
+  "east-port-marina-and-resort": {
+   "reason": "dead-site",
+   "reviews": 410,
+   "name": "East Port Marina and Resort"
   },
   "horse-creek-resort": {
    "reason": "dead-site",
@@ -15,9 +25,9 @@
   "hidden-valley-golf-country-club": {
    "reason": "dead-site",
    "reviews": 61,
-   "name": "Hidden Valley Golf & Country Club",
    "phone": "+1 931-823-1313",
-   "address": "201 Valley Dr, Livingston, TN 38570, United States"
+   "address": "201 Valley Dr, Livingston, TN 38570, United States",
+   "name": "Hidden Valley Golf & Country Club"
   },
   "livingston-overton-county-farmers-market": {
    "reason": "aggregator-listing",
@@ -27,9 +37,9 @@
   "millard-oakley-public-library": {
    "reason": "dead-site",
    "reviews": 54,
-   "name": "Millard Oakley Public Library",
    "phone": "+1 931-823-1888",
-   "address": "107 E Main St, Livingston, TN 38570, United States"
+   "address": "107 E Main St, Livingston, TN 38570, United States",
+   "name": "Millard Oakley Public Library"
   },
   "overton-county-arts": {
    "reason": "aggregator-listing",
@@ -44,201 +54,197 @@
   "overton-county-heritage-museum": {
    "reason": "aggregator-listing",
    "reviews": 14,
-   "name": "Overton County Heritage Museum",
    "phone": "+1 931-403-0909",
-   "address": "318 W Broad St, Livingston, TN 38570, United States"
+   "address": "318 W Broad St, Livingston, TN 38570, United States",
+   "name": "Overton County Heritage Museum"
   },
   "the-antique-market": {
    "reason": "aggregator-listing",
    "reviews": 69,
-   "name": "The Antique Market",
    "phone": "+1 931-823-4943",
-   "address": "116 N Court Square, Livingston, TN 38570, United States"
+   "address": "116 N Court Square, Livingston, TN 38570, United States",
+   "name": "The Antique Market"
   },
   "angelina-s-italian-subs-more": {
    "reason": "aggregator-listing",
    "reviews": 32,
-   "name": "Angelina's Italian Subs & More",
    "phone": "+1 931-823-2867",
-   "address": "920 Overton Plz, Livingston, TN 38570, United States"
+   "address": "920 Overton Plz, Livingston, TN 38570, United States",
+   "name": "Angelina's Italian Subs & More"
   },
   "casa-mexicana": {
    "reason": "aggregator-listing",
    "reviews": 528,
-   "name": "Casa Mexicana",
    "phone": "(931) 823-8870",
-   "address": "440 Market Square Plaza, Livingston, TN 38570"
-  },
-  "ruby-lee-coffee-and-bakehouse": {
-   "reason": "aggregator-listing",
-   "reviews": 94,
-   "name": "Ruby & Lee Coffee and Bakehouse"
+   "address": "440 Market Square Plaza, Livingston, TN 38570",
+   "name": "Casa Mexicana"
   },
   "stover-s-country-kitchen": {
    "reason": "aggregator-listing",
    "reviews": 631,
-   "name": "Stover's Country Kitchen",
    "phone": "+1 931-823-9550",
-   "address": "511 E Main St, Livingston, TN 38570, United States"
+   "address": "511 E Main St, Livingston, TN 38570, United States",
+   "name": "Stover's Country Kitchen"
   },
   "the-sno-shack": {
    "reason": "aggregator-listing",
    "reviews": 38,
-   "name": "The Sno Shack",
    "phone": "+1 931-704-2338",
-   "address": "718 W Main St, Livingston, TN 38570, United States"
+   "address": "718 W Main St, Livingston, TN 38570, United States",
+   "name": "The Sno Shack"
   },
   "wired-coffee-co": {
    "reason": "rented-subdomain",
    "reviews": 253,
-   "name": "Wired Coffee Co",
    "phone": "(931) 403-9417",
-   "address": "1185 Preston St, Livingston, TN 38570"
+   "address": "1185 Preston St, Livingston, TN 38570",
+   "name": "Wired Coffee Co"
   },
   "the-coop": {
    "reason": "aggregator-listing",
    "reviews": 946,
-   "name": "The Coop",
    "phone": "+1 931-403-2667",
-   "address": "209 S Spring St, Livingston, TN 38570, United States"
+   "address": "209 S Spring St, Livingston, TN 38570, United States",
+   "name": "The Coop"
   },
   "frank-s": {
    "reason": "aggregator-listing",
    "reviews": 87,
-   "name": "Frank's",
    "phone": "+1 931-823-7265",
-   "address": "1033 E Main St, Livingston, TN 38570, United States"
+   "address": "1033 E Main St, Livingston, TN 38570, United States",
+   "name": "Frank's"
   },
   "livingston-house-of-pizza": {
    "reason": "aggregator-listing",
    "reviews": 34,
-   "name": "Livingston House of Pizza",
    "phone": "+1 931-823-3486",
-   "address": "616 E Main St, Livingston, TN 38570, United States"
-  },
-  "the-coffee-shop": {
-   "reason": "facebook-only",
-   "reviews": 94,
-   "name": "The Coffee Shop",
-   "phone": "+1 931-823-2253",
-   "address": "101 S Court Square, Livingston, TN 38570, United States"
+   "address": "616 E Main St, Livingston, TN 38570, United States",
+   "name": "Livingston House of Pizza"
   },
   "the-emporium": {
    "reason": "facebook-only",
    "reviews": 27,
-   "name": "The Emporium",
    "phone": "+1 931-823-6741",
-   "address": "108 N Court Square, Livingston, TN 38570, United States"
+   "address": "108 N Court Square, Livingston, TN 38570, United States",
+   "name": "The Emporium"
   },
   "keaton-place": {
    "reason": "aggregator-listing",
    "reviews": 11,
-   "name": "Keaton Place",
    "phone": "+1 931-823-2727",
-   "address": "120 N Court Square, Livingston, TN 38570, United States"
+   "address": "120 N Court Square, Livingston, TN 38570, United States",
+   "name": "Keaton Place"
+  },
+  "nettlecarrier-creek-camp": {
+   "reason": "aggregator-listing",
+   "reviews": null
   },
   "casa-nueva-mexican-bar-grill-inc": {
    "reason": "dead-site",
    "reviews": 447,
-   "name": "Casa Nueva Mexican Bar & Grill Inc.",
    "phone": "+1 931-823-8875",
-   "address": "840 Overton Plz, Livingston, TN 38570, United States"
+   "address": "840 Overton Plz, Livingston, TN 38570, United States",
+   "name": "Casa Nueva Mexican Bar & Grill Inc."
   },
   "j-d-s-sandwich-shop": {
    "reason": "aggregator-listing",
    "reviews": 202,
-   "name": "J D's Sandwich Shop",
    "phone": "(931) 823-6718",
-   "address": "208 W Broad St, Livingston, TN 38570"
+   "address": "208 W Broad St, Livingston, TN 38570",
+   "name": "J D's Sandwich Shop"
   },
   "the-fork": {
    "reason": "aggregator-listing",
    "reviews": 134,
-   "name": "The Fork",
    "phone": "+1 931-823-8822",
-   "address": "33 Lily Dale Rd, Allons, TN 38541, United States"
+   "address": "33 Lily Dale Rd, Allons, TN 38541, United States",
+   "name": "The Fork"
   },
   "the-sunset-restaurant-by-the-steel-coop": {
    "reason": "aggregator-listing",
    "reviews": 106,
-   "name": "The Sunset Restaurant by The Steel Coop",
    "phone": "(931) 864-4874",
-   "address": "2040 Sunset Dock Rd, Monroe, TN 38573"
+   "address": "2040 Sunset Dock Rd, Monroe, TN 38573",
+   "name": "The Sunset Restaurant by The Steel Coop"
+  },
+  "ruby-lee-coffee-bakehouse": {
+   "reason": "facebook-only",
+   "reviews": null
   },
   "gio-s-deli": {
    "reason": "aggregator-listing",
    "reviews": 26,
-   "name": "Gio\u2019s Deli",
    "phone": "+1 931-403-7089",
-   "address": "1589w W Main St, Livingston, TN 38570, United States"
+   "address": "1589w W Main St, Livingston, TN 38570, United States",
+   "name": "Gio\u2019s Deli"
   },
   "uncle-goose-coffee": {
    "reason": "aggregator-listing",
    "reviews": 17,
-   "name": "Uncle Goose Coffee",
-   "address": "507 W Main St, Livingston, TN 38570"
+   "address": "507 W Main St, Livingston, TN 38570",
+   "name": "Uncle Goose Coffee"
   },
   "local-ground": {
    "reason": "dead-site",
    "reviews": 6,
-   "name": "Local Ground",
    "phone": "+1 931-385-0916",
-   "address": "213 N Church St, Livingston, TN 38570, United States"
+   "address": "213 N Church St, Livingston, TN 38570, United States",
+   "name": "Local Ground"
   },
   "kent-s-wholesale-tire": {
-   "reason": "dead-site",
+   "reason": "aggregator-listing",
    "reviews": 499,
-   "name": "Kent's Wholesale Tire",
-   "phone": "+1 931-863-8233"
+   "phone": "+1 931-863-8233",
+   "name": "Kent's Wholesale Tire"
   },
   "waterloo-tire-service": {
    "reason": "aggregator-listing",
    "reviews": 136,
-   "name": "Waterloo Tire Service",
    "phone": "+1 931-823-7442",
-   "address": "519 W Main St, Livingston, TN 38570, United States"
+   "address": "519 W Main St, Livingston, TN 38570, United States",
+   "name": "Waterloo Tire Service"
   },
   "maynord-bros-automotive": {
    "reason": "dead-site",
    "reviews": 67,
-   "name": "Maynord Bros Automotive",
    "phone": "(931) 823-2558",
-   "address": "605 E Main St, Livingston, TN 38570"
+   "address": "605 E Main St, Livingston, TN 38570",
+   "name": "Maynord Bros Automotive"
   },
   "floyd-s-automotive-and-performance": {
    "reason": "facebook-only",
    "reviews": 56,
-   "name": "Floyd's Automotive and Performance",
    "phone": "+1 931-372-8253",
-   "address": "3812 Rickman Rd, Rickman, TN 38580, United States"
+   "address": "3812 Rickman Rd, Rickman, TN 38580, United States",
+   "name": "Floyd's Automotive and Performance"
   },
   "hwy-tire": {
    "reason": "aggregator-listing",
    "reviews": 53,
-   "name": "HWY TIRE",
    "phone": "+1 931-823-8473",
-   "address": "2320 Cookeville Hwy, Livingston, TN 38570, United States"
+   "address": "2320 Cookeville Hwy, Livingston, TN 38570, United States",
+   "name": "HWY TIRE"
   },
   "woolbright-auto-repair": {
    "reason": "aggregator-listing",
    "reviews": 46,
-   "name": "Woolbright Auto Repair",
    "phone": "+1 931-403-5277",
-   "address": "617 N Church St, Livingston, TN 38570, United States"
+   "address": "617 N Church St, Livingston, TN 38570, United States",
+   "name": "Woolbright Auto Repair"
   },
   "vaughn-s-collision": {
    "reason": "aggregator-listing",
    "reviews": 36,
-   "name": "Vaughn's Collision",
    "phone": "(931) 823-6282",
-   "address": "1210 Byrdstown Hwy, Livingston, TN 38570"
+   "address": "1210 Byrdstown Hwy, Livingston, TN 38570",
+   "name": "Vaughn's Collision"
   },
   "watkins-langford-wrecker-services": {
    "reason": "aggregator-listing",
    "reviews": 34,
-   "name": "Watkins & Langford Wrecker Services",
    "phone": "+1 931-823-2370",
-   "address": "909 Oak St, Livingston, TN 38570, United States"
+   "address": "909 Oak St, Livingston, TN 38570, United States",
+   "name": "Watkins & Langford Wrecker Services"
   },
   "t-m-automotive": {
    "reason": "aggregator-listing",
@@ -248,12 +254,12 @@
   "arneys-wrecker-service": {
    "reason": "aggregator-listing",
    "reviews": 29,
-   "name": "Arneys Wrecker Service",
    "phone": "+1 931-823-4422",
-   "address": "306 Kennedy St, Livingston, TN 38570, United States"
+   "address": "306 Kennedy St, Livingston, TN 38570, United States",
+   "name": "Arneys Wrecker Service"
   },
   "auto-worx-of-livingston-llc": {
-   "reason": "dead-site",
+   "reason": "aggregator-listing",
    "reviews": 28,
    "name": "Auto Worx of Livingston LLC"
   },
@@ -265,9 +271,9 @@
   "wayne-s-customs-automotive-and-towing": {
    "reason": "aggregator-listing",
    "reviews": 19,
-   "name": "Wayne's Customs Automotive and Towing",
    "phone": "+1 931-319-5964",
-   "address": "1006 E Main St, Livingston, TN 38570, United States"
+   "address": "1006 E Main St, Livingston, TN 38570, United States",
+   "name": "Wayne's Customs Automotive and Towing"
   },
   "palestine-tire-shop": {
    "reason": "aggregator-listing",
@@ -277,37 +283,37 @@
   "crossroads-diesel-and-auto": {
    "reason": "dead-site",
    "reviews": 12,
-   "name": "Crossroads Diesel and Auto",
    "phone": "+1 615-374-8547",
-   "address": "3913 Rickman Rd, Rickman, TN 38580, United States"
+   "address": "3913 Rickman Rd, Rickman, TN 38580, United States",
+   "name": "Crossroads Diesel and Auto"
   },
   "light-the-fire-garage-fab": {
    "reason": "facebook-only",
    "reviews": 4,
-   "name": "Light the Fire Garage & Fab",
    "phone": "(931) 823-2011",
-   "address": "507 Standing Stone Hwy, Hilham, TN 38568"
+   "address": "507 Standing Stone Hwy, Hilham, TN 38568",
+   "name": "Light the Fire Garage & Fab"
   },
   "roadside-rescue-of-the-upper-cumberland": {
    "reason": "facebook-only",
    "reviews": 3,
-   "name": "Roadside rescue of the upper Cumberland",
    "phone": "+1 931-284-1546",
-   "address": "Tennessee dr & fletcher, Livingston, TN 38570, United States"
+   "address": "Tennessee dr & fletcher, Livingston, TN 38570, United States",
+   "name": "Roadside rescue of the upper Cumberland"
   },
   "hunters-garage-inc": {
-   "reason": "dead-site",
+   "reason": "aggregator-listing",
    "reviews": 2,
-   "name": "Hunters Garage Inc.",
    "phone": "+1 931-823-1621",
-   "address": "221 Mountain Rd, Livingston, TN 38570, United States"
+   "address": "221 Mountain Rd, Livingston, TN 38570, United States",
+   "name": "Hunters Garage Inc."
   },
   "the-tennessee-hot-rod-shop-llc": {
    "reason": "aggregator-listing",
    "reviews": 1,
-   "name": "The Tennessee Hot Rod Shop LLC",
    "phone": "+1 931-704-4941",
-   "address": "281 Jerry Bilbrey Ln, Hilham, TN 38568, United States"
+   "address": "281 Jerry Bilbrey Ln, Hilham, TN 38568, United States",
+   "name": "The Tennessee Hot Rod Shop LLC"
   }
  },
  "new": [

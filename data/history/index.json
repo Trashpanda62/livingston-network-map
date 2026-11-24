@@ -6,5 +6,9 @@
  {
   "month": "202609",
   "file": "traffic-202609.json"
+ },
+ {
+  "month": "202611",
+  "file": "traffic-202611.json"
  }
 ]

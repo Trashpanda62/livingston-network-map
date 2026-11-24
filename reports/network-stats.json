@@ -1,25 +1,25 @@
 {
- "nodes_total": 114,
+ "nodes_total": 123,
  "by_type": {
   "hub": 1,
   "directory": 6,
   "built": 5,
-  "listed": 102
+  "listed": 111
  },
- "edges_total": 125,
+ "edges_total": 136,
  "edges_by_kind": {
   "operates": 6,
   "built": 5,
-  "lists": 113,
+  "lists": 124,
   "sister": 1
  },
  "source_counts": {
   "outdoors": 40,
-  "visit": 34,
+  "visit": 41,
   "printers": 11
  },
  "printers_in_scope": 1,
- "eat_in_scope": 18,
+ "eat_in_scope": 22,
  "auto_in_scope": 20,
  "deduped": [
   "Central Park Livingston -> existing node central-park-livingston (+visit-livingston-tn)",
@@ -32,7 +32,9 @@
   "1806 BBQ -> existing node 1806-bbq (+eat-livingston-tn)",
   "Frank\u2019s -> existing node frank-s (+eat-livingston-tn)",
   "Livingston House of Pizza -> existing node livingston-house-of-pizza (+eat-livingston-tn)",
-  "Angelina's Italian Subs & More -> existing node angelina-s-italian-subs-more (+eat-livingston-tn)"
+  "Angelina's Italian Subs & More -> existing node angelina-s-italian-subs-more (+eat-livingston-tn)",
+  "Stover's Country Kitchen -> existing node stover-s-country-kitchen (+eat-livingston-tn)",
+  "The Sno Shack -> existing node the-sno-shack (+eat-livingston-tn)"
  ],
  "missing_url": [],
  "missing_drive_min": [],

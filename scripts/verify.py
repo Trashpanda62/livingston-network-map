@@ -100,7 +100,9 @@ def main() -> int:
 
     # 9: index.html references only local assets, and they exist.
     html = (ROOT / "index.html").read_text(encoding="utf-8")
-    refs = re.findall(r'(?:src|href)="([^"]+)"', html)
+    # <link rel="canonical"> names the page's own public URL; it is metadata, not an asset load.
+    asset_html = re.sub(r'<link\s+rel="canonical"[^>]*>', "", html)
+    refs = re.findall(r'(?:src|href)="([^"]+)"', asset_html)
     external = [r for r in refs if r.startswith(("http://", "https://", "//"))]
     check("zero external asset references in index.html", not external, str(external or "all local"))
     missing_files = [r for r in refs if not (ROOT / r.split("?")[0]).exists()]

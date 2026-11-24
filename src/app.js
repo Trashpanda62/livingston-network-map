@@ -1342,10 +1342,10 @@ document.addEventListener('mousemove', e => {
 Promise.all([
   fetch('./data/network.json').then(r => r.json()),
   fetch('./data/satellite.json').then(r => r.json()),
-  new THREE.TextureLoader().loadAsync('./data/satellite.jpg'),
+  new THREE.TextureLoader().loadAsync('./data/satellite.jpg?v=3'),
   fetch('./data/visitors.json').then(r => r.json()).catch(() => null),
   fetch('./data/region.json').then(r => r.json()).catch(() => null),
-  new THREE.TextureLoader().loadAsync('./data/region.jpg?v=2').catch(() => null),
+  new THREE.TextureLoader().loadAsync('./data/region.jpg?v=3').catch(() => null),
   fetch('./data/traffic.json').then(r => r.json()).catch(() => null),
   fetch('./data/prospects.json').then(r => r.json()).catch(() => null),
   fetch('./data/history/index.json').then(r => r.json()).catch(() => null)

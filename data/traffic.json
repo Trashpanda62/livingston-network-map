@@ -39,7 +39,7 @@
   "reviews": null,
   "rating": null,
   "source": null,
-  "crux": true
+  "crux": false
  },
  "cinderella-park": {
   "reviews": 204,
@@ -111,7 +111,7 @@
   "reviews": 410,
   "rating": 4.7,
   "source": "Google reviews",
-  "crux": true
+  "crux": false
  },
  "bee-rock": {
   "reviews": 343,
@@ -285,7 +285,7 @@
   "reviews": null,
   "rating": null,
   "source": null,
-  "crux": true
+  "crux": false
  },
  "livingston-overton-county-farmers-market": {
   "reviews": 39,
