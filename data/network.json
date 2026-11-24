@@ -27,7 +27,7 @@
    "drive_min": 2,
    "blurb": "Photo-led directory of 40 outdoor places within 45 minutes of Livingston.",
    "listed_in": [],
-   "bearing": 196.5
+   "bearing": 196.0
   },
   {
    "id": "visit-livingston-tn",
@@ -39,7 +39,7 @@
    "drive_min": 2,
    "blurb": "First-timer's editorial guide to Livingston and Overton County \u2014 35 places.",
    "listed_in": [],
-   "bearing": 249.7
+   "bearing": 249.8
   },
   {
    "id": "middle-tn-printers",
@@ -51,7 +51,7 @@
    "drive_min": 2,
    "blurb": "Directory of eleven Middle Tennessee commercial printers. Only its Overton County shop is on this map.",
    "listed_in": [],
-   "bearing": 202.6
+   "bearing": 202.0
   },
   {
    "id": "eat-livingston-tn",
@@ -63,7 +63,7 @@
    "drive_min": 2,
    "blurb": "Every place to eat in Overton County, with the hours each one publishes and the date they were read.",
    "listed_in": [],
-   "bearing": 172.4
+   "bearing": 172.1
   },
   {
    "id": "upper-cumberland-auto",
@@ -75,7 +75,7 @@
    "drive_min": 2,
    "blurb": "Auto repair, tire, body and towing shops across six counties. Only its Overton County shops are on this map.",
    "listed_in": [],
-   "bearing": 247.3
+   "bearing": 247.4
   },
   {
    "id": "cookeville-garden-guide",
@@ -87,7 +87,7 @@
    "drive_min": 2,
    "blurb": "Garden centers, nurseries and growers around Cookeville and Livingston, each checked against its own published source.",
    "listed_in": [],
-   "bearing": 161.5
+   "bearing": 161.4
   },
   {
    "id": "livingston-garden-center",
@@ -99,7 +99,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 pickup-ordering garden center site, order by 5 PM for next-day pickup.",
    "listed_in": [],
-   "bearing": 191.7,
+   "bearing": 191.2,
    "geo": [
     151.07,
     -89.79
@@ -116,7 +116,7 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 alpaca farm and glamping stays outside Livingston.",
    "listed_in": [],
-   "bearing": 234.0,
+   "bearing": 233.1,
    "geo": [
     572.82,
     -1044.6
@@ -133,7 +133,7 @@
    "drive_min": 15,
    "blurb": "Own venture \u2014 RV rental based at the Tapestry Acres farm.",
    "listed_in": [],
-   "bearing": 244.9,
+   "bearing": 245.1,
    "geo": [
     583.27,
     -1033.55
@@ -150,7 +150,7 @@
    "drive_min": 2,
    "blurb": "Client build \u2014 drone and aerial photography, credited to Barnraised.",
    "listed_in": [],
-   "bearing": 219.5
+   "bearing": 218.8
   },
   {
    "id": "oliver-printing",
@@ -164,7 +164,7 @@
    "listed_in": [
     "middle-tn-printers"
    ],
-   "bearing": 207.4,
+   "bearing": 206.8,
    "geo": [
     -20.76,
     13.75
@@ -184,7 +184,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 189.3,
+   "bearing": 188.9,
    "geo": [
     85.61,
     -22.13
@@ -205,7 +205,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 160.3,
+   "bearing": 160.2,
    "geo": [
     -1.01,
     21.76
@@ -225,7 +225,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 226.8,
+   "bearing": 225.9,
    "geo": [
     -1073.95,
     -628.13
@@ -286,7 +286,7 @@
     "livingston-outdoors",
     "visit-livingston-tn"
    ],
-   "bearing": 229.2,
+   "bearing": 228.3,
    "geo": [
     -1.01,
     -0.91
@@ -306,7 +306,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 252.1,
+   "bearing": 252.2,
    "geo": [
     -1080.62,
     747.17
@@ -526,7 +526,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 218.3,
+   "bearing": 217.6,
    "geo": [
     -119.93,
     -471.97
@@ -546,7 +546,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 171.2,
+   "bearing": 170.9,
    "geo": [
     1487.36,
     -611.67
@@ -826,7 +826,7 @@
    "listed_in": [
     "livingston-outdoors"
    ],
-   "bearing": 167.5,
+   "bearing": 167.3,
    "geo": [
     -193.97,
     -528.62
@@ -986,7 +986,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 163.9,
+   "bearing": 163.8,
    "geo": [
     1195.79,
     1025.36
@@ -1006,7 +1006,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 165.1,
+   "bearing": 164.9,
    "geo": [
     30.63,
     -41.89
@@ -1026,7 +1026,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 168.7,
+   "bearing": 168.5,
    "geo": [
     -109.62,
     -607.22
@@ -1041,12 +1041,12 @@
    "city": "Livingston",
    "county": "Overton",
    "drive_min": 2,
-   "blurb": "Semi-private 9-hole golf course in Livingston, built in 1966. Open to the public most days; Sundays are members-and-guests only.",
+   "blurb": "Semi-private 9-hole golf course in Livingston, established in 1965. Open to the public most days; Sundays are members-and-guests only.",
    "category": "outdoors",
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 179.6,
+   "bearing": 179.3,
    "geo": [
     -88.63,
     -228.38
@@ -1066,7 +1066,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 190.5,
+   "bearing": 190.1,
    "geo": [
     85.61,
     -22.13
@@ -1086,7 +1086,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 206.2
+   "bearing": 205.6
   },
   {
    "id": "standing-stone-state-forest-wma",
@@ -1096,12 +1096,12 @@
    "city": "",
    "county": "Overton",
    "drive_min": 20,
-   "blurb": "TWRA-managed wildlife management area of nearly 11,000 acres surrounding Standing Stone State Park in Overton County. Open for big game and small game hunting, trapping, and dog training in season, as well as hiking and birding (notable songbird migration diversity).",
+   "blurb": "State forest of 8,309 acres (Tennessee Division of Forestry figure) around Standing Stone State Park in Overton and Clay counties, managed for wildlife by TWRA. Open for big game and small game hunting, trapping, and dog training in season, as well as hiking and birding (notable songbird migration diversity).",
    "category": "outdoors",
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 228.0,
+   "bearing": 227.1,
    "geo": [
     -1073.95,
     -628.13
@@ -1121,7 +1121,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 195.3,
+   "bearing": 194.8,
    "geo": [
     -17.17,
     -43.04
@@ -1141,7 +1141,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 199.0,
+   "bearing": 198.4,
    "geo": [
     0.3,
     -7.36
@@ -1161,7 +1161,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 203.8,
+   "bearing": 203.2,
    "geo": [
     4.25,
     9.37
@@ -1181,7 +1181,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 208.6,
+   "bearing": 208.0,
    "geo": [
     -22.79,
     3.77
@@ -1201,7 +1201,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 209.8,
+   "bearing": 209.2,
    "geo": [
     0.38,
     5.97
@@ -1221,7 +1221,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 212.3,
+   "bearing": 211.6,
    "geo": [
     -31.98,
     9.52
@@ -1241,7 +1241,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 221.9,
+   "bearing": 221.1,
    "geo": [
     -39.66,
     -49.98
@@ -1261,7 +1261,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 235.2,
+   "bearing": 235.5,
    "geo": [
     -2.13,
     0.43
@@ -1345,7 +1345,7 @@
     "visit-livingston-tn",
     "eat-livingston-tn"
    ],
-   "bearing": 157.9,
+   "bearing": 157.8,
    "geo": [
     3.55,
     -130.05
@@ -1365,7 +1365,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 223.1,
+   "bearing": 222.3,
    "geo": [
     0.69,
     7.54
@@ -1386,7 +1386,7 @@
     "visit-livingston-tn",
     "eat-livingston-tn"
    ],
-   "bearing": 230.4,
+   "bearing": 229.5,
    "geo": [
     43.82,
     -6.48
@@ -1407,7 +1407,7 @@
     "visit-livingston-tn",
     "eat-livingston-tn"
    ],
-   "bearing": 241.3,
+   "bearing": 241.5,
    "geo": [
     -61.96,
     34.9
@@ -1448,7 +1448,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 173.6,
+   "bearing": 173.3,
    "geo": [
     -4.95,
     5.11
@@ -1468,7 +1468,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 197.7,
+   "bearing": 197.2,
    "geo": [
     77.84,
     -33.44
@@ -1488,7 +1488,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 211.0,
+   "bearing": 210.4,
    "geo": [
     -22.32,
     -49.98
@@ -1508,7 +1508,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 214.7,
+   "bearing": 214.0,
    "geo": [
     -4.95,
     5.11
@@ -1529,7 +1529,7 @@
     "visit-livingston-tn",
     "eat-livingston-tn"
    ],
-   "bearing": 236.4,
+   "bearing": 236.7,
    "geo": [
     -0.46,
     20.57
@@ -1550,7 +1550,7 @@
     "visit-livingston-tn",
     "eat-livingston-tn"
    ],
-   "bearing": 177.2,
+   "bearing": 176.9,
    "geo": [
     134.86,
     -45.91
@@ -1571,7 +1571,7 @@
     "visit-livingston-tn",
     "eat-livingston-tn"
    ],
-   "bearing": 192.9,
+   "bearing": 192.4,
    "geo": [
     52.57,
     -21.74
@@ -1591,7 +1591,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 237.6,
+   "bearing": 237.9,
    "geo": [
     -1.88,
     0.35
@@ -1611,7 +1611,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 184.5,
+   "bearing": 184.1,
    "geo": [
     -2.26,
     0.47
@@ -1622,16 +1622,16 @@
    "id": "overton-motel",
    "name": "Overton Motel",
    "type": "listed",
-   "url": "https://www.overtonmotel.us/",
+   "url": "https://www.google.com/maps/search/Overton+Motel+1035+E+Main+St+Livingston+TN",
    "city": "Livingston",
    "county": "Overton",
    "drive_min": 2,
-   "blurb": "Motel on East Main Street in Livingston; its own site takes online bookings. Address and phone from its Google Business Profile, read 2026-11-24.",
+   "blurb": "Motel on East Main Street in Livingston. Address and phone from its Google Business Profile, read 2026-11-24. No website of its own was found; overtonmotel.us states it is an independent booking site not affiliated with the motel.",
    "category": "stay",
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 213.5
+   "bearing": 212.8
   },
   {
    "id": "livingston-lofts",
@@ -1646,7 +1646,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 194.1
+   "bearing": 193.6
   },
   {
    "id": "lakeside-inn-at-dale-hollow",
@@ -1661,7 +1661,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 186.9
+   "bearing": 186.5
   },
   {
    "id": "the-lake-house-on-dale-hollow",
@@ -1676,7 +1676,22 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 240.1
+   "bearing": 240.3
+  },
+  {
+   "id": "tapestry-acres-farm-rv-stays",
+   "name": "Tapestry Acres Farm RV Stays",
+   "type": "listed",
+   "url": "https://tapestryacres.com/stay",
+   "city": "Monroe",
+   "county": "Overton",
+   "drive_min": 15,
+   "blurb": "Alpaca farm near Monroe that rents set-up motorhomes, on the farm or delivered to a campground within about 50 miles, and takes guests' own RVs with 30 amp power, per tapestryacres.com/stay, read 2026-11-24. A Barnraised web design customer.",
+   "category": "stay",
+   "listed_in": [
+    "visit-livingston-tn"
+   ],
+   "bearing": 234.3
   },
   {
    "id": "deep-valley-campground",
@@ -1691,7 +1706,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 169.9
+   "bearing": 169.7
   },
   {
    "id": "water-wheel-rv-camp",
@@ -1706,7 +1721,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 250.9
+   "bearing": 251.0
   },
   {
    "id": "nettlecarrier-creek-camp",
@@ -1721,7 +1736,7 @@
    "listed_in": [
     "visit-livingston-tn"
    ],
-   "bearing": 205.0
+   "bearing": 204.4
   },
   {
    "id": "casa-nueva-mexican-bar-grill-inc",
@@ -1736,7 +1751,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 159.1
+   "bearing": 159.0
   },
   {
    "id": "pizza-hut",
@@ -1751,7 +1766,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 217.1
+   "bearing": 216.4
   },
   {
    "id": "j-d-s-sandwich-shop",
@@ -1766,7 +1781,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 183.2
+   "bearing": 182.9
   },
   {
    "id": "the-fork",
@@ -1781,7 +1796,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 238.8
+   "bearing": 239.1
   },
   {
    "id": "the-sunset-restaurant-by-the-steel-coop",
@@ -1796,7 +1811,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 242.5
+   "bearing": 242.7
   },
   {
    "id": "ruby-lee-coffee-bakehouse",
@@ -1811,7 +1826,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 224.3
+   "bearing": 223.5
   },
   {
    "id": "fiesta-livingston",
@@ -1826,7 +1841,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 174.8
+   "bearing": 174.5
   },
   {
    "id": "gio-s-deli",
@@ -1841,7 +1856,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 178.4
+   "bearing": 178.1
   },
   {
    "id": "uncle-goose-coffee",
@@ -1856,7 +1871,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 246.1
+   "bearing": 246.2
   },
   {
    "id": "local-ground",
@@ -1871,7 +1886,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 200.2
+   "bearing": 199.6
   },
   {
    "id": "dairy-queen-grill-chill",
@@ -1886,7 +1901,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 166.3
+   "bearing": 166.1
   },
   {
    "id": "sonic-drive-in",
@@ -1901,7 +1916,7 @@
    "listed_in": [
     "eat-livingston-tn"
    ],
-   "bearing": 225.5
+   "bearing": 224.7
   },
   {
    "id": "strickland-brothers-10-minute-oil-change",
@@ -1916,7 +1931,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 231.6
+   "bearing": 230.7
   },
   {
    "id": "kent-s-wholesale-tire",
@@ -1931,7 +1946,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 185.7
+   "bearing": 185.3
   },
   {
    "id": "waterloo-tire-service",
@@ -1961,7 +1976,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 201.4
+   "bearing": 200.8
   },
   {
    "id": "floyd-s-automotive-and-performance",
@@ -1976,7 +1991,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 176.0
+   "bearing": 175.7
   },
   {
    "id": "hwy-tire",
@@ -1991,7 +2006,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 182.0
+   "bearing": 181.7
   },
   {
    "id": "woolbright-auto-repair",
@@ -2021,7 +2036,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 248.5
+   "bearing": 248.6
   },
   {
    "id": "watkins-langford-wrecker-services",
@@ -2051,7 +2066,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 232.8
+   "bearing": 231.9
   },
   {
    "id": "arneys-wrecker-service",
@@ -2126,7 +2141,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 215.9
+   "bearing": 215.2
   },
   {
    "id": "crossroads-diesel-and-auto",
@@ -2141,7 +2156,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 162.7
+   "bearing": 162.6
   },
   {
    "id": "light-the-fire-garage-fab",
@@ -2156,7 +2171,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 188.1
+   "bearing": 187.7
   },
   {
    "id": "roadside-rescue-of-the-upper-cumberland",
@@ -2171,7 +2186,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 220.7
+   "bearing": 219.9
   },
   {
    "id": "hunters-garage-inc",
@@ -2186,7 +2201,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 180.8
+   "bearing": 180.5
   },
   {
    "id": "the-tennessee-hot-rod-shop-llc",
@@ -2201,7 +2216,7 @@
    "listed_in": [
     "upper-cumberland-auto"
    ],
-   "bearing": 243.7
+   "bearing": 243.9
   }
  ],
  "edges": [
@@ -2653,6 +2668,11 @@
   {
    "source": "visit-livingston-tn",
    "target": "the-lake-house-on-dale-hollow",
+   "kind": "lists"
+  },
+  {
+   "source": "visit-livingston-tn",
+   "target": "tapestry-acres-farm-rv-stays",
    "kind": "lists"
   },
   {

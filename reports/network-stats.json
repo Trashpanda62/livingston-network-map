@@ -1,21 +1,21 @@
 {
- "nodes_total": 123,
+ "nodes_total": 124,
  "by_type": {
   "hub": 1,
   "directory": 6,
   "built": 5,
-  "listed": 111
+  "listed": 112
  },
- "edges_total": 136,
+ "edges_total": 137,
  "edges_by_kind": {
   "operates": 6,
   "built": 5,
-  "lists": 124,
+  "lists": 125,
   "sister": 1
  },
  "source_counts": {
   "outdoors": 40,
-  "visit": 41,
+  "visit": 42,
   "printers": 11
  },
  "printers_in_scope": 1,
