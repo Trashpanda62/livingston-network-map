@@ -1,10 +1,10 @@
 {
- "nodes_total": 124,
+ "nodes_total": 123,
  "by_type": {
   "hub": 1,
   "directory": 6,
   "built": 5,
-  "listed": 112
+  "listed": 111
  },
  "edges_total": 137,
  "edges_by_kind": {
@@ -24,6 +24,7 @@
  "deduped": [
   "Central Park Livingston -> existing node central-park-livingston (+visit-livingston-tn)",
   "Standing Stone State Park -> existing node standing-stone-state-park (+visit-livingston-tn)",
+  "Tapestry Acres Farm RV Stays -> existing node tapestry-acres (+visit-livingston-tn)",
   "Oliver Printing Company -> existing node oliver-printing (+middle-tn-printers)",
   "The Coop -> existing node the-coop (+eat-livingston-tn)",
   "Casa Mexicana -> existing node casa-mexicana (+eat-livingston-tn)",

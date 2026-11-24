@@ -78,6 +78,11 @@ BUILT_SITES = [
 ]
 
 
+# A directory listing whose name differs from the site we built for the same
+# business. The listing merges into the built node, so the map shows one pin.
+LISTING_ALIASES = {"tapestryacresfarmrvstays": "tapestryacres"}
+
+
 def norm(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", name.lower())
 
@@ -121,7 +126,7 @@ def main() -> int:
     emitted_lists = set()
 
     def add_listing(directory_id, name, url, city, county, drive_min, blurb, category):
-        key = norm(name)
+        key = LISTING_ALIASES.get(norm(name), norm(name))
         existing = None
         if key in by_norm:
             candidate = next(n for n in nodes if n["id"] == by_norm[key])
